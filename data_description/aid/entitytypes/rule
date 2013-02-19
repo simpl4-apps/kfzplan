@@ -1,0 +1,3 @@
+[sw]
+	type = sw.entitytype
+	content = {\"enabled\":true,\"index\":1000,\"name\":\"rule\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"description\":{\"name\":\"description\",\"datatype\":\"string\",\"enabled\":true},\"name\":{\"name\":\"name\",\"datatype\":\"string\",\"constraints\":\"[{\\\"annotation\\\":\\\"NotEmpty\\\",\\\"parameter1\\\":\\\"\\\"},{\\\"annotation\\\":\\\"Pattern\\\",\\\"parameter1\\\":\\\"[a-zA-Z][a-zA-Z0-9_.-]{2,64}\\\"}]\",\"form_enabled_expr\":\"!isEdit\",\"enabled\":true},\"rules\":{\"name\":\"rules\",\"datatype\":\"text\",\"enabled\":true}}}

@@ -1,0 +1,3 @@
+[sw]
+	type = sw.entitytype
+	content = {\"enabled\":true,\"index\":1000,\"name\":\"enumdata\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"sort\":{\"name\":\"sort\",\"datatype\":\"integer\",\"default_value\":1,\"enabled\":true},\"invalid_from\":{\"name\":\"invalid_from\",\"datatype\":\"date\",\"default_value\":\"31.12.2101\",\"enabled\":true},\"invalid\":{\"name\":\"invalid\",\"datatype\":\"boolean\",\"default_value\":\"false\",\"edittype\":\"checkbox\",\"enabled\":true},\"key\":{\"name\":\"key\",\"datatype\":\"string\",\"primary_key\":true,\"constraints\":\"[{\\\"annotation\\\":\\\"NotEmpty\\\",\\\"parameter1\\\":\\\"\\\"}]\",\"enabled\":true}}}

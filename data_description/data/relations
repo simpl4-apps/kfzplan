@@ -1,0 +1,3 @@
+[sw]
+	type = sw.relations
+	content = [{\"rightmodule\":\"data.buchungsvoraussetzungen\",\"leftmodule\":\"data.fahrzeuge\",\"dependent\":false,\"relation\":\"many-to-many\"},{\"rightmodule\":\"data.buchungsvoraussetzungen\",\"leftmodule\":\"data.fahrer\",\"dependent\":false,\"relation\":\"many-to-many\"},{\"rightmodule\":\"data.buchungen\",\"leftmodule\":\"data.fahrzeuge\",\"dependent\":false,\"relation\":\"one-to-many-bi\"},{\"rightmodule\":\"data.fahrer\",\"leftmodule\":\"data.firma\",\"dependent\":false,\"relation\":\"one-to-many-bi\"},{\"rightmodule\":\"data.buchungen\",\"leftmodule\":\"data.fahrer\",\"dependent\":false,\"relation\":\"one-to-many-bi\"}]
