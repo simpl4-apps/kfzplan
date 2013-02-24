@@ -1,0 +1,31 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "email",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "name",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "geschlecht",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "telefonnummer",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "_team_list",
+            "tab": "tab2"
+        }
+    ]
+}

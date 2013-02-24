@@ -1,0 +1,16 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "bisdatum",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "_team_list",
+            "tab": "tab2"
+        }
+    ]
+}

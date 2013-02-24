@@ -1,0 +1,35 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "hubraum",
+            "enabled": true
+        },
+        {
+            "name": "schneeketten",
+            "enabled": true
+        },
+        {
+            "name": "hebebuehne",
+            "enabled": true
+        },
+        {
+            "name": "treibstoff",
+            "enabled": true
+        },
+        {
+            "name": "kennzeichen",
+            "enabled": true
+        },
+        {
+            "name": "hersteller",
+            "enabled": true
+        },
+        {
+            "name": "modell",
+            "enabled": true
+        }
+    ]
+}

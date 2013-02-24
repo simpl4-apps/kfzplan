@@ -1,0 +1,17 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "vorname",
+            "enabled": true,
+            "check_type": "both"
+        },
+        {
+            "name": "name",
+            "enabled": true,
+            "check_type": "both"
+        }
+    ]
+}

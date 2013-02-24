@@ -1,0 +1,116 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "schneeketten",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "treibstoff",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "kennzeichen",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "fahrgastplaetze",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "leistung",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "erstzulassung",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "farbe",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "hersteller",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "fahrzeugtyp",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "sitzheizung",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "zuordnung",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "modell",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "fahrgestellnummer",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "anhaengerkupplung",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "rollstuhlplaetze",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "auffahrrampe",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "klimaanlage",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "standheizung",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "palettenplaetze",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "absenkung",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "stablebeladung",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
+            "name": "_team_list",
+            "tab": "tab2"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "schneeketten",
+            "enabled": true
+        },
+        {
+            "name": "treibstoff",
+            "enabled": true
+        },
+        {
+            "name": "kennzeichen",
+            "enabled": true
+        },
+        {
+            "name": "fahrgastplaetze",
+            "enabled": true
+        },
+        {
+            "name": "leistung",
+            "enabled": true
+        },
+        {
+            "name": "erstzulassung",
+            "enabled": true
+        },
+        {
+            "name": "farbe",
+            "enabled": true
+        },
+        {
+            "name": "hersteller",
+            "enabled": true
+        },
+        {
+            "name": "fahrzeugtyp",
+            "enabled": true
+        },
+        {
+            "name": "sitzheizung",
+            "enabled": true
+        },
+        {
+            "name": "zuordnung",
+            "enabled": true
+        },
+        {
+            "name": "modell",
+            "enabled": true
+        },
+        {
+            "name": "fahrgestellnummer",
+            "enabled": true
+        },
+        {
+            "name": "anhaengerkupplung",
+            "enabled": true
+        },
+        {
+            "name": "rollstuhlplaetze",
+            "enabled": true
+        },
+        {
+            "name": "auffahrrampe",
+            "enabled": true
+        },
+        {
+            "name": "klimaanlage",
+            "enabled": true
+        },
+        {
+            "name": "standheizung",
+            "enabled": true
+        },
+        {
+            "name": "palettenplaetze",
+            "enabled": true
+        },
+        {
+            "name": "absenkung",
+            "enabled": true
+        },
+        {
+            "name": "stablebeladung",
+            "enabled": true
+        },
+        {
+            "name": "_team_list"
+        }
+    ]
+}

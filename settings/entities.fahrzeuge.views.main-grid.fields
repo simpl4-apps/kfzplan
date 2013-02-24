@@ -1,0 +1,27 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "schneeketten",
+            "enabled": true
+        },
+        {
+            "name": "kennzeichen",
+            "enabled": true
+        },
+        {
+            "name": "fahrgastplaetze",
+            "enabled": true
+        },
+        {
+            "name": "leistung",
+            "enabled": true
+        },
+        {
+            "name": "standheizung",
+            "enabled": true
+        }
+    ]
+}

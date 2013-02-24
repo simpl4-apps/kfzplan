@@ -1,0 +1,20 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fieldsets": [
+        {
+            "fsname": "data.fahrer.fieldset.set1",
+            "description": "",
+            "fields": [
+                "firma",
+                "ort"
+            ],
+            "search_options": [
+                "bw",
+                "cn",
+                "eq"
+            ]
+        }
+    ]
+}

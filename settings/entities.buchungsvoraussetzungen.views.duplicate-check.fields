@@ -1,0 +1,17 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "schluessel",
+            "enabled": true,
+            "check_type": "equal"
+        },
+        {
+            "name": "beschreibung",
+            "enabled": true,
+            "check_type": "equal"
+        }
+    ]
+}

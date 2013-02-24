@@ -1,0 +1,20 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fieldsets": [
+        {
+            "fsname": "data.fahrzeuge.fieldset.set1",
+            "description": "",
+            "fields": [
+                "kennzeichen",
+                "modell"
+            ],
+            "search_options": [
+                "bw",
+                "cn",
+                "eq"
+            ]
+        }
+    ]
+}

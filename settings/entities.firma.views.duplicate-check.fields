@@ -1,0 +1,22 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "strasse",
+            "enabled": true,
+            "check_type": "both"
+        },
+        {
+            "name": "ort",
+            "enabled": true,
+            "check_type": "both"
+        },
+        {
+            "name": "plz",
+            "enabled": true,
+            "check_type": "both"
+        }
+    ]
+}

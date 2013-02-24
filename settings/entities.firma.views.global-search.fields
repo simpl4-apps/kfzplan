@@ -1,0 +1,23 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "strasse",
+            "enabled": true
+        },
+        {
+            "name": "ort",
+            "enabled": true
+        },
+        {
+            "name": "firma",
+            "enabled": true
+        },
+        {
+            "name": "email",
+            "enabled": true
+        }
+    ]
+}

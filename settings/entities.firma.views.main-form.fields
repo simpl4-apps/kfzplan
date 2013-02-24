@@ -1,0 +1,36 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "ort",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "faxnummer",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "plz",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "telefonnummer",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "email",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
+            "name": "_team_list",
+            "tab": "tab2"
+        }
+    ]
+}
