@@ -1,3 +1,190 @@
 [sw]
-	content = "{\"resourceId\":\"oryx_5D4C1984-0B6C-4220-B575-8F424514D8DB\",\"properties\":{\"xf_id\":\"\",\"xf_name\":\"\",\"xf_version\":\"\",\"xf_default_buttons\":true,\"xf_head\":\"\",\"xf_nsdeclarations\":\"\"},\"stencil\":{\"id\":\"XForm\"},\"childShapes\":[{\"resourceId\":\"oryx_353181B1-A6F7-4CC9-BE7B-E142E4CC4230\",\"properties\":{\"xf_id\":\"name_input\",\"xf_default\":\"\",\"xf_navindex\":\"\",\"xf_accesskey\":\"\",\"xf_type\":\"text\",\"xf_readonly\":\"\",\"xf_required\":\"true\",\"xf_calculate\":\"\",\"xf_constraint\":\"\"},\"stencil\":{\"id\":\"Input\"},\"childShapes\":[{\"resourceId\":\"oryx_F87214F6-6A92-4497-B8A5-496AB045FDD5\",\"properties\":{\"xf_id\":\"\",\"xf_text\":\"Name des Fahrers eingeben\"},\"stencil\":{\"id\":\"Label\"},\"childShapes\":[],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":100,\"y\":-1},\"upperLeft\":{\"x\":0,\"y\":-21}},\"dockers\":[]}],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":180,\"y\":100},\"upperLeft\":{\"x\":30,\"y\":76}},\"dockers\":[]},{\"resourceId\":\"oryx_3BCDDABB-66E3-4DF7-B4B7-9C9FFA80FBE2\",\"properties\":{\"xf_id\":\"kfz_modell\",\"xf_default\":\"\",\"xf_navindex\":\"\",\"xf_accesskey\":\"\",\"xf_type\":\"text\",\"xf_readonly\":\"true\",\"xf_required\":\"\",\"xf_calculate\":\"\",\"xf_constraint\":\"\"},\"stencil\":{\"id\":\"Input\"},\"childShapes\":[{\"resourceId\":\"oryx_441D81C9-81F4-4521-92C1-AC15AC1768B1\",\"properties\":{\"xf_id\":\"\",\"xf_text\":\"Ausgewähltes Kfzmodell\"},\"stencil\":{\"id\":\"Label\"},\"childShapes\":[],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":100,\"y\":-1},\"upperLeft\":{\"x\":0,\"y\":-21}},\"dockers\":[]}],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":180,\"y\":154},\"upperLeft\":{\"x\":30,\"y\":130}},\"dockers\":[]},{\"resourceId\":\"oryx_81DE01F7-58B3-4159-8533-F7A5F5B532E1\",\"properties\":{\"xf_id\":\"error_alert\",\"xf_message\":\"Fahrer nicht berechtigt\",\"xf_exclude\":\"!error_alert\"},\"stencil\":{\"id\":\"Alert\"},\"childShapes\":[],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":46,\"y\":46},\"upperLeft\":{\"x\":30,\"y\":30}},\"dockers\":[]},{\"resourceId\":\"oryx_C85B9CC7-4146-4C87-A64D-5BF2352E158C\",\"properties\":{\"xf_id\":\"fahrerliste_alert\",\"xf_message\":\"Keine Fahrer gefunden\",\"xf_exclude\":\"fahrerliste_alert == false\"},\"stencil\":{\"id\":\"Alert\"},\"childShapes\":[],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":92,\"y\":46},\"upperLeft\":{\"x\":76,\"y\":30}},\"dockers\":[]}],\"bounds\":{\"lowerRight\":{\"x\":1485,\"y\":1050},\"upperLeft\":{\"x\":0,\"y\":0}},\"stencilset\":{\"url\":\"forms\",\"namespace\":\"http://b3mn.org/stencilset/xforms#\"},\"ssextensions\":[]}"
 	type = sw.form
+--
+{
+  "resourceId": "oryx_5D4C1984-0B6C-4220-B575-8F424514D8DB",
+  "properties": {
+    "xf_id": "",
+    "xf_name": "",
+    "xf_version": "",
+    "xf_default_buttons": true,
+    "xf_head": "",
+    "xf_nsdeclarations": ""
+  },
+  "stencil": {
+    "id": "XForm"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_353181B1-A6F7-4CC9-BE7B-E142E4CC4230",
+      "properties": {
+        "xf_id": "name_input",
+        "xf_default": "",
+        "xf_navindex": "",
+        "xf_accesskey": "",
+        "xf_type": "text",
+        "xf_readonly": "",
+        "xf_required": "true",
+        "xf_calculate": "",
+        "xf_constraint": ""
+      },
+      "stencil": {
+        "id": "Input"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_F87214F6-6A92-4497-B8A5-496AB045FDD5",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Name des Fahrers eingeben"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 100
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 76
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3BCDDABB-66E3-4DF7-B4B7-9C9FFA80FBE2",
+      "properties": {
+        "xf_id": "kfz_modell",
+        "xf_default": "",
+        "xf_navindex": "",
+        "xf_accesskey": "",
+        "xf_type": "text",
+        "xf_readonly": "true",
+        "xf_required": "",
+        "xf_calculate": "",
+        "xf_constraint": ""
+      },
+      "stencil": {
+        "id": "Input"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_441D81C9-81F4-4521-92C1-AC15AC1768B1",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Ausgewähltes Kfzmodell"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 154
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 130
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_81DE01F7-58B3-4159-8533-F7A5F5B532E1",
+      "properties": {
+        "xf_id": "error_alert",
+        "xf_message": "Fahrer nicht berechtigt",
+        "xf_exclude": "!error_alert"
+      },
+      "stencil": {
+        "id": "Alert"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 46,
+          "y": 46
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_C85B9CC7-4146-4C87-A64D-5BF2352E158C",
+      "properties": {
+        "xf_id": "fahrerliste_alert",
+        "xf_message": "Keine Fahrer gefunden",
+        "xf_exclude": "fahrerliste_alert == false"
+      },
+      "stencil": {
+        "id": "Alert"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 92,
+          "y": 46
+        },
+        "upperLeft": {
+          "x": 76,
+          "y": 30
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 1485,
+      "y": 1050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "forms",
+    "namespace": "http://b3mn.org/stencilset/xforms#"
+  },
+  "ssextensions": []
+}

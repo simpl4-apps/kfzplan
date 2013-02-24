@@ -1,3 +1,65 @@
 [sw]
 	type = sw.enum
-	content = {\"dataList\":[{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"Audi\",\"key\":\"1\"},{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"BMW\",\"key\":\"2\"},{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"Mercedes\",\"key\":\"3\"},{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"Seat\",\"key\":\"4\"},{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"VW\",\"key\":\"5\"},{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"Peugeot\",\"key\":\"6\"},{\"sort\":0,\"invalid_from\":4133935209265,\"invalid\":false,\"hersteller\":\"Renault\",\"key\":\"7\"}],\"fieldList\":[{\"description\":\"Hersteller\",\"fieldname\":\"hersteller\"}]}
+--
+{
+    "dataList": [
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "Audi",
+            "key": "1"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "BMW",
+            "key": "2"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "Mercedes",
+            "key": "3"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "Seat",
+            "key": "4"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "VW",
+            "key": "5"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "Peugeot",
+            "key": "6"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209265,
+            "hersteller": "Renault",
+            "key": "7"
+        }
+    ],
+    "fieldList": [
+        {
+            "description": "Hersteller",
+            "fieldname": "hersteller",
+            "__hints__": {
+
+            }
+        }
+    ]
+}

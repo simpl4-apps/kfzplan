@@ -1,3 +1,34 @@
 [sw]
 	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1,\"name\":\"buchungen\",\"pack\":\"data\",\"team_security\":true,\"fields\":{\"bisdatum\":{\"name\":\"bisdatum\",\"datatype\":\"date\",\"edittype\":\"datetime\",\"enabled\":true},\"vondatum\":{\"name\":\"vondatum\",\"datatype\":\"date\",\"edittype\":\"datetime\",\"enabled\":true}}}
+--
+{
+    "enabled": true,
+    "index": 1,
+    "default_fields": false,
+    "pack": "data",
+    "team_security": true,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "buchungen",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "bisdatum": {
+            "enabled": true,
+            "name": "bisdatum",
+            "edittype": "datetime",
+            "datatype": "date"
+        },
+        "vondatum": {
+            "enabled": true,
+            "name": "vondatum",
+            "edittype": "datetime",
+            "datatype": "date"
+        }
+    }
+}

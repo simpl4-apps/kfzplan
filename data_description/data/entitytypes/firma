@@ -1,3 +1,57 @@
 [sw]
 	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1,\"name\":\"firma\",\"pack\":\"data\",\"team_security\":true,\"fields\":{\"strasse\":{\"name\":\"strasse\",\"datatype\":\"string\",\"enabled\":true},\"email\":{\"name\":\"email\",\"datatype\":\"string\",\"enabled\":true},\"plz\":{\"name\":\"plz\",\"datatype\":\"string\",\"enabled\":true},\"ort\":{\"name\":\"ort\",\"datatype\":\"string\",\"enabled\":true},\"faxnummer\":{\"name\":\"faxnummer\",\"datatype\":\"string\",\"enabled\":true},\"telefonnumer\":{\"name\":\"telefonnumer\",\"datatype\":\"string\",\"enabled\":true},\"firma\":{\"name\":\"firma\",\"datatype\":\"string\",\"enabled\":true}}}
+--
+{
+    "enabled": true,
+    "index": 1,
+    "default_fields": false,
+    "pack": "data",
+    "team_security": true,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "firma",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "strasse": {
+            "enabled": true,
+            "name": "strasse",
+            "datatype": "string"
+        },
+        "email": {
+            "enabled": true,
+            "name": "email",
+            "datatype": "string"
+        },
+        "plz": {
+            "enabled": true,
+            "name": "plz",
+            "datatype": "string"
+        },
+        "ort": {
+            "enabled": true,
+            "name": "ort",
+            "datatype": "string"
+        },
+        "faxnummer": {
+            "enabled": true,
+            "name": "faxnummer",
+            "datatype": "string"
+        },
+        "telefonnumer": {
+            "enabled": true,
+            "name": "telefonnumer",
+            "datatype": "string"
+        },
+        "firma": {
+            "enabled": true,
+            "name": "firma",
+            "datatype": "string"
+        }
+    }
+}

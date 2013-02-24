@@ -1,3 +1,58 @@
 [sw]
-	content = {\"id\":\"fganfr_fahrzeug_suchen\",\"name\":\"fganfr_fahrzeug_suchen\",\"modulename\":\"fahrzeuge\",\"user\":\"admin\",\"type\":\"jcr\",\"description\":null,\"exclusion\":[],\"filter\":{\"label\":\"1\",\"connector\":\"and\",\"children\":[{\"label\":\"input_kennzeichen\",\"connector\":null,\"field\":{\"id\":\"fahrzeuge.kennzeichen\",\"title\":\"kennzeichen\",\"module\":\"\",\"moduleTitle\":\"\",\"children\":[]},\"op\":\"cn\",\"data\":\"\",\"children\":[]}]},\"fields\":[{\"display\":true,\"mapping\":\"\",\"id\":\"kennzeichen\",\"selector\":\"fahrzeuge\",\"module\":\"fahrzeuge\",\"path\":\"fahrzeuge\"},{\"display\":true,\"mapping\":null,\"id\":\"hersteller\",\"selector\":\"fahrzeuge\",\"module\":\"fahrzeuge\",\"path\":\"fahrzeuge\"},{\"display\":true,\"mapping\":null,\"id\":\"modell\",\"selector\":\"fahrzeuge\",\"module\":\"fahrzeuge\",\"path\":\"fahrzeuge\"}]}
 	type = sw.filter
+--
+{
+  "id": "fganfr_fahrzeug_suchen",
+  "modulename": "fahrzeuge",
+  "storeId": "kfzplan_data",
+  "user": null,
+  "type": "jcr",
+  "description": null,
+  "exclusion": [],
+  "filter": {
+    "label": "1",
+    "connector": "and",
+    "children": [
+      {
+        "label": "input_kennzeichen",
+        "connector": null,
+        "field": {
+          "id": "fahrzeuge.kennzeichen",
+          "title": "kennzeichen",
+          "module": "",
+          "moduleTitle": "",
+          "children": []
+        },
+        "op": "cn",
+        "data": "",
+        "children": []
+      }
+    ]
+  },
+  "fields": [
+    {
+      "display": true,
+      "mapping": "",
+      "id": "kennzeichen",
+      "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "mapping": null,
+      "id": "hersteller",
+      "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "mapping": null,
+      "id": "modell",
+      "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    }
+  ]
+}

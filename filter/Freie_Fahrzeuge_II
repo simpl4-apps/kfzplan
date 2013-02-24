@@ -1,3 +1,82 @@
 [sw]
-	content = {\"id\":\"Freie_Fahrzeuge_II\",\"name\":\"Freie_Fahrzeuge_II\",\"modulename\":\"fahrzeuge\",\"user\":\"admin\",\"type\":\"jcr\",\"description\":null,\"exclusion\":[],\"filter\":{\"label\":\"1\",\"connector\":\"and\",\"children\":[{\"label\":\"hersteller\",\"connector\":null,\"field\":{\"id\":\"fahrzeuge.hersteller\",\"title\":\"hersteller\",\"module\":\"\",\"moduleTitle\":\"\",\"children\":[]},\"op\":\"eq\",\"data\":\"1\",\"children\":[]},{\"label\":\"1.2\",\"connector\":null,\"field\":\"_exists_not_subselect\",\"op\":\"freie_termine\",\"data\":\"buchungen.fahrzeuge = fahrzeuge\",\"children\":[]}]},\"fields\":[{\"display\":true,\"mapping\":\"\",\"id\":\"hersteller\",\"selector\":\"fahrzeuge\",\"module\":\"fahrzeuge\",\"path\":\"fahrzeuge\"},{\"display\":true,\"mapping\":null,\"id\":\"kennzeichen\",\"selector\":\"fahrzeuge\",\"module\":\"fahrzeuge\",\"path\":\"fahrzeuge\"},{\"display\":true,\"mapping\":null,\"id\":\"modell\",\"selector\":\"fahrzeuge\",\"module\":\"fahrzeuge\",\"path\":\"fahrzeuge\"},{\"display\":true,\"mapping\":null,\"id\":\"schluessel\",\"selector\":\"buchungsvoraussetzungen\",\"module\":\"buchungsvoraussetzungen\",\"path\":\"fahrzeuge$buchungsvoraussetzungen_list\"},{\"display\":true,\"mapping\":null,\"id\":\"beschreibung\",\"selector\":\"buchungsvoraussetzungen\",\"module\":\"buchungsvoraussetzungen\",\"path\":\"fahrzeuge$buchungsvoraussetzungen_list\"}]}
 	type = sw.filter
+--
+{
+  "id": "Freie_Fahrzeuge_II",
+  "modulename": "fahrzeuge",
+  "storeId": "kfzplan_data",
+  "user": null,
+  "type": "jcr",
+  "description": null,
+  "exclusion": [],
+  "filter": {
+    "label": "1",
+    "connector": "and",
+    "children": [
+      {
+        "label": "hersteller",
+        "connector": null,
+        "field": {
+          "id": "fahrzeuge.hersteller",
+          "title": "hersteller",
+          "module": "",
+          "moduleTitle": "",
+          "children": []
+        },
+        "op": "eq",
+        "data": "1",
+        "children": []
+      },
+      {
+        "label": "1.2",
+        "connector": null,
+        "field": "_exists_not_subselect",
+        "op": "freie_termine",
+        "data": "buchungen.fahrzeuge = fahrzeuge",
+        "children": []
+      }
+    ]
+  },
+  "fields": [
+    {
+      "display": true,
+      "mapping": "",
+      "id": "hersteller",
+      "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "mapping": null,
+      "id": "kennzeichen",
+      "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "mapping": null,
+      "id": "modell",
+      "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "mapping": null,
+      "id": "schluessel",
+      "selector": "buchungsvoraussetzungen",
+      "module": "buchungsvoraussetzungen",
+      "path": "fahrzeuge$buchungsvoraussetzungen_list"
+    },
+    {
+      "display": true,
+      "mapping": null,
+      "id": "beschreibung",
+      "selector": "buchungsvoraussetzungen",
+      "module": "buchungsvoraussetzungen",
+      "path": "fahrzeuge$buchungsvoraussetzungen_list"
+    }
+  ]
+}

@@ -1,3 +1,0 @@
-[sw]
-	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"dataimport\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"defaults\":{\"name\":\"defaults\",\"datatype\":\"string\",\"enabled\":true},\"importid\":{\"name\":\"importid\",\"datatype\":\"string\",\"enabled\":true},\"source\":{\"name\":\"source\",\"datatype\":\"string\",\"enabled\":true},\"filetype\":{\"name\":\"filetype\",\"datatype\":\"filetype\",\"enabled\":true},\"mapping\":{\"name\":\"mapping\",\"datatype\":\"string\",\"enabled\":true},\"mainmodule\":{\"name\":\"mainmodule\",\"datatype\":\"mainmodule\",\"enabled\":true},\"filter\":{\"name\":\"filter\",\"datatype\":\"string\",\"enabled\":true}}}

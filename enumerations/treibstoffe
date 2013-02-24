@@ -1,3 +1,65 @@
 [sw]
 	type = sw.enum
-	content = {\"dataList\":[{\"sort\":0,\"invalid_from\":4133935209318,\"invalid\":false,\"beschreibung\":\"Diesel\",\"key\":\"D\"},{\"sort\":0,\"invalid_from\":4133935209318,\"invalid\":false,\"beschreibung\":\"Erdgas\",\"key\":\"EG\"},{\"sort\":0,\"invalid_from\":4133935209318,\"invalid\":false,\"beschreibung\":\"Autogas\",\"key\":\"AG\"},{\"sort\":0,\"invalid_from\":4133935209319,\"invalid\":false,\"beschreibung\":\"Biodiesel\",\"key\":\"BD\"},{\"sort\":0,\"invalid_from\":4133935209319,\"invalid\":false,\"beschreibung\":\"Benzin\",\"key\":\"B\"},{\"sort\":0,\"invalid_from\":4133935209319,\"invalid\":false,\"beschreibung\":\"E10\",\"key\":\"E10\"},{\"sort\":0,\"invalid_from\":4133935209319,\"invalid\":false,\"beschreibung\":\"Super Plus\",\"key\":\"SP\"}],\"fieldList\":[{\"description\":\"Beschreibung\",\"fieldname\":\"beschreibung\"}]}
+--
+{
+    "dataList": [
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209318,
+            "beschreibung": "Diesel",
+            "key": "D"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209318,
+            "beschreibung": "Erdgas",
+            "key": "EG"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209318,
+            "beschreibung": "Autogas",
+            "key": "AG"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209319,
+            "beschreibung": "Biodiesel",
+            "key": "BD"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209319,
+            "beschreibung": "Benzin",
+            "key": "B"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209319,
+            "beschreibung": "E10",
+            "key": "E10"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209319,
+            "beschreibung": "Super Plus",
+            "key": "SP"
+        }
+    ],
+    "fieldList": [
+        {
+            "description": "Beschreibung",
+            "fieldname": "beschreibung",
+            "__hints__": {
+
+            }
+        }
+    ]
+}

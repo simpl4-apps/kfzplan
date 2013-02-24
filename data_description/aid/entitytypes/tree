@@ -1,3 +1,0 @@
-[sw]
-	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"tree\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"tree\":{\"name\":\"tree\",\"datatype\":\"string\",\"enabled\":true},\"valid_from\":{\"name\":\"valid_from\",\"datatype\":\"date\",\"enabled\":true},\"description\":{\"name\":\"description\",\"datatype\":\"string\",\"enabled\":true},\"valid_to\":{\"name\":\"valid_to\",\"datatype\":\"date\",\"enabled\":true},\"treeid\":{\"name\":\"treeid\",\"datatype\":\"string\",\"primary_key\":true,\"enabled\":true}}}

@@ -1,3 +1,50 @@
 [sw]
-	content = {\"id\":\"testbv\",\"modulename\":\"buchungsvoraussetzungen\",\"user\":\"admin\",\"type\":\"jcr\",\"description\":null,\"exclusion\":[],\"filter\":{\"label\":\"1\",\"connector\":\"and\",\"children\":[{\"label\":\"1.1\",\"connector\":null,\"field\":{\"id\":\"buchungsvoraussetzungen.beschreibung\",\"title\":\"Buchungsvoraussetzungen.Beschreibung\",\"module\":\"\",\"moduleTitle\":\"\",\"children\":[]},\"op\":\"cn\",\"data\":\"\",\"children\":[]}]},\"fields\":[{\"column\":\"Buchungsvoraussetzungen.Beschreibung\",\"display\":true,\"displayname\":null,\"mapping\":\"beschreibung\",\"id\":\"beschreibung\",\"selector\":\"buchungsvoraussetzungen\",\"module\":\"buchungsvoraussetzungen\",\"path\":\"buchungsvoraussetzungen\"},{\"column\":\"Buchungsvoraussetzungen.Schlüssel\",\"display\":true,\"displayname\":null,\"mapping\":\"key\",\"id\":\"schluessel\",\"selector\":\"buchungsvoraussetzungen\",\"module\":\"buchungsvoraussetzungen\",\"path\":\"buchungsvoraussetzungen\"}]}
 	type = sw.filter
+--
+{
+  "id": "testbv",
+  "modulename": "buchungsvoraussetzungen",
+  "storeId": "kfzplan_data",
+  "user": null,
+  "type": "jcr",
+  "description": null,
+  "exclusion": [],
+  "filter": {
+    "label": "1",
+    "connector": "and",
+    "children": [
+      {
+        "label": "1.1",
+        "connector": null,
+        "field": {
+          "id": "buchungsvoraussetzungen.beschreibung",
+          "title": "beschreibung",
+          "module": "",
+          "moduleTitle": "",
+          "children": []
+        },
+        "op": "cn",
+        "data": "",
+        "children": []
+      }
+    ]
+  },
+  "fields": [
+    {
+      "display": true,
+      "mapping": "beschreibung",
+      "id": "beschreibung",
+      "selector": "buchungsvoraussetzungen",
+      "module": "buchungsvoraussetzungen",
+      "path": "buchungsvoraussetzungen"
+    },
+    {
+      "display": true,
+      "mapping": "key",
+      "id": "schluessel",
+      "selector": "buchungsvoraussetzungen",
+      "module": "buchungsvoraussetzungen",
+      "path": "buchungsvoraussetzungen"
+    }
+  ]
+}

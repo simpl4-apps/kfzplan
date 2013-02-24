@@ -1,3 +1,176 @@
 [sw]
 	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1,\"name\":\"fahrzeuge\",\"pack\":\"data\",\"team_security\":true,\"fields\":{\"palettenplaetze\":{\"name\":\"palettenplaetze\",\"datatype\":\"number\",\"enabled\":true},\"farbe\":{\"name\":\"farbe\",\"datatype\":\"string\",\"enabled\":true},\"treibstoff\":{\"name\":\"treibstoff\",\"datatype\":\"string\",\"selectable_items\":\"rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'treibstoffe',mapping:{label:'(beschreibung)',value:'key'}\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"anhaengerkupplung\":{\"name\":\"anhaengerkupplung\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"schneeketten\":{\"name\":\"schneeketten\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"hebebuehne\":{\"name\":\"hebebuehne\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"hersteller\":{\"name\":\"hersteller\",\"datatype\":\"string\",\"selectable_items\":\"rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'hersteller',mapping:{label:'(hersteller)',value:'key'}\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"stablebeladung\":{\"name\":\"stablebeladung\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"rollstuhlplaetze\":{\"name\":\"rollstuhlplaetze\",\"datatype\":\"number\",\"enabled\":true},\"fahrgestellnummer\":{\"name\":\"fahrgestellnummer\",\"datatype\":\"string\",\"enabled\":true},\"auffahrrampe\":{\"name\":\"auffahrrampe\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"erstzulassung\":{\"name\":\"erstzulassung\",\"datatype\":\"date\",\"enabled\":true},\"fahrzeugtyp\":{\"name\":\"fahrzeugtyp\",\"datatype\":\"string\",\"selectable_items\":\"rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'fahrzeugtypen',mapping:{label:'(fahrzeugtyp)',value:'key'}\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"kennzeichen\":{\"name\":\"kennzeichen\",\"datatype\":\"string\",\"enabled\":true},\"zuordnung\":{\"name\":\"zuordnung\",\"datatype\":\"string\",\"selectable_items\":\"Dienstfahrzeug,Privatfahrzeug,Sonstiges \",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"standheizung\":{\"name\":\"standheizung\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"klimaanlage\":{\"name\":\"klimaanlage\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"modell\":{\"name\":\"modell\",\"datatype\":\"string\",\"enabled\":true},\"absenkung\":{\"name\":\"absenkung\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"sitzheizung\":{\"name\":\"sitzheizung\",\"datatype\":\"string\",\"selectable_items\":\"Nein,Ja\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true},\"leistung\":{\"name\":\"leistung\",\"datatype\":\"number\",\"enabled\":true},\"fahrgastplaetze\":{\"name\":\"fahrgastplaetze\",\"datatype\":\"number\",\"enabled\":true},\"hubraum\":{\"name\":\"hubraum\",\"datatype\":\"number\",\"enabled\":true}}}
+--
+{
+    "enabled": true,
+    "index": 1,
+    "default_fields": false,
+    "pack": "data",
+    "team_security": true,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "fahrzeuge",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "palettenplaetze": {
+            "enabled": true,
+            "name": "palettenplaetze",
+            "datatype": "number"
+        },
+        "farbe": {
+            "enabled": true,
+            "name": "farbe",
+            "datatype": "string"
+        },
+        "treibstoff": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "treibstoff",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'treibstoffe',mapping:{label:'(beschreibung)',value:'key'}"
+        },
+        "anhaengerkupplung": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "anhaengerkupplung",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "schneeketten": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "schneeketten",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "hebebuehne": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "hebebuehne",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "hersteller": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "hersteller",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'hersteller',mapping:{label:'(hersteller)',value:'key'}"
+        },
+        "stablebeladung": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "stablebeladung",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "rollstuhlplaetze": {
+            "enabled": true,
+            "name": "rollstuhlplaetze",
+            "datatype": "number"
+        },
+        "fahrgestellnummer": {
+            "enabled": true,
+            "name": "fahrgestellnummer",
+            "datatype": "string"
+        },
+        "erstzulassung": {
+            "enabled": true,
+            "name": "erstzulassung",
+            "datatype": "date"
+        },
+        "fahrzeugtyp": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "fahrzeugtyp",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'fahrzeugtypen',mapping:{label:'(fahrzeugtyp)',value:'key'}"
+        },
+        "auffahrrampe": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "auffahrrampe",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "kennzeichen": {
+            "enabled": true,
+            "name": "kennzeichen",
+            "datatype": "string"
+        },
+        "zuordnung": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "zuordnung",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Dienstfahrzeug,Privatfahrzeug,Sonstiges "
+        },
+        "standheizung": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "standheizung",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "klimaanlage": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "klimaanlage",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "modell": {
+            "enabled": true,
+            "name": "modell",
+            "datatype": "string"
+        },
+        "absenkung": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "absenkung",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "sitzheizung": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "sitzheizung",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Nein,Ja"
+        },
+        "leistung": {
+            "enabled": true,
+            "name": "leistung",
+            "datatype": "number"
+        },
+        "fahrgastplaetze": {
+            "enabled": true,
+            "name": "fahrgastplaetze",
+            "datatype": "number"
+        },
+        "hubraum": {
+            "enabled": true,
+            "name": "hubraum",
+            "datatype": "number"
+        }
+    }
+}

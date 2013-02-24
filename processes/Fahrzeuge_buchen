@@ -1,5 +1,1505 @@
 [sw]
-	content = "{\"resourceId\":\"oryx_2B64A04B-D96A-4B07-8ACC-6CA4F095EE05\",\"properties\":{\"name\":\"Fahrzeuge_buchen\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"version\":\"\",\"author\":\"\",\"language\":\"English\",\"namespaces\":\"\",\"targetnamespace\":\"kfzplan\",\"expressionlanguage\":\"http://www.w3.org/1999/XPath\",\"typelanguage\":\"http://www.w3.org/2001/XMLSchema\",\"creationdate\":\"\",\"modificationdate\":\"\",\"orientation\":\"horizontal\"},\"stencil\":{\"id\":\"BPMNDiagram\"},\"childShapes\":[{\"resourceId\":\"oryx_C54FEC0F-9191-4B0A-9FFE-8315D2E611CA\",\"properties\":{\"name\":\"Start\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"attr$activiti$formkey\":\"\",\"bgcolor\":\"#000\",\"bordercolor\":\"green\",\"processid\":\"\",\"trigger\":\"None\",\"attr$activiti$initiator\":\"initiator\"},\"stencil\":{\"id\":\"StartNoneEvent\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_2DF24FBA-C6AF-4B42-887B-810BE2BADAEC\"}],\"bounds\":{\"lowerRight\":{\"x\":45,\"y\":160},\"upperLeft\":{\"x\":15,\"y\":130}},\"dockers\":[]},{\"resourceId\":\"oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE\",\"properties\":{\"processid\":\"\",\"name\":\"Freie Fahrzeuge ermitteln\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"yellow\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$class\":\"org.ms123.common.workflow.TaskFilterExecutor\",\"el$activiti$filtername\":\"filter/Freie_Fahrzeuge_II,Freie_Fahrzeuge_II\",\"el$activiti$variablesmapping\":{\"totalCount\":3,\"items\":[{\"processvar\":\"Form1.input_date_from\",\"filtervar\":\"input_date_from\"},{\"processvar\":\"Form1.input_date_to\",\"filtervar\":\"input_date_to\"},{\"processvar\":\"Form1.hersteller\",\"filtervar\":\"hersteller\"}]},\"el$activiti$listname\":\"Freie_Fahrzeuge\",\"tasktype\":\"Filter\"},\"stencil\":{\"id\":\"FilterTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_AD835652-1EB5-4ED6-A4DD-8650D8F3B583\"}],\"bounds\":{\"lowerRight\":{\"x\":338,\"y\":187},\"upperLeft\":{\"x\":240,\"y\":103}},\"dockers\":[]},{\"resourceId\":\"oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85\",\"properties\":{\"processid\":\"\",\"name\":\"Freies Fahrzeug selektieren\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"yellow\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$formhandlerclass\":\"org.ms123.common.workflow.UserTaskFormHandler\",\"attr$activiti$formkey\":\"forms/auswahl_freies_fahrzeug,auswahl_freies_fahrzeug\",\"el$activiti$variablesmapping\":\"\",\"attr$activiti$candidategroups\":\"\",\"attr$activiti$assignee\":\"admin\",\"tasktype\":\"User\"},\"stencil\":{\"id\":\"UserTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_F10965E9-2A15-46C3-8EE6-4327B2353B86\"}],\"bounds\":{\"lowerRight\":{\"x\":339,\"y\":327},\"upperLeft\":{\"x\":240,\"y\":210}},\"dockers\":[]},{\"resourceId\":\"oryx_B53613AE-8994-49BE-AAAE-359D91D3C73B\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"datainputassociations\":\"\",\"datainput\":\"\",\"inputset\":\"\",\"bgcolor\":\"#000\",\"bordercolor\":\"#000000\",\"trigger\":\"None\"},\"stencil\":{\"id\":\"EndNoneEvent\"},\"childShapes\":[],\"outgoing\":[],\"bounds\":{\"lowerRight\":{\"x\":310.0925923200519,\"y\":1003},\"upperLeft\":{\"x\":282.0925923200519,\"y\":975}},\"dockers\":[]},{\"resourceId\":\"oryx_F10965E9-2A15-46C3-8EE6-4327B2353B86\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\"}],\"bounds\":{\"lowerRight\":{\"x\":296.0925923200519,\"y\":369.8532978701412},\"upperLeft\":{\"x\":289.5,\"y\":327.1331014600746}},\"dockers\":[{\"x\":49.5,\"y\":58.5},{\"x\":289.5,\"y\":348.68518464010384},{\"x\":296.0925923200519,\"y\":348.68518464010384},{\"x\":50,\"y\":40}],\"target\":{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\"}},{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\",\"properties\":{\"processid\":\"\",\"name\":\"Fahrer Suchemaske\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"green\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$formhandlerclass\":\"org.ms123.common.workflow.UserTaskFormHandler\",\"attr$activiti$formkey\":\"forms/fahrer_suchen,fahrer_suchen\",\"el$activiti$variablesmapping\":{\"totalCount\":3,\"items\":[{\"processvar\":\"auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell\",\"formvar\":\"kfz_modell\"},{\"processvar\":\"auswahl_fahrer\",\"formvar\":\"error_alert\"},{\"processvar\":\"${isListEmpty(fahrerliste)}\",\"formvar\":\"fahrerliste_alert\"}]},\"attr$activiti$candidategroups\":\"\",\"attr$activiti$assignee\":\"admin\",\"tasktype\":\"User\"},\"stencil\":{\"id\":\"UserTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_DF33C0A7-4AA5-4D9E-A165-C9613C3CB53C\"}],\"bounds\":{\"lowerRight\":{\"x\":346.0925923200519,\"y\":450.3703692802077},\"upperLeft\":{\"x\":246.0925923200519,\"y\":370.3703692802077}},\"dockers\":[]},{\"resourceId\":\"oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A\",\"properties\":{\"processid\":\"\",\"name\":\"Fahrer ermitteln\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"green\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$class\":\"org.ms123.common.workflow.TaskFilterExecutor\",\"el$activiti$filtername\":\"filter/Fahrerauswahl,Fahrerauswahl\",\"el$activiti$variablesmapping\":{\"totalCount\":1,\"items\":[{\"processvar\":\"fahrer_suchen.name_input\",\"filtervar\":\"name\"}]},\"el$activiti$listname\":\"fahrerliste\",\"tasktype\":\"Filter\"},\"stencil\":{\"id\":\"FilterTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30\"}],\"bounds\":{\"lowerRight\":{\"x\":346.0925923200519,\"y\":561.48148006427},\"upperLeft\":{\"x\":246.0925923200519,\"y\":481.48148006427}},\"dockers\":[]},{\"resourceId\":\"oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B\",\"properties\":{\"name\":\"Buchungsvoraussetzungen\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"blue\",\"processid\":\"\",\"gatewaytype\":\"XOR\",\"xortype\":\"Data\",\"markervisible\":\"true\",\"bordercolor\":\"#000\"},\"stencil\":{\"id\":\"Exclusive_Databased_Gateway\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_06080541-2529-4BE2-AC67-7B8B02C57C59\"},{\"resourceId\":\"oryx_8CF2D611-5043-4186-87C1-717C27C55338\"}],\"bounds\":{\"lowerRight\":{\"x\":85,\"y\":790},\"upperLeft\":{\"x\":45,\"y\":750}},\"dockers\":[]},{\"resourceId\":\"oryx_06080541-2529-4BE2-AC67-7B8B02C57C59\",\"properties\":{\"name\":\"stimmen NICHT überein\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"${!isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\"}],\"bounds\":{\"lowerRight\":{\"x\":245.55121506379078,\"y\":749.8054108200114},\"upperLeft\":{\"x\":65.5,\"y\":410.3703692802077}},\"dockers\":[{\"x\":20.5,\"y\":20.5},{\"x\":65.5,\"y\":410.3703692802077},{\"x\":50,\"y\":40}],\"target\":{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\"}},{\"resourceId\":\"oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63\",\"properties\":{\"processid\":\"\",\"name\":\"Buchen\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"#999\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"red\",\"attr$activiti$class\":\"org.ms123.common.workflow.TaskScriptExecutor\",\"el$activiti$script\":\"/*Neue  Buchung erzeugen*/\\ndef neueBuchung = createObject(\\\"buchungen\\\");\\n\\n\\n//Zuweisung Fahrer/Fahrzeug\\nneueBuchung.fahrer = getObjectById (\\\"fahrer\\\", auswahl_fahrer.fahrer.id );\\nneueBuchung.fahrzeuge  = getObjectById (\\\"fahrzeuge\\\", auswahl_freies_fahrzeug.Freie_Fahrzeuge.id );\\n\\n/*Zuweisung des Buchungszeitraums*/\\nneueBuchung.vondatum=new Date(Form1.input_date_from);\\nneueBuchung.bisdatum=new Date(Form1.input_date_to);\\n\",\"tasktype\":\"Script\"},\"stencil\":{\"id\":\"ScriptTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_E7E9A929-7984-4BEC-93EB-1F1FC2B9E17C\"}],\"bounds\":{\"lowerRight\":{\"x\":346.0925923200519,\"y\":920},\"upperLeft\":{\"x\":246.0925923200519,\"y\":840}},\"dockers\":[]},{\"resourceId\":\"oryx_8CF2D611-5043-4186-87C1-717C27C55338\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"${isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"red\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63\"}],\"bounds\":{\"lowerRight\":{\"x\":245.87356641913541,\"y\":879.3423747307714},\"upperLeft\":{\"x\":65.77189561025472,\"y\":789.8045883280853}},\"dockers\":[{\"x\":20.5,\"y\":20.5},{\"x\":67,\"y\":877},{\"x\":50,\"y\":40}],\"target\":{\"resourceId\":\"oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63\"}},{\"resourceId\":\"oryx_E7E9A929-7984-4BEC-93EB-1F1FC2B9E17C\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":false,\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_B53613AE-8994-49BE-AAAE-359D91D3C73B\"}],\"bounds\":{\"lowerRight\":{\"x\":296.0925923200519,\"y\":974.375},\"upperLeft\":{\"x\":296.0925923200519,\"y\":920.171875}},\"dockers\":[{\"x\":50,\"y\":40},{\"x\":14,\"y\":14}],\"target\":{\"resourceId\":\"oryx_B53613AE-8994-49BE-AAAE-359D91D3C73B\"}},{\"resourceId\":\"oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE\",\"properties\":{\"processid\":\"\",\"name\":\"Anzeige gemachter Selektionen\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"blue\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$formhandlerclass\":\"org.ms123.common.workflow.UserTaskFormHandler\",\"attr$activiti$formkey\":\"forms/uebersicht_selectionen,uebersicht_selectionen\",\"el$activiti$variablesmapping\":{\"totalCount\":4,\"items\":[{\"processvar\":\"auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell\",\"formvar\":\"kfz_modell\"},{\"processvar\":\"auswahl_freies_fahrzeug.Freie_Fahrzeuge.kennzeichen\",\"formvar\":\"kfz_kennzeichen\"},{\"processvar\":\"auswahl_fahrer.fahrer.name\",\"formvar\":\"fahrer_name\"},{\"processvar\":\"auswahl_fahrer.fahrer.vorname\",\"formvar\":\"fahrer_vorname\"}]},\"attr$activiti$candidategroups\":\"\",\"attr$activiti$assignee\":\"admin\",\"tasktype\":\"User\"},\"stencil\":{\"id\":\"UserTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_9D6C4E28-544F-4A3E-B3B7-F4115C6A5DC4\"}],\"bounds\":{\"lowerRight\":{\"x\":402.0925923200519,\"y\":814},\"upperLeft\":{\"x\":190.0925923200519,\"y\":730}},\"dockers\":[]},{\"resourceId\":\"oryx_9D6C4E28-544F-4A3E-B3B7-F4115C6A5DC4\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B\"}],\"bounds\":{\"lowerRight\":{\"x\":189.47609343470262,\"y\":771.077283284462},\"upperLeft\":{\"x\":84.95677676532976,\"y\":770.172716715538}},\"dockers\":[{\"x\":106,\"y\":42},{\"x\":20,\"y\":20}],\"target\":{\"resourceId\":\"oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B\"}},{\"resourceId\":\"oryx_92334EB3-4116-4979-9AE6-996FBFDC3061\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"green\",\"processid\":\"\",\"gatewaytype\":\"XOR\",\"xortype\":\"Data\",\"markervisible\":\"true\",\"bordercolor\":\"#000\"},\"stencil\":{\"id\":\"Exclusive_Databased_Gateway\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9\"},{\"resourceId\":\"oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B\"}],\"bounds\":{\"lowerRight\":{\"x\":460,\"y\":541.48148006427},\"upperLeft\":{\"x\":420,\"y\":501.48148006427004}},\"dockers\":[]},{\"resourceId\":\"oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9\",\"properties\":{\"name\":\"Liste ausgeben\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"${fahrerliste.size()>0}\",\"isimmediate\":\"\",\"showdiamondmarker\":false,\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_D009FD96-9947-46CE-9B10-22F17A265515\"}],\"bounds\":{\"lowerRight\":{\"x\":441.55876874743757,\"y\":661},\"upperLeft\":{\"x\":346.80973066350197,\"y\":540.48148006427}},\"dockers\":[{\"x\":21.55876874743757,\"y\":39},{\"x\":441.55876874743757,\"y\":661},{\"x\":72.90740767994811,\"y\":46}],\"target\":{\"resourceId\":\"oryx_D009FD96-9947-46CE-9B10-22F17A265515\"}},{\"resourceId\":\"oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B\",\"properties\":{\"name\":\"Nichts gefunden\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"${fahrerliste.size()==0}\",\"isimmediate\":\"\",\"showdiamondmarker\":false,\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\"}],\"bounds\":{\"lowerRight\":{\"x\":441,\"y\":501.19140067213937},\"upperLeft\":{\"x\":346.8418689425515,\"y\":410.3703692802077}},\"dockers\":[{\"x\":20.5,\"y\":3.671875},{\"x\":441,\"y\":410.3703692802077},{\"x\":99,\"y\":40}],\"target\":{\"resourceId\":\"oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E\"}},{\"resourceId\":\"oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":false,\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE\"}],\"bounds\":{\"lowerRight\":{\"x\":296.0925923200519,\"y\":730},\"upperLeft\":{\"x\":296.0925923200519,\"y\":695.1875}},\"dockers\":[{\"x\":50,\"y\":40},{\"x\":106,\"y\":1}],\"target\":{\"resourceId\":\"oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE\"}},{\"resourceId\":\"oryx_D009FD96-9947-46CE-9B10-22F17A265515\",\"properties\":{\"processid\":\"\",\"name\":\"Fahrer wählen\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"green\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$formhandlerclass\":\"org.ms123.common.workflow.UserTaskFormHandler\",\"attr$activiti$formkey\":\"forms/auswahl_fahrer,auswahl_fahrer\",\"el$activiti$variablesmapping\":{\"totalCount\":2,\"items\":[{\"processvar\":\"auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell\",\"formvar\":\"kfz_modell\"},{\"processvar\":\"auswahl_freies_fahrzeug.Freie_Fahrzeuge.kennzeichen\",\"formvar\":\"kfz_kennzeichen\"}]},\"attr$activiti$candidategroups\":\"\",\"attr$activiti$assignee\":\"admin\",\"tasktype\":\"User\"},\"stencil\":{\"id\":\"UserTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3\"}],\"bounds\":{\"lowerRight\":{\"x\":346.0925923200519,\"y\":695},\"upperLeft\":{\"x\":246.0925923200519,\"y\":615}},\"dockers\":[]},{\"resourceId\":\"oryx_DF33C0A7-4AA5-4D9E-A165-C9613C3CB53C\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A\"}],\"bounds\":{\"lowerRight\":{\"x\":296.0925923200519,\"y\":480.5509246262476},\"upperLeft\":{\"x\":296.0925923200519,\"y\":451.30092471823014}},\"dockers\":[{\"x\":50,\"y\":40},{\"x\":50,\"y\":40.00000000000003}],\"target\":{\"resourceId\":\"oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A\"}},{\"resourceId\":\"oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_92334EB3-4116-4979-9AE6-996FBFDC3061\"}],\"bounds\":{\"lowerRight\":{\"x\":419.88729741750694,\"y\":521.48148006427},\"upperLeft\":{\"x\":346.56076371003405,\"y\":521.48148006427}},\"dockers\":[{\"x\":50,\"y\":40},{\"x\":20,\"y\":20}],\"target\":{\"resourceId\":\"oryx_92334EB3-4116-4979-9AE6-996FBFDC3061\"}},{\"resourceId\":\"oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8\",\"properties\":{\"processid\":\"\",\"name\":\"FahrzeugSuchmaske\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"yellow\",\"startquantity\":1,\"completionquantity\":1,\"isforcompensation\":\"\",\"assignments\":\"\",\"callacitivity\":\"\",\"looptype\":\"None\",\"testbefore\":\"\",\"loopcondition\":\"\",\"loopmaximum\":\"\",\"loopcardinality\":\"\",\"loopdatainputref\":\"\",\"loopdataoutputref\":\"\",\"activiti$collection\":\"\",\"inputdataitem\":\"\",\"activiti$elementvariable\":\"\",\"outputdataitem\":\"\",\"behavior\":\"all\",\"complexbehaviordefinition\":\"\",\"completioncondition\":\"\",\"onebehavioreventref:\":\"signal\",\"nonebehavioreventref\":\"signal\",\"properties\":\"\",\"bordercolor\":\"#000000\",\"attr$activiti$formhandlerclass\":\"org.ms123.common.workflow.UserTaskFormHandler\",\"attr$activiti$formkey\":\"forms/Form1,Form1\",\"el$activiti$variablesmapping\":{\"totalCount\":1,\"items\":[{\"processvar\":\"${isListEmpty(Freie_Fahrzeuge)}\",\"formvar\":\"fahrzeugliste_alert\"}]},\"attr$activiti$candidategroups\":\"\",\"attr$activiti$assignee\":\"admin\",\"tasktype\":\"User\"},\"stencil\":{\"id\":\"UserTask\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_4E380E89-535E-419E-8F54-10BA87152643\"}],\"bounds\":{\"lowerRight\":{\"x\":175,\"y\":185},\"upperLeft\":{\"x\":75,\"y\":105}},\"dockers\":[]},{\"resourceId\":\"oryx_2DF24FBA-C6AF-4B42-887B-810BE2BADAEC\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8\"}],\"bounds\":{\"lowerRight\":{\"x\":74.2734375,\"y\":145},\"upperLeft\":{\"x\":45.84375,\"y\":145}},\"dockers\":[{\"x\":15,\"y\":15},{\"x\":50,\"y\":40}],\"target\":{\"resourceId\":\"oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8\"}},{\"resourceId\":\"oryx_4E380E89-535E-419E-8F54-10BA87152643\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE\"}],\"bounds\":{\"lowerRight\":{\"x\":239.3125,\"y\":145},\"upperLeft\":{\"x\":175.96875,\"y\":145}},\"dockers\":[{\"x\":50,\"y\":40},{\"x\":49,\"y\":42}],\"target\":{\"resourceId\":\"oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE\"}},{\"resourceId\":\"oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"bgcolor\":\"yellow\",\"processid\":\"\",\"gatewaytype\":\"XOR\",\"xortype\":\"Data\",\"markervisible\":\"true\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"Exclusive_Databased_Gateway\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86\"},{\"resourceId\":\"oryx_8FB75CC2-03E1-435D-8A52-59D65246D643\"}],\"bounds\":{\"lowerRight\":{\"x\":452,\"y\":165},\"upperLeft\":{\"x\":412,\"y\":125}},\"dockers\":[]},{\"resourceId\":\"oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86\",\"properties\":{\"name\":\"Liste ausgeben\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"${Freie_Fahrzeuge.size >0}\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85\"}],\"bounds\":{\"lowerRight\":{\"x\":432.5,\"y\":268.5},\"upperLeft\":{\"x\":339.65625,\"y\":165.71875}},\"dockers\":[{\"x\":20.5,\"y\":20.5},{\"x\":432.5,\"y\":268.5},{\"x\":49.5,\"y\":58.5}],\"target\":{\"resourceId\":\"oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85\"}},{\"resourceId\":\"oryx_8FB75CC2-03E1-435D-8A52-59D65246D643\",\"properties\":{\"name\":\"Nichts gefunden\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"${Freie_Fahrzeuge.size == 0}\",\"isimmediate\":\"\",\"showdiamondmarker\":false,\"bordercolor\":\"#000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8\"}],\"bounds\":{\"lowerRight\":{\"x\":432,\"y\":124.859375},\"upperLeft\":{\"x\":125,\"y\":37}},\"dockers\":[{\"x\":20,\"y\":6},{\"x\":432,\"y\":37},{\"x\":125,\"y\":37},{\"x\":50,\"y\":40}],\"target\":{\"resourceId\":\"oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8\"}},{\"resourceId\":\"oryx_AD835652-1EB5-4ED6-A4DD-8650D8F3B583\",\"properties\":{\"name\":\"\",\"documentation\":\"\",\"auditing\":\"\",\"monitoring\":\"\",\"conditiontype\":\"None\",\"conditionexpression\":\"\",\"isimmediate\":\"\",\"showdiamondmarker\":\"\",\"bordercolor\":\"#000000\"},\"stencil\":{\"id\":\"SequenceFlow\"},\"childShapes\":[],\"outgoing\":[{\"resourceId\":\"oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528\"}],\"bounds\":{\"lowerRight\":{\"x\":412.0078125,\"y\":145},\"upperLeft\":{\"x\":338.0390625,\"y\":145}},\"dockers\":[{\"x\":49,\"y\":42},{\"x\":20,\"y\":20}],\"target\":{\"resourceId\":\"oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528\"}}],\"bounds\":{\"lowerRight\":{\"x\":1485,\"y\":1103},\"upperLeft\":{\"x\":0,\"y\":0}},\"stencilset\":{\"url\":\"bpmn\",\"namespace\":\"http://b3mn.org/stencilset/bpmn2.0#\"},\"ssextensions\":[]}"
 	type = sw.process
 [meta]
 	deploymentId = 47
+--
+{
+  "resourceId": "oryx_2B64A04B-D96A-4B07-8ACC-6CA4F095EE05",
+  "properties": {
+    "name": "Fahrzeuge_buchen",
+    "documentation": "",
+    "auditing": "",
+    "monitoring": "",
+    "version": "",
+    "author": "",
+    "language": "English",
+    "namespaces": "",
+    "targetnamespace": "kfzplan",
+    "expressionlanguage": "http://www.w3.org/1999/XPath",
+    "typelanguage": "http://www.w3.org/2001/XMLSchema",
+    "creationdate": "",
+    "modificationdate": "",
+    "orientation": "horizontal"
+  },
+  "stencil": {
+    "id": "BPMNDiagram"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_C54FEC0F-9191-4B0A-9FFE-8315D2E611CA",
+      "properties": {
+        "name": "Start",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "attr$activiti$formkey": "",
+        "bgcolor": "#000",
+        "bordercolor": "green",
+        "processid": "",
+        "trigger": "None",
+        "attr$activiti$initiator": "initiator"
+      },
+      "stencil": {
+        "id": "StartNoneEvent"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_2DF24FBA-C6AF-4B42-887B-810BE2BADAEC"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 45,
+          "y": 160
+        },
+        "upperLeft": {
+          "x": 15,
+          "y": 130
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE",
+      "properties": {
+        "processid": "",
+        "name": "Freie Fahrzeuge ermitteln",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "yellow",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
+        "el$activiti$filtername": "filter/Freie_Fahrzeuge_II,Freie_Fahrzeuge_II",
+        "el$activiti$variablesmapping": {
+          "totalCount": 3,
+          "items": [
+            {
+              "processvar": "Form1.input_date_from",
+              "filtervar": "input_date_from"
+            },
+            {
+              "processvar": "Form1.input_date_to",
+              "filtervar": "input_date_to"
+            },
+            {
+              "processvar": "Form1.hersteller",
+              "filtervar": "hersteller"
+            }
+          ]
+        },
+        "el$activiti$listname": "Freie_Fahrzeuge",
+        "tasktype": "Filter"
+      },
+      "stencil": {
+        "id": "FilterTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AD835652-1EB5-4ED6-A4DD-8650D8F3B583"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 338,
+          "y": 187
+        },
+        "upperLeft": {
+          "x": 240,
+          "y": 103
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85",
+      "properties": {
+        "processid": "",
+        "name": "Freies Fahrzeug selektieren",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "yellow",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "forms/auswahl_freies_fahrzeug,auswahl_freies_fahrzeug",
+        "el$activiti$variablesmapping": "",
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "admin",
+        "tasktype": "User"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_F10965E9-2A15-46C3-8EE6-4327B2353B86"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 339,
+          "y": 327
+        },
+        "upperLeft": {
+          "x": 240,
+          "y": 210
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_B53613AE-8994-49BE-AAAE-359D91D3C73B",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "datainputassociations": "",
+        "datainput": "",
+        "inputset": "",
+        "bgcolor": "#000",
+        "bordercolor": "#000000",
+        "trigger": "None"
+      },
+      "stencil": {
+        "id": "EndNoneEvent"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 310.0925923200519,
+          "y": 1003
+        },
+        "upperLeft": {
+          "x": 282.0925923200519,
+          "y": 975
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F10965E9-2A15-46C3-8EE6-4327B2353B86",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 296.0925923200519,
+          "y": 369.8532978701412
+        },
+        "upperLeft": {
+          "x": 289.5,
+          "y": 327.1331014600746
+        }
+      },
+      "dockers": [
+        {
+          "x": 49.5,
+          "y": 58.5
+        },
+        {
+          "x": 289.5,
+          "y": 348.68518464010384
+        },
+        {
+          "x": 296.0925923200519,
+          "y": 348.68518464010384
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+      }
+    },
+    {
+      "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E",
+      "properties": {
+        "processid": "",
+        "name": "Fahrer Suchemaske",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "green",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "forms/fahrer_suchen,fahrer_suchen",
+        "el$activiti$variablesmapping": {
+          "totalCount": 3,
+          "items": [
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell",
+              "formvar": "kfz_modell"
+            },
+            {
+              "processvar": "auswahl_fahrer",
+              "formvar": "error_alert"
+            },
+            {
+              "processvar": "${isListEmpty(fahrerliste)}",
+              "formvar": "fahrerliste_alert"
+            }
+          ]
+        },
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "admin",
+        "tasktype": "User"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_DF33C0A7-4AA5-4D9E-A165-C9613C3CB53C"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 346.0925923200519,
+          "y": 450.3703692802077
+        },
+        "upperLeft": {
+          "x": 246.0925923200519,
+          "y": 370.3703692802077
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A",
+      "properties": {
+        "processid": "",
+        "name": "Fahrer ermitteln",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "green",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
+        "el$activiti$filtername": "filter/Fahrerauswahl,Fahrerauswahl",
+        "el$activiti$variablesmapping": {
+          "totalCount": 1,
+          "items": [
+            {
+              "processvar": "fahrer_suchen.name_input",
+              "filtervar": "name"
+            }
+          ]
+        },
+        "el$activiti$listname": "fahrerliste",
+        "tasktype": "Filter"
+      },
+      "stencil": {
+        "id": "FilterTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 346.0925923200519,
+          "y": 561.48148006427
+        },
+        "upperLeft": {
+          "x": 246.0925923200519,
+          "y": 481.48148006427
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B",
+      "properties": {
+        "name": "Buchungsvoraussetzungen",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "blue",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true",
+        "bordercolor": "#000"
+      },
+      "stencil": {
+        "id": "Exclusive_Databased_Gateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_06080541-2529-4BE2-AC67-7B8B02C57C59"
+        },
+        {
+          "resourceId": "oryx_8CF2D611-5043-4186-87C1-717C27C55338"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 85,
+          "y": 790
+        },
+        "upperLeft": {
+          "x": 45,
+          "y": 750
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_06080541-2529-4BE2-AC67-7B8B02C57C59",
+      "properties": {
+        "name": "stimmen NICHT überein",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "${!isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 245.55121506379078,
+          "y": 749.8054108200114
+        },
+        "upperLeft": {
+          "x": 65.5,
+          "y": 410.3703692802077
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 20.5
+        },
+        {
+          "x": 65.5,
+          "y": 410.3703692802077
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+      }
+    },
+    {
+      "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63",
+      "properties": {
+        "processid": "",
+        "name": "Buchen",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "#999",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "red",
+        "attr$activiti$class": "org.ms123.common.workflow.TaskScriptExecutor",
+        "el$activiti$script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", auswahl_fahrer.fahrer.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", auswahl_freies_fahrzeug.Freie_Fahrzeuge.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(Form1.input_date_from);\nneueBuchung.bisdatum=new Date(Form1.input_date_to);\n",
+        "tasktype": "Script"
+      },
+      "stencil": {
+        "id": "ScriptTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_E7E9A929-7984-4BEC-93EB-1F1FC2B9E17C"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 346.0925923200519,
+          "y": 920
+        },
+        "upperLeft": {
+          "x": 246.0925923200519,
+          "y": 840
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_8CF2D611-5043-4186-87C1-717C27C55338",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "${isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "red"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 245.87356641913541,
+          "y": 879.3423747307714
+        },
+        "upperLeft": {
+          "x": 65.77189561025472,
+          "y": 789.8045883280853
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 20.5
+        },
+        {
+          "x": 67,
+          "y": 877
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+      }
+    },
+    {
+      "resourceId": "oryx_E7E9A929-7984-4BEC-93EB-1F1FC2B9E17C",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": false,
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_B53613AE-8994-49BE-AAAE-359D91D3C73B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 296.0925923200519,
+          "y": 974.375
+        },
+        "upperLeft": {
+          "x": 296.0925923200519,
+          "y": 920.171875
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 14,
+          "y": 14
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_B53613AE-8994-49BE-AAAE-359D91D3C73B"
+      }
+    },
+    {
+      "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE",
+      "properties": {
+        "processid": "",
+        "name": "Anzeige gemachter Selektionen",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "blue",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "forms/uebersicht_selectionen,uebersicht_selectionen",
+        "el$activiti$variablesmapping": {
+          "totalCount": 4,
+          "items": [
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell",
+              "formvar": "kfz_modell"
+            },
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.kennzeichen",
+              "formvar": "kfz_kennzeichen"
+            },
+            {
+              "processvar": "auswahl_fahrer.fahrer.name",
+              "formvar": "fahrer_name"
+            },
+            {
+              "processvar": "auswahl_fahrer.fahrer.vorname",
+              "formvar": "fahrer_vorname"
+            }
+          ]
+        },
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "admin",
+        "tasktype": "User"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_9D6C4E28-544F-4A3E-B3B7-F4115C6A5DC4"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 402.0925923200519,
+          "y": 814
+        },
+        "upperLeft": {
+          "x": 190.0925923200519,
+          "y": 730
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_9D6C4E28-544F-4A3E-B3B7-F4115C6A5DC4",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 189.47609343470262,
+          "y": 771.077283284462
+        },
+        "upperLeft": {
+          "x": 84.95677676532976,
+          "y": 770.172716715538
+        }
+      },
+      "dockers": [
+        {
+          "x": 106,
+          "y": 42
+        },
+        {
+          "x": 20,
+          "y": 20
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
+      }
+    },
+    {
+      "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "green",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true",
+        "bordercolor": "#000"
+      },
+      "stencil": {
+        "id": "Exclusive_Databased_Gateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9"
+        },
+        {
+          "resourceId": "oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 460,
+          "y": 541.48148006427
+        },
+        "upperLeft": {
+          "x": 420,
+          "y": 501.48148006427004
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9",
+      "properties": {
+        "name": "Liste ausgeben",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "${fahrerliste.size()>0}",
+        "isimmediate": "",
+        "showdiamondmarker": false,
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 441.55876874743757,
+          "y": 661
+        },
+        "upperLeft": {
+          "x": 346.80973066350197,
+          "y": 540.48148006427
+        }
+      },
+      "dockers": [
+        {
+          "x": 21.55876874743757,
+          "y": 39
+        },
+        {
+          "x": 441.55876874743757,
+          "y": 661
+        },
+        {
+          "x": 72.90740767994811,
+          "y": 46
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515"
+      }
+    },
+    {
+      "resourceId": "oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B",
+      "properties": {
+        "name": "Nichts gefunden",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "${fahrerliste.size()==0}",
+        "isimmediate": "",
+        "showdiamondmarker": false,
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 441,
+          "y": 501.19140067213937
+        },
+        "upperLeft": {
+          "x": 346.8418689425515,
+          "y": 410.3703692802077
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 3.671875
+        },
+        {
+          "x": 441,
+          "y": 410.3703692802077
+        },
+        {
+          "x": 99,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+      }
+    },
+    {
+      "resourceId": "oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": false,
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 296.0925923200519,
+          "y": 730
+        },
+        "upperLeft": {
+          "x": 296.0925923200519,
+          "y": 695.1875
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 106,
+          "y": 1
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE"
+      }
+    },
+    {
+      "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515",
+      "properties": {
+        "processid": "",
+        "name": "Fahrer wählen",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "green",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "forms/auswahl_fahrer,auswahl_fahrer",
+        "el$activiti$variablesmapping": {
+          "totalCount": 2,
+          "items": [
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell",
+              "formvar": "kfz_modell"
+            },
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.kennzeichen",
+              "formvar": "kfz_kennzeichen"
+            }
+          ]
+        },
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "admin",
+        "tasktype": "User"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 346.0925923200519,
+          "y": 695
+        },
+        "upperLeft": {
+          "x": 246.0925923200519,
+          "y": 615
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_DF33C0A7-4AA5-4D9E-A165-C9613C3CB53C",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 296.0925923200519,
+          "y": 480.5509246262476
+        },
+        "upperLeft": {
+          "x": 296.0925923200519,
+          "y": 451.30092471823014
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 50,
+          "y": 40.00000000000003
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
+      }
+    },
+    {
+      "resourceId": "oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 419.88729741750694,
+          "y": 521.48148006427
+        },
+        "upperLeft": {
+          "x": 346.56076371003405,
+          "y": 521.48148006427
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 20,
+          "y": 20
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061"
+      }
+    },
+    {
+      "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8",
+      "properties": {
+        "processid": "",
+        "name": "FahrzeugSuchmaske",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "yellow",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "isforcompensation": "",
+        "assignments": "",
+        "callacitivity": "",
+        "looptype": "None",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "inputdataitem": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "properties": "",
+        "bordercolor": "#000000",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "forms/Form1,Form1",
+        "el$activiti$variablesmapping": {
+          "totalCount": 1,
+          "items": [
+            {
+              "processvar": "${isListEmpty(Freie_Fahrzeuge)}",
+              "formvar": "fahrzeugliste_alert"
+            }
+          ]
+        },
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "admin",
+        "tasktype": "User"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4E380E89-535E-419E-8F54-10BA87152643"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 175,
+          "y": 185
+        },
+        "upperLeft": {
+          "x": 75,
+          "y": 105
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_2DF24FBA-C6AF-4B42-887B-810BE2BADAEC",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 74.2734375,
+          "y": 145
+        },
+        "upperLeft": {
+          "x": 45.84375,
+          "y": 145
+        }
+      },
+      "dockers": [
+        {
+          "x": 15,
+          "y": 15
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+      }
+    },
+    {
+      "resourceId": "oryx_4E380E89-535E-419E-8F54-10BA87152643",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 239.3125,
+          "y": 145
+        },
+        "upperLeft": {
+          "x": 175.96875,
+          "y": 145
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 49,
+          "y": 42
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE"
+      }
+    },
+    {
+      "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "bgcolor": "yellow",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "Exclusive_Databased_Gateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86"
+        },
+        {
+          "resourceId": "oryx_8FB75CC2-03E1-435D-8A52-59D65246D643"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 452,
+          "y": 165
+        },
+        "upperLeft": {
+          "x": 412,
+          "y": 125
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86",
+      "properties": {
+        "name": "Liste ausgeben",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "${Freie_Fahrzeuge.size >0}",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 432.5,
+          "y": 268.5
+        },
+        "upperLeft": {
+          "x": 339.65625,
+          "y": 165.71875
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 20.5
+        },
+        {
+          "x": 432.5,
+          "y": 268.5
+        },
+        {
+          "x": 49.5,
+          "y": 58.5
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85"
+      }
+    },
+    {
+      "resourceId": "oryx_8FB75CC2-03E1-435D-8A52-59D65246D643",
+      "properties": {
+        "name": "Nichts gefunden",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "${Freie_Fahrzeuge.size == 0}",
+        "isimmediate": "",
+        "showdiamondmarker": false,
+        "bordercolor": "#000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 432,
+          "y": 124.859375
+        },
+        "upperLeft": {
+          "x": 125,
+          "y": 37
+        }
+      },
+      "dockers": [
+        {
+          "x": 20,
+          "y": 6
+        },
+        {
+          "x": 432,
+          "y": 37
+        },
+        {
+          "x": 125,
+          "y": 37
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+      }
+    },
+    {
+      "resourceId": "oryx_AD835652-1EB5-4ED6-A4DD-8650D8F3B583",
+      "properties": {
+        "name": "",
+        "documentation": "",
+        "auditing": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "conditionexpression": "",
+        "isimmediate": "",
+        "showdiamondmarker": "",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 412.0078125,
+          "y": 145
+        },
+        "upperLeft": {
+          "x": 338.0390625,
+          "y": 145
+        }
+      },
+      "dockers": [
+        {
+          "x": 49,
+          "y": 42
+        },
+        {
+          "x": 20,
+          "y": 20
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 1485,
+      "y": 1103
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "bpmn",
+    "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
+  },
+  "ssextensions": []
+}

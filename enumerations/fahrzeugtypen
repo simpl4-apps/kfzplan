@@ -1,3 +1,65 @@
 [sw]
 	type = sw.enum
-	content = {\"dataList\":[{\"sort\":0,\"invalid_from\":4133935209212,\"invalid\":false,\"fahrzeugtyp\":\"Transporter\",\"key\":\"1\"},{\"sort\":0,\"invalid_from\":4133935209213,\"invalid\":false,\"fahrzeugtyp\":\"Limousine\",\"key\":\"2\"},{\"sort\":0,\"invalid_from\":4133935209213,\"invalid\":false,\"fahrzeugtyp\":\"Kombi\",\"key\":\"3\"},{\"sort\":0,\"invalid_from\":4133935209213,\"invalid\":false,\"fahrzeugtyp\":\"Cabriolet\",\"key\":\"4\"},{\"sort\":0,\"invalid_from\":4133935209213,\"invalid\":false,\"fahrzeugtyp\":\"Kastenwagen\",\"key\":\"5\"},{\"sort\":0,\"invalid_from\":4133935209213,\"invalid\":false,\"fahrzeugtyp\":\"Motorrad\",\"key\":\"6\"},{\"sort\":0,\"invalid_from\":4133935209213,\"invalid\":false,\"fahrzeugtyp\":\"Roller\",\"key\":\"7\"}],\"fieldList\":[{\"description\":\"Fahrzeugtyp\",\"fieldname\":\"fahrzeugtyp\"}]}
+--
+{
+    "dataList": [
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209212,
+            "fahrzeugtyp": "Transporter",
+            "key": "1"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209213,
+            "fahrzeugtyp": "Limousine",
+            "key": "2"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209213,
+            "fahrzeugtyp": "Kombi",
+            "key": "3"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209213,
+            "fahrzeugtyp": "Cabriolet",
+            "key": "4"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209213,
+            "fahrzeugtyp": "Kastenwagen",
+            "key": "5"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209213,
+            "fahrzeugtyp": "Motorrad",
+            "key": "6"
+        },
+        {
+            "sort": 0,
+            "invalid": false,
+            "invalid_from": 4133935209213,
+            "fahrzeugtyp": "Roller",
+            "key": "7"
+        }
+    ],
+    "fieldList": [
+        {
+            "description": "Fahrzeugtyp",
+            "fieldname": "fahrzeugtyp",
+            "__hints__": {
+
+            }
+        }
+    ]
+}

@@ -1,3 +1,32 @@
 [sw]
 	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1,\"name\":\"buchungsvoraussetzungen\",\"pack\":\"data\",\"team_security\":true,\"fields\":{\"beschreibung\":{\"name\":\"beschreibung\",\"datatype\":\"string\",\"enabled\":true},\"schluessel\":{\"name\":\"schluessel\",\"datatype\":\"string\",\"enabled\":true}}}
+--
+{
+    "enabled": true,
+    "index": 1,
+    "default_fields": false,
+    "pack": "data",
+    "team_security": true,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "buchungsvoraussetzungen",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "beschreibung": {
+            "enabled": true,
+            "name": "beschreibung",
+            "datatype": "string"
+        },
+        "schluessel": {
+            "enabled": true,
+            "name": "schluessel",
+            "datatype": "string"
+        }
+    }
+}

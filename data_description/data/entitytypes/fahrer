@@ -1,3 +1,55 @@
 [sw]
 	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1,\"name\":\"fahrer\",\"pack\":\"data\",\"team_security\":true,\"fields\":{\"telefonnummer\":{\"name\":\"telefonnummer\",\"datatype\":\"string\",\"enabled\":true},\"geburtsdatum\":{\"name\":\"geburtsdatum\",\"datatype\":\"date\",\"enabled\":true},\"vorname\":{\"name\":\"vorname\",\"datatype\":\"string\",\"enabled\":true},\"email\":{\"name\":\"email\",\"datatype\":\"string\",\"enabled\":true},\"name\":{\"name\":\"name\",\"datatype\":\"string\",\"enabled\":true},\"geschlecht\":{\"name\":\"geschlecht\",\"datatype\":\"string\",\"selectable_items\":\"Männlich,Weiblich\",\"edittype\":\"select\",\"formatter\":\"select\",\"enabled\":true}}}
+--
+{
+    "enabled": true,
+    "index": 1,
+    "default_fields": false,
+    "pack": "data",
+    "team_security": true,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "fahrer",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "telefonnummer": {
+            "enabled": true,
+            "name": "telefonnummer",
+            "datatype": "string"
+        },
+        "geburtsdatum": {
+            "enabled": true,
+            "name": "geburtsdatum",
+            "datatype": "date"
+        },
+        "vorname": {
+            "enabled": true,
+            "name": "vorname",
+            "datatype": "string"
+        },
+        "email": {
+            "enabled": true,
+            "name": "email",
+            "datatype": "string"
+        },
+        "name": {
+            "enabled": true,
+            "name": "name",
+            "datatype": "string"
+        },
+        "geschlecht": {
+            "formatter": "select",
+            "enabled": true,
+            "name": "geschlecht",
+            "edittype": "select",
+            "datatype": "string",
+            "selectable_items": "Männlich,Weiblich"
+        }
+    }
+}

@@ -1,3 +1,0 @@
-[sw]
-	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"search\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"searchid\":{\"name\":\"searchid\",\"datatype\":\"string\",\"enabled\":true},\"exclusion\":{\"name\":\"exclusion\",\"datatype\":\"string\",\"enabled\":true},\"filter\":{\"name\":\"filter\",\"datatype\":\"string\",\"enabled\":true}}}

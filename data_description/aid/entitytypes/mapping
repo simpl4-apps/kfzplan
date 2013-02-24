@@ -1,3 +1,0 @@
-[sw]
-	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"mapping\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"mapping\":{\"name\":\"mapping\",\"datatype\":\"string\",\"enabled\":true},\"mid\":{\"name\":\"mid\",\"datatype\":\"string\",\"enabled\":true}}}

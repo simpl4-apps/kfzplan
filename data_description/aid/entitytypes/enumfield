@@ -1,3 +1,0 @@
-[sw]
-	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"enumfield\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"description\":{\"name\":\"description\",\"datatype\":\"string\",\"constraints\":\"[{\\\"annotation\\\":\\\"NotEmpty\\\",\\\"parameter1\\\":\\\"\\\"}]\",\"enabled\":true},\"fieldname\":{\"name\":\"fieldname\",\"datatype\":\"string\",\"primary_key\":true,\"constraints\":\"[{\\\"annotation\\\":\\\"NotEmpty\\\",\\\"parameter1\\\":\\\"\\\"}]\",\"enabled\":true}}}

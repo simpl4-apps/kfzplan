@@ -1,3 +1,0 @@
-[sw]
-	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"import\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"importfile\":{\"name\":\"importfile\",\"datatype\":\"binary\",\"enabled\":true}}}
