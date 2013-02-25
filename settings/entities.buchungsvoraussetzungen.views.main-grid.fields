@@ -4,8 +4,14 @@
 {
     "fields": [
         {
+            "enabled": "true",
             "name": "beschreibung",
-            "enabled": true
+            "displayname": "Beschreibung"
+        },
+        {
+            "enabled": "true",
+            "name": "schluessel",
+            "displayname": "Schlüssel"
         }
     ]
 }

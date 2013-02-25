@@ -4,13 +4,21 @@
 {
     "fields": [
         {
+            "enabled": "true",
             "name": "beschreibung",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Beschreibung"
         },
         {
             "name": "_team_list",
-            "tab": "tab2"
+            "tab": "tab2",
+            "displayname": "data.buchungsvoraussetzungen._team_list"
+        },
+        {
+            "enabled": "true",
+            "name": "schluessel",
+            "tab": "tab1",
+            "displayname": "Schlüssel"
         }
     ]
 }
