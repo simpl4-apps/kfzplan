@@ -4,31 +4,47 @@
 [
     {
         "rightmodule": "data.buchungsvoraussetzungen",
+        "leftfield": "",
         "leftmodule": "data.fahrzeuge",
+        "rightfield": "",
         "dependent": false,
-        "relation": "many-to-many"
+        "relation": "many-to-many",
+        "__hints__": {
+
+        }
     },
     {
         "rightmodule": "data.buchungsvoraussetzungen",
+        "leftfield": "",
         "leftmodule": "data.fahrer",
+        "rightfield": "",
         "dependent": false,
-        "relation": "many-to-many"
+        "relation": "many-to-many",
+        "__hints__": {
+
+        }
     },
     {
         "rightmodule": "data.buchungen",
+        "leftfield": "",
         "leftmodule": "data.fahrzeuge",
+        "rightfield": "",
         "dependent": false,
         "relation": "one-to-many-bi"
     },
     {
         "rightmodule": "data.fahrer",
+        "leftfield": "",
         "leftmodule": "data.firma",
+        "rightfield": "",
         "dependent": false,
         "relation": "one-to-many-bi"
     },
     {
         "rightmodule": "data.buchungen",
+        "leftfield": "",
         "leftmodule": "data.fahrer",
+        "rightfield": "",
         "dependent": false,
         "relation": "one-to-many-bi"
     }
