@@ -4,13 +4,33 @@
 {
     "fields": [
         {
+            "enabled": "true",
             "name": "bisdatum",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Bis Datum"
         },
         {
             "name": "_team_list",
-            "tab": "tab2"
+            "tab": "tab2",
+            "displayname": "data.buchungen._team_list"
+        },
+        {
+            "enabled": "true",
+            "name": "vondatum",
+            "tab": "tab1",
+            "displayname": "Von Datum"
+        },
+        {
+            "enabled": "true",
+            "name": "fahrzeuge",
+            "tab": "tab1",
+            "displayname": "Fahrzeug"
+        },
+        {
+            "enabled": "true",
+            "name": "fahrer",
+            "tab": "tab1",
+            "displayname": "Fahrer"
         }
     ]
 }

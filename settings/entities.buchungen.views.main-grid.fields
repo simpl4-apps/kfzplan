@@ -4,8 +4,14 @@
 {
     "fields": [
         {
+            "enabled": "true",
             "name": "bisdatum",
-            "enabled": true
+            "displayname": "Bis Datum"
+        },
+        {
+            "enabled": "true",
+            "name": "vondatum",
+            "displayname": "Von Datum"
         }
     ]
 }
