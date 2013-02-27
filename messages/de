@@ -293,5 +293,21 @@
     {
         "msgid": "fahrer_list.name",
         "msgstr": "Name"
+    },
+    {
+        "msgid": "data.fahrer.tab1",
+        "msgstr": "Daten"
+    },
+    {
+        "msgid": "data.fahrer.tab2",
+        "msgstr": "Teams"
+    },
+    {
+        "msgid": "data.fahrer.buchungsvoraussetzungen_list",
+        "msgstr": "Buchungsvoraussetzungen"
+    },
+    {
+        "msgid": "data.fahrer.fieldset.set1",
+        "msgstr": "Vor/Nachname"
     }
 ]
