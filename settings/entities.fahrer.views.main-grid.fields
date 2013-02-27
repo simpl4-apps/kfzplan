@@ -4,16 +4,24 @@
 {
     "fields": [
         {
+            "enabled": "true",
+            "name": "name",
+            "displayname": "Name"
+        },
+        {
+            "enabled": "true",
             "name": "email",
-            "enabled": true
+            "displayname": "eMail"
         },
         {
+            "enabled": "true",
             "name": "geschlecht",
-            "enabled": true
+            "displayname": "Geschlecht"
         },
         {
+            "enabled": "true",
             "name": "telefonnummer",
-            "enabled": true
+            "displayname": "Tel."
         }
     ]
 }

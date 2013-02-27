@@ -4,28 +4,45 @@
 {
     "fields": [
         {
-            "name": "email",
-            "enabled": true,
-            "tab": "tab1"
-        },
-        {
+            "enabled": "true",
             "name": "name",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Name"
         },
         {
+            "enabled": "true",
+            "name": "vorname",
+            "tab": "tab1",
+            "displayname": "Vorname"
+        },
+        {
+            "enabled": "true",
+            "name": "email",
+            "tab": "tab1",
+            "displayname": "eMail"
+        },
+        {
+            "enabled": "true",
             "name": "geschlecht",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Geschlecht"
         },
         {
+            "enabled": "true",
             "name": "telefonnummer",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Tel."
         },
         {
             "name": "_team_list",
-            "tab": "tab2"
+            "tab": "tab2",
+            "displayname": "data.fahrer._team_list"
+        },
+        {
+            "enabled": "true",
+            "name": "geburtsdatum",
+            "tab": "tab1",
+            "displayname": "Geburtsdatum"
         }
     ]
 }
