@@ -4,9 +4,9 @@
 {
     "enabled": true,
     "index": 1,
-    "default_fields": false,
+    "default_fields": true,
     "pack": "data",
-    "team_security": true,
+    "team_security": false,
     "add_self_to_subpanel": false,
     "description": "",
     "name": "buchungen",
