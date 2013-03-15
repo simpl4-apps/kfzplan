@@ -5,13 +5,13 @@
     "fields": [
         {
             "enabled": "true",
-            "name": "bisdatum",
-            "displayname": "Bis Datum"
+            "name": "vondatum",
+            "displayname": "Von Datum"
         },
         {
             "enabled": "true",
-            "name": "vondatum",
-            "displayname": "Von Datum"
+            "name": "bisdatum",
+            "displayname": "Bis Datum"
         }
     ]
 }

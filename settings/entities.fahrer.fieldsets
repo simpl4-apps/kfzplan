@@ -4,16 +4,19 @@
 {
     "fieldsets": [
         {
-            "fsname": "data.fahrer.fieldset.set1",
             "description": "",
+            "fsname": "data.fahrer.fieldset.set1",
+            "search_options": [
+                "cn",
+                "bw",
+                "eq"
+            ],
+            "__hints__": {
+
+            },
             "fields": [
                 "name",
                 "vorname"
-            ],
-            "search_options": [
-                "bw",
-                "cn",
-                "eq"
             ]
         }
     ]
