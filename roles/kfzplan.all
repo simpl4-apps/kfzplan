@@ -1,0 +1,33 @@
+[sw]
+	type = sw.role
+--
+{
+    "name": "kfzplan.all",
+    "permissions": [
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:buchungen",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:buchungsvoraussetzungen",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:fahrer",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:fahrzeuge",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:firma",
+            "actions": "read,write"
+        }
+    ]
+}

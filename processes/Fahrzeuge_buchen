@@ -171,7 +171,7 @@
         "attr$activiti$formkey": "forms/auswahl_freies_fahrzeug,auswahl_freies_fahrzeug",
         "el$activiti$variablesmapping": "",
         "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "admin",
+        "attr$activiti$assignee": "${initiator}",
         "tasktype": "User"
       },
       "stencil": {
@@ -332,7 +332,7 @@
           ]
         },
         "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "admin",
+        "attr$activiti$assignee": "${initiator}",
         "tasktype": "User"
       },
       "stencil": {
@@ -720,7 +720,7 @@
           ]
         },
         "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "admin",
+        "attr$activiti$assignee": "${initiator}",
         "tasktype": "User"
       },
       "stencil": {
@@ -1022,7 +1022,7 @@
           ]
         },
         "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "admin",
+        "attr$activiti$assignee": "${initiator}",
         "tasktype": "User"
       },
       "stencil": {
@@ -1182,7 +1182,7 @@
           ]
         },
         "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "admin",
+        "attr$activiti$assignee": "${initiator}",
         "tasktype": "User"
       },
       "stencil": {
