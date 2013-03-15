@@ -39,7 +39,7 @@
         "msgstr": "Fahrer"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.fahrzeuge",
+        "msgid": "data.buchungsvoraussetzungen.fahrzeuge_list",
         "msgstr": "Fahrzeuge"
     },
     {
@@ -71,7 +71,7 @@
         "msgstr": "Buchungen"
     },
     {
-        "msgid": "data.fahrer.buchungsvoraussetzungen",
+        "msgid": "data.fahrer.buchungsvoraussetzungen_list",
         "msgstr": "Buchungsvoraussetzungen"
     },
     {
@@ -139,7 +139,7 @@
         "msgstr": "Fahrzeugbuchungen/-belegungen"
     },
     {
-        "msgid": "data.fahrzeuge.buchungsvoraussetzungen",
+        "msgid": "data.fahrzeuge.buchungsvoraussetzungen_list",
         "msgstr": "Buchungsvoraussetzungen"
     },
     {
