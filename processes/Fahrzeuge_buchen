@@ -8,18 +8,18 @@
   "properties": {
     "name": "Fahrzeuge_buchen",
     "documentation": "",
-    "auditing": "",
-    "monitoring": "",
     "version": "",
     "author": "",
     "language": "English",
     "namespaces": "",
     "targetnamespace": "kfzplan",
-    "expressionlanguage": "http://www.w3.org/1999/XPath",
-    "typelanguage": "http://www.w3.org/2001/XMLSchema",
     "creationdate": "",
     "modificationdate": "",
-    "orientation": "horizontal"
+    "orientation": "horizontal",
+    "auditing": "",
+    "monitoring": "",
+    "expressionlanguage": "http://www.w3.org/1999/XPath",
+    "typelanguage": "http://www.w3.org/2001/XMLSchema"
   },
   "stencil": {
     "id": "BPMNDiagram"
@@ -30,14 +30,14 @@
       "properties": {
         "name": "Start",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "attr$activiti$formkey": "",
         "bgcolor": "#000",
         "bordercolor": "green",
         "processid": "",
         "trigger": "None",
-        "attr$activiti$initiator": "initiator"
+        "attr$activiti$initiator": "initiator",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "StartNoneEvent"
@@ -66,31 +66,14 @@
         "processid": "",
         "name": "Freie Fahrzeuge ermitteln",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
-        "bgcolor": "yellow",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "isforcompensation": "",
-        "assignments": "",
-        "callacitivity": "",
         "looptype": "None",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "loopdataoutputref": "",
-        "activiti$collection": "",
-        "inputdataitem": "",
-        "activiti$elementvariable": "",
-        "outputdataitem": "",
-        "behavior": "all",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "yellow",
         "bordercolor": "#000000",
         "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
         "el$activiti$filtername": "filter/Freie_Fahrzeuge_II,Freie_Fahrzeuge_II",
@@ -112,7 +95,29 @@
           ]
         },
         "el$activiti$listname": "Freie_Fahrzeuge",
-        "tasktype": "Filter"
+        "tasktype": "Filter",
+        "inputdataitem": "",
+        "auditing": "",
+        "monitoring": "",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "assignments": "",
+        "callacitivity": "",
+        "properties": "",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "FilterTask"
@@ -141,15 +146,29 @@
         "processid": "",
         "name": "Freies Fahrzeug selektieren",
         "documentation": "",
+        "looptype": "None",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "yellow",
+        "bordercolor": "#000000",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "forms/auswahl_freies_fahrzeug,auswahl_freies_fahrzeug",
+        "el$activiti$variablesmapping": "",
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "${initiator}",
+        "tasktype": "User",
+        "inputdataitem": "",
         "auditing": "",
         "monitoring": "",
-        "bgcolor": "yellow",
         "startquantity": 1,
         "completionquantity": 1,
-        "isforcompensation": "",
         "assignments": "",
         "callacitivity": "",
-        "looptype": "None",
+        "properties": "",
         "testbefore": "",
         "loopcondition": "",
         "loopmaximum": "",
@@ -157,22 +176,13 @@
         "loopdatainputref": "",
         "loopdataoutputref": "",
         "activiti$collection": "",
-        "inputdataitem": "",
+        "nonebehavioreventref": "signal",
         "activiti$elementvariable": "",
         "outputdataitem": "",
         "behavior": "all",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
-        "bordercolor": "#000000",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "forms/auswahl_freies_fahrzeug,auswahl_freies_fahrzeug",
-        "el$activiti$variablesmapping": "",
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User"
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "UserTask"
@@ -200,14 +210,14 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "datainputassociations": "",
-        "datainput": "",
-        "inputset": "",
         "bgcolor": "#000",
         "bordercolor": "#000000",
-        "trigger": "None"
+        "trigger": "None",
+        "inputset": "",
+        "auditing": "",
+        "monitoring": "",
+        "datainput": ""
       },
       "stencil": {
         "id": "EndNoneEvent"
@@ -231,13 +241,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -286,31 +296,14 @@
         "processid": "",
         "name": "Fahrer Suchemaske",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
-        "bgcolor": "green",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "isforcompensation": "",
-        "assignments": "",
-        "callacitivity": "",
         "looptype": "None",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "loopdataoutputref": "",
-        "activiti$collection": "",
-        "inputdataitem": "",
-        "activiti$elementvariable": "",
-        "outputdataitem": "",
-        "behavior": "all",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "green",
         "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "attr$activiti$formkey": "forms/fahrer_suchen,fahrer_suchen",
@@ -333,7 +326,29 @@
         },
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User"
+        "tasktype": "User",
+        "inputdataitem": "",
+        "auditing": "",
+        "monitoring": "",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "assignments": "",
+        "callacitivity": "",
+        "properties": "",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "UserTask"
@@ -362,31 +377,14 @@
         "processid": "",
         "name": "Fahrer ermitteln",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
-        "bgcolor": "green",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "isforcompensation": "",
-        "assignments": "",
-        "callacitivity": "",
         "looptype": "None",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "loopdataoutputref": "",
-        "activiti$collection": "",
-        "inputdataitem": "",
-        "activiti$elementvariable": "",
-        "outputdataitem": "",
-        "behavior": "all",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "green",
         "bordercolor": "#000000",
         "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
         "el$activiti$filtername": "filter/Fahrerauswahl,Fahrerauswahl",
@@ -400,7 +398,29 @@
           ]
         },
         "el$activiti$listname": "fahrerliste",
-        "tasktype": "Filter"
+        "tasktype": "Filter",
+        "inputdataitem": "",
+        "auditing": "",
+        "monitoring": "",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "assignments": "",
+        "callacitivity": "",
+        "properties": "",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "FilterTask"
@@ -413,7 +433,7 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 346.0925923200519,
+          "x": 346.09259232005195,
           "y": 561.48148006427
         },
         "upperLeft": {
@@ -428,17 +448,17 @@
       "properties": {
         "name": "Buchungsvoraussetzungen",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "bgcolor": "blue",
         "processid": "",
         "gatewaytype": "XOR",
         "xortype": "Data",
         "markervisible": "true",
-        "bordercolor": "#000"
+        "bordercolor": "#000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
-        "id": "Exclusive_Databased_Gateway"
+        "id": "ExclusiveGateway"
       },
       "childShapes": [],
       "outgoing": [
@@ -466,13 +486,13 @@
       "properties": {
         "name": "stimmen NICHT überein",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${!isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
+        "conditionsequenceflow": "${!isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
         "isimmediate": "",
-        "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "showdiamondmarker": false,
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -517,35 +537,40 @@
         "processid": "",
         "name": "Buchen",
         "documentation": "",
+        "looptype": "None",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "#999",
+        "bordercolor": "red",
+        "attr$activiti$class": "org.ms123.common.workflow.TaskScriptExecutor",
+        "el$activiti$script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", auswahl_fahrer.fahrer.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", auswahl_freies_fahrzeug.Freie_Fahrzeuge.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(Form1.input_date_from);\nneueBuchung.bisdatum=new Date(Form1.input_date_to);\n",
+        "tasktype": "Script",
+        "activiti$collection": "",
         "auditing": "",
         "monitoring": "",
-        "bgcolor": "#999",
         "startquantity": 1,
         "completionquantity": 1,
-        "isforcompensation": "",
         "assignments": "",
         "callacitivity": "",
-        "looptype": "None",
+        "properties": "",
         "testbefore": "",
         "loopcondition": "",
         "loopmaximum": "",
         "loopcardinality": "",
         "loopdatainputref": "",
         "loopdataoutputref": "",
-        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
         "inputdataitem": "",
         "activiti$elementvariable": "",
         "outputdataitem": "",
         "behavior": "all",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
-        "bordercolor": "red",
-        "attr$activiti$class": "org.ms123.common.workflow.TaskScriptExecutor",
-        "el$activiti$script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", auswahl_fahrer.fahrer.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", auswahl_freies_fahrzeug.Freie_Fahrzeuge.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(Form1.input_date_from);\nneueBuchung.bisdatum=new Date(Form1.input_date_to);\n",
-        "tasktype": "Script"
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "ScriptTask"
@@ -573,13 +598,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
+        "conditionsequenceflow": "${isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
         "isimmediate": "",
         "showdiamondmarker": "",
-        "bordercolor": "red"
+        "bordercolor": "red",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -623,13 +648,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": false,
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -670,31 +695,14 @@
         "processid": "",
         "name": "Anzeige gemachter Selektionen",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
-        "bgcolor": "blue",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "isforcompensation": "",
-        "assignments": "",
-        "callacitivity": "",
         "looptype": "None",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "loopdataoutputref": "",
-        "activiti$collection": "",
-        "inputdataitem": "",
-        "activiti$elementvariable": "",
-        "outputdataitem": "",
-        "behavior": "all",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "blue",
         "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "attr$activiti$formkey": "forms/uebersicht_selectionen,uebersicht_selectionen",
@@ -721,7 +729,29 @@
         },
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User"
+        "tasktype": "User",
+        "inputdataitem": "",
+        "auditing": "",
+        "monitoring": "",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "assignments": "",
+        "callacitivity": "",
+        "properties": "",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "UserTask"
@@ -749,13 +779,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
-        "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "showdiamondmarker": false,
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -795,17 +825,17 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "bgcolor": "green",
         "processid": "",
         "gatewaytype": "XOR",
         "xortype": "Data",
         "markervisible": "true",
-        "bordercolor": "#000"
+        "bordercolor": "#000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
-        "id": "Exclusive_Databased_Gateway"
+        "id": "ExclusiveGateway"
       },
       "childShapes": [],
       "outgoing": [
@@ -833,13 +863,13 @@
       "properties": {
         "name": "Liste ausgeben",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${fahrerliste.size()>0}",
+        "conditionsequenceflow": "${fahrerliste.size()>0}",
         "isimmediate": "",
         "showdiamondmarker": false,
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -883,13 +913,13 @@
       "properties": {
         "name": "Nichts gefunden",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${fahrerliste.size()==0}",
+        "conditionsequenceflow": "${fahrerliste.size()==0}",
         "isimmediate": "",
         "showdiamondmarker": false,
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -933,13 +963,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": false,
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -980,31 +1010,14 @@
         "processid": "",
         "name": "Fahrer wählen",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
-        "bgcolor": "green",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "isforcompensation": "",
-        "assignments": "",
-        "callacitivity": "",
         "looptype": "None",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "loopdataoutputref": "",
-        "activiti$collection": "",
-        "inputdataitem": "",
-        "activiti$elementvariable": "",
-        "outputdataitem": "",
-        "behavior": "all",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "green",
         "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "attr$activiti$formkey": "forms/auswahl_fahrer,auswahl_fahrer",
@@ -1023,7 +1036,29 @@
         },
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User"
+        "tasktype": "User",
+        "inputdataitem": "",
+        "auditing": "",
+        "monitoring": "",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "assignments": "",
+        "callacitivity": "",
+        "properties": "",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "UserTask"
@@ -1051,13 +1086,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -1070,11 +1105,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 296.0925923200519,
+          "x": 296.09259232005195,
           "y": 480.5509246262476
         },
         "upperLeft": {
-          "x": 296.0925923200519,
+          "x": 296.09259232005195,
           "y": 451.30092471823014
         }
       },
@@ -1084,7 +1119,7 @@
           "y": 40
         },
         {
-          "x": 50,
+          "x": 50.00000000000003,
           "y": 40.00000000000003
         }
       ],
@@ -1097,13 +1132,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
-        "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "showdiamondmarker": false,
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -1126,7 +1161,7 @@
       },
       "dockers": [
         {
-          "x": 50,
+          "x": 50.00000000000003,
           "y": 40
         },
         {
@@ -1144,31 +1179,14 @@
         "processid": "",
         "name": "FahrzeugSuchmaske",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
-        "bgcolor": "yellow",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "isforcompensation": "",
-        "assignments": "",
-        "callacitivity": "",
         "looptype": "None",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "loopdataoutputref": "",
-        "activiti$collection": "",
-        "inputdataitem": "",
-        "activiti$elementvariable": "",
-        "outputdataitem": "",
-        "behavior": "all",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal",
-        "nonebehavioreventref": "signal",
-        "properties": "",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "bgcolor": "yellow",
         "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "attr$activiti$formkey": "forms/Form1,Form1",
@@ -1183,7 +1201,29 @@
         },
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User"
+        "tasktype": "User",
+        "inputdataitem": "",
+        "auditing": "",
+        "monitoring": "",
+        "startquantity": 1,
+        "completionquantity": 1,
+        "assignments": "",
+        "callacitivity": "",
+        "properties": "",
+        "testbefore": "",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "activiti$collection": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "behavior": "all",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal"
       },
       "stencil": {
         "id": "UserTask"
@@ -1211,13 +1251,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -1257,13 +1297,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -1303,17 +1343,17 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "bgcolor": "yellow",
         "processid": "",
         "gatewaytype": "XOR",
         "xortype": "Data",
         "markervisible": "true",
-        "bordercolor": "#000000"
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
-        "id": "Exclusive_Databased_Gateway"
+        "id": "ExclusiveGateway"
       },
       "childShapes": [],
       "outgoing": [
@@ -1341,13 +1381,13 @@
       "properties": {
         "name": "Liste ausgeben",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${Freie_Fahrzeuge.size >0}",
+        "conditionsequenceflow": "${Freie_Fahrzeuge.size >0}",
         "isimmediate": "",
-        "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "showdiamondmarker": false,
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -1391,13 +1431,13 @@
       "properties": {
         "name": "Nichts gefunden",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${Freie_Fahrzeuge.size == 0}",
+        "conditionsequenceflow": "${Freie_Fahrzeuge.size == 0}",
         "isimmediate": "",
         "showdiamondmarker": false,
-        "bordercolor": "#000"
+        "bordercolor": "#000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -1445,13 +1485,13 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "auditing": "",
-        "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
-        "showdiamondmarker": "",
-        "bordercolor": "#000000"
+        "showdiamondmarker": false,
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "SequenceFlow"

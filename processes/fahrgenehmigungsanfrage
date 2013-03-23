@@ -128,7 +128,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
         "bordercolor": "#000000"
@@ -252,7 +252,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
         "bordercolor": "#000000"
@@ -397,7 +397,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${Fahrzeuge.size >0}",
+        "conditionsequenceflow": "${Fahrzeuge.size >0}",
         "isimmediate": "",
         "showdiamondmarker": false,
         "bordercolor": "green"
@@ -451,7 +451,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "${Fahrzeuge.size == 0}",
+        "conditionsequenceflow": "${Fahrzeuge.size == 0}",
         "isimmediate": "",
         "showdiamondmarker": false,
         "bordercolor": "red"
@@ -505,7 +505,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": false,
         "bordercolor": "#000000"
@@ -710,7 +710,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": "",
         "bordercolor": "#000000"
@@ -756,7 +756,7 @@
         "auditing": "",
         "monitoring": "",
         "conditiontype": "None",
-        "conditionexpression": "",
+        "conditionsequenceflow": "",
         "isimmediate": "",
         "showdiamondmarker": false,
         "bordercolor": "#000000"
