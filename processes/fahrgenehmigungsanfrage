@@ -37,7 +37,7 @@
         "bordercolor": "#000000",
         "processid": "",
         "trigger": "None",
-        "attr$activiti$initiator": "initiator"
+        "initiator": "initiator"
       },
       "stencil": {
         "id": "StartNoneEvent"
