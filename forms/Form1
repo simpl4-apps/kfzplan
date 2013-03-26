@@ -130,7 +130,7 @@
         "xf_navindex": "",
         "xf_accesskey": "",
         "xf_multiselection": "",
-        "xf_enums": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'hersteller',mapping:{label:'(hersteller)',value:'key'}"
+        "xf_enums": "enumeration:hersteller,{label:'(hersteller)',value:'key'}"
       },
       "stencil": {
         "id": "Enumselect"
@@ -156,9 +156,9 @@
         "xf_navindex": "",
         "xf_place": "south",
         "xf_readonly": "",
-        "xf_required": "",
         "xf_accesskey": "",
         "xf_type": "",
+        "xf_required": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -187,7 +187,7 @@
           "bounds": {
             "lowerRight": {
               "x": 143,
-              "y": 50
+              "y": 54
             },
             "upperLeft": {
               "x": 30,
@@ -217,7 +217,7 @@
           "bounds": {
             "lowerRight": {
               "x": 284,
-              "y": 50
+              "y": 54
             },
             "upperLeft": {
               "x": 173,
@@ -231,7 +231,7 @@
       "bounds": {
         "lowerRight": {
           "x": 344,
-          "y": 318
+          "y": 322
         },
         "upperLeft": {
           "x": 30,

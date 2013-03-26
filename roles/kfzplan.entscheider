@@ -1,0 +1,9 @@
+[sw]
+	type = sw.role
+--
+{
+    "name": "kfzplan.entscheider",
+    "permissions": [
+
+    ]
+}
