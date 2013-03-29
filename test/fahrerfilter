@@ -1,0 +1,76 @@
+[sw]
+	type = sw.filter
+--
+{
+  "id": "fahrerfilter",
+  "modulename": "fahrer",
+  "storeId": "kfzplan_data",
+  "user": null,
+  "type": "jcr",
+  "description": null,
+  "exclusion": [],
+  "filter": {
+    "label": "1",
+    "connector": "and",
+    "children": [
+      {
+        "label": "nameinput",
+        "connector": null,
+        "field": {
+          "id": "fahrer.name",
+          "title": "name",
+          "module": "",
+          "moduleTitle": "",
+          "children": []
+        },
+        "op": "cn",
+        "data": "",
+        "children": []
+      }
+    ]
+  },
+  "fields": [
+    {
+      "display": true,
+      "id": "name",
+      "selector": "fahrer",
+      "module": "fahrer",
+      "path": "fahrer"
+    },
+    {
+      "display": true,
+      "id": "telefonnummer",
+      "selector": "fahrer",
+      "module": "fahrer",
+      "path": "fahrer"
+    },
+    {
+      "display": true,
+      "id": "vorname",
+      "selector": "fahrer",
+      "module": "fahrer",
+      "path": "fahrer"
+    },
+    {
+      "display": true,
+      "id": "email",
+      "selector": "fahrer",
+      "module": "fahrer",
+      "path": "fahrer"
+    },
+    {
+      "display": true,
+      "id": "ort",
+      "selector": "firma",
+      "module": "firma",
+      "path": "fahrer$firma"
+    },
+    {
+      "display": true,
+      "id": "firma",
+      "selector": "firma",
+      "module": "firma",
+      "path": "fahrer$firma"
+    }
+  ]
+}

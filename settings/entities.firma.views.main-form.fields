@@ -4,33 +4,39 @@
 {
     "fields": [
         {
+            "enabled": "true",
             "name": "ort",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Ort"
         },
         {
+            "enabled": "true",
             "name": "faxnummer",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "Fax"
         },
         {
+            "enabled": "true",
             "name": "plz",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "PLZ"
         },
         {
-            "name": "telefonnummer",
-            "enabled": true,
-            "tab": "tab1"
-        },
-        {
+            "enabled": "true",
             "name": "email",
-            "enabled": true,
-            "tab": "tab1"
+            "tab": "tab1",
+            "displayname": "eMail"
         },
         {
             "name": "_team_list",
-            "tab": "tab2"
+            "tab": "tab2",
+            "displayname": "data.firma._team_list"
+        },
+        {
+            "enabled": "true",
+            "name": "firma",
+            "tab": "tab1",
+            "displayname": "Firma"
         }
     ]
 }
