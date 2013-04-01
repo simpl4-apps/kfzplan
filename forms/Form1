@@ -16,149 +16,15 @@
   },
   "childShapes": [
     {
-      "resourceId": "oryx_06AB3F95-8D72-4A60-AD36-B6E7AB1D2B38",
-      "properties": {
-        "xf_id": "input_date_from",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
-        "xf_type": "datetime",
-        "xf_readonly": "",
-        "xf_required": "",
-        "xf_calculate": "",
-        "xf_constraint": ""
-      },
-      "stencil": {
-        "id": "Input"
-      },
-      "childShapes": [
-        {
-          "resourceId": "oryx_CD9C63EE-26B0-45DF-BF4F-68F925CF6C5A",
-          "properties": {
-            "xf_id": "",
-            "xf_text": "Von Datum"
-          },
-          "stencil": {
-            "id": "Label"
-          },
-          "childShapes": [],
-          "outgoing": [],
-          "bounds": {
-            "lowerRight": {
-              "x": 100,
-              "y": -1
-            },
-            "upperLeft": {
-              "x": 0,
-              "y": -21
-            }
-          },
-          "dockers": []
-        }
-      ],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 175,
-          "y": 100
-        },
-        "upperLeft": {
-          "x": 30,
-          "y": 76
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_CBE2DA2A-4EB2-42C6-B8FC-1CD0182EA7D0",
-      "properties": {
-        "xf_id": "input_date_to",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
-        "xf_type": "datetime",
-        "xf_readonly": "",
-        "xf_required": "",
-        "xf_calculate": "",
-        "xf_constraint": ""
-      },
-      "stencil": {
-        "id": "Input"
-      },
-      "childShapes": [
-        {
-          "resourceId": "oryx_454D366D-2D3C-4E94-BD43-1AADC73B88A0",
-          "properties": {
-            "xf_id": "",
-            "xf_text": "Bis Datum"
-          },
-          "stencil": {
-            "id": "Label"
-          },
-          "childShapes": [],
-          "outgoing": [],
-          "bounds": {
-            "lowerRight": {
-              "x": 100,
-              "y": -1
-            },
-            "upperLeft": {
-              "x": 0,
-              "y": -21
-            }
-          },
-          "dockers": []
-        }
-      ],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 180,
-          "y": 154
-        },
-        "upperLeft": {
-          "x": 30,
-          "y": 130
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_D8E4AD18-3553-4116-B7C9-7DFC56B630C8",
-      "properties": {
-        "xf_id": "hersteller",
-        "xf_navindex": "",
-        "xf_accesskey": "",
-        "xf_multiselection": "",
-        "xf_enums": "enumeration:hersteller,{label:'(hersteller)',value:'key'}"
-      },
-      "stencil": {
-        "id": "Enumselect"
-      },
-      "childShapes": [],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 180,
-          "y": 208
-        },
-        "upperLeft": {
-          "x": 30,
-          "y": 184
-        }
-      },
-      "dockers": []
-    },
-    {
       "resourceId": "oryx_43F32485-2FB3-4544-8B0A-6731154D5440",
       "properties": {
         "xf_id": "",
-        "xf_navindex": "",
         "xf_place": "south",
+        "xf_navindex": "",
         "xf_readonly": "",
+        "xf_required": "",
         "xf_accesskey": "",
         "xf_type": "",
-        "xf_required": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -174,10 +40,10 @@
             "xf_label": "Task starten",
             "xf_iconname": "",
             "xf_navindex": "",
-            "xf_accesskey": "",
-            "xf_type": "string",
             "xf_readonly": "",
-            "xf_value": "ddddd"
+            "xf_type": "string",
+            "xf_value": "ddddd",
+            "xf_accesskey": ""
           },
           "stencil": {
             "id": "ActionButton"
@@ -204,10 +70,10 @@
             "xf_label": "Abbrechen",
             "xf_iconname": "",
             "xf_navindex": "",
-            "xf_accesskey": "",
-            "xf_type": "string",
             "xf_readonly": "",
-            "xf_value": "ddddddddd"
+            "xf_type": "string",
+            "xf_value": "ddddddddd",
+            "xf_accesskey": ""
           },
           "stencil": {
             "id": "ActionButton"
@@ -231,11 +97,254 @@
       "bounds": {
         "lowerRight": {
           "x": 344,
-          "y": 322
+          "y": 388
         },
         "upperLeft": {
           "x": 30,
-          "y": 238
+          "y": 304
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_48DB9862-1E11-48AC-A5DF-6D9CC8423174",
+      "properties": {
+        "xf_id": "",
+        "xf_place": "normal",
+        "xf_readonly": ""
+      },
+      "stencil": {
+        "id": "Group"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_06AB3F95-8D72-4A60-AD36-B6E7AB1D2B38",
+          "properties": {
+            "xf_id": "input_date_from",
+            "xf_type": "datetime",
+            "xf_default": "",
+            "xf_readonly": "",
+            "xf_required": "",
+            "xf_constraint": "",
+            "xf_navindex": "",
+            "xf_calculate": "",
+            "xf_accesskey": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_CD9C63EE-26B0-45DF-BF4F-68F925CF6C5A",
+              "properties": {
+                "xf_id": "",
+                "xf_text": "von"
+              },
+              "stencil": {
+                "id": "Label"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 100,
+                  "y": -1
+                },
+                "upperLeft": {
+                  "x": 0,
+                  "y": -21
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 175,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_54B3BB58-C1E8-48DD-BCFF-B005A77FF2C3",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Zeitraum"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_CBE2DA2A-4EB2-42C6-B8FC-1CD0182EA7D0",
+          "properties": {
+            "xf_id": "input_date_to",
+            "xf_type": "datetime",
+            "xf_default": "",
+            "xf_readonly": "",
+            "xf_required": "",
+            "xf_constraint": "",
+            "xf_navindex": "",
+            "xf_calculate": "",
+            "xf_accesskey": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_454D366D-2D3C-4E94-BD43-1AADC73B88A0",
+              "properties": {
+                "xf_id": "",
+                "xf_text": "bis"
+              },
+              "stencil": {
+                "id": "Label"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 100,
+                  "y": -1
+                },
+                "upperLeft": {
+                  "x": 0,
+                  "y": -21
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 355,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 205,
+              "y": 30
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 415,
+          "y": 160
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 76
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_8029E1B4-ED20-410F-B11E-F71A38E5B7A6",
+      "properties": {
+        "xf_id": "",
+        "xf_place": "normal",
+        "xf_readonly": ""
+      },
+      "stencil": {
+        "id": "Group"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_D8E4AD18-3553-4116-B7C9-7DFC56B630C8",
+          "properties": {
+            "xf_id": "hersteller",
+            "xf_multiselection": "",
+            "xf_enum": {
+              "totalCount": 2,
+              "enumDescription": "sw.enum:hersteller",
+              "items": [
+                {
+                  "colname": "(hersteller)",
+                  "mapping": "label"
+                },
+                {
+                  "colname": "key",
+                  "mapping": "value"
+                }
+              ]
+            },
+            "xf_navindex": "",
+            "xf_accesskey": ""
+          },
+          "stencil": {
+            "id": "Enumselect"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 180,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_A400ECE3-E96B-496A-A717-17B57E4D478C",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Hersteller"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 240,
+          "y": 274
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 190
         }
       },
       "dockers": []

@@ -1,0 +1,386 @@
+[sw]
+	type = sw.form
+--
+{
+  "resourceId": "oryx_88AF39D6-F9A6-4BB6-AD79-A62172D90F26",
+  "properties": {
+    "xf_id": "",
+    "xf_name": "${diagramname}",
+    "xf_version": "",
+    "xf_default_buttons": true
+  },
+  "stencil": {
+    "id": "XForm"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_52034417-E8EE-44EA-A2D7-8582620DCDFE",
+      "properties": {
+        "xf_id": "",
+        "xf_place": "normal",
+        "xf_readonly": ""
+      },
+      "stencil": {
+        "id": "Group"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_75736005-74B0-46E9-B2C0-4BD3AEBD1BBD",
+          "properties": {
+            "xf_id": "i1",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "xxxxx",
+            "xf_required": "",
+            "xf_constraint": "",
+            "xf_readonly1": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_DBE18ED2-592A-4809-8AB2-3494AD1CF6B1",
+              "properties": {
+                "xf_id": "",
+                "xf_text": "Label"
+              },
+              "stencil": {
+                "id": "Label"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 100,
+                  "y": -1
+                },
+                "upperLeft": {
+                  "x": 0,
+                  "y": -21
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 180,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_D6D3977C-11D2-43FE-9A89-F212AA04B897",
+          "properties": {
+            "xf_id": "i2",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "true",
+            "xf_required": "",
+            "xf_constraint": "",
+            "xf_readonly1": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_26537689-92DF-4BCA-B771-B6BAAB7CCF9C",
+              "properties": {
+                "xf_id": "",
+                "xf_text": "Label"
+              },
+              "stencil": {
+                "id": "Label"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 100,
+                  "y": -1
+                },
+                "upperLeft": {
+                  "x": 0,
+                  "y": -21
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 360,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 210,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_876518BD-1068-473F-9DC6-949982311A2C",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Label1"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 420,
+          "y": 114
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_204C09DA-82A7-48E5-92A2-DFAB9D5B6332",
+      "properties": {
+        "xf_id": "",
+        "xf_place": "south",
+        "xf_readonly": ""
+      },
+      "stencil": {
+        "id": "Group"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_E8B5C944-09DA-48AF-B81C-49590C506486",
+          "properties": {
+            "xf_id": "i3",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "",
+            "xf_required": "",
+            "xf_constraint": "",
+            "xf_readonly1": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_9A64876A-9881-4E58-840B-9FF7D93937F4",
+              "properties": {
+                "xf_id": "",
+                "xf_text": "Label"
+              },
+              "stencil": {
+                "id": "Label"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 100,
+                  "y": -1
+                },
+                "upperLeft": {
+                  "x": 0,
+                  "y": -21
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 180,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_01BD8F66-9B8A-4C6A-9D77-D253AB6ACD38",
+          "properties": {
+            "xf_id": "i4",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "Ja",
+            "xf_required": "",
+            "xf_constraint": "",
+            "xf_readonly1": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_90393DBC-AB86-431A-AE2C-3EB46B731B50",
+              "properties": {
+                "xf_id": "",
+                "xf_text": "Label"
+              },
+              "stencil": {
+                "id": "Label"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 100,
+                  "y": -1
+                },
+                "upperLeft": {
+                  "x": 0,
+                  "y": -21
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 360,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 210,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_A7F611C8-231D-485A-8A1C-86111551B719",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Label2"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 420,
+          "y": 228
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 144
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_86F17F91-E2F0-4166-B3B3-F92D2243E2C6",
+      "properties": {
+        "xf_id": "",
+        "xf_multiselection": "",
+        "xf_enumembed": {
+          "totalCount": 2,
+          "items": [
+            {
+              "value": "wert1",
+              "label": "label1"
+            },
+            {
+              "value": "wert2",
+              "label": "label2"
+            }
+          ]
+        },
+        "xf_enum": {
+          "totalCount": 2,
+          "enumDescription": "sw.filter:Fahrerauswahl",
+          "items": [
+            {
+              "colname": "vorname",
+              "mapping": "label"
+            },
+            {
+              "colname": "name",
+              "mapping": "value"
+            }
+          ]
+        }
+      },
+      "stencil": {
+        "id": "Enumselect"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 308
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 258
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 1485,
+      "y": 1050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "forms",
+    "namespace": "http://b3mn.org/stencilset/xforms#"
+  },
+  "ssextensions": []
+}
