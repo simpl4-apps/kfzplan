@@ -1,0 +1,382 @@
+[sw]
+	type = sw.form
+--
+{
+  "resourceId": "oryx_02A57527-AC6B-41F7-82C5-271701BA78CA",
+  "properties": {
+    "xf_id": "",
+    "xf_name": "${diagramname}",
+    "xf_version": "",
+    "xf_default_buttons": true
+  },
+  "stencil": {
+    "id": "XForm"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_2A677876-6BB0-4A92-8C42-41D3F863AE10",
+      "properties": {
+        "xf_id": "",
+        "xf_enabled": ""
+      },
+      "stencil": {
+        "id": "Tabview"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_5C85DD97-A0BD-42FD-B73D-3AA08BD54390",
+          "properties": {
+            "xf_id": "Tab 1",
+            "xf_selected": ""
+          },
+          "stencil": {
+            "id": "Page"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_55A334C9-C6A7-48D8-B67C-B3C9358E1755",
+              "properties": {
+                "xf_id": "texeingabe",
+                "xf_default": "\"Bitte hier einen Text eingeben !\"",
+                "xf_readonly": "",
+                "xf_required": "",
+                "xf_constraint": ""
+              },
+              "stencil": {
+                "id": "Textarea"
+              },
+              "childShapes": [
+                {
+                  "resourceId": "oryx_54E1C45B-CD7B-4529-AB72-FD24FCED1A07",
+                  "properties": {
+                    "xf_id": "",
+                    "xf_text": "Bitte Text eingeben"
+                  },
+                  "stencil": {
+                    "id": "Label"
+                  },
+                  "childShapes": [],
+                  "outgoing": [],
+                  "bounds": {
+                    "lowerRight": {
+                      "x": 217,
+                      "y": -1
+                    },
+                    "upperLeft": {
+                      "x": 0,
+                      "y": -21
+                    }
+                  },
+                  "dockers": []
+                }
+              ],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 360,
+                  "y": 142
+                },
+                "upperLeft": {
+                  "x": 10,
+                  "y": 30
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 370,
+              "y": 177
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": 5
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_813F8538-5AB5-43E0-9224-1D6224673B46",
+          "properties": {
+            "xf_id": "Tab 2",
+            "xf_selected": ""
+          },
+          "stencil": {
+            "id": "Page"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_CAE5F400-1D90-447E-BC57-3691FCA4F185",
+              "properties": {
+                "xf_id": "fahrzeuge",
+                "xf_module": "fahrzeuge",
+                "xf_field": "kennzeichen",
+                "xf_required": ""
+              },
+              "stencil": {
+                "id": "Moduleselector"
+              },
+              "childShapes": [],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 360,
+                  "y": 54
+                },
+                "upperLeft": {
+                  "x": 10,
+                  "y": 30
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 370,
+              "y": 266
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": 182
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_06E31D2A-A7CD-4252-AA4F-246125CCA4CC",
+          "properties": {
+            "xf_id": "Tab 3",
+            "xf_selected": ""
+          },
+          "stencil": {
+            "id": "Page"
+          },
+          "childShapes": [
+            {
+              "resourceId": "oryx_413B3B99-2E88-4157-B626-3D8B90B8F19D",
+              "properties": {
+                "xf_id": "datum",
+                "xf_type": "text",
+                "xf_default": "",
+                "xf_readonly": "",
+                "xf_required": "",
+                "xf_constraint": ""
+              },
+              "stencil": {
+                "id": "Input"
+              },
+              "childShapes": [
+                {
+                  "resourceId": "oryx_6D9F58FF-6111-43BE-90C9-EAAEE407CF0E",
+                  "properties": {
+                    "xf_id": "",
+                    "xf_text": "Datum"
+                  },
+                  "stencil": {
+                    "id": "Label"
+                  },
+                  "childShapes": [],
+                  "outgoing": [],
+                  "bounds": {
+                    "lowerRight": {
+                      "x": 100,
+                      "y": -1
+                    },
+                    "upperLeft": {
+                      "x": 0,
+                      "y": -21
+                    }
+                  },
+                  "dockers": []
+                }
+              ],
+              "outgoing": [],
+              "bounds": {
+                "lowerRight": {
+                  "x": 160,
+                  "y": 54
+                },
+                "upperLeft": {
+                  "x": 10,
+                  "y": 30
+                }
+              },
+              "dockers": []
+            }
+          ],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 370,
+              "y": 355
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": 271
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 400,
+          "y": 410
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_15B36902-F5E4-4040-96E5-9BC8947E4D23",
+      "properties": {
+        "xf_id": "",
+        "xf_place": "normal"
+      },
+      "stencil": {
+        "id": "Group"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_DC9B9743-B3F9-467A-8689-6700BFD5AF18",
+          "properties": {
+            "xf_id": "ge1",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "",
+            "xf_required": "",
+            "xf_constraint": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 380,
+              "y": 54
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 30
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_B5DB25A3-1036-4E39-AD3F-5064621C8136",
+          "properties": {
+            "xf_id": "ge2",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "",
+            "xf_required": "",
+            "xf_constraint": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 180,
+              "y": 108
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 84
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_07FCC264-6460-4EDD-A4F3-DAF0BC8A210D",
+          "properties": {
+            "xf_id": "ge3",
+            "xf_type": "text",
+            "xf_default": "",
+            "xf_readonly": "",
+            "xf_required": "",
+            "xf_constraint": ""
+          },
+          "stencil": {
+            "id": "Input"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 180,
+              "y": 162
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 138
+            }
+          },
+          "dockers": []
+        },
+        {
+          "resourceId": "oryx_8A96C0D6-F9B7-4942-B49D-846C6AE5325C",
+          "properties": {
+            "xf_id": "gh1",
+            "xf_message": "\"Text 1\""
+          },
+          "stencil": {
+            "id": "Help"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 46,
+              "y": 208
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 192
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 440,
+          "y": 678
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 440
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 1485,
+      "y": 1050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "forms",
+    "namespace": "http://b3mn.org/stencilset/xforms#"
+  },
+  "ssextensions": []
+}

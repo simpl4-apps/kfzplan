@@ -1,0 +1,268 @@
+[sw]
+	type = sw.document
+--
+{
+  "resourceId": "oryx_28C38E19-7C1F-4956-B8B3-AAACE608454B",
+  "properties": {
+    "xf_id": "",
+    "xf_name": "${diagramname}",
+    "db_header.left.content": "Rechnung ",
+    "db_header.right.content": "",
+    "db_paper.type": "A5",
+    "db_page.orientation": "landscape",
+    "db_body.font.master": "8",
+    "xf_version": "",
+    "xf_default_buttons": true
+  },
+  "stencil": {
+    "id": "XDocument"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_CAC059F6-AB3D-4698-B4A4-BB8511360840",
+      "properties": {
+        "xf_width": "1*",
+        "xf_align": "left",
+        "xf_frame": "",
+        "xf_engine": "st",
+        "xf_id": "",
+        "xf_filter": "",
+        "xf_markdown": "=Ein paar Listen mit verschiedenen Formatierungen=\n\n* Zur Darstellung kann die MediaWiki-Syntax verwendet werden.\n\n=== Orderedlists===\n\n# List1\n# List2\n\n\n=== Unordered ===\n* <blockquote>Zitat</blockquote>\n* <sub>sub</sub>\n* <sup>subscript</sup>\n* <del>del</del>\n* <ins>ins</ins>\n"
+      },
+      "stencil": {
+        "id": "Textarea"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 344,
+          "y": 235
+        },
+        "upperLeft": {
+          "x": 196,
+          "y": 135
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_FCD6C7A1-098A-428E-92FE-C2804962B714",
+      "properties": {
+        "xf_width": "1*",
+        "xf_align": "left",
+        "xf_frame": "",
+        "xf_engine": "st",
+        "xf_id": "",
+        "xf_filter": "Fahrerauswahl",
+        "xf_markdown": "=== Bei diesen geschachtelten Tabellen ist etwas Handarbeit nötig ===\n\n{|colspec1=\"left,0.5*\" colspec3=left,1.5* \n!font=\"big3bold\"|Vorname\n!font=\"big3bold\"|Name\n!font=\"big3bold\"|Buchungsvers.\n<list:{rec|\n|-\n|<rec.vorname>\n|font=\"italic\"|<rec.name>\n|\n{|frame=\"none\" colspec1=\",,false,false\"\n<rec.buchungsvoraussetzungen_list:{bv|\n|-\n|<bv.beschreibung>\n}>|}\n}>\n|}\n\n{| colspec3=left,1.5*\n!Vorname\n!Name\n!Buchungsvers.\n<list:{rec|\n|-\n|<rec.vorname>\n|<rec.name>\n|\n{|frame=\"none\" colspec1=\",,false,false\"\n<rec.buchungsvoraussetzungen_list:{bv|\n|-\n|<bv.beschreibung>\n}>|}\n}>\n|}"
+      },
+      "stencil": {
+        "id": "Textarea"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 178,
+          "y": 490
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 390
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_D7794D64-0F5A-4A50-9C19-483956469E90",
+      "properties": {
+        "xf_width": "1*",
+        "xf_align": "left",
+        "xf_frame": false,
+        "xf_engine": "st",
+        "xf_id": "",
+        "xf_filter": "Fahrerauswahl",
+        "xf_columns": {
+          "totalCount": 2,
+          "items": [
+            {
+              "colname": "vorname"
+            },
+            {
+              "colname": "name"
+            }
+          ]
+        }
+      },
+      "stencil": {
+        "id": "autogentable"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 178,
+          "y": 370
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 270
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_AE88A8A8-5F20-4423-88E8-51BDCBB9EB6F",
+      "properties": {
+        "xf_width": "1*",
+        "xf_align": "left",
+        "xf_frame": true,
+        "xf_engine": "st",
+        "xf_id": "",
+        "xf_filter": "",
+        "xf_markdown": "=Die folgende Tabelle ist autogeneriert=\n\n<sub>\n* Es muss nur der Filter angeben werden.\n* Es muss nur der Filter angeben werden.\n</sub>"
+      },
+      "stencil": {
+        "id": "Textarea"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 178,
+          "y": 235
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 135
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_31866803-2A45-424E-803C-48041D441525",
+      "properties": {
+        "xf_width": "1*",
+        "xf_align": "left",
+        "xf_frame": false,
+        "xf_engine": "groovy",
+        "xf_id": "",
+        "xf_filter": "Fahrerauswahl",
+        "xf_markdown": "{| cs3=l,2*\n!Vorname\n!Name\n!Buchungsvers.<% \n   list.each{rec ->\n%>\n|-\n|$rec.vorname\n|font=\"bold\"|$rec.name\n|\n{|frame=\"none\" cs1=\",,false,false\"<%\n    rec.buchungsvoraussetzungen_list.each{bv ->\n%>\n|-\n|$bv.beschreibung $xxx<%\n}%>\n|}<%\n}%>\n|}\n"
+      },
+      "stencil": {
+        "id": "Textarea"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 344,
+          "y": 490
+        },
+        "upperLeft": {
+          "x": 196,
+          "y": 390
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_88A9F45F-8135-4EC1-BB6B-A9822680483A",
+      "properties": {
+        "xf_width": "1*",
+        "xf_align": "right",
+        "xf_frame": true,
+        "xf_engine": "st",
+        "xf_id": "",
+        "xf_filter": "",
+        "xf_markdown": "{| cs1=\",,n,n\" frame=\"none\" font=\"big\"\n|-\n|font=\"big2bold\"|Manfred Sattler\n|-\n|Harsdörfferstr.13\n|-\n|80478 Nürnberg\n|}\n"
+      },
+      "stencil": {
+        "id": "Textarea"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 178,
+          "y": 116
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 16
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F9F9D8DC-F853-4D78-93C8-80BC8EEEAB81",
+      "properties": {
+        "xf_id": "",
+        "xf_headerfooter": "header",
+        "xf_pages": "first"
+      },
+      "stencil": {
+        "id": "HeaderFooter"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_806AED34-75B1-44D2-8F56-4B640995654A",
+          "properties": {
+            "xf_width": "1*",
+            "xf_align": "left",
+            "xf_frame": "",
+            "xf_engine": "st",
+            "xf_id": "",
+            "xf_filter": "",
+            "xf_markdown": "{| cs1=\",,n,n\" frame=\"none\" font=\"big\"\n|-\n|font=\"big2bold\"|Manfred Sattler\n|-\n|Harsdörfferstr.13\n|-\n|80478 Nürnberg\n|}\n"
+          },
+          "stencil": {
+            "id": "Textarea"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 180,
+              "y": 130
+            },
+            "upperLeft": {
+              "x": 30,
+              "y": 30
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 255,
+          "y": 677
+        },
+        "upperLeft": {
+          "x": 45,
+          "y": 517
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 1485,
+      "y": 1050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "documents",
+    "namespace": "http://b3mn.org/stencilset/xdocuments#"
+  },
+  "ssextensions": []
+}
