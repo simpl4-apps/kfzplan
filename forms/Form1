@@ -8,6 +8,7 @@
     "xf_name": "",
     "xf_version": "",
     "xf_default_buttons": false,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -20,11 +21,11 @@
       "properties": {
         "xf_id": "",
         "xf_place": "south",
+        "xf_accesskey": "",
+        "xf_type": "",
         "xf_navindex": "",
         "xf_readonly": "",
         "xf_required": "",
-        "xf_accesskey": "",
-        "xf_type": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -33,17 +34,12 @@
       },
       "childShapes": [
         {
-          "resourceId": "oryx_DC2A8644-5A6A-4AE9-858C-DFB1862F3B69",
+          "resourceId": "oryx_C173FB31-05FE-44D9-BCF9-A0D09475E18C",
           "properties": {
             "xf_id": "button1",
             "xf_action": "execute",
             "xf_label": "Task starten",
-            "xf_iconname": "",
-            "xf_navindex": "",
-            "xf_readonly": "",
-            "xf_type": "string",
-            "xf_value": "ddddd",
-            "xf_accesskey": ""
+            "xf_iconname": ""
           },
           "stencil": {
             "id": "ActionButton"
@@ -52,7 +48,7 @@
           "outgoing": [],
           "bounds": {
             "lowerRight": {
-              "x": 143,
+              "x": 180,
               "y": 54
             },
             "upperLeft": {
@@ -63,17 +59,12 @@
           "dockers": []
         },
         {
-          "resourceId": "oryx_F94CC2FB-0D96-48BA-BB76-5732E19322B2",
+          "resourceId": "oryx_53AC2789-5474-4557-BCBB-22EE6A1B2347",
           "properties": {
             "xf_id": "button2",
             "xf_action": "cancel",
             "xf_label": "Abbrechen",
-            "xf_iconname": "",
-            "xf_navindex": "",
-            "xf_readonly": "",
-            "xf_type": "string",
-            "xf_value": "ddddddddd",
-            "xf_accesskey": ""
+            "xf_iconname": ""
           },
           "stencil": {
             "id": "ActionButton"
@@ -82,11 +73,11 @@
           "outgoing": [],
           "bounds": {
             "lowerRight": {
-              "x": 284,
+              "x": 360,
               "y": 54
             },
             "upperLeft": {
-              "x": 173,
+              "x": 210,
               "y": 30
             }
           },
@@ -96,12 +87,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 344,
-          "y": 388
+          "x": 420,
+          "y": 415
         },
         "upperLeft": {
           "x": 30,
-          "y": 304
+          "y": 331
         }
       },
       "dockers": []
@@ -125,10 +116,16 @@
             "xf_default": "",
             "xf_readonly": "",
             "xf_required": "",
-            "xf_constraint": "",
+            "xf_filtercheck": null,
+            "xf_constraint_text": null,
+            "xf_constraint_date": null,
+            "xf_constraint_boolean": null,
+            "xf_constraint_decimal": null,
+            "xf_constraint_number": null,
             "xf_navindex": "",
-            "xf_calculate": "",
-            "xf_accesskey": ""
+            "xf_accesskey": "",
+            "xf_constraint": "",
+            "xf_calculate": ""
           },
           "stencil": {
             "id": "Input"
@@ -202,10 +199,16 @@
             "xf_default": "",
             "xf_readonly": "",
             "xf_required": "",
-            "xf_constraint": "",
+            "xf_filtercheck": null,
+            "xf_constraint_text": null,
+            "xf_constraint_date": null,
+            "xf_constraint_boolean": null,
+            "xf_constraint_decimal": null,
+            "xf_constraint_number": null,
             "xf_navindex": "",
-            "xf_calculate": "",
-            "xf_accesskey": ""
+            "xf_accesskey": "",
+            "xf_constraint": "",
+            "xf_calculate": ""
           },
           "stencil": {
             "id": "Input"
@@ -253,11 +256,11 @@
       "bounds": {
         "lowerRight": {
           "x": 415,
-          "y": 160
+          "y": 187
         },
         "upperLeft": {
           "x": 30,
-          "y": 76
+          "y": 103
         }
       },
       "dockers": []
@@ -278,6 +281,7 @@
           "properties": {
             "xf_id": "hersteller",
             "xf_multiselection": "",
+            "xf_enumembed": null,
             "xf_enum": {
               "totalCount": 2,
               "enumDescription": "sw.enum:hersteller",
@@ -340,17 +344,17 @@
       "bounds": {
         "lowerRight": {
           "x": 240,
-          "y": 274
+          "y": 301
         },
         "upperLeft": {
           "x": 30,
-          "y": 190
+          "y": 217
         }
       },
       "dockers": []
     },
     {
-      "resourceId": "oryx_6F2562E8-ADAA-4748-8B85-FED809A10072",
+      "resourceId": "oryx_5E59EAA6-3CB9-4DB4-BEB3-7F5323120316",
       "properties": {
         "xf_id": "fahrzeugliste_alert",
         "xf_message": "Kein Fahrzeug gefunden",
@@ -363,8 +367,8 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 46,
-          "y": 46
+          "x": 380,
+          "y": 73
         },
         "upperLeft": {
           "x": 30,
@@ -377,7 +381,7 @@
   "bounds": {
     "lowerRight": {
       "x": 1485,
-      "y": 1050
+      "y": 2050
     },
     "upperLeft": {
       "x": 0,
@@ -385,8 +389,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }

@@ -11,11 +11,15 @@
     "version": "",
     "author": "",
     "language": "English",
-    "namespaces": "",
     "targetnamespace": "kfzplan",
     "creationdate": "",
     "modificationdate": "",
     "orientation": "horizontal",
+    "startablegroups": null,
+    "startableusers": null,
+    "camelroutes": null,
+    "initialparameter": null,
+    "namespaces": "",
     "auditing": "",
     "monitoring": "",
     "expressionlanguage": "http://www.w3.org/1999/XPath",
@@ -28,6 +32,7 @@
     {
       "resourceId": "oryx_CAD7F577-10FD-4CE9-90E0-91DEA57BA40E",
       "properties": {
+        "overrideid": "",
         "name": "Start",
         "documentation": "",
         "attr$activiti$formkey": "",
@@ -51,11 +56,11 @@
       "bounds": {
         "lowerRight": {
           "x": 60,
-          "y": 150
+          "y": 152.5
         },
         "upperLeft": {
           "x": 30,
-          "y": 120
+          "y": 122.5
         }
       },
       "dockers": []
@@ -63,9 +68,11 @@
     {
       "resourceId": "oryx_F0AD77CE-F190-4909-977E-B848870CB24C",
       "properties": {
-        "processid": "",
+        "overrideid": "",
         "name": "FahrzeugSuchmaske",
         "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "#ffffff",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -73,36 +80,35 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "forms/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
+        "attr$activiti$formkey": "fganfr_fahrzeug_suchen",
         "el$activiti$variablesmapping": "",
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
         "tasktype": "User",
-        "completionquantity": 1,
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "complexbehaviordefinition": "",
-        "behavior": "all",
-        "outputdataitem": "",
-        "activiti$elementvariable": "",
-        "nonebehavioreventref": "signal",
         "activiti$collection": "",
-        "loopdataoutputref": "",
-        "loopdatainputref": "",
-        "loopcardinality": "",
-        "loopmaximum": "",
-        "loopcondition": "",
-        "inputdataitem": "",
         "auditing": "",
         "monitoring": "",
         "startquantity": 1,
         "testbefore": "",
-        "assignments": "",
+        "inputdataitem": "",
         "callacitivity": "",
-        "properties": ""
+        "properties": "",
+        "processid": "",
+        "behavior": "all",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "assignments": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "loopdataoutputref": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "completionquantity": 1
       },
       "stencil": {
         "id": "UserTask"
@@ -116,11 +122,11 @@
       "bounds": {
         "lowerRight": {
           "x": 220,
-          "y": 185
+          "y": 177.5
         },
         "upperLeft": {
           "x": 120,
-          "y": 105
+          "y": 97.5
         }
       },
       "dockers": []
@@ -128,17 +134,18 @@
     {
       "resourceId": "oryx_1B4D0216-B175-4FA5-BDD6-DE170D6E6E3C",
       "properties": {
+        "overrideid": "",
         "name": "",
         "documentation": "",
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "monitoring": "",
-        "showdiamondmarker": "",
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -151,26 +158,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 119.625,
-          "y": 145
+          "x": 119.1953125,
+          "y": 137.5
         },
         "upperLeft": {
-          "x": 60.0625,
-          "y": 135
+          "x": 60.6484375,
+          "y": 137.5
         }
       },
       "dockers": [
         {
           "x": 15,
           "y": 15
-        },
-        {
-          "x": 90,
-          "y": 135
-        },
-        {
-          "x": 90,
-          "y": 145
         },
         {
           "x": 50,
@@ -184,9 +183,11 @@
     {
       "resourceId": "oryx_F0442020-7E0F-4340-A360-B7CBE655505B",
       "properties": {
-        "processid": "",
+        "overrideid": "",
         "name": "Fahrzeuge ermitteln",
         "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "#ffffff",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -194,8 +195,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
         "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
         "el$activiti$filtername": "filter/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
         "el$activiti$variablesmapping": {
@@ -209,28 +208,29 @@
         },
         "el$activiti$listname": "Fahrzeuge",
         "tasktype": "Filter",
-        "assignments": "",
-        "nonebehavioreventref": "signal",
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "complexbehaviordefinition": "",
-        "behavior": "all",
-        "outputdataitem": "",
-        "activiti$elementvariable": "",
-        "properties": "",
-        "activiti$collection": "",
         "loopdataoutputref": "",
-        "loopdatainputref": "",
-        "inputdataitem": "",
         "auditing": "",
         "monitoring": "",
         "startquantity": 1,
         "completionquantity": 1,
         "loopcardinality": "",
-        "callacitivity": "",
+        "inputdataitem": "",
         "testbefore": "",
         "loopcondition": "",
-        "loopmaximum": ""
+        "loopmaximum": "",
+        "processid": "",
+        "behavior": "all",
+        "callacitivity": "",
+        "activiti$collection": "",
+        "properties": "",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "loopdatainputref": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "nonebehavioreventref": "signal",
+        "assignments": ""
       },
       "stencil": {
         "id": "FilterTask"
@@ -238,20 +238,20 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_F9ECEC4C-27E4-49D8-B7B1-97AC4095E5C6"
+          "resourceId": "oryx_5C8E0807-86C8-4BFF-A91E-2682A4B84453"
         },
         {
-          "resourceId": "oryx_5C8E0807-86C8-4BFF-A91E-2682A4B84453"
+          "resourceId": "oryx_F9ECEC4C-27E4-49D8-B7B1-97AC4095E5C6"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 445,
-          "y": 170
+          "x": 447,
+          "y": 177.5
         },
         "upperLeft": {
-          "x": 345,
-          "y": 90
+          "x": 347,
+          "y": 97.5
         }
       },
       "dockers": []
@@ -259,17 +259,18 @@
     {
       "resourceId": "oryx_FA220E4C-1DFB-46A3-B565-15364D108F4B",
       "properties": {
+        "overrideid": "",
         "name": "",
         "documentation": "",
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "monitoring": "",
-        "showdiamondmarker": "",
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -282,26 +283,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 344.78125,
-          "y": 145
+          "x": 346.34375,
+          "y": 137.5
         },
         "upperLeft": {
-          "x": 220.21875,
-          "y": 130
+          "x": 220.65625,
+          "y": 137.5
         }
       },
       "dockers": [
         {
           "x": 50,
           "y": 40
-        },
-        {
-          "x": 282.5,
-          "y": 145
-        },
-        {
-          "x": 282.5,
-          "y": 130
         },
         {
           "x": 50,
@@ -315,9 +308,11 @@
     {
       "resourceId": "oryx_B2F61E82-2ECC-40E6-AC0F-D9EECFB1F62B",
       "properties": {
-        "processid": "",
+        "overrideid": "",
         "name": "Fahrzeugauswählen / weitere Eingaben",
         "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "#ffffff",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -325,36 +320,35 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "forms/fganfr_fahrzeug_waehlen,fganfr_fahrzeug_waehlen",
+        "attr$activiti$formkey": "fganfr_fahrzeug_waehlen",
         "el$activiti$variablesmapping": "",
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
         "tasktype": "User",
-        "completionquantity": 1,
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "complexbehaviordefinition": "",
-        "behavior": "all",
-        "outputdataitem": "",
-        "activiti$elementvariable": "",
-        "nonebehavioreventref": "signal",
         "activiti$collection": "",
-        "loopdataoutputref": "",
-        "loopdatainputref": "",
-        "loopcardinality": "",
-        "loopmaximum": "",
-        "loopcondition": "",
-        "inputdataitem": "",
         "auditing": "",
         "monitoring": "",
         "startquantity": 1,
         "testbefore": "",
-        "assignments": "",
+        "inputdataitem": "",
         "callacitivity": "",
-        "properties": ""
+        "properties": "",
+        "processid": "",
+        "behavior": "all",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "assignments": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "loopdataoutputref": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "completionquantity": 1
       },
       "stencil": {
         "id": "UserTask"
@@ -380,16 +374,17 @@
     {
       "resourceId": "oryx_BF96CD9A-D09C-49BA-9DDF-6539210ED012",
       "properties": {
+        "overrideid": "",
         "name": "Ende",
         "documentation": "",
-        "datainputassociations": "",
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
         "trigger": "None",
-        "inputset": "",
         "datainput": "",
-        "monitoring": "",
-        "auditing": ""
+        "auditing": "",
+        "inputset": "",
+        "datainputassociations": "",
+        "monitoring": ""
       },
       "stencil": {
         "id": "EndNoneEvent"
@@ -398,11 +393,11 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 415.12962924807266,
+          "x": 411,
           "y": 758.592592320052
         },
         "upperLeft": {
-          "x": 387.12962924807266,
+          "x": 383,
           "y": 730.592592320052
         }
       },
@@ -411,17 +406,18 @@
     {
       "resourceId": "oryx_5C8E0807-86C8-4BFF-A91E-2682A4B84453",
       "properties": {
+        "overrideid": "",
         "name": "Ergebnisliste Fahrzeuge > 0",
         "documentation": "",
         "defaultflow": "None",
-        "conditionalflow": "None",
+        "conditionalflow": "Conditional",
         "conditionsequenceflow": "${Fahrzeuge.size >0}",
         "bordercolor": "green",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": false,
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -435,25 +431,17 @@
       "bounds": {
         "lowerRight": {
           "x": 397,
-          "y": 359.99247680500895
+          "y": 359.46875
         },
         "upperLeft": {
-          "x": 395,
-          "y": 170.79137731375022
+          "x": 397,
+          "y": 178.40625
         }
       },
       "dockers": [
         {
           "x": 50,
           "y": 79
-        },
-        {
-          "x": 395,
-          "y": 270.296296160026
-        },
-        {
-          "x": 397,
-          "y": 270.296296160026
         },
         {
           "x": 52,
@@ -467,17 +455,18 @@
     {
       "resourceId": "oryx_F9ECEC4C-27E4-49D8-B7B1-97AC4095E5C6",
       "properties": {
+        "overrideid": "",
         "name": "Ergebnisliste Fahrzeuge = 0",
         "documentation": "",
         "defaultflow": "None",
-        "conditionalflow": "None",
+        "conditionalflow": "Conditional",
         "conditionsequenceflow": "${Fahrzeuge.size == 0}",
         "bordercolor": "red",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": false,
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -490,8 +479,8 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 400.87969283823327,
-          "y": 105
+          "x": 402.87969283823327,
+          "y": 97.5
         },
         "upperLeft": {
           "x": 170,
@@ -504,7 +493,7 @@
           "y": 13.918859025939355
         },
         {
-          "x": 400.87969283823327,
+          "x": 402.87969283823327,
           "y": 66.04937996302522
         },
         {
@@ -523,17 +512,18 @@
     {
       "resourceId": "oryx_BD4F0A52-A69E-45AC-A120-5F49AAAB8815",
       "properties": {
+        "overrideid": "",
         "name": "",
         "documentation": "",
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": false,
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -547,25 +537,17 @@
       "bounds": {
         "lowerRight": {
           "x": 397,
-          "y": 494.5613424925191
+          "y": 494.46875
         },
         "upperLeft": {
-          "x": 395,
-          "y": 457.2725693550171
+          "x": 397,
+          "y": 457.92578125
         }
       },
       "dockers": [
         {
           "x": 52,
           "y": 48.5
-        },
-        {
-          "x": 397,
-          "y": 481.296296160026
-        },
-        {
-          "x": 395,
-          "y": 481.296296160026
         },
         {
           "x": 50,
@@ -579,9 +561,11 @@
     {
       "resourceId": "oryx_6FAD9C9B-CF3A-4CEB-A154-9AEC9C99C3E3",
       "properties": {
-        "processid": "",
+        "overrideid": "",
         "name": "Anzeige aller Daten / Entscheidung",
         "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "#ffffff",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -589,10 +573,8 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "forms/fganfr_fahrzeug_anzeigen,fganfr_fahrzeug_anzeigen",
+        "attr$activiti$formkey": "fganfr_fahrzeug_anzeigen",
         "el$activiti$variablesmapping": {
           "totalCount": 6,
           "items": [
@@ -625,28 +607,29 @@
         "attr$activiti$candidategroups": "kfzplan.entscheider",
         "attr$activiti$assignee": "",
         "tasktype": "User",
-        "completionquantity": 1,
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "complexbehaviordefinition": "",
-        "behavior": "all",
-        "outputdataitem": "",
-        "activiti$elementvariable": "",
-        "nonebehavioreventref": "signal",
         "activiti$collection": "",
-        "loopdataoutputref": "",
-        "loopdatainputref": "",
-        "loopcardinality": "",
-        "loopmaximum": "",
-        "loopcondition": "",
-        "inputdataitem": "",
         "auditing": "",
         "monitoring": "",
         "startquantity": 1,
         "testbefore": "",
-        "assignments": "",
+        "inputdataitem": "",
         "callacitivity": "",
-        "properties": ""
+        "properties": "",
+        "processid": "",
+        "behavior": "all",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "assignments": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "loopdataoutputref": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "completionquantity": 1
       },
       "stencil": {
         "id": "UserTask"
@@ -659,11 +642,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 445,
+          "x": 447,
           "y": 575
         },
         "upperLeft": {
-          "x": 345,
+          "x": 347,
           "y": 495
         }
       },
@@ -672,9 +655,11 @@
     {
       "resourceId": "oryx_D786836F-98EB-430B-BDD2-34EFBE6058B8",
       "properties": {
-        "processid": "",
+        "overrideid": "",
         "name": "Mitteilung Entscheidung",
         "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "#ffffff",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -682,10 +667,8 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
         "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "forms/fganfr_mitteilung_entscheidung,fganfr_mitteilung_entscheidung",
+        "attr$activiti$formkey": "fganfr_mitteilung_entscheidung",
         "el$activiti$variablesmapping": {
           "totalCount": 0,
           "items": []
@@ -693,28 +676,29 @@
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
         "tasktype": "User",
-        "completionquantity": 1,
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "complexbehaviordefinition": "",
-        "behavior": "all",
-        "outputdataitem": "",
-        "activiti$elementvariable": "",
-        "nonebehavioreventref": "signal",
         "activiti$collection": "",
-        "loopdataoutputref": "",
-        "loopdatainputref": "",
-        "loopcardinality": "",
-        "loopmaximum": "",
-        "loopcondition": "",
-        "inputdataitem": "",
         "auditing": "",
         "monitoring": "",
         "startquantity": 1,
         "testbefore": "",
-        "assignments": "",
+        "inputdataitem": "",
         "callacitivity": "",
-        "properties": ""
+        "properties": "",
+        "processid": "",
+        "behavior": "all",
+        "loopcondition": "",
+        "loopmaximum": "",
+        "loopcardinality": "",
+        "loopdatainputref": "",
+        "assignments": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "outputdataitem": "",
+        "loopdataoutputref": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "completionquantity": 1
       },
       "stencil": {
         "id": "UserTask"
@@ -727,11 +711,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 445,
+          "x": 447,
           "y": 680
         },
         "upperLeft": {
-          "x": 345,
+          "x": 347,
           "y": 600
         }
       },
@@ -740,17 +724,18 @@
     {
       "resourceId": "oryx_3BA66977-2006-4AC5-BDE4-1938FDA2EC5E",
       "properties": {
+        "overrideid": "",
         "name": "",
         "documentation": "",
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "monitoring": "",
-        "showdiamondmarker": "",
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": "",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -763,11 +748,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 395,
+          "x": 397,
           "y": 599.625
         },
         "upperLeft": {
-          "x": 395,
+          "x": 397,
           "y": 575.375
         }
       },
@@ -788,17 +773,18 @@
     {
       "resourceId": "oryx_208A96A3-202B-43B6-8A2E-83B7D46FE7F4",
       "properties": {
+        "overrideid": "",
         "name": "",
         "documentation": "",
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": "",
         "isimmediate": "",
-        "conditiontype": "None"
+        "showdiamondmarker": false,
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -811,12 +797,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 399.9016614697616,
-          "y": 730.1534808141893
+          "x": 396.6978324544048,
+          "y": 730.1501028208373
         },
         "upperLeft": {
-          "x": 395.68876053382405,
-          "y": 680.6159054383721
+          "x": 395.6615425455952,
+          "y": 680.619283431724
         }
       },
       "dockers": [
@@ -837,7 +823,7 @@
   "bounds": {
     "lowerRight": {
       "x": 1485,
-      "y": 1050
+      "y": 2050
     },
     "upperLeft": {
       "x": 0,
@@ -845,8 +831,9 @@
     }
   },
   "stencilset": {
-    "url": "bpmn",
+    "url": "process",
     "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 0.7290000000000001
 }

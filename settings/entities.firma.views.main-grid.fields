@@ -4,20 +4,24 @@
 {
     "fields": [
         {
+            "enabled": "true",
+            "name": "firma",
+            "displayname": "Firma"
+        },
+        {
+            "enabled": "true",
             "name": "ort",
-            "enabled": true
+            "displayname": "Ort"
         },
         {
+            "enabled": "true",
             "name": "plz",
-            "enabled": true
+            "displayname": "PLZ"
         },
         {
-            "name": "telefonnummer",
-            "enabled": true
-        },
-        {
+            "enabled": "true",
             "name": "email",
-            "enabled": true
+            "displayname": "eMail"
         }
     ]
 }

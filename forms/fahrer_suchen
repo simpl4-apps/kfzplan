@@ -8,6 +8,7 @@
     "xf_name": "",
     "xf_version": "",
     "xf_default_buttons": true,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -19,12 +20,18 @@
       "resourceId": "oryx_353181B1-A6F7-4CC9-BE7B-E142E4CC4230",
       "properties": {
         "xf_id": "name_input",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
         "xf_readonly": "",
         "xf_required": "true",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -60,11 +67,11 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 100
+          "y": 111
         },
         "upperLeft": {
           "x": 30,
-          "y": 76
+          "y": 87
         }
       },
       "dockers": []
@@ -73,12 +80,18 @@
       "resourceId": "oryx_3BCDDABB-66E3-4DF7-B4B7-9C9FFA80FBE2",
       "properties": {
         "xf_id": "kfz_modell",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -114,41 +127,17 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 154
+          "y": 165
         },
         "upperLeft": {
           "x": 30,
-          "y": 130
+          "y": 141
         }
       },
       "dockers": []
     },
     {
-      "resourceId": "oryx_81DE01F7-58B3-4159-8533-F7A5F5B532E1",
-      "properties": {
-        "xf_id": "error_alert",
-        "xf_message": "Fahrer nicht berechtigt",
-        "xf_exclude": "!error_alert"
-      },
-      "stencil": {
-        "id": "Alert"
-      },
-      "childShapes": [],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 46,
-          "y": 46
-        },
-        "upperLeft": {
-          "x": 30,
-          "y": 30
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_C85B9CC7-4146-4C87-A64D-5BF2352E158C",
+      "resourceId": "oryx_D28A63AC-745E-46B8-8D18-2758F0B985C8",
       "properties": {
         "xf_id": "fahrerliste_alert",
         "xf_message": "Keine Fahrer gefunden",
@@ -161,11 +150,35 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 92,
-          "y": 46
+          "x": 350,
+          "y": 57
         },
         "upperLeft": {
-          "x": 76,
+          "x": 208,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_5C9064A7-6BDF-4DAE-AC46-E02162E1CA23",
+      "properties": {
+        "xf_id": "error_alert",
+        "xf_message": "Fahrer nicht berechtigt",
+        "xf_exclude": "!error_alert"
+      },
+      "stencil": {
+        "id": "Alert"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 178,
+          "y": 54
+        },
+        "upperLeft": {
+          "x": 30,
           "y": 30
         }
       },
@@ -175,7 +188,7 @@
   "bounds": {
     "lowerRight": {
       "x": 1485,
-      "y": 1050
+      "y": 2050
     },
     "upperLeft": {
       "x": 0,
@@ -183,8 +196,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }
