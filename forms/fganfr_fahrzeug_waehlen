@@ -7,7 +7,8 @@
     "xf_id": "",
     "xf_name": "",
     "xf_version": "",
-    "xf_default_buttons": true
+    "xf_default_buttons": true,
+    "xf_postprocess": null
   },
   "stencil": {
     "id": "XForm"
@@ -17,8 +18,6 @@
       "resourceId": "oryx_45A9A999-B44B-4D54-82AC-36C7AFE4E00B",
       "properties": {
         "xf_id": "Fahrzeugliste",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_multiselection": "",
         "xf_columns": {
           "totalCount": 3,
@@ -35,7 +34,10 @@
           ]
         },
         "xf_inputlistname": "Fahrzeuge",
-        "xf_required": "true"
+        "xf_filter": null,
+        "xf_required": "true",
+        "xf_navindex": "",
+        "xf_accesskey": ""
       },
       "stencil": {
         "id": "Tableselect"
@@ -68,8 +70,8 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 465,
-          "y": 178
+          "x": 466,
+          "y": 228
         },
         "upperLeft": {
           "x": 30,
@@ -82,12 +84,20 @@
       "resourceId": "oryx_81DE1C6E-6CD4-4872-BD23-C1D62664D24D",
       "properties": {
         "xf_id": "fahrtgrund_input",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "true",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -123,11 +133,11 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 232
+          "y": 282
         },
         "upperLeft": {
           "x": 30,
-          "y": 208
+          "y": 258
         }
       },
       "dockers": []
@@ -136,12 +146,20 @@
       "resourceId": "oryx_75CA3080-C8BB-45FA-8D59-70188816804B",
       "properties": {
         "xf_id": "fahrtziel_input",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -177,11 +195,11 @@
       "bounds": {
         "lowerRight": {
           "x": 360,
-          "y": 232
+          "y": 282
         },
         "upperLeft": {
           "x": 210,
-          "y": 208
+          "y": 258
         }
       },
       "dockers": []
@@ -190,12 +208,20 @@
       "resourceId": "oryx_DE157462-DE42-4A3D-9358-3923B9C1163C",
       "properties": {
         "xf_id": "datum_zeit_input",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "datetime",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -231,11 +257,59 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 286
+          "y": 336
         },
         "upperLeft": {
           "x": 30,
-          "y": 262
+          "y": 312
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_39CCE9DD-F02C-4733-8AE6-D5EECD5FE8F0",
+      "properties": {
+        "xf_id": "fahrerid",
+        "xf_module": "fahrzeuge",
+        "xf_fieldlist": "{\"totalCount\":3,\"items\":[{\"db_fieldname\":\"hersteller\",\"form_fieldname\":\"fahrtgrund_input\",\"id\":\"hersteller\",\"module\":\"fahrzeuge\",\"display\":true,\"path\":\"fahrzeuge\"},{\"db_fieldname\":\"modell\",\"form_fieldname\":\"fahrtziel_input\",\"id\":\"modell\",\"module\":\"fahrzeuge\",\"display\":true,\"path\":\"fahrzeuge\"},{\"db_fieldname\":\"buchungsvoraussetzungen_list.schluessel\",\"form_fieldname\":\"\",\"id\":\"schluessel\",\"module\":\"buchungsvoraussetzungen\",\"display\":true,\"path\":\"fahrzeuge$buchungsvoraussetzungen_list\"}]}"
+      },
+      "stencil": {
+        "id": "Moduleselector"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_5120680B-8A40-42A7-8813-DCF1E4C8CFD5",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Fahhrzeug liste"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 412,
+          "y": 527
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 366
         }
       },
       "dockers": []
@@ -243,8 +317,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 1050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,
@@ -252,8 +326,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }

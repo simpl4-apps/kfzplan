@@ -1,0 +1,70 @@
+[sw]
+	type = sw.enum
+--
+{
+    "dataList": [
+        {
+            "invalid": false,
+            "invalid_from": 4165437600000,
+            "value": "BMW",
+            "label": "BMW",
+            "tooltip": null
+        },
+        {
+            "invalid": false,
+            "invalid_from": 4165434000000,
+            "value": "Audi",
+            "label": "Audi",
+            "tooltip": null
+        },
+        {
+            "invalid": false,
+            "invalid_from": 4165434000000,
+            "value": "Mercedes",
+            "label": "Mercedes",
+            "tooltip": null
+        },
+        {
+            "invalid": false,
+            "invalid_from": 4165434000000,
+            "value": "Seat",
+            "label": "Seat",
+            "tooltip": null
+        },
+        {
+            "invalid": false,
+            "invalid_from": 4165434000000,
+            "value": "VW",
+            "label": "VW",
+            "tooltip": null
+        },
+        {
+            "invalid": false,
+            "invalid_from": 4165437600000,
+            "value": "Peugeot",
+            "label": "Peugeot",
+            "tooltip": null
+        },
+        {
+            "invalid": false,
+            "invalid_from": 4165437600000,
+            "value": "Renault",
+            "label": "Renault",
+            "tooltip": null
+        }
+    ],
+    "fieldList": [
+        {
+            "description": "Wert",
+            "fieldname": "value"
+        },
+        {
+            "description": "Label",
+            "fieldname": "label"
+        },
+        {
+            "description": "Tooltip",
+            "fieldname": "tooltip"
+        }
+    ]
+}

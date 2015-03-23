@@ -21,11 +21,11 @@
       "properties": {
         "xf_id": "",
         "xf_place": "south",
-        "xf_accesskey": "",
         "xf_type": "",
         "xf_navindex": "",
         "xf_readonly": "",
         "xf_required": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -114,6 +114,8 @@
             "xf_id": "input_date_from",
             "xf_type": "datetime",
             "xf_default": "",
+            "xf_exclude": "",
+            "xf_invisible": "",
             "xf_readonly": "",
             "xf_required": "",
             "xf_filtercheck": null,
@@ -197,6 +199,8 @@
             "xf_id": "input_date_to",
             "xf_type": "datetime",
             "xf_default": "",
+            "xf_exclude": "",
+            "xf_invisible": "",
             "xf_readonly": "",
             "xf_required": "",
             "xf_filtercheck": null,
@@ -380,8 +384,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 2050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,

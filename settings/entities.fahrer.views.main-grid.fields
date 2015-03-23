@@ -22,6 +22,18 @@
             "enabled": "true",
             "name": "telefonnummer",
             "displayname": "Tel."
+        },
+        {
+            "enabled": true,
+            "name": "geburtsdatum",
+            "tab": "tab1",
+            "displayname": "Geburtsdatum"
+        },
+        {
+            "enabled": true,
+            "name": "vorname",
+            "tab": "tab1",
+            "displayname": "Vorname"
         }
     ]
 }

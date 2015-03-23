@@ -1,0 +1,73 @@
+[sw]
+	type = sw.form
+--
+{
+  "resourceId": "oryx_0184F4BC-8A72-4E1F-863D-F031BD846995",
+  "properties": {
+    "xf_id": "",
+    "xf_name": "${diagramname}",
+    "xf_version": "",
+    "xf_default_buttons": true,
+    "xf_postprocess": null
+  },
+  "stencil": {
+    "id": "XForm"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_A8AA3E38-5D34-42A8-8D71-55DAED3C305E",
+      "properties": {
+        "xf_id": "testid",
+        "xf_multiselection": true,
+        "xf_columns": {
+          "totalCount": 2,
+          "items": [
+            {
+              "colname": "vorname",
+              "display": "Vorname"
+            },
+            {
+              "colname": "name",
+              "display": "Nachname"
+            }
+          ]
+        },
+        "xf_inputlistname": "",
+        "xf_filter": "Fahrerauswahl",
+        "xf_required": null
+      },
+      "stencil": {
+        "id": "Tableselect"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 231,
+          "y": 382
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 30
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "form",
+    "namespace": "http://b3mn.org/stencilset/xforms#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}

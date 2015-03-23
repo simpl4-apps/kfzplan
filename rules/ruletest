@@ -1,0 +1,81 @@
+[sw]
+	type = sw.rule
+--
+{
+  "variables": {
+    "input": [
+      {
+        "variable": "dddd",
+        "vartype": "string"
+      }
+    ],
+    "output": [
+      {
+        "variable": "ddd",
+        "vartype": "string"
+      }
+    ]
+  },
+  "columns": {
+    "conditions": [
+      {
+        "variableName": "dddd",
+        "variableType": "string",
+        "operationText": "equal",
+        "operation": "eq",
+        "label": "Condition0",
+        "name": "C0",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "variableName": "dddd",
+        "variableType": "string",
+        "operationText": "equal",
+        "operation": "eq",
+        "label": "Condition1",
+        "name": "C1",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "variableType": "string",
+        "variableName": "ddd",
+        "label": "ruleseditor.ergebnis0",
+        "name": "A0",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "variableType": "string",
+        "variableName": "ddd",
+        "label": "ruleseditor.ergebnis1",
+        "name": "A1",
+        "data": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ]
+  }
+}

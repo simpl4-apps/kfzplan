@@ -309,5 +309,9 @@
     {
         "msgid": "data.fahrer.fieldset.set1",
         "msgstr": "Vor/Nachname"
+    },
+    {
+        "msgid": "data.fahrer._team_list",
+        "msgstr": "Teams"
     }
 ]

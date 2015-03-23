@@ -16,7 +16,7 @@
     "modificationdate": "",
     "orientation": "horizontal",
     "startablegroups": null,
-    "startableusers": null,
+    "startableusers": "admin,guest",
     "camelroutes": null,
     "initialparameter": null,
     "namespaces": "",
@@ -56,11 +56,11 @@
       "bounds": {
         "lowerRight": {
           "x": 45,
-          "y": 160
+          "y": 146.1111107840623
         },
         "upperLeft": {
           "x": 15,
-          "y": 130
+          "y": 116.1111107840623
         }
       },
       "dockers": []
@@ -69,10 +69,10 @@
       "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE",
       "properties": {
         "overrideid": "",
-        "name": "Freie Fahrzeuge ermitteln",
+        "name": "Freie Fahrzeuge",
         "documentation": "",
         "bordercolor": "#000000",
-        "bgcolor": "yellow",
+        "bgcolor": "rgb(150,174,255)",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -82,6 +82,7 @@
         "isforcompensation": "",
         "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
         "el$activiti$filtername": "filter/Freie_Fahrzeuge_II,Freie_Fahrzeuge_II",
+        "el$activiti$filtervarname": "",
         "el$activiti$variablesmapping": {
           "totalCount": 3,
           "items": [
@@ -101,29 +102,29 @@
         },
         "el$activiti$listname": "Freie_Fahrzeuge",
         "tasktype": "Filter",
-        "loopdatainputref": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopmaximum": "",
-        "processid": "",
         "callacitivity": "",
-        "properties": "",
-        "testbefore": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "outputdataitem": "",
-        "loopcardinality": "",
-        "inputdataitem": "",
-        "assignments": "",
         "activiti$collection": "",
         "nonebehavioreventref": "signal",
         "activiti$elementvariable": "",
         "loopcondition": "",
-        "loopdataoutputref": "",
+        "assignments": "",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal"
+        "onebehavioreventref:": "signal",
+        "processid": "",
+        "inputdataitem": "",
+        "loopcardinality": "",
+        "outputdataitem": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "testbefore": "",
+        "properties": "",
+        "auditing": "",
+        "completionquantity": 1,
+        "loopmaximum": "",
+        "startquantity": 1,
+        "monitoring": ""
       },
       "stencil": {
         "id": "FilterTask"
@@ -136,12 +137,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 342.046296160026,
-          "y": 187
+          "x": 449.3250063989167,
+          "y": 179.2915135899546
         },
         "upperLeft": {
-          "x": 244.04629616002597,
-          "y": 103
+          "x": 296.29629542416615,
+          "y": 97.29448790107688
         }
       },
       "dockers": []
@@ -150,10 +151,10 @@
       "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85",
       "properties": {
         "overrideid": "",
-        "name": "Freies Fahrzeug selektieren",
+        "name": "Fahrzeug selektieren",
         "documentation": "",
         "bordercolor": "#000000",
-        "bgcolor": "yellow",
+        "bgcolor": "rgb(150,174,255)",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -167,29 +168,29 @@
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
         "tasktype": "User",
-        "outputdataitem": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopcondition": "",
         "processid": "",
-        "callacitivity": "",
-        "properties": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "activiti$collection": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "assignments": "",
         "testbefore": "",
         "nonebehavioreventref": "signal",
         "activiti$elementvariable": "",
         "inputdataitem": "",
-        "loopdataoutputref": "",
+        "assignments": "",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal"
+        "onebehavioreventref:": "signal",
+        "loopcondition": "",
+        "loopdatainputref": "",
+        "loopcardinality": "",
+        "loopmaximum": "",
+        "activiti$collection": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "properties": "",
+        "callacitivity": "",
+        "outputdataitem": "",
+        "completionquantity": 1,
+        "startquantity": 1,
+        "monitoring": "",
+        "auditing": ""
       },
       "stencil": {
         "id": "UserTask"
@@ -202,12 +203,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 342.546296160026,
-          "y": 327
+          "x": 449.3250063989167,
+          "y": 285.700728792992
         },
         "upperLeft": {
-          "x": 243.54629616002597,
-          "y": 210
+          "x": 296.29629542416615,
+          "y": 203.70370310411423
         }
       },
       "dockers": []
@@ -221,11 +222,11 @@
         "bgcolor": "#000",
         "bordercolor": "#000000",
         "trigger": "None",
-        "inputset": "",
-        "monitoring": "",
         "datainput": "",
         "auditing": "",
-        "datainputassociations": ""
+        "monitoring": "",
+        "datainputassociations": "",
+        "inputset": ""
       },
       "stencil": {
         "id": "EndNoneEvent"
@@ -234,12 +235,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 307.046296160026,
-          "y": 1003
+          "x": 589.5555539203116,
+          "y": 858.4766967583388
         },
         "upperLeft": {
-          "x": 279.046296160026,
-          "y": 975
+          "x": 561.5555539203116,
+          "y": 830.4766967583388
         }
       },
       "dockers": []
@@ -254,11 +255,11 @@
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
         "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
         "showdiamondmarker": "",
-        "auditing": ""
+        "isimmediate": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -271,22 +272,22 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 293.046296160026,
-          "y": 369.4693279201492
+          "x": 372.8106509115414,
+          "y": 324.1358722876929
         },
         "upperLeft": {
-          "x": 293.046296160026,
-          "y": 327.1348375200844
+          "x": 372.8106509115414,
+          "y": 286.3921832730591
         }
       },
       "dockers": [
         {
-          "x": 49.5,
-          "y": 58.5
+          "x": 76.5143554873753,
+          "y": 40.998512844438885
         },
         {
-          "x": 50,
-          "y": 40
+          "x": 76.5143554873753,
+          "y": 40.99851284443882
         }
       ],
       "target": {
@@ -297,10 +298,10 @@
       "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E",
       "properties": {
         "overrideid": "",
-        "name": "Fahrer Suchemaske",
+        "name": "Fahrerkriterien",
         "documentation": "",
         "bordercolor": "#000000",
-        "bgcolor": "green",
+        "bgcolor": "rgb(175,255,163)",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -330,29 +331,29 @@
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
         "tasktype": "User",
-        "outputdataitem": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopcondition": "",
         "processid": "",
-        "callacitivity": "",
-        "properties": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "activiti$collection": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "assignments": "",
         "testbefore": "",
         "nonebehavioreventref": "signal",
         "activiti$elementvariable": "",
         "inputdataitem": "",
-        "loopdataoutputref": "",
+        "assignments": "",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal"
+        "onebehavioreventref:": "signal",
+        "loopcondition": "",
+        "loopdatainputref": "",
+        "loopcardinality": "",
+        "loopmaximum": "",
+        "activiti$collection": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "properties": "",
+        "callacitivity": "",
+        "outputdataitem": "",
+        "completionquantity": 1,
+        "startquantity": 1,
+        "monitoring": "",
+        "auditing": ""
       },
       "stencil": {
         "id": "UserTask"
@@ -365,12 +366,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 343.046296160026,
-          "y": 450.3703692802077
+          "x": 449.3250063989167,
+          "y": 406.8243524566377
         },
         "upperLeft": {
-          "x": 243.04629616002597,
-          "y": 370.3703692802077
+          "x": 296.29629542416615,
+          "y": 324.82732676776004
         }
       },
       "dockers": []
@@ -379,10 +380,10 @@
       "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A",
       "properties": {
         "overrideid": "",
-        "name": "Fahrer ermitteln",
+        "name": "Freie Fahrer",
         "documentation": "",
         "bordercolor": "#000000",
-        "bgcolor": "green",
+        "bgcolor": "rgb(175,255,163)",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -392,6 +393,7 @@
         "isforcompensation": "",
         "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
         "el$activiti$filtername": "filter/Fahrerauswahl,Fahrerauswahl",
+        "el$activiti$filtervarname": "",
         "el$activiti$variablesmapping": {
           "totalCount": 1,
           "items": [
@@ -403,29 +405,29 @@
         },
         "el$activiti$listname": "fahrerliste",
         "tasktype": "Filter",
-        "loopdatainputref": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopmaximum": "",
-        "processid": "",
         "callacitivity": "",
-        "properties": "",
-        "testbefore": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "outputdataitem": "",
-        "loopcardinality": "",
-        "inputdataitem": "",
-        "assignments": "",
         "activiti$collection": "",
         "nonebehavioreventref": "signal",
         "activiti$elementvariable": "",
         "loopcondition": "",
-        "loopdataoutputref": "",
+        "assignments": "",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal"
+        "onebehavioreventref:": "signal",
+        "processid": "",
+        "inputdataitem": "",
+        "loopcardinality": "",
+        "outputdataitem": "",
+        "loopdatainputref": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "testbefore": "",
+        "properties": "",
+        "auditing": "",
+        "completionquantity": 1,
+        "loopmaximum": "",
+        "startquantity": 1,
+        "monitoring": ""
       },
       "stencil": {
         "id": "FilterTask"
@@ -438,12 +440,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 343.04629616002603,
-          "y": 561.48148006427
+          "x": 449.3250063989167,
+          "y": 539.5652515578196
         },
         "upperLeft": {
-          "x": 243.04629616002595,
-          "y": 481.48148006427004
+          "x": 296.29629542416615,
+          "y": 457.5682258689418
         }
       },
       "dockers": []
@@ -452,9 +454,9 @@
       "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B",
       "properties": {
         "overrideid": "buchung_xor",
-        "name": "Buchungsvoraussetzungen",
+        "name": "Voraussetzungen",
         "documentation": "",
-        "bgcolor": "blue",
+        "bgcolor": "teal",
         "processid": "",
         "gatewaytype": "XOR",
         "xortype": "Data",
@@ -478,11 +480,11 @@
       "bounds": {
         "lowerRight": {
           "x": 85,
-          "y": 792
+          "y": 753.3655859742765
         },
         "upperLeft": {
           "x": 45,
-          "y": 752
+          "y": 713.3655859742765
         }
       },
       "dockers": []
@@ -497,11 +499,11 @@
         "conditionalflow": "Conditional",
         "conditionsequenceflow": "${!isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
         "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
         "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
         "showdiamondmarker": false,
-        "auditing": ""
+        "isimmediate": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -514,12 +516,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 242.27054387502028,
-          "y": 751.6960358200114
+          "x": 296.1834204137793,
+          "y": 712.7384123451004
         },
         "upperLeft": {
           "x": 65.5,
-          "y": 410.3703692802077
+          "y": 365.8258396121989
         }
       },
       "dockers": [
@@ -529,11 +531,11 @@
         },
         {
           "x": 65.5,
-          "y": 410.3703692802077
+          "y": 365.8258396121989
         },
         {
-          "x": 50,
-          "y": 40
+          "x": 76.5143554873753,
+          "y": 40.99851284443882
         }
       ],
       "target": {
@@ -546,8 +548,10 @@
         "overrideid": "",
         "name": "Buchen",
         "documentation": "",
-        "bordercolor": "red",
-        "bgcolor": "#999",
+        "bordercolor": "#000",
+        "bgcolor": "rgb(20,25,94)",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -558,29 +562,29 @@
         "attr$activiti$class": "org.ms123.common.workflow.TaskScriptExecutor",
         "el$activiti$script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", auswahl_fahrer.fahrer.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", auswahl_freies_fahrzeug.Freie_Fahrzeuge.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(Form1.input_date_from);\nneueBuchung.bisdatum=new Date(Form1.input_date_to);\n",
         "tasktype": "Script",
-        "auditing": "",
-        "loopcardinality": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "completionquantity": 1,
-        "loopdatainputref": "",
-        "onebehavioreventref:": "signal",
         "properties": "",
-        "testbefore": "",
-        "loopcondition": "",
-        "loopmaximum": "",
-        "assignments": "",
-        "processid": "",
-        "activiti$elementvariable": "",
         "loopdataoutputref": "",
         "nonebehavioreventref": "signal",
         "inputdataitem": "",
         "callacitivity": "",
-        "activiti$collection": "",
+        "activiti$elementvariable": "",
         "behavior": "all",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "outputdataitem": ""
+        "outputdataitem": "",
+        "onebehavioreventref:": "signal",
+        "auditing": "",
+        "loopcardinality": "",
+        "activiti$collection": "",
+        "assignments": "",
+        "loopmaximum": "",
+        "loopcondition": "",
+        "testbefore": "",
+        "monitoring": "",
+        "processid": "",
+        "loopdatainputref": "",
+        "completionquantity": 1,
+        "startquantity": 1
       },
       "stencil": {
         "id": "ScriptTask"
@@ -593,12 +597,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 343.046296160026,
-          "y": 920
+          "x": 449.3250063989167,
+          "y": 885.4752096027777
         },
         "upperLeft": {
-          "x": 243.04629616002597,
-          "y": 840
+          "x": 296.29629542416615,
+          "y": 803.4781839138999
         }
       },
       "dockers": []
@@ -612,12 +616,12 @@
         "defaultflow": "None",
         "conditionalflow": "Conditional",
         "conditionsequenceflow": "${isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list)}",
-        "bordercolor": "red",
-        "conditiontype": "None",
-        "isimmediate": "",
+        "bordercolor": "#000",
         "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
         "showdiamondmarker": "",
-        "auditing": ""
+        "isimmediate": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -630,12 +634,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 242.27063077433658,
-          "y": 879.3305670154704
+          "x": 296.1834204137793,
+          "y": 844.4766967583388
         },
         "upperLeft": {
           "x": 65.5,
-          "y": 792.27734375
+          "y": 753.8768706402872
         }
       },
       "dockers": [
@@ -645,11 +649,11 @@
         },
         {
           "x": 65.5,
-          "y": 877
+          "y": 844.4766967583388
         },
         {
-          "x": 50,
-          "y": 40
+          "x": 76.51435548737527,
+          "y": 40.99851284443889
         }
       ],
       "target": {
@@ -666,11 +670,11 @@
         "conditionalflow": "None",
         "conditionsequenceflow": "",
         "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
         "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
         "showdiamondmarker": false,
-        "auditing": ""
+        "isimmediate": ""
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -683,18 +687,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 293.046296160026,
-          "y": 974.375
+          "x": 561.0920252048854,
+          "y": 844.4766967583388
         },
         "upperLeft": {
-          "x": 293.046296160026,
-          "y": 920.171875
+          "x": 449.8399895398302,
+          "y": 844.4766967583388
         }
       },
       "dockers": [
         {
-          "x": 50,
-          "y": 40
+          "x": 76.51435548737527,
+          "y": 40.99851284443889
         },
         {
           "x": 14,
@@ -706,13 +710,802 @@
       }
     },
     {
+      "resourceId": "oryx_9D6C4E28-544F-4A3E-B3B7-F4115C6A5DC4",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 296.0603735387793,
+          "y": 733.3655859742765
+        },
+        "upperLeft": {
+          "x": 85.23816568197134,
+          "y": 733.3655859742765
+        }
+      },
+      "dockers": [
+        {
+          "x": 76.51435548737528,
+          "y": 40.998512844438885
+        },
+        {
+          "x": 20,
+          "y": 20
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
+      }
+    },
+    {
+      "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "bgcolor": "teal",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true",
+        "bordercolor": "#000",
+        "auditing": "",
+        "monitoring": ""
+      },
+      "stencil": {
+        "id": "ExclusiveGateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B"
+        },
+        {
+          "resourceId": "oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 595.5555539203116,
+          "y": 518.5667387133806
+        },
+        "upperLeft": {
+          "x": 555.5555539203116,
+          "y": 478.56673871338063
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrer > 0",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${fahrerliste.size()>0}",
+        "bordercolor": "#000000",
+        "conditiontype": "None",
+        "auditing": "",
+        "isimmediate": "",
+        "monitoring": "",
+        "showdiamondmarker": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 576.0555539203117,
+          "y": 623.2504170489109
+        },
+        "upperLeft": {
+          "x": 449.59907536651315,
+          "y": 519.4704384533072
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.499999999999996,
+          "y": 20.499999999999968
+        },
+        {
+          "x": 576.0555539203117,
+          "y": 623.2504170489109
+        },
+        {
+          "x": 111.56926617773085,
+          "y": 47.14828977110472
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515"
+      }
+    },
+    {
+      "resourceId": "oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrer = 0",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${fahrerliste.size()==0}",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 576.0555539203117,
+          "y": 477.6007145227187
+        },
+        "upperLeft": {
+          "x": 449.796757059725,
+          "y": 365.8258396121989
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.499999999999996,
+          "y": 3.671874999999994
+        },
+        {
+          "x": 576.0555539203117,
+          "y": 365.8258396121989
+        },
+        {
+          "x": 151.49842386500302,
+          "y": 40.99851284443882
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
+      }
+    },
+    {
+      "resourceId": "oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 372.8106509115414,
+          "y": 692.3432281975624
+        },
+        "upperLeft": {
+          "x": 372.8106509115414,
+          "y": 658.6045150372574
+        }
+      },
+      "dockers": [
+        {
+          "x": 76.51435548737527,
+          "y": 40.9985128444389
+        },
+        {
+          "x": 76.51435548737528,
+          "y": 0.9761550677247353
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE"
+      }
+    },
+    {
+      "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrer selektieren",
+        "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "rgb(175,255,163)",
+        "looptype": "None",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "auswahl_fahrer",
+        "el$activiti$variablesmapping": {
+          "totalCount": 2,
+          "items": [
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell",
+              "formvar": "kfz_modell"
+            },
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.kennzeichen",
+              "formvar": "kfz_kennzeichen"
+            }
+          ]
+        },
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "${initiator}",
+        "tasktype": "User",
+        "processid": "",
+        "testbefore": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "inputdataitem": "",
+        "assignments": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "loopcondition": "",
+        "loopdatainputref": "",
+        "loopcardinality": "",
+        "loopmaximum": "",
+        "activiti$collection": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "properties": "",
+        "callacitivity": "",
+        "outputdataitem": "",
+        "completionquantity": 1,
+        "startquantity": 1,
+        "monitoring": "",
+        "auditing": ""
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 449.3250063989167,
+          "y": 658.099152966684
+        },
+        "upperLeft": {
+          "x": 296.29629542416615,
+          "y": 576.1021272778062
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_DF33C0A7-4AA5-4D9E-A165-C9613C3CB53C",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": "",
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 372.8106509115414,
+          "y": 457.1222460184893
+        },
+        "upperLeft": {
+          "x": 372.8106509115414,
+          "y": 407.2703323070902
+        }
+      },
+      "dockers": [
+        {
+          "x": 76.5143554873753,
+          "y": 40.99851284443882
+        },
+        {
+          "x": 76.51435548737527,
+          "y": 40.9985128444389
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
+      }
+    },
+    {
+      "resourceId": "oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 555.5482192632394,
+          "y": 498.5667387133806
+        },
+        "upperLeft": {
+          "x": 449.8399895398302,
+          "y": 498.5667387133806
+        }
+      },
+      "dockers": [
+        {
+          "x": 76.51435548737527,
+          "y": 40.99851284443886
+        },
+        {
+          "x": 20,
+          "y": 19.99999999999997
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061"
+      }
+    },
+    {
+      "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrzeugkriterien",
+        "documentation": "",
+        "bordercolor": "#000000",
+        "bgcolor": "rgb(150,174,255)",
+        "looptype": "None",
+        "multiinstance_sequential": "Yes",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "",
+        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "attr$activiti$formkey": "Form1",
+        "el$activiti$variablesmapping": {
+          "totalCount": 1,
+          "items": [
+            {
+              "processvar": "${isListEmpty(Freie_Fahrzeuge)}",
+              "formvar": "fahrzeugliste_alert"
+            }
+          ]
+        },
+        "attr$activiti$candidategroups": "",
+        "attr$activiti$assignee": "${initiator}",
+        "tasktype": "User",
+        "processid": "",
+        "testbefore": "",
+        "nonebehavioreventref": "signal",
+        "activiti$elementvariable": "",
+        "inputdataitem": "",
+        "assignments": "",
+        "complexbehaviordefinition": "",
+        "completioncondition": "",
+        "onebehavioreventref:": "signal",
+        "loopcondition": "",
+        "loopdatainputref": "",
+        "loopcardinality": "",
+        "loopmaximum": "",
+        "activiti$collection": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "properties": "",
+        "callacitivity": "",
+        "outputdataitem": "",
+        "completionquantity": 1,
+        "startquantity": 1,
+        "monitoring": "",
+        "auditing": ""
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4E380E89-535E-419E-8F54-10BA87152643"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 204.38653367422555,
+          "y": 177.5540159208339
+        },
+        "upperLeft": {
+          "x": 75,
+          "y": 100.26655346506651
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_2DF24FBA-C6AF-4B42-887B-810BE2BADAEC",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "auditing": "",
+        "isimmediate": "",
+        "conditiontype": "None",
+        "showdiamondmarker": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 74.07856483911583,
+          "y": 134.20804406934676
+        },
+        "upperLeft": {
+          "x": 45.46527293502853,
+          "y": 132.15748863787456
+        }
+      },
+      "dockers": [
+        {
+          "x": 15.864197288121304,
+          "y": 15
+        },
+        {
+          "x": 64.69326683711277,
+          "y": 38.6437312278837
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+      }
+    },
+    {
+      "resourceId": "oryx_4E380E89-535E-419E-8F54-10BA87152643",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": "",
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 295.3190127679294,
+          "y": 138.7388481695526
+        },
+        "upperLeft": {
+          "x": 204.43629803915442,
+          "y": 138.4981949847887
+        }
+      },
+      "dockers": [
+        {
+          "x": 64.69326683711277,
+          "y": 38.6437312278837
+        },
+        {
+          "x": 76.51435548737525,
+          "y": 40.99851284443886
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE"
+      }
+    },
+    {
+      "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "bgcolor": "teal",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true",
+        "bordercolor": "#000000",
+        "auditing": "",
+        "monitoring": ""
+      },
+      "stencil": {
+        "id": "ExclusiveGateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86"
+        },
+        {
+          "resourceId": "oryx_8FB75CC2-03E1-435D-8A52-59D65246D643"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 595.5555539203116,
+          "y": 158.29300074551577
+        },
+        "upperLeft": {
+          "x": 555.5555539203116,
+          "y": 118.29300074551576
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrzeuge > 0",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${Freie_Fahrzeuge.size >0}",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 576.0555539203117,
+          "y": 244.70221594855312
+        },
+        "upperLeft": {
+          "x": 450.0274895398303,
+          "y": 158.82356285231157
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.499999999999996,
+          "y": 20.50000000000001
+        },
+        {
+          "x": 576.0555539203117,
+          "y": 244.70221594855312
+        },
+        {
+          "x": 76.5143554873753,
+          "y": 40.998512844438885
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85"
+      }
+    },
+    {
+      "resourceId": "oryx_8FB75CC2-03E1-435D-8A52-59D65246D643",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrzeuge = 0",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${Freie_Fahrzeuge.size == 0}",
+        "bordercolor": "#000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 575.5555539203117,
+          "y": 117.83718819892101
+        },
+        "upperLeft": {
+          "x": 139.6932668371128,
+          "y": 37
+        }
+      },
+      "dockers": [
+        {
+          "x": 20,
+          "y": 6.000000000000003
+        },
+        {
+          "x": 575.5555539203117,
+          "y": 37
+        },
+        {
+          "x": 139.6932668371128,
+          "y": 37
+        },
+        {
+          "x": 64.69326683711277,
+          "y": 38.6437312278837
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
+      }
+    },
+    {
+      "resourceId": "oryx_AD835652-1EB5-4ED6-A4DD-8650D8F3B583",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": "",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": "",
+        "bordercolor": "#000000",
+        "monitoring": "",
+        "conditiontype": "None",
+        "auditing": "",
+        "showdiamondmarker": false,
+        "isimmediate": ""
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 555.5482192632394,
+          "y": 138.29300074551577
+        },
+        "upperLeft": {
+          "x": 449.8399895398302,
+          "y": 138.29300074551577
+        }
+      },
+      "dockers": [
+        {
+          "x": 76.51435548737525,
+          "y": 40.99851284443886
+        },
+        {
+          "x": 20,
+          "y": 20.000000000000007
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528"
+      }
+    },
+    {
       "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE",
       "properties": {
         "overrideid": "",
-        "name": "Anzeige gemachter Selektionen",
+        "name": "Zusammenfassung",
         "documentation": "",
         "bordercolor": "#000000",
-        "bgcolor": "blue",
+        "bgcolor": "red",
         "looptype": "None",
         "multiinstance_sequential": "Yes",
         "multiinstance_cardinality": "",
@@ -746,29 +1539,29 @@
         "attr$activiti$candidategroups": "",
         "attr$activiti$assignee": "${initiator}",
         "tasktype": "User",
-        "outputdataitem": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopcondition": "",
         "processid": "",
-        "callacitivity": "",
-        "properties": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "activiti$collection": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "assignments": "",
         "testbefore": "",
         "nonebehavioreventref": "signal",
         "activiti$elementvariable": "",
         "inputdataitem": "",
-        "loopdataoutputref": "",
+        "assignments": "",
         "complexbehaviordefinition": "",
         "completioncondition": "",
-        "onebehavioreventref:": "signal"
+        "onebehavioreventref:": "signal",
+        "loopcondition": "",
+        "loopdatainputref": "",
+        "loopcardinality": "",
+        "loopmaximum": "",
+        "activiti$collection": "",
+        "loopdataoutputref": "",
+        "behavior": "all",
+        "properties": "",
+        "callacitivity": "",
+        "outputdataitem": "",
+        "completionquantity": 1,
+        "startquantity": 1,
+        "monitoring": "",
+        "auditing": ""
       },
       "stencil": {
         "id": "UserTask"
@@ -781,810 +1574,21 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 402.0925923200519,
-          "y": 814
+          "x": 449.3250063989167,
+          "y": 774.3640988187154
         },
         "upperLeft": {
-          "x": 190.0925923200519,
-          "y": 730
+          "x": 296.29629542416615,
+          "y": 692.3670731298376
         }
       },
       "dockers": []
-    },
-    {
-      "resourceId": "oryx_9D6C4E28-544F-4A3E-B3B7-F4115C6A5DC4",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 189.47605598627814,
-          "y": 772
-        },
-        "upperLeft": {
-          "x": 84.95681421375424,
-          "y": 772
-        }
-      },
-      "dockers": [
-        {
-          "x": 106,
-          "y": 42
-        },
-        {
-          "x": 20,
-          "y": 20
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
-      }
-    },
-    {
-      "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "bgcolor": "green",
-        "processid": "",
-        "gatewaytype": "XOR",
-        "xortype": "Data",
-        "markervisible": "true",
-        "bordercolor": "#000",
-        "auditing": "",
-        "monitoring": ""
-      },
-      "stencil": {
-        "id": "ExclusiveGateway"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B"
-        },
-        {
-          "resourceId": "oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 456,
-          "y": 541.48148006427
-        },
-        "upperLeft": {
-          "x": 416,
-          "y": 501.48148006427004
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_D0B90388-3195-43DF-8A68-1D583F7CDCC9",
-      "properties": {
-        "overrideid": "",
-        "name": "Liste ausgeben",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${fahrerliste.size()>0}",
-        "bordercolor": "#000000",
-        "auditing": "",
-        "showdiamondmarker": false,
-        "conditiontype": "None",
-        "monitoring": "",
-        "isimmediate": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 436.5,
-          "y": 661
-        },
-        "upperLeft": {
-          "x": 343.3232061249798,
-          "y": 541.9879183367332
-        }
-      },
-      "dockers": [
-        {
-          "x": 20.5,
-          "y": 20.5
-        },
-        {
-          "x": 436.5,
-          "y": 661
-        },
-        {
-          "x": 72.90740767994811,
-          "y": 46
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515"
-      }
-    },
-    {
-      "resourceId": "oryx_AF252700-95A3-4D67-857E-3AB42CA72A3B",
-      "properties": {
-        "overrideid": "",
-        "name": "Nichts gefunden",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${fahrerliste.size()==0}",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 436.5,
-          "y": 501.1913867585181
-        },
-        "upperLeft": {
-          "x": 343.7842157212758,
-          "y": 410.3703692802077
-        }
-      },
-      "dockers": [
-        {
-          "x": 20.5,
-          "y": 3.671875
-        },
-        {
-          "x": 436.5,
-          "y": 410.3703692802077
-        },
-        {
-          "x": 99,
-          "y": 40
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
-      }
-    },
-    {
-      "resourceId": "oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 296.0287424475816,
-          "y": 729.4070523505164
-        },
-        "upperLeft": {
-          "x": 294.65709330125947,
-          "y": 695.1866976494836
-        }
-      },
-      "dockers": [
-        {
-          "x": 50,
-          "y": 40
-        },
-        {
-          "x": 106,
-          "y": 1
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_3267D2FD-2536-4039-8079-568CBF4EB2BE"
-      }
-    },
-    {
-      "resourceId": "oryx_D009FD96-9947-46CE-9B10-22F17A265515",
-      "properties": {
-        "overrideid": "",
-        "name": "Fahrer wählen",
-        "documentation": "",
-        "bordercolor": "#000000",
-        "bgcolor": "green",
-        "looptype": "None",
-        "multiinstance_sequential": "Yes",
-        "multiinstance_cardinality": "",
-        "multiinstance_collection": "",
-        "multiinstance_variable": "",
-        "multiinstance_condition": "",
-        "isforcompensation": "",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "auswahl_fahrer",
-        "el$activiti$variablesmapping": {
-          "totalCount": 2,
-          "items": [
-            {
-              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.modell",
-              "formvar": "kfz_modell"
-            },
-            {
-              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.kennzeichen",
-              "formvar": "kfz_kennzeichen"
-            }
-          ]
-        },
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User",
-        "outputdataitem": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopcondition": "",
-        "processid": "",
-        "callacitivity": "",
-        "properties": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "activiti$collection": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "assignments": "",
-        "testbefore": "",
-        "nonebehavioreventref": "signal",
-        "activiti$elementvariable": "",
-        "inputdataitem": "",
-        "loopdataoutputref": "",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal"
-      },
-      "stencil": {
-        "id": "UserTask"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_57BA91FD-56C1-495E-AFA9-E91594522DF3"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 343.046296160026,
-          "y": 695
-        },
-        "upperLeft": {
-          "x": 243.04629616002597,
-          "y": 615
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_DF33C0A7-4AA5-4D9E-A165-C9613C3CB53C",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": "",
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 293.046296160026,
-          "y": 480.5509246262476
-        },
-        "upperLeft": {
-          "x": 293.046296160026,
-          "y": 451.30092471823014
-        }
-      },
-      "dockers": [
-        {
-          "x": 50,
-          "y": 40
-        },
-        {
-          "x": 50.00000000000004,
-          "y": 40
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
-      }
-    },
-    {
-      "resourceId": "oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 416.01396120875347,
-          "y": 521.48148006427
-        },
-        "upperLeft": {
-          "x": 343.1866318550171,
-          "y": 521.48148006427
-        }
-      },
-      "dockers": [
-        {
-          "x": 50.00000000000004,
-          "y": 39.99999999999997
-        },
-        {
-          "x": 20,
-          "y": 20
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_92334EB3-4116-4979-9AE6-996FBFDC3061"
-      }
-    },
-    {
-      "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8",
-      "properties": {
-        "overrideid": "",
-        "name": "FahrzeugSuchmaske",
-        "documentation": "",
-        "bordercolor": "#000000",
-        "bgcolor": "yellow",
-        "looptype": "None",
-        "multiinstance_sequential": "Yes",
-        "multiinstance_cardinality": "",
-        "multiinstance_collection": "",
-        "multiinstance_variable": "",
-        "multiinstance_condition": "",
-        "isforcompensation": "",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "Form1",
-        "el$activiti$variablesmapping": {
-          "totalCount": 1,
-          "items": [
-            {
-              "processvar": "${isListEmpty(Freie_Fahrzeuge)}",
-              "formvar": "fahrzeugliste_alert"
-            }
-          ]
-        },
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
-        "tasktype": "User",
-        "outputdataitem": "",
-        "auditing": "",
-        "monitoring": "",
-        "startquantity": 1,
-        "loopcondition": "",
-        "processid": "",
-        "callacitivity": "",
-        "properties": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "activiti$collection": "",
-        "loopmaximum": "",
-        "loopcardinality": "",
-        "loopdatainputref": "",
-        "assignments": "",
-        "testbefore": "",
-        "nonebehavioreventref": "signal",
-        "activiti$elementvariable": "",
-        "inputdataitem": "",
-        "loopdataoutputref": "",
-        "complexbehaviordefinition": "",
-        "completioncondition": "",
-        "onebehavioreventref:": "signal"
-      },
-      "stencil": {
-        "id": "UserTask"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_4E380E89-535E-419E-8F54-10BA87152643"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 175,
-          "y": 185
-        },
-        "upperLeft": {
-          "x": 75,
-          "y": 105
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_2DF24FBA-C6AF-4B42-887B-810BE2BADAEC",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": "",
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 74.2734375,
-          "y": 145
-        },
-        "upperLeft": {
-          "x": 45.84375,
-          "y": 145
-        }
-      },
-      "dockers": [
-        {
-          "x": 15,
-          "y": 15
-        },
-        {
-          "x": 50,
-          "y": 40
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
-      }
-    },
-    {
-      "resourceId": "oryx_4E380E89-535E-419E-8F54-10BA87152643",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": "",
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 243.47041367626844,
-          "y": 145
-        },
-        "upperLeft": {
-          "x": 175.88874417250773,
-          "y": 145
-        }
-      },
-      "dockers": [
-        {
-          "x": 50,
-          "y": 40
-        },
-        {
-          "x": 49,
-          "y": 42
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_2F0BE906-8C68-470E-840E-DB7FBF1ED4AE"
-      }
-    },
-    {
-      "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "bgcolor": "yellow",
-        "processid": "",
-        "gatewaytype": "XOR",
-        "xortype": "Data",
-        "markervisible": "true",
-        "bordercolor": "#000000",
-        "auditing": "",
-        "monitoring": ""
-      },
-      "stencil": {
-        "id": "ExclusiveGateway"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86"
-        },
-        {
-          "resourceId": "oryx_8FB75CC2-03E1-435D-8A52-59D65246D643"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 456,
-          "y": 165
-        },
-        "upperLeft": {
-          "x": 416,
-          "y": 125
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_C9A5FC29-4BCE-4EA7-9C9C-612559A75A86",
-      "properties": {
-        "overrideid": "",
-        "name": "Liste ausgeben",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${Freie_Fahrzeuge.size >0}",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 436.5,
-          "y": 268.5
-        },
-        "upperLeft": {
-          "x": 343.3585068550171,
-          "y": 165.71875
-        }
-      },
-      "dockers": [
-        {
-          "x": 20.5,
-          "y": 20.5
-        },
-        {
-          "x": 436.5,
-          "y": 268.5
-        },
-        {
-          "x": 49.5,
-          "y": 58.5
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_EC148F7F-CAB2-40C8-9A95-D4D7B878FC85"
-      }
-    },
-    {
-      "resourceId": "oryx_8FB75CC2-03E1-435D-8A52-59D65246D643",
-      "properties": {
-        "overrideid": "",
-        "name": "Nichts gefunden",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${Freie_Fahrzeuge.size == 0}",
-        "bordercolor": "#000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 436,
-          "y": 124.859375
-        },
-        "upperLeft": {
-          "x": 125,
-          "y": 37
-        }
-      },
-      "dockers": [
-        {
-          "x": 20,
-          "y": 6
-        },
-        {
-          "x": 436,
-          "y": 37
-        },
-        {
-          "x": 125,
-          "y": 37
-        },
-        {
-          "x": 50,
-          "y": 40
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_20B4644C-ECA7-42E0-AC1F-82357B2404D8"
-      }
-    },
-    {
-      "resourceId": "oryx_AD835652-1EB5-4ED6-A4DD-8650D8F3B583",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "defaultflow": "None",
-        "conditionalflow": "None",
-        "conditionsequenceflow": "",
-        "bordercolor": "#000000",
-        "conditiontype": "None",
-        "isimmediate": "",
-        "monitoring": "",
-        "showdiamondmarker": false,
-        "auditing": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 416.01396120875347,
-          "y": 145
-        },
-        "upperLeft": {
-          "x": 342.06980604376724,
-          "y": 145
-        }
-      },
-      "dockers": [
-        {
-          "x": 49,
-          "y": 42
-        },
-        {
-          "x": 20,
-          "y": 20
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_5B5F91F2-4B1C-40FF-AB75-79E658C4F528"
-      }
     }
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 2050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,
@@ -1596,5 +1600,5 @@
     "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
   },
   "ssextensions": [],
-  "zoomLevel": 0.81
+  "zoomLevel": 0.8019000000000002
 }

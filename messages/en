@@ -179,7 +179,23 @@
         "msgstr": "Birthdate"
     },
     {
+        "msgid": "data.fahrer.fieldset.set1",
+        "msgstr": "Given/Surnname"
+    },
+    {
         "msgid": "fahrer_list.name",
         "msgstr": "Driver name"
+    },
+    {
+        "msgid": "data.fahrer",
+        "msgstr": "Driver"
+    },
+    {
+        "msgid": "data.fahrzeuge.hersteller",
+        "msgstr": "Manufacturer"
+    },
+    {
+        "msgid": "data.fahrzeuge.modell",
+        "msgstr": "Model"
     }
 ]

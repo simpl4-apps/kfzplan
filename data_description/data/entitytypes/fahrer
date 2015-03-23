@@ -4,6 +4,7 @@
 {
     "enabled": true,
     "index": 1,
+    "state_fields": true,
     "default_fields": true,
     "pack": "data",
     "team_security": true,
@@ -20,32 +21,43 @@
     "fields": {
         "telefonnummer": {
             "enabled": true,
+            "index": 0,
             "name": "telefonnummer",
+            "edittype": "text",
             "datatype": "string"
         },
         "geburtsdatum": {
             "enabled": true,
+            "index": 1,
             "name": "geburtsdatum",
+            "edittype": "text",
             "datatype": "date"
         },
         "vorname": {
             "enabled": true,
+            "index": 2,
             "name": "vorname",
+            "edittype": "text",
             "datatype": "string"
         },
         "email": {
             "enabled": true,
+            "index": 3,
             "name": "email",
+            "edittype": "text",
             "datatype": "string"
         },
         "name": {
             "enabled": true,
+            "index": 4,
             "name": "name",
+            "edittype": "text",
             "datatype": "string"
         },
         "geschlecht": {
             "formatter": "select",
             "enabled": true,
+            "index": 5,
             "name": "geschlecht",
             "edittype": "select",
             "datatype": "string",

@@ -4,23 +4,35 @@
 {
     "fields": [
         {
-            "name": "email",
-            "enabled": true
+            "enabled": true,
+            "name": "email"
         },
         {
-            "name": "name",
-            "enabled": true
+            "enabled": true,
+            "name": "name"
         },
         {
-            "name": "geschlecht",
-            "enabled": true
+            "enabled": true,
+            "name": "geschlecht"
         },
         {
-            "name": "telefonnummer",
-            "enabled": true
+            "enabled": true,
+            "name": "telefonnummer"
         },
         {
             "name": "_team_list"
+        },
+        {
+            "enabled": true,
+            "name": "geburtsdatum",
+            "tab": "tab1",
+            "displayname": "Geburtsdatum"
+        },
+        {
+            "enabled": true,
+            "name": "vorname",
+            "tab": "tab1",
+            "displayname": "Vorname"
         }
     ]
 }
