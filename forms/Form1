@@ -21,11 +21,11 @@
       "properties": {
         "xf_id": "",
         "xf_place": "south",
+        "xf_required": "",
+        "xf_accesskey": "",
         "xf_type": "",
         "xf_navindex": "",
         "xf_readonly": "",
-        "xf_required": "",
-        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -38,7 +38,7 @@
           "properties": {
             "xf_id": "button1",
             "xf_action": "execute",
-            "xf_label": "Task starten",
+            "xf_label": "Ausführen",
             "xf_iconname": ""
           },
           "stencil": {
@@ -120,7 +120,7 @@
             "xf_required": "",
             "xf_filtercheck": null,
             "xf_constraint_text": null,
-            "xf_constraint_date": null,
+            "xf_constraint_date": "{\"Future\":[true],\"Past\":[false],\"DateMin\":[false,1437861600000],\"DateMax\":[false,1437861600000],\"NotBlank\":[false],\"NotNull\":[true]}",
             "xf_constraint_boolean": null,
             "xf_constraint_decimal": null,
             "xf_constraint_number": null,
@@ -205,7 +205,7 @@
             "xf_required": "",
             "xf_filtercheck": null,
             "xf_constraint_text": null,
-            "xf_constraint_date": null,
+            "xf_constraint_date": "{\"Future\":[true],\"Past\":[false],\"DateMin\":[false,1437861600000],\"DateMax\":[false,1437861600000],\"NotBlank\":[false],\"NotNull\":[true]}",
             "xf_constraint_boolean": null,
             "xf_constraint_decimal": null,
             "xf_constraint_number": null,
@@ -362,6 +362,8 @@
       "properties": {
         "xf_id": "fahrzeugliste_alert",
         "xf_message": "Kein Fahrzeug gefunden",
+        "xf_message_de": null,
+        "xf_message_en": null,
         "xf_exclude": "!fahrzeugliste_alert"
       },
       "stencil": {
