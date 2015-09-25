@@ -35,7 +35,7 @@
         "overrideid": "",
         "name": "Start",
         "documentation": "",
-        "attr$activiti$formkey": "",
+        "formkey": "",
         "bgcolor": "green",
         "bordercolor": "#000000",
         "processid": "",
@@ -129,10 +129,10 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "attr$activiti$class": "org.ms123.common.workflow.TaskFilterExecutor",
-        "el$activiti$filtername": "filter/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
-        "el$activiti$filtervarname": "",
-        "el$activiti$variablesmapping": {
+        "class": "org.ms123.common.workflow.TaskFilterExecutor",
+        "filtername": "filter/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
+        "filtervarname": "",
+        "variablesmapping": {
           "totalCount": 1,
           "items": [
             {
@@ -141,7 +141,7 @@
             }
           ]
         },
-        "el$activiti$listname": "Fahrzeuge",
+        "listname": "Fahrzeuge",
         "tasktype": "Filter",
         "complexbehaviordefinition": "",
         "processid": "",
@@ -442,9 +442,9 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "fganfr_fahrzeug_anzeigen",
-        "el$activiti$variablesmapping": {
+        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "formkey": "fganfr_fahrzeug_anzeigen",
+        "variablesmapping": {
           "totalCount": 6,
           "items": [
             {
@@ -473,8 +473,8 @@
             }
           ]
         },
-        "attr$activiti$candidategroups": "kfzplan.entscheider",
-        "attr$activiti$assignee": "",
+        "candidategroups": "kfzplan.entscheider",
+        "assignee": "",
         "tasktype": "User",
         "complexbehaviordefinition": "",
         "processid": "",
@@ -536,14 +536,14 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "fganfr_mitteilung_entscheidung",
-        "el$activiti$variablesmapping": {
+        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "formkey": "fganfr_mitteilung_entscheidung",
+        "variablesmapping": {
           "totalCount": 0,
           "items": []
         },
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
+        "candidategroups": "",
+        "assignee": "${initiator}",
         "tasktype": "User",
         "complexbehaviordefinition": "",
         "processid": "",
@@ -703,11 +703,11 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "fganfr_fahrzeug_suchen",
-        "el$activiti$variablesmapping": "",
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
+        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "formkey": "fganfr_fahrzeug_suchen",
+        "variablesmapping": "",
+        "candidategroups": "",
+        "assignee": "${initiator}",
         "tasktype": "User",
         "complexbehaviordefinition": "",
         "processid": "",
@@ -769,11 +769,11 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "fganfr_fahrzeug_waehlen",
-        "el$activiti$variablesmapping": "",
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
+        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "formkey": "fganfr_fahrzeug_waehlen",
+        "variablesmapping": "",
+        "candidategroups": "",
+        "assignee": "${initiator}",
         "tasktype": "User",
         "complexbehaviordefinition": "",
         "processid": "",

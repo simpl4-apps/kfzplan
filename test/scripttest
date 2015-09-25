@@ -24,7 +24,7 @@
       "properties": {
         "name": "",
         "documentation": "",
-        "attr$activiti$formkey": "",
+        "formkey": "",
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
         "processid": "",
@@ -67,8 +67,8 @@
         "isforcompensation": "false",
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
-        "attr$activiti$class": "org.ms123.common.workflow.TaskScriptExecutor",
-        "el$activiti$script": "gvars.resultlist = executeNamedFilter(\"fahrerfilter\",[nameinput:\"sat\"])",
+        "class": "org.ms123.common.workflow.TaskScriptExecutor",
+        "script": "gvars.resultlist = executeNamedFilter(\"fahrerfilter\",[nameinput:\"sat\"])",
         "tasktype": "Script"
       },
       "stencil": {
@@ -107,9 +107,9 @@
         "isforcompensation": "false",
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
-        "attr$activiti$formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
-        "attr$activiti$formkey": "ergebnis",
-        "el$activiti$variablesmapping": {
+        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
+        "formkey": "ergebnis",
+        "variablesmapping": {
           "totalCount": 1,
           "items": [
             {
@@ -118,8 +118,8 @@
             }
           ]
         },
-        "attr$activiti$candidategroups": "",
-        "attr$activiti$assignee": "${initiator}",
+        "candidategroups": "",
+        "assignee": "${initiator}",
         "tasktype": "User"
       },
       "stencil": {
