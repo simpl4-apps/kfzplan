@@ -17,7 +17,6 @@
     "orientation": "horizontal",
     "startablegroups": null,
     "startableusers": "admin,guest",
-    "camelroutes": null,
     "initialparameter": null,
     "namespaces": "",
     "auditing": "",
