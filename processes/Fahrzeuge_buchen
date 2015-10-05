@@ -79,7 +79,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "class": "org.ms123.common.workflow.TaskFilterExecutor",
         "filtername": "filter/Freie_Fahrzeuge_II,Freie_Fahrzeuge_II",
         "filtervarname": "",
         "variablesmapping": {
@@ -161,7 +160,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "auswahl_freies_fahrzeug",
         "variablesmapping": "",
         "candidategroups": "",
@@ -308,7 +306,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "fahrer_suchen",
         "variablesmapping": {
           "totalCount": 3,
@@ -390,7 +387,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "class": "org.ms123.common.workflow.TaskFilterExecutor",
         "filtername": "filter/Fahrerauswahl,Fahrerauswahl",
         "filtervarname": "",
         "variablesmapping": {
@@ -558,7 +554,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "class": "org.ms123.common.workflow.TaskScriptExecutor",
         "script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", auswahl_fahrer.fahrer.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", auswahl_freies_fahrzeug.Freie_Fahrzeuge.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(Form1.input_date_from);\nneueBuchung.bisdatum=new Date(Form1.input_date_to);\n",
         "tasktype": "Script",
         "properties": "",
@@ -966,7 +961,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "auswahl_fahrer",
         "variablesmapping": {
           "totalCount": 2,
@@ -1142,7 +1136,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "Form1",
         "variablesmapping": {
           "totalCount": 1,
@@ -1512,7 +1505,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "uebersicht_selectionen",
         "variablesmapping": {
           "totalCount": 4,

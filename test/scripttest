@@ -67,7 +67,6 @@
         "isforcompensation": "false",
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
-        "class": "org.ms123.common.workflow.TaskScriptExecutor",
         "script": "gvars.resultlist = executeNamedFilter(\"fahrerfilter\",[nameinput:\"sat\"])",
         "tasktype": "Script"
       },
@@ -107,7 +106,6 @@
         "isforcompensation": "false",
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "ergebnis",
         "variablesmapping": {
           "totalCount": 1,

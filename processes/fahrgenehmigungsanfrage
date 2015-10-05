@@ -128,7 +128,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "class": "org.ms123.common.workflow.TaskFilterExecutor",
         "filtername": "filter/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
         "filtervarname": "",
         "variablesmapping": {
@@ -441,7 +440,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "fganfr_fahrzeug_anzeigen",
         "variablesmapping": {
           "totalCount": 6,
@@ -535,7 +533,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "fganfr_mitteilung_entscheidung",
         "variablesmapping": {
           "totalCount": 0,
@@ -702,7 +699,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "fganfr_fahrzeug_suchen",
         "variablesmapping": "",
         "candidategroups": "",
@@ -768,7 +764,6 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formhandlerclass": "org.ms123.common.workflow.UserTaskFormHandler",
         "formkey": "fganfr_fahrzeug_waehlen",
         "variablesmapping": "",
         "candidategroups": "",
