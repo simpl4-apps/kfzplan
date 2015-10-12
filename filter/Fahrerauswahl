@@ -16,13 +16,7 @@
       {
         "label": "name",
         "connector": null,
-        "field": {
-          "id": "fahrer.name",
-          "title": "name",
-          "module": "",
-          "moduleTitle": "",
-          "children": []
-        },
+        "field": "fahrer.name",
         "op": "cn",
         "data": "",
         "children": []
@@ -85,6 +79,12 @@
       "selector": "buchungsvoraussetzungen",
       "module": "buchungsvoraussetzungen",
       "path": "fahrer$buchungsvoraussetzungen_list"
+    },
+    {
+      "display": true,
+      "id": "id",
+      "module": "fahrer",
+      "path": "fahrer"
     }
   ]
 }

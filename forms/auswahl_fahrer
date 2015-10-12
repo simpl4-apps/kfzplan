@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_684C4EEC-246A-4DE0-A012-547DCBB6D11C",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "auswahl_fahrer",
+    "xf_name": "auswahl_fahrer",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,

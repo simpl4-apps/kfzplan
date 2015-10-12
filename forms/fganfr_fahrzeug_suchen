@@ -4,10 +4,11 @@
 {
   "resourceId": "oryx_91D94FD2-F131-4C45-8C3F-BEB7672A2838",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "fganfr_fahrzeug_suchen",
+    "xf_name": "fganfr_fahrzeug_suchen",
     "xf_version": "",
-    "xf_default_buttons": true
+    "xf_default_buttons": true,
+    "xf_postprocess": null
   },
   "stencil": {
     "id": "XForm"
@@ -17,12 +18,20 @@
       "resourceId": "oryx_0A99D5D8-CB1C-43DA-8C8D-29B73F674705",
       "properties": {
         "xf_id": "input_kennzeichen",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -70,8 +79,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 1050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,
@@ -79,8 +88,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }

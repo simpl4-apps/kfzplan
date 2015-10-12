@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_47892306-64E5-48A6-8F5A-2DA3141AA1A1",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "fganfr_mitteilung_entscheidung",
+    "xf_name": "fganfr_mitteilung_entscheidung",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null
@@ -19,6 +19,8 @@
       "properties": {
         "xf_id": "entscheidung_alert1",
         "xf_message": "Sehr geehrter Anwender  \"${initiator}\" ihr Antrag wurde <br />\n  <center><b>\n  ${fganfr_fahrzeug_anzeigen.antrag_annehmen_input ? \"genehmigt.\" : \"nicht genehmigt.\"}\n  </b></center> \n\n  ",
+        "xf_message_de": null,
+        "xf_message_en": null,
         "xf_exclude": "false"
       },
       "stencil": {
@@ -41,8 +43,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 2050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,

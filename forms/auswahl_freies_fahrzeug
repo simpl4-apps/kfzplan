@@ -4,10 +4,11 @@
 {
   "resourceId": "oryx_5BDB88DD-D350-4D1A-9C7E-9D2156920C55",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "auswahl_freies_fahrzeug",
+    "xf_name": "auswahl_freies_fahrzeug",
     "xf_version": "",
     "xf_default_buttons": true,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -19,8 +20,6 @@
       "resourceId": "oryx_FA87E5DC-8D0C-4605-AD56-334C9D20DFDF",
       "properties": {
         "xf_id": "Freie_Fahrzeuge",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_multiselection": "",
         "xf_columns": {
           "totalCount": 3,
@@ -37,7 +36,10 @@
           ]
         },
         "xf_inputlistname": "Freie_Fahrzeuge",
-        "xf_required": "true"
+        "xf_filter": null,
+        "xf_required": "true",
+        "xf_navindex": "",
+        "xf_accesskey": ""
       },
       "stencil": {
         "id": "Tableselect"
@@ -92,8 +94,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }

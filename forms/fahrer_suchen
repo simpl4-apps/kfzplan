@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_5D4C1984-0B6C-4220-B575-8F424514D8DB",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "fahrer_suchen",
+    "xf_name": "fahrer_suchen",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,
@@ -22,6 +22,8 @@
         "xf_id": "name_input",
         "xf_type": "text",
         "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "true",
         "xf_filtercheck": null,
@@ -82,6 +84,8 @@
         "xf_id": "kfz_modell",
         "xf_type": "text",
         "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
         "xf_filtercheck": null,
@@ -141,6 +145,8 @@
       "properties": {
         "xf_id": "fahrerliste_alert",
         "xf_message": "Keine Fahrer gefunden",
+        "xf_message_de": null,
+        "xf_message_en": null,
         "xf_exclude": "fahrerliste_alert == false"
       },
       "stencil": {
@@ -165,6 +171,8 @@
       "properties": {
         "xf_id": "error_alert",
         "xf_message": "Fahrer nicht berechtigt",
+        "xf_message_de": null,
+        "xf_message_en": null,
         "xf_exclude": "!error_alert"
       },
       "stencil": {
@@ -188,7 +196,7 @@
   "bounds": {
     "lowerRight": {
       "x": 1485,
-      "y": 2050
+      "y": 1050
     },
     "upperLeft": {
       "x": 0,

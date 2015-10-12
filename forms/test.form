@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_0184F4BC-8A72-4E1F-863D-F031BD846995",
   "properties": {
-    "xf_id": "",
-    "xf_name": "${diagramname}",
+    "xf_id": "test.form",
+    "xf_name": "test",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null

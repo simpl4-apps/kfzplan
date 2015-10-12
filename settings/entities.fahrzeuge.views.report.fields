@@ -4,95 +4,123 @@
 {
     "fields": [
         {
+            "displayname": "Hubraum in ccm",
             "name": "hubraum",
             "enabled": true
         },
         {
+            "displayname": "Schneeketten",
             "name": "schneeketten",
             "enabled": true
         },
         {
+            "displayname": "Hebebühne",
             "name": "hebebuehne",
             "enabled": true
         },
         {
+            "displayname": "Treibstoff",
             "name": "treibstoff",
             "enabled": true
         },
         {
+            "displayname": "Kennzeichen",
             "name": "kennzeichen",
             "enabled": true
         },
         {
+            "displayname": "Fahrgastplätze",
             "name": "fahrgastplaetze",
             "enabled": true
         },
         {
+            "displayname": "Leistung in kW",
             "name": "leistung",
             "enabled": true
         },
         {
+            "displayname": "Erstzulassung",
             "name": "erstzulassung",
             "enabled": true
         },
         {
+            "displayname": "Fahrzeugfarbe",
             "name": "farbe",
             "enabled": true
         },
         {
+            "displayname": "Hersteller",
             "name": "hersteller",
             "enabled": true
         },
         {
+            "displayname": "Fahrzeugtyp",
             "name": "fahrzeugtyp",
             "enabled": true
         },
         {
+            "displayname": "Sitzheizung",
             "name": "sitzheizung",
             "enabled": true
         },
         {
+            "displayname": "Zuordnung",
             "name": "zuordnung",
             "enabled": true
         },
         {
+            "displayname": "Modell",
             "name": "modell",
             "enabled": true
         },
         {
+            "displayname": "Fahrgestellnummer",
             "name": "fahrgestellnummer",
             "enabled": true
         },
         {
+            "displayname": "Anhängerkupplung",
             "name": "anhaengerkupplung",
             "enabled": true
         },
         {
+            "displayname": "Rollstuhlplätze",
             "name": "rollstuhlplaetze",
             "enabled": true
         },
         {
+            "displayname": "Auffahrrampe",
             "name": "auffahrrampe",
             "enabled": true
         },
         {
+            "displayname": "Klimaanlage",
             "name": "klimaanlage",
             "enabled": true
         },
         {
+            "displayname": "Standheizung",
             "name": "standheizung",
             "enabled": true
         },
         {
+            "displayname": "Palettenplätze",
             "name": "palettenplaetze",
             "enabled": true
         },
         {
+            "displayname": "Absenkung",
             "name": "absenkung",
             "enabled": true
         },
         {
+            "displayname": "Stablerbeladung",
             "name": "stablebeladung",
+            "enabled": true
+        },
+        {
+            "displayname": "data.fahrzeuge.id",
+            "name": "id",
             "enabled": true
         }
     ]

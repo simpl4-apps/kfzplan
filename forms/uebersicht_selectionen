@@ -4,10 +4,11 @@
 {
   "resourceId": "oryx_98C5D72F-116D-4A45-9308-89E7C2C099DB",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "uebersicht_selectionen",
+    "xf_name": "uebersicht_selectionen",
     "xf_version": "",
     "xf_default_buttons": true,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -19,12 +20,20 @@
       "resourceId": "oryx_A446C794-2A6B-495D-8F56-8A92F751B61C",
       "properties": {
         "xf_id": "kfz_modell",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -73,12 +82,20 @@
       "resourceId": "oryx_3CA0AE2E-0937-4E5B-9C30-DFECF76746AB",
       "properties": {
         "xf_id": "kfz_kennzeichen",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -127,12 +144,20 @@
       "resourceId": "oryx_9182C963-EF10-43DC-917C-57AADC70054C",
       "properties": {
         "xf_id": "fahrer_name",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -181,12 +206,20 @@
       "resourceId": "oryx_44CAA0A8-AE33-4373-AC8D-D1E2E5C1A3F6",
       "properties": {
         "xf_id": "fahrer_vorname",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -234,8 +267,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 1050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,
@@ -243,8 +276,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }

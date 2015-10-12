@@ -4,10 +4,11 @@
 {
   "resourceId": "oryx_D410213F-2362-4A5E-A5D9-B754768A5CB8",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "fganfr_fahrzeug_anzeigen",
+    "xf_name": "fganfr_fahrzeug_anzeigen",
     "xf_version": "",
-    "xf_default_buttons": true
+    "xf_default_buttons": true,
+    "xf_postprocess": null
   },
   "stencil": {
     "id": "XForm"
@@ -17,12 +18,20 @@
       "resourceId": "oryx_62CB4BD1-6B08-497E-9D26-9ADEFF45A48F",
       "properties": {
         "xf_id": "kfz_kennzeichen",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -71,12 +80,20 @@
       "resourceId": "oryx_A8ECADA2-E77B-4C91-8824-64EC8F8A1034",
       "properties": {
         "xf_id": "kfz_modell",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -125,12 +142,20 @@
       "resourceId": "oryx_BF96E7DC-6634-456B-97A9-D328BF0BC9B7",
       "properties": {
         "xf_id": "kfz_hersteller",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -179,12 +204,20 @@
       "resourceId": "oryx_DFC002A5-82F0-4A3B-A0DA-769557FB7DB0",
       "properties": {
         "xf_id": "fahrtgrund",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "true",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -233,12 +266,20 @@
       "resourceId": "oryx_3ED51B81-495D-4D5C-A461-6D74FC843257",
       "properties": {
         "xf_id": "fahrtziel",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "true",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -287,12 +328,20 @@
       "resourceId": "oryx_902E2FC4-F651-4E32-BBA6-B876DBC08319",
       "properties": {
         "xf_id": "datum_zeit",
-        "xf_default": "",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "datetime",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "true",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -341,12 +390,20 @@
       "resourceId": "oryx_55F528A4-BD15-47F1-A0D0-AF1A666F5876",
       "properties": {
         "xf_id": "antrag_annehmen_input",
-        "xf_default": "Ja, Nein",
-        "xf_navindex": "",
-        "xf_accesskey": "",
         "xf_type": "boolean",
+        "xf_default": "Ja, Nein",
+        "xf_exclude": "",
+        "xf_invisible": "",
         "xf_readonly": "",
         "xf_required": "",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },
@@ -394,8 +451,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 1050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,
@@ -403,8 +460,9 @@
     }
   },
   "stencilset": {
-    "url": "forms",
+    "url": "form",
     "namespace": "http://b3mn.org/stencilset/xforms#"
   },
-  "ssextensions": []
+  "ssextensions": [],
+  "zoomLevel": 1
 }

@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_DC6E0474-84DD-45CD-8FAE-3E646E77103A",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "fganfr_fahrzeug_waehlen",
+    "xf_name": "fganfr_fahrzeug_waehlen",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null

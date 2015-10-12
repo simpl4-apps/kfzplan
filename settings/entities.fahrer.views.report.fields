@@ -4,27 +4,38 @@
 {
     "fields": [
         {
+            "displayname": "Vorname",
             "name": "vorname",
             "enabled": true
         },
         {
+            "displayname": "eMail",
             "name": "email",
             "enabled": true
         },
         {
+            "displayname": "Geburtsdatum",
             "name": "geburtsdatum",
             "enabled": true
         },
         {
+            "displayname": "Name",
             "name": "name",
             "enabled": true
         },
         {
+            "displayname": "Geschlecht",
             "name": "geschlecht",
             "enabled": true
         },
         {
+            "displayname": "Tel.",
             "name": "telefonnummer",
+            "enabled": true
+        },
+        {
+            "displayname": "data.fahrer.id",
+            "name": "id",
             "enabled": true
         }
     ]

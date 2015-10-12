@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_7CD6DE25-CD87-4855-ACC3-EC3C439ADF8B",
   "properties": {
-    "xf_id": "input_date_to",
-    "xf_name": "",
+    "xf_id": "Form1",
+    "xf_name": "startForm",
     "xf_version": "",
     "xf_default_buttons": false,
     "xf_postprocess": null,
@@ -21,11 +21,11 @@
       "properties": {
         "xf_id": "",
         "xf_place": "south",
-        "xf_required": "",
-        "xf_accesskey": "",
         "xf_type": "",
         "xf_navindex": "",
         "xf_readonly": "",
+        "xf_required": "",
+        "xf_accesskey": "",
         "xf_calculate": "",
         "xf_constraint": ""
       },

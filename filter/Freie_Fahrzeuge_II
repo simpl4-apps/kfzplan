@@ -16,13 +16,7 @@
       {
         "label": "hersteller",
         "connector": null,
-        "field": {
-          "id": "fahrzeuge.hersteller",
-          "title": "hersteller",
-          "module": "",
-          "moduleTitle": "",
-          "children": []
-        },
+        "field": "fahrzeuge.hersteller",
         "op": "eq",
         "data": "1",
         "children": []
@@ -77,6 +71,12 @@
       "selector": "buchungsvoraussetzungen",
       "module": "buchungsvoraussetzungen",
       "path": "fahrzeuge$buchungsvoraussetzungen_list"
+    },
+    {
+      "display": true,
+      "id": "id",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
     }
   ]
 }
