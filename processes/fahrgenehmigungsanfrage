@@ -139,7 +139,7 @@
             }
           ]
         },
-        "listname": "Fahrzeuge",
+        "filtervarname": "Fahrzeuge",
         "tasktype": "Filter",
         "complexbehaviordefinition": "",
         "processid": "",
