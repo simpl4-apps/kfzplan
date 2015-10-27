@@ -1,0 +1,201 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_5962B80E-5EBE-48FB-BBFD-3DEE635864FD",
+  "properties": {
+    "overrideid": "helper.camel",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "rpc": false,
+    "rpcParameter": null,
+    "rpcReturn": "body",
+    "rpcReturnHeaders": null,
+    "websocket": false,
+    "recvEndpoint": "",
+    "sendEndpoint": "",
+    "startableGroups": null,
+    "startableUsers": null,
+    "settings": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_1CD6210A-F89B-4CFB-B5CA-9E9D90267F45",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "rgb(252,255,198)",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_localdata": "Localdata",
+        "uri_template": "localdata:${operation}",
+        "urivalue_operation": "findByFilter",
+        "uriparam_relation": null,
+        "uriparam_lookupRelationObjectExpr": "",
+        "isupdate": false,
+        "uriparam_lookupUpdateObjectExpr": "",
+        "uriparam_noUpdate": false,
+        "uriparam_filterName": "Freie_Fahrzeuge_II",
+        "uriparam_entityType": "",
+        "uriparam_namespace": null,
+        "uriparam_resultHeader": "",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "LocaldataEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 380.01689994000003,
+          "y": 225
+        },
+        "upperLeft": {
+          "x": 300,
+          "y": 165
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_AAF19B45-4125-4FB3-ADA6-042FAFF37053",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_1CD6210A-F89B-4CFB-B5CA-9E9D90267F45"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 299.6707630621484,
+          "y": 195
+        },
+        "upperLeft": {
+          "x": 170.29773320007814,
+          "y": 195
+        }
+      },
+      "dockers": [
+        {
+          "x": 60,
+          "y": 30
+        },
+        {
+          "x": 40.008449970000015,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_1CD6210A-F89B-4CFB-B5CA-9E9D90267F45"
+      }
+    },
+    {
+      "resourceId": "oryx_8EC584FF-0394-4166-B88F-51239A6C64F7",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "rgb(150,174,255)",
+        "bordercolor": "#000000",
+        "caption": "FreieFahrzeuge",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "getFreieFahrzeuge",
+        "rpc": true,
+        "rpcParameter": {
+          "totalCount": 3,
+          "items": [
+            {
+              "name": "input_date_from",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "long",
+              "destination": "property"
+            },
+            {
+              "name": "input_date_to",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "long",
+              "destination": "property"
+            },
+            {
+              "name": "hersteller",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
+              "destination": "property"
+            }
+          ]
+        },
+        "rpcReturn": "body",
+        "mimetype": "",
+        "rpcReturnHeaders": null,
+        "startableGroups": null,
+        "startableUsers": "admin,guest"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AAF19B45-4125-4FB3-ADA6-042FAFF37053"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 170,
+          "y": 225
+        },
+        "upperLeft": {
+          "x": 90,
+          "y": 165
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
