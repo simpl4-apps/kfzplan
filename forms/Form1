@@ -113,7 +113,7 @@
           "properties": {
             "xf_id": "input_date_from",
             "xf_type": "datetime",
-            "xf_default": "",
+            "xf_default": "1 day from now",
             "xf_exclude": "",
             "xf_invisible": "",
             "xf_readonly": "",
@@ -198,7 +198,7 @@
           "properties": {
             "xf_id": "input_date_to",
             "xf_type": "datetime",
-            "xf_default": "",
+            "xf_default": "2 day from now",
             "xf_exclude": "",
             "xf_invisible": "",
             "xf_readonly": "",
@@ -284,6 +284,7 @@
           "resourceId": "oryx_D8E4AD18-3553-4116-B7C9-7DFC56B630C8",
           "properties": {
             "xf_id": "hersteller",
+            "xf_default": "2",
             "xf_multiselection": "",
             "xf_enumembed": null,
             "xf_enum": {
