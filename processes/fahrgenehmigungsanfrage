@@ -129,7 +129,6 @@
         "multiinstance_condition": "",
         "isforcompensation": "",
         "filtername": "filter/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
-        "filtervarname": "",
         "variablesmapping": {
           "totalCount": 1,
           "items": [
