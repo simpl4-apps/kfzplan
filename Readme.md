@@ -7,6 +7,9 @@
 * Clone url(Meta-Repository): 
 https://github.com/simpl4-apps/kfzplan.git
 
+* Clone url(Data-Repository): 
+https://github.com/simpl4-apps/kfzplan_data.git
+
 ### Deploy process 
 
 ![alt text](/web/images/deploy.png?raw=true "Deploy process")
