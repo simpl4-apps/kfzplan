@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="fragment" content="!">
+  <meta name="google-site-verification" content="gLEZaEJH3Y5qtJGZU2KB6viCgQFZOZaEoca6DFVkORE" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <title>simpl4 Info/Demo</title>
+  <script src="/sw/surface/webcomponents-lite.js.gz"></script>
+  <script src="/sw/surface/libs.js.gz"></script>
+  <link rel="stylesheet" type="text/css" href="/sw/surface/libs.css.gz">
+
+  <link rel="import" href="/sw/surface/domelements.html.gz">
+
+  <script>
+  </script>
+
+  <style>
+    [invisible] {
+      visibility: hidden;
+    }
+    [exclude] {
+      display: none !important;
+    }
+    /*chromium asciidoctor hack*/
+    html /deep/ .admonitionblock > table {
+      display: block;
+    }
+    a {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html /deep/ select {
+      padding: 3px;
+      margin: 2px;
+      border-radius: 3px;
+      box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+      background: #ffffff;
+      color: #888;
+      border: none;
+      outline: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 640px) {
+      html /deep/ .mobile-hidden {
+        display: none !important;
+      }
+    }
+    @media screen and (max-height: 650px) {
+      html /deep/ #loginDialog {
+        top: -30px;
+      }
+    }
+		/*ie9*/
+    .no-flexbox iron-icon {
+      display: inline-block !important;
+    }
+
+  </style>
+</head>
+
+<body class="polymer-theme text_body_1">
+  <simpl-main logo-link="http://simpl4.org/%l" logo="web/images/logo212121.svg" mmenu-background="white" mmenu-classes="mm-light"></simpl-main>
+</body>
+
+</html>
