@@ -7,6 +7,6 @@
 * Clone url(Meta-Repository): 
 https://github.com/simpl4-apps/kfzplan.git
 
-### Setting permissions 
+### Deploy process 
 
 ![alt text](/web/images/deploy.png?raw=true "Deploy process")
