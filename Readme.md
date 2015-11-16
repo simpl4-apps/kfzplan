@@ -13,3 +13,7 @@ https://github.com/simpl4-apps/kfzplan_data.git
 ### Deploy process 
 
 ![alt text](/web/images/deploy.png?raw=true "Deploy process")
+
+### Create user "kpmaster" with role "kfzplan.entscheider" 
+
+![alt text](/web/images/cwuser_create.png?raw=true "User create")
