@@ -20,6 +20,6 @@ https://github.com/simpl4-apps/kfzplan_data.git
 
 
 
-### Permission setting for user "guest" 
+### Permission setting for role "global.guest" 
 
 ![alt text](/web/images/perm_kfzplan.png?raw=true "Permissions")
