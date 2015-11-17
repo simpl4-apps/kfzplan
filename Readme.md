@@ -17,3 +17,9 @@ https://github.com/simpl4-apps/kfzplan_data.git
 ### Create user "kpmaster" with role "kfzplan.entscheider" 
 
 ![alt text](/web/images/user_create.png?raw=true "User create")
+
+
+
+### Permission setting for user "guest" 
+
+![alt text](/web/images/perm_kfzplan.png?raw=true "Permissions")
