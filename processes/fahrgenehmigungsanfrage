@@ -118,83 +118,6 @@
       }
     },
     {
-      "resourceId": "oryx_F0442020-7E0F-4340-A360-B7CBE655505B",
-      "properties": {
-        "overrideid": "",
-        "name": "Fahrzeuge ermitteln",
-        "documentation": "",
-        "bgcolor": "teal",
-        "bordercolor": "teal",
-        "multiinstance_type": "None",
-        "multiinstance_cardinality": "",
-        "multiinstance_collection": "",
-        "multiinstance_variable": "",
-        "multiinstance_condition": "",
-        "isforcompensation": "",
-        "filtername": "filter/fganfr_fahrzeug_suchen,fganfr_fahrzeug_suchen",
-        "filterobject": "",
-        "variablesmapping": {
-          "totalCount": 1,
-          "items": [
-            {
-              "processvar": "fganfr_fahrzeug_suchen.input_kennzeichen",
-              "filtervar": "input_kennzeichen"
-            }
-          ]
-        },
-        "filtervarname": "Fahrzeuge",
-        "tasktype": "Filter",
-        "looptype": "None",
-        "multiinstance_sequential": "Yes",
-        "complexbehaviordefinition": "",
-        "processid": "",
-        "loopmaximum": "",
-        "loopcondition": "",
-        "testbefore": "",
-        "inputdataitem": "",
-        "behavior": "all",
-        "completionquantity": 1,
-        "startquantity": 1,
-        "monitoring": "",
-        "auditing": "",
-        "loopdataoutputref": "",
-        "loopcardinality": "",
-        "assignments": "",
-        "nonebehavioreventref": "signal",
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "callacitivity": "",
-        "loopdatainputref": "",
-        "outputdataitem": "",
-        "activiti$elementvariable": "",
-        "properties": "",
-        "activiti$collection": ""
-      },
-      "stencil": {
-        "id": "FilterTask"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_5C8E0807-86C8-4BFF-A91E-2682A4B84453"
-        },
-        {
-          "resourceId": "oryx_F9ECEC4C-27E4-49D8-B7B1-97AC4095E5C6"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 447,
-          "y": 213.3333280351429
-        },
-        "upperLeft": {
-          "x": 347,
-          "y": 133.3333280351429
-        }
-      },
-      "dockers": []
-    },
-    {
       "resourceId": "oryx_FA220E4C-1DFB-46A3-B565-15364D108F4B",
       "properties": {
         "overrideid": "",
@@ -205,9 +128,9 @@
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
+        "showdiamondmarker": "",
         "auditing": "",
         "monitoring": "",
-        "showdiamondmarker": "",
         "conditiontype": "None",
         "isimmediate": ""
       },
@@ -217,16 +140,16 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_F0442020-7E0F-4340-A360-B7CBE655505B"
+          "resourceId": "oryx_6629F627-4FEE-40A5-8B80-0C35C1471537"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 346.34375,
+          "x": 346.4609214046763,
           "y": 173.33332803514287
         },
         "upperLeft": {
-          "x": 220.65625,
+          "x": 220.1666622073562,
           "y": 173.33332803514287
         }
       },
@@ -236,12 +159,12 @@
           "y": 40
         },
         {
-          "x": 50,
-          "y": 40
+          "x": 19.666648829424844,
+          "y": 39.99999999999994
         }
       ],
       "target": {
-        "resourceId": "oryx_F0442020-7E0F-4340-A360-B7CBE655505B"
+        "resourceId": "oryx_6629F627-4FEE-40A5-8B80-0C35C1471537"
       }
     },
     {
@@ -287,9 +210,9 @@
         "defaultflow": "None",
         "conditionalflow": "Conditional",
         "conditionsequenceflow": "${Fahrzeuge.size >0}",
+        "showdiamondmarker": false,
         "auditing": "",
         "monitoring": "",
-        "showdiamondmarker": false,
         "conditiontype": "None",
         "isimmediate": ""
       },
@@ -305,17 +228,17 @@
       "bounds": {
         "lowerRight": {
           "x": 397,
-          "y": 316.4062396933639
+          "y": 315.965700598641
         },
         "upperLeft": {
           "x": 397,
-          "y": 213.93033321501917
+          "y": 213.9893580813789
         }
       },
       "dockers": [
         {
           "x": 50,
-          "y": 79
+          "y": 55.55555330382424
         },
         {
           "x": 52,
@@ -337,9 +260,9 @@
         "defaultflow": "None",
         "conditionalflow": "Conditional",
         "conditionsequenceflow": "${Fahrzeuge.size == 0}",
+        "showdiamondmarker": false,
         "auditing": "",
         "monitoring": "",
-        "showdiamondmarker": false,
         "conditiontype": "None",
         "isimmediate": ""
       },
@@ -365,7 +288,7 @@
       "dockers": [
         {
           "x": 55.87969283823327,
-          "y": 13.918859025939355
+          "y": 17.77777728327976
         },
         {
           "x": 402.87969283823327,
@@ -442,6 +365,8 @@
         "documentation": "",
         "bgcolor": "red",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -480,6 +405,7 @@
         },
         "formvarname": "",
         "candidategroups": "kfzplan.entscheider",
+        "candidateusers": null,
         "assignee": "",
         "tasktype": "User",
         "looptype": "None",
@@ -537,6 +463,8 @@
         "documentation": "",
         "bgcolor": "rgb(150,174,255)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -550,6 +478,7 @@
         },
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -707,6 +636,8 @@
         "documentation": "",
         "bgcolor": "rgb(208,249,151)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -717,6 +648,7 @@
         "variablesmapping": "",
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -774,6 +706,8 @@
         "documentation": "",
         "bgcolor": "#CCC",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -784,6 +718,7 @@
         "variablesmapping": "",
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -829,6 +764,61 @@
         "upperLeft": {
           "x": 345,
           "y": 316.6666540834644
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_6629F627-4FEE-40A5-8B80-0C35C1471537",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrzeug ermitteln",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
+        "multiinstance_type": "None",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "false",
+        "namespace": "-",
+        "routename": "getFahrzeug",
+        "routevarname": "",
+        "variablesmapping": {
+          "totalCount": 1,
+          "items": [
+            {
+              "processvar": "fganfr_fahrzeug_suchen.input_kennzeichen",
+              "routevar": "input_kennzeichen"
+            }
+          ]
+        },
+        "returnvariable": "Fahrzeuge",
+        "tasktype": "Filter"
+      },
+      "stencil": {
+        "id": "CamelTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_F9ECEC4C-27E4-49D8-B7B1-97AC4095E5C6"
+        },
+        {
+          "resourceId": "oryx_5C8E0807-86C8-4BFF-A91E-2682A4B84453"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 447,
+          "y": 213.33332803514293
+        },
+        "upperLeft": {
+          "x": 347,
+          "y": 133.33332803514293
         }
       },
       "dockers": []
