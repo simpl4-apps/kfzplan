@@ -75,6 +75,8 @@
         "documentation": "",
         "bgcolor": "rgb(150,174,255)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -88,6 +90,7 @@
         },
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -227,6 +230,8 @@
         "documentation": "",
         "bgcolor": "rgb(175,255,163)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -253,6 +258,7 @@
         },
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -298,80 +304,6 @@
         "upperLeft": {
           "x": 293.6323671772338,
           "y": 324.82732676776004
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A",
-      "properties": {
-        "overrideid": "",
-        "name": "Freie Fahrer",
-        "documentation": "",
-        "bgcolor": "rgb(175,255,163)",
-        "bordercolor": "#000000",
-        "multiinstance_type": "None",
-        "multiinstance_cardinality": "",
-        "multiinstance_collection": "",
-        "multiinstance_variable": "",
-        "multiinstance_condition": "",
-        "isforcompensation": "",
-        "filtername": "Fahrerauswahl",
-        "filterobject": "",
-        "variablesmapping": {
-          "totalCount": 1,
-          "items": [
-            {
-              "processvar": "fahrer_suchen.name_input",
-              "filtervar": "name"
-            }
-          ]
-        },
-        "filtervarname": "fahrerliste",
-        "tasktype": "Filter",
-        "looptype": "None",
-        "assignments": "",
-        "auditing": "",
-        "loopdataoutputref": "",
-        "behavior": "all",
-        "testbefore": "",
-        "properties": "",
-        "activiti$collection": "",
-        "callacitivity": "",
-        "loopmaximum": "",
-        "startquantity": 1,
-        "monitoring": "",
-        "loopcardinality": "",
-        "complexbehaviordefinition": "",
-        "inputdataitem": "",
-        "processid": "",
-        "onebehavioreventref:": "signal",
-        "completioncondition": "",
-        "multiinstance_sequential": "Yes",
-        "loopdatainputref": "",
-        "loopcondition": "",
-        "activiti$elementvariable": "",
-        "nonebehavioreventref": "signal",
-        "outputdataitem": "",
-        "completionquantity": 1
-      },
-      "stencil": {
-        "id": "FilterTask"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 446.6610781519843,
-          "y": 539.5652515578196
-        },
-        "upperLeft": {
-          "x": 293.6323671772338,
-          "y": 457.5682258689418
         }
       },
       "dockers": []
@@ -893,6 +825,8 @@
         "documentation": "",
         "bgcolor": "rgb(175,255,163)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -915,6 +849,7 @@
         },
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -975,9 +910,9 @@
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
+        "showdiamondmarker": "",
         "isimmediate": "",
         "auditing": "",
-        "showdiamondmarker": "",
         "conditiontype": "None",
         "monitoring": ""
       },
@@ -987,17 +922,17 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
+          "resourceId": "oryx_BBC3B687-290F-448D-AA44-F58287C9F427"
         }
       ],
       "bounds": {
         "lowerRight": {
           "x": 370.1467226646091,
-          "y": 457.1222460184893
+          "y": 458.05304722296296
         },
         "upperLeft": {
           "x": 370.1467226646091,
-          "y": 407.2703323070902
+          "y": 407.73165519651377
         }
       },
       "dockers": [
@@ -1006,12 +941,12 @@
           "y": 40.99851284443882
         },
         {
-          "x": 76.51435548737527,
-          "y": 40.9985128444389
+          "x": 70.85752313219973,
+          "y": 29.025249614918323
         }
       ],
       "target": {
-        "resourceId": "oryx_A251CDB2-4FB6-4BA4-8E2D-4CD21942AB6A"
+        "resourceId": "oryx_BBC3B687-290F-448D-AA44-F58287C9F427"
       }
     },
     {
@@ -1025,9 +960,9 @@
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
+        "showdiamondmarker": false,
         "isimmediate": "",
         "auditing": "",
-        "showdiamondmarker": false,
         "conditiontype": "None",
         "monitoring": ""
       },
@@ -1042,18 +977,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 555.2984759900895,
-          "y": 498.5667387133806
+          "x": 555.9406603943603,
+          "y": 498.3591321189668
         },
         "upperLeft": {
-          "x": 447.3726561384049,
-          "y": 498.5667387133806
+          "x": 444.699605386587,
+          "y": 497.18174226678065
         }
       },
       "dockers": [
         {
-          "x": 76.51435548737527,
-          "y": 40.99851284443886
+          "x": 143.89337992990556,
+          "y": 38.598947152922676
         },
         {
           "x": 20,
@@ -1072,6 +1007,8 @@
         "documentation": "",
         "bgcolor": "rgb(150,174,255)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -1090,6 +1027,7 @@
         },
         "formvarname": "startForm",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -1448,6 +1386,8 @@
         "documentation": "",
         "bgcolor": "rgb(255,75,48)",
         "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
         "multiinstance_collection": "",
@@ -1478,6 +1418,7 @@
         },
         "formvarname": "",
         "candidategroups": "",
+        "candidateusers": null,
         "assignee": "${initiator}",
         "tasktype": "User",
         "looptype": "None",
@@ -1583,6 +1524,58 @@
         "upperLeft": {
           "x": 293.0737403651812,
           "y": 91.2827570386798
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_BBC3B687-290F-448D-AA44-F58287C9F427",
+      "properties": {
+        "overrideid": "",
+        "name": "Fahrerliste laden",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
+        "multiinstance_type": "None",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "false",
+        "namespace": "-",
+        "routename": "getFahrerauswahl",
+        "routevarname": "",
+        "variablesmapping": {
+          "totalCount": 1,
+          "items": [
+            {
+              "processvar": "fahrer_suchen.name_input",
+              "routevar": "name"
+            }
+          ]
+        },
+        "returnvariable": "fahrerliste",
+        "tasktype": "Filter"
+      },
+      "stencil": {
+        "id": "CamelTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_813394EB-AFF2-473A-B6A6-BB8C1F2FBD30"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 444.18257946231495,
+          "y": 535.7646330192258
+        },
+        "upperLeft": {
+          "x": 299.2891995324094,
+          "y": 458.5667387133806
         }
       },
       "dockers": []
