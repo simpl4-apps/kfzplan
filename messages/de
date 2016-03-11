@@ -313,5 +313,14 @@
     {
         "msgid": "data.fahrer._team_list",
         "msgstr": "Teams"
+    },
+	  {
+        "msgstr": "Workflows",
+        "msgid": "tr.menu.process_list"
+    },
+    {
+        "msgstr": "Aufgabenliste",
+        "msgid": "tr.menu.task_list"
     }
+
 ]

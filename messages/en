@@ -197,5 +197,13 @@
     {
         "msgid": "data.fahrzeuge.modell",
         "msgstr": "Model"
+    },
+    {
+        "msgid": "tr.menu.process_list",
+        "msgstr": "Workflows"
+    },
+    {
+        "msgid": "tr.menu.task_list",
+        "msgstr": "Tasklist"
     }
 ]
