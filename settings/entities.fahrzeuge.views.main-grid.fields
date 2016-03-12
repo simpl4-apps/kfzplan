@@ -1,6 +1,3 @@
-[sw]
-	type = sw.setting
---
 {
     "fields": [
         {
@@ -21,6 +18,120 @@
         },
         {
             "name": "standheizung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Hersteller",
+            "name": "hersteller",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Treibstoff",
+            "name": "treibstoff",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Modell",
+            "name": "modell",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Sitzheizung",
+            "name": "sitzheizung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Stablebeladung",
+            "name": "stablebeladung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Auffahrrampe",
+            "name": "auffahrrampe",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Fahrzeugtyp",
+            "name": "fahrzeugtyp",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Farbe",
+            "name": "farbe",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Rollstuhlplaetze",
+            "name": "rollstuhlplaetze",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Zuordnung",
+            "name": "zuordnung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Hebebuehne",
+            "name": "hebebuehne",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Hubraum",
+            "name": "hubraum",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Palettenplaetze",
+            "name": "palettenplaetze",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Anhaengerkupplung",
+            "name": "anhaengerkupplung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Erstzulassung",
+            "name": "erstzulassung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Absenkung",
+            "name": "absenkung",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Klimaanlage",
+            "name": "klimaanlage",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Fahrgestellnummer",
+            "name": "fahrgestellnummer",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Wert",
+            "name": "wert",
             "enabled": true
         }
     ]

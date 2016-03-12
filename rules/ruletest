@@ -5,13 +5,13 @@
   "variables": {
     "input": [
       {
-        "variable": "dddd",
-        "vartype": "string"
+        "variable": "price",
+        "vartype": "decimal"
       }
     ],
     "output": [
       {
-        "variable": "ddd",
+        "variable": "rabatt",
         "vartype": "string"
       }
     ]
@@ -19,32 +19,27 @@
   "columns": {
     "conditions": [
       {
-        "variableName": "dddd",
-        "variableType": "string",
-        "operationText": "equal",
-        "operation": "eq",
-        "label": "Condition0",
+        "variableName": "price",
+        "variableType": "decimal",
+        "operationText": "größer gleich",
+        "operation": "ge",
+        "label": "Bedingung0",
         "name": "C0",
         "data": [
-          null,
-          null,
-          null,
-          null,
-          null
+          30,
+          51,
+          0
         ]
       },
       {
-        "variableName": "dddd",
-        "variableType": "string",
-        "operationText": "equal",
-        "operation": "eq",
-        "label": "Condition1",
+        "variableName": "price",
+        "variableType": "decimal",
+        "operationText": "kleiner gleich",
+        "operation": "le",
+        "label": "Bedingung1",
         "name": "C1",
         "data": [
-          null,
-          null,
-          null,
-          null,
+          50,
           null
         ]
       }
@@ -52,28 +47,13 @@
     "actions": [
       {
         "variableType": "string",
-        "variableName": "ddd",
-        "label": "ruleseditor.ergebnis0",
+        "variableName": "rabatt",
+        "label": "Ergebnis0",
         "name": "A0",
         "data": [
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      {
-        "variableType": "string",
-        "variableName": "ddd",
-        "label": "ruleseditor.ergebnis1",
-        "name": "A1",
-        "data": [
-          null,
-          null,
-          null,
-          null,
-          null
+          "20",
+          "30",
+          "5"
         ]
       }
     ]

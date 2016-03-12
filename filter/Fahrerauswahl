@@ -85,6 +85,12 @@
       "id": "id",
       "module": "fahrer",
       "path": "fahrer"
+    },
+    {
+      "display": true,
+      "id": "geburtsdatum",
+      "module": "fahrer",
+      "path": "fahrer"
     }
   ]
 }

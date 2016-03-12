@@ -2,175 +2,217 @@
 	type = sw.entitytype
 --
 {
-    "enabled": true,
-    "index": 1,
-    "default_fields": true,
-    "pack": "data",
-    "team_security": true,
-    "add_self_to_subpanel": false,
-    "description": "",
-    "name": "fahrzeuge",
-    "multi_add": false,
-    "multiple_tabs": false,
-    "exclusion_list": false,
-    "filter": "",
     "__hints__": {
 
     },
+    "default_fields": true,
+    "index": 1,
+    "description": "",
+    "pack": "data",
+    "enabled": true,
+    "multi_add": false,
+    "multiple_tabs": false,
+    "filter": "",
+    "add_self_to_subpanel": false,
+    "exclusion_list": false,
+    "state_fields": null,
+    "name": "fahrzeuge",
+    "team_security": true,
     "fields": {
-        "palettenplaetze": {
+        "hersteller": {
+            "formatter": "select",
+            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'hersteller',mapping:{label:'(hersteller)',value:'key'}",
+            "datatype": "string",
+            "name": "hersteller",
+            "index": 0,
             "enabled": true,
-            "name": "palettenplaetze",
-            "datatype": "number"
+            "edittype": "select"
         },
-        "farbe": {
+        "rollstuhlplaetze": {
+            "datatype": "number",
+            "name": "rollstuhlplaetze",
+            "index": 11,
             "enabled": true,
-            "name": "farbe",
-            "datatype": "string"
+            "edittype": "text"
         },
         "treibstoff": {
             "formatter": "select",
-            "enabled": true,
+            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'treibstoffe',mapping:{label:'(beschreibung)',value:'key'}",
+            "datatype": "string",
             "name": "treibstoff",
-            "edittype": "select",
+            "index": 2,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "wert": {
+            "datatype": "decimal",
+            "name": "wert",
+            "description": "Wert",
+            "index": 23,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "modell": {
             "datatype": "string",
-            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'treibstoffe',mapping:{label:'(beschreibung)',value:'key'}"
-        },
-        "anhaengerkupplung": {
-            "formatter": "select",
+            "name": "modell",
+            "index": 3,
             "enabled": true,
-            "name": "anhaengerkupplung",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
+            "edittype": "text"
         },
-        "schneeketten": {
-            "formatter": "select",
+        "fahrgastplaetze": {
+            "datatype": "number",
+            "name": "fahrgastplaetze",
+            "index": 4,
             "enabled": true,
-            "name": "schneeketten",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
-        },
-        "hebebuehne": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "hebebuehne",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
-        },
-        "hersteller": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "hersteller",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'hersteller',mapping:{label:'(hersteller)',value:'key'}"
-        },
-        "stablebeladung": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "stablebeladung",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
-        },
-        "rollstuhlplaetze": {
-            "enabled": true,
-            "name": "rollstuhlplaetze",
-            "datatype": "number"
-        },
-        "fahrgestellnummer": {
-            "enabled": true,
-            "name": "fahrgestellnummer",
-            "datatype": "string"
-        },
-        "erstzulassung": {
-            "enabled": true,
-            "name": "erstzulassung",
-            "datatype": "date"
-        },
-        "fahrzeugtyp": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "fahrzeugtyp",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'fahrzeugtypen',mapping:{label:'(fahrzeugtyp)',value:'key'}"
-        },
-        "auffahrrampe": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "auffahrrampe",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
-        },
-        "kennzeichen": {
-            "enabled": true,
-            "name": "kennzeichen",
-            "datatype": "string"
-        },
-        "zuordnung": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "zuordnung",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Dienstfahrzeug,Privatfahrzeug,Sonstiges "
+            "edittype": "text"
         },
         "standheizung": {
             "formatter": "select",
-            "enabled": true,
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
             "name": "standheizung",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
-        },
-        "klimaanlage": {
-            "formatter": "select",
+            "index": 5,
             "enabled": true,
-            "name": "klimaanlage",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
-        },
-        "modell": {
-            "enabled": true,
-            "name": "modell",
-            "datatype": "string"
-        },
-        "absenkung": {
-            "formatter": "select",
-            "enabled": true,
-            "name": "absenkung",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "Nein,Ja"
+            "edittype": "select"
         },
         "sitzheizung": {
             "formatter": "select",
-            "enabled": true,
-            "name": "sitzheizung",
-            "edittype": "select",
+            "selectable_items": "Nein,Ja",
             "datatype": "string",
-            "selectable_items": "Nein,Ja"
+            "name": "sitzheizung",
+            "index": 6,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "stablebeladung": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "stablebeladung",
+            "index": 7,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "auffahrrampe": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "auffahrrampe",
+            "index": 8,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "fahrzeugtyp": {
+            "formatter": "select",
+            "selectable_items": "rpc:enumeration:get,namespace:'@{NAMESPACE}',name:'fahrzeugtypen',mapping:{label:'(fahrzeugtyp)',value:'key'}",
+            "datatype": "string",
+            "name": "fahrzeugtyp",
+            "index": 9,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "farbe": {
+            "datatype": "string",
+            "name": "farbe",
+            "index": 10,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "zuordnung": {
+            "formatter": "select",
+            "selectable_items": "Dienstfahrzeug,Privatfahrzeug,Sonstiges ",
+            "datatype": "string",
+            "name": "zuordnung",
+            "index": 12,
+            "enabled": true,
+            "edittype": "select"
         },
         "leistung": {
-            "enabled": true,
+            "datatype": "number",
             "name": "leistung",
-            "datatype": "number"
-        },
-        "fahrgastplaetze": {
+            "index": 13,
             "enabled": true,
-            "name": "fahrgastplaetze",
-            "datatype": "number"
+            "edittype": "text"
+        },
+        "fahrgestellnummer": {
+            "datatype": "string",
+            "name": "fahrgestellnummer",
+            "index": 22,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "kennzeichen": {
+            "datatype": "string",
+            "name": "kennzeichen",
+            "index": 14,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "hebebuehne": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "hebebuehne",
+            "index": 15,
+            "enabled": true,
+            "edittype": "select"
         },
         "hubraum": {
-            "enabled": true,
+            "datatype": "number",
             "name": "hubraum",
-            "datatype": "number"
+            "index": 16,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "palettenplaetze": {
+            "datatype": "number",
+            "name": "palettenplaetze",
+            "index": 17,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "anhaengerkupplung": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "anhaengerkupplung",
+            "index": 18,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "erstzulassung": {
+            "datatype": "date",
+            "name": "erstzulassung",
+            "index": 19,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "absenkung": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "absenkung",
+            "index": 20,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "klimaanlage": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "klimaanlage",
+            "index": 21,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "schneeketten": {
+            "formatter": "select",
+            "selectable_items": "Nein,Ja",
+            "datatype": "string",
+            "name": "schneeketten",
+            "index": 1,
+            "enabled": true,
+            "edittype": "select"
         }
     }
 }

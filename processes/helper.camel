@@ -52,7 +52,7 @@
         "uriparam_namespace": null,
         "uriparam_filterName": "Freie_Fahrzeuge_II",
         "uriparam_entityType": "",
-        "uriparam_paramHeaders": "",
+        "uriparam_paramHeaders": "hersteller",
         "uriparam_resultHeader": "",
         "extraParams": null
       },
@@ -155,7 +155,7 @@
               "defaultvalue": null,
               "optional": false,
               "type": "string",
-              "destination": "property"
+              "destination": "header"
             }
           ]
         },
@@ -218,7 +218,11 @@
         "id": "LocaldataEndpoint"
       },
       "childShapes": [],
-      "outgoing": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_F03D4DD4-8F22-4D12-832B-262D4A365547"
+        }
+      ],
       "bounds": {
         "lowerRight": {
           "x": 380.01689994000003,
@@ -469,6 +473,304 @@
         }
       },
       "dockers": []
+    },
+    {
+      "resourceId": "oryx_188AFB39-7E64-445A-8AEB-56523396176A",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "",
+        "ref": "",
+        "code": "public void process(Exchange ex){\n  def fahrerList = ex.getIn().getBody();\n  println(\"fahrer:\"+fahrerList);\n\n  fahrerList.each{fahrer->\n    fahrer.age = calculateAge(new Date(fahrer.geburtsdatum));\n    println(\"fahrerage:\"+fahrer);\n  }\n}\nInteger calculateAge(Date birthday, Date offset = new Date()) {\n  def birthdayThisYear = offset.clone().clearTime()\n  birthdayThisYear[Calendar.MONTH]= birthday[Calendar.MONTH]\n  birthdayThisYear[Calendar.DATE] = birthday[Calendar.DATE]\n\n  offset[Calendar.YEAR] - birthday[Calendar.YEAR] - (birthdayThisYear > offset ? 1 : 0)\n}",
+        "codeKind": "processMethod",
+        "addImport": null,
+        "codeLanguage": "groovy",
+        "isEndpoint": false
+      },
+      "stencil": {
+        "id": "Processor"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 533,
+          "y": 375
+        },
+        "upperLeft": {
+          "x": 453,
+          "y": 315
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F03D4DD4-8F22-4D12-832B-262D4A365547",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_188AFB39-7E64-445A-8AEB-56523396176A"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 452.6875,
+          "y": 345
+        },
+        "upperLeft": {
+          "x": 380.3125,
+          "y": 345
+        }
+      },
+      "dockers": [
+        {
+          "x": 57,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_188AFB39-7E64-445A-8AEB-56523396176A"
+      }
+    },
+    {
+      "resourceId": "oryx_FA508DD7-BEFD-4447-8803-ABBCFD4543D5",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "rgb(170,208,255)",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_activiti": "Workflow",
+        "uri_template": "activiti:${operation}",
+        "urivalue_operation": "sendMessageEvent",
+        "uriparam_namespace": "kfzplan",
+        "uriparam_sendSignal": null,
+        "uriparam_signalName": "signal1",
+        "uriparam_sendMessage": null,
+        "uriparam_messageName": "supervisorAnswer",
+        "uriparam_businessKey": "",
+        "uriparam_headerFields": "pid,supervisorResult",
+        "uriparam_variableNames": "",
+        "uriparam_processCriteria": [
+          {
+            "name": "processInstanceId",
+            "value": " ${pid}"
+          }
+        ],
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "ActivitiEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 470,
+          "y": 660
+        },
+        "upperLeft": {
+          "x": 390,
+          "y": 600
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_6C61CD03-7ABC-41DF-9095-095F406B661E",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "enrich": "no",
+        "enrich_timeout": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "rgb(84,180,255)",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_mail": "Mail",
+        "uri_template": "${protocol}://${host}:${port}",
+        "urivalue_protocol": "imaps",
+        "urivalue_host": "imap.gmx.de",
+        "urivalue_port": 993,
+        "uriparam_username": "ms123@gmx.de",
+        "uriparam_password": "my1234My",
+        "uriparam_subject": "",
+        "uriparam_from": "",
+        "uriparam_to": "",
+        "uriparam_cc": "",
+        "uriparam_bcc": "",
+        "uriparam_searchTerm.subject": "SuperVisor",
+        "uriparam_searchTerm.body": "",
+        "uriparam_searchTerm.subjectOrBody": "",
+        "uriparam_searchTerm.from": "",
+        "uriparam_searchTerm.to": "",
+        "uriparam_searchTerm.seen": true,
+        "uriparam_contentType": "text/plain",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "MailEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_65568533-8DB2-4555-9C03-2D15D9570FE7"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 170,
+          "y": 660
+        },
+        "upperLeft": {
+          "x": 90,
+          "y": 600
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_65568533-8DB2-4555-9C03-2D15D9570FE7",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_AB592738-40E0-4DAB-88FD-183083733EA3"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 215.3321197607762,
+          "y": 709.8013342207258
+        },
+        "upperLeft": {
+          "x": 162.7928802392238,
+          "y": 660.6674157792742
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 22,
+          "y": 37
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_AB592738-40E0-4DAB-88FD-183083733EA3"
+      }
+    },
+    {
+      "resourceId": "oryx_AB592738-40E0-4DAB-88FD-183083733EA3",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": "",
+        "ref": "",
+        "code": "public void process(Exchange ex){\n  def body = ex.getIn().getBody();\n  println(\"Body:\"+body);\n  body.readLines().findResult { line ->\n    (line =~ /(nok|ok)/).with { m ->\n      if( m.matches() ) {\n        ex.getIn().setHeader(\"supervisorResult\",m[ 0 ][ 1 ]);\n      }\n    }\n    (line =~ /^> (\\d{5,6})/).with { m ->\n      if( m.matches() ) {\n        ex.getIn().setHeader(\"pid\",m[ 0 ][ 1 ]);\n      }\n    }\n  }\n}",
+        "codeKind": "processMethod",
+        "addImport": null,
+        "codeLanguage": "groovy",
+        "isEndpoint": false
+      },
+      "stencil": {
+        "id": "Processor"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_E5D72388-8054-4F6C-827D-DCE8DD8EB413"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 296,
+          "y": 754
+        },
+        "upperLeft": {
+          "x": 216,
+          "y": 694
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_E5D72388-8054-4F6C-827D-DCE8DD8EB413",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_FA508DD7-BEFD-4447-8803-ABBCFD4543D5"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 430,
+          "y": 724
+        },
+        "upperLeft": {
+          "x": 296.421875,
+          "y": 660.375
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 430,
+          "y": 724
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_FA508DD7-BEFD-4447-8803-ABBCFD4543D5"
+      }
     }
   ],
   "bounds": {

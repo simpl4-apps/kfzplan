@@ -1,116 +1,131 @@
-[sw]
-	type = sw.setting
---
 {
     "fields": [
         {
+            "tab": "tab1",
             "name": "schneeketten",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "treibstoff",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "kennzeichen",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "fahrgastplaetze",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "leistung",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "erstzulassung",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "farbe",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "hersteller",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "fahrzeugtyp",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "sitzheizung",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "zuordnung",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "modell",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "fahrgestellnummer",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab1",
             "name": "anhaengerkupplung",
-            "enabled": true,
-            "tab": "tab1"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "rollstuhlplaetze",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "auffahrrampe",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "klimaanlage",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "standheizung",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "palettenplaetze",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "absenkung",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
+            "tab": "tab2",
             "name": "stablebeladung",
-            "enabled": true,
-            "tab": "tab2"
+            "enabled": true
         },
         {
-            "name": "_team_list",
-            "tab": "tab2"
+            "tab": "tab2",
+            "name": "_team_list"
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Hebebuehne",
+            "name": "hebebuehne",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Hubraum",
+            "name": "hubraum",
+            "enabled": true
+        },
+        {
+            "tab": "tab1",
+            "displayname": "Wert",
+            "name": "wert",
+            "enabled": true
         }
     ]
 }

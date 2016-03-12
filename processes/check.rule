@@ -1,0 +1,63 @@
+[sw]
+	type = sw.rule
+--
+{
+  "variables": {
+    "input": [
+      {
+        "variable": "alter",
+        "vartype": "integer"
+      },
+      {
+        "variable": "wert",
+        "vartype": "decimal"
+      }
+    ],
+    "output": [
+      {
+        "variable": "status",
+        "vartype": "string"
+      }
+    ]
+  },
+  "columns": {
+    "conditions": [
+      {
+        "variableName": "alter",
+        "variableType": "integer",
+        "operationText": "kleiner gleich",
+        "operation": "le",
+        "label": "Bedingung1",
+        "name": "C1",
+        "data": [
+          24,
+          null
+        ]
+      },
+      {
+        "variableName": "wert",
+        "variableType": "decimal",
+        "operationText": "größer gleich",
+        "operation": "ge",
+        "label": "Bedingung2",
+        "name": "C2",
+        "data": [
+          50000,
+          null
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "variableType": "string",
+        "variableName": "status",
+        "label": "Ergebnis0",
+        "name": "A0",
+        "data": [
+          "nok",
+          "ok"
+        ]
+      }
+    ]
+  }
+}

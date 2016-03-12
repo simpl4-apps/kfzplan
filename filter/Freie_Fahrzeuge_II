@@ -77,6 +77,12 @@
       "id": "id",
       "module": "fahrzeuge",
       "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "id": "wert",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
     }
   ]
 }

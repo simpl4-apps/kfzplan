@@ -3,324 +3,335 @@
 --
 [
     {
-        "msgid": "app.firma",
-        "msgstr": "Firma"
+        "msgstr": "Firma",
+        "msgid": "app.firma"
     },
     {
-        "msgid": "data.buchungen",
-        "msgstr": "Fahrzeug-/Fahrerbelegungen"
+        "msgstr": "Fahrzeug-/Fahrerbelegungen",
+        "msgid": "data.buchungen"
     },
     {
-        "msgid": "data.buchungen.bisdatum",
-        "msgstr": "Bis Datum"
+        "msgstr": "Bis Datum",
+        "msgid": "data.buchungen.bisdatum"
     },
     {
-        "msgid": "data.buchungen.fahrer",
-        "msgstr": "Fahrer"
+        "msgstr": "Fahrer",
+        "msgid": "data.buchungen.fahrer"
     },
     {
-        "msgid": "data.buchungen.fahrzeuge",
-        "msgstr": "Fahrzeug"
+        "msgstr": "Fahrzeug",
+        "msgid": "data.buchungen.fahrzeuge"
     },
     {
-        "msgid": "data.buchungen.vondatum",
-        "msgstr": "Von Datum"
+        "msgstr": "Von Datum",
+        "msgid": "data.buchungen.vondatum"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen",
-        "msgstr": "Buchungsvoraussetzungen"
+        "msgstr": "Buchungsvoraussetzungen",
+        "msgid": "data.buchungsvoraussetzungen"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.beschreibung",
-        "msgstr": "Beschreibung"
+        "msgstr": "Beschreibung",
+        "msgid": "data.buchungsvoraussetzungen.beschreibung"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.fahrer_list",
-        "msgstr": "Fahrer"
+        "msgstr": "Fahrer",
+        "msgid": "data.buchungsvoraussetzungen.fahrer_list"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.fahrzeuge_list",
-        "msgstr": "Fahrzeuge"
+        "msgstr": "Fahrzeuge",
+        "msgid": "data.buchungsvoraussetzungen.fahrzeuge_list"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.save",
-        "msgstr": "Speichern"
+        "msgstr": "Speichern",
+        "msgid": "data.buchungsvoraussetzungen.save"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.saved",
-        "msgstr": "Saved"
+        "msgstr": "Saved",
+        "msgid": "data.buchungsvoraussetzungen.saved"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.saved",
-        "msgstr": "Gespeichert"
+        "msgstr": "Gespeichert",
+        "msgid": "data.buchungsvoraussetzungen.saved"
     },
     {
-        "msgid": "data.buchungsvoraussetzungen.schluessel",
-        "msgstr": "Schlüssel"
+        "msgstr": "Schlüssel",
+        "msgid": "data.buchungsvoraussetzungen.schluessel"
     },
     {
-        "msgid": "data.fahrer",
-        "msgstr": "Fahrer"
+        "msgstr": "Fahrer",
+        "msgid": "data.fahrer"
     },
     {
-        "msgid": "data.fahrer.buchungen",
-        "msgstr": "Buchungen"
+        "msgstr": "Buchungen",
+        "msgid": "data.fahrer.buchungen"
     },
     {
-        "msgid": "data.fahrer.buchungen_list",
-        "msgstr": "Buchungen"
+        "msgstr": "Buchungen",
+        "msgid": "data.fahrer.buchungen_list"
     },
     {
-        "msgid": "data.fahrer.buchungsvoraussetzungen_list",
-        "msgstr": "Buchungsvoraussetzungen"
+        "msgstr": "Buchungsvoraussetzungen",
+        "msgid": "data.fahrer.buchungsvoraussetzungen_list"
     },
     {
-        "msgid": "data.fahrer.created",
-        "msgstr": "Record was created"
+        "msgstr": "Record was created",
+        "msgid": "data.fahrer.created"
     },
     {
-        "msgid": "data.fahrer.created",
-        "msgstr": "Datensatz wurde erstellt"
+        "msgstr": "Datensatz wurde erstellt",
+        "msgid": "data.fahrer.created"
     },
     {
-        "msgid": "data.fahrer.email",
-        "msgstr": "eMail"
+        "msgstr": "eMail",
+        "msgid": "data.fahrer.email"
     },
     {
-        "msgid": "data.fahrer.firma",
-        "msgstr": "Firma"
+        "msgstr": "Firma",
+        "msgid": "data.fahrer.firma"
     },
     {
-        "msgid": "data.fahrer.geburtsdatum",
-        "msgstr": "Geburtsdatum"
+        "msgstr": "Geburtsdatum",
+        "msgid": "data.fahrer.geburtsdatum"
     },
     {
-        "msgid": "data.fahrer.geschlecht",
-        "msgstr": "Geschlecht"
+        "msgstr": "Geschlecht",
+        "msgid": "data.fahrer.geschlecht"
     },
     {
-        "msgid": "data.fahrer.name",
-        "msgstr": "Name"
+        "msgstr": "Name",
+        "msgid": "data.fahrer.name"
     },
     {
-        "msgid": "data.fahrer.save",
-        "msgstr": "Speichern"
+        "msgstr": "Speichern",
+        "msgid": "data.fahrer.save"
     },
     {
-        "msgid": "data.fahrer.saved",
-        "msgstr": "Gespeichert"
+        "msgstr": "Gespeichert",
+        "msgid": "data.fahrer.saved"
     },
     {
-        "msgid": "data.fahrer.telefonnummer",
-        "msgstr": "Tel."
+        "msgstr": "Tel.",
+        "msgid": "data.fahrer.telefonnummer"
     },
     {
-        "msgid": "data.fahrer.vorname",
-        "msgstr": "Vorname"
+        "msgstr": "Vorname",
+        "msgid": "data.fahrer.vorname"
     },
     {
-        "msgid": "data.fahrzeuge",
-        "msgstr": "Fahrzeuge"
+        "msgstr": "Fahrzeuge",
+        "msgid": "data.fahrzeuge"
     },
     {
-        "msgid": "data.fahrzeuge.absenkung",
-        "msgstr": "Absenkung"
+        "msgstr": "Absenkung",
+        "msgid": "data.fahrzeuge.absenkung"
     },
     {
-        "msgid": "data.fahrzeuge.anhaengerkupplung",
-        "msgstr": "Anhängerkupplung"
+        "msgstr": "Anhängerkupplung",
+        "msgid": "data.fahrzeuge.anhaengerkupplung"
     },
     {
-        "msgid": "data.fahrzeuge.auffahrrampe",
-        "msgstr": "Auffahrrampe"
+        "msgstr": "Auffahrrampe",
+        "msgid": "data.fahrzeuge.auffahrrampe"
     },
     {
-        "msgid": "data.fahrzeuge.buchungen_list",
-        "msgstr": "Fahrzeugbuchungen/-belegungen"
+        "msgstr": "Fahrzeugbuchungen/-belegungen",
+        "msgid": "data.fahrzeuge.buchungen_list"
     },
     {
-        "msgid": "data.fahrzeuge.buchungsvoraussetzungen_list",
-        "msgstr": "Buchungsvoraussetzungen"
+        "msgstr": "Buchungsvoraussetzungen",
+        "msgid": "data.fahrzeuge.buchungsvoraussetzungen_list"
     },
     {
-        "msgid": "data.fahrzeuge.created",
-        "msgstr": "Datensatz wurde erstellt"
+        "msgstr": "Datensatz wurde erstellt",
+        "msgid": "data.fahrzeuge.created"
     },
     {
-        "msgid": "data.fahrzeuge.erstzulassung",
-        "msgstr": "Erstzulassung"
+        "msgstr": "Erstzulassung",
+        "msgid": "data.fahrzeuge.erstzulassung"
     },
     {
-        "msgid": "data.fahrzeuge.fahrgastplaetze",
-        "msgstr": "Fahrgastplätze"
+        "msgstr": "Fahrgastplätze",
+        "msgid": "data.fahrzeuge.fahrgastplaetze"
     },
     {
-        "msgid": "data.fahrzeuge.fahrgestellnummer",
-        "msgstr": "Fahrgestellnummer"
+        "msgstr": "Fahrgestellnummer",
+        "msgid": "data.fahrzeuge.fahrgestellnummer"
     },
     {
-        "msgid": "data.fahrzeuge.fahrzeugtyp",
-        "msgstr": "Fahrzeugtyp"
+        "msgstr": "Fahrzeugtyp",
+        "msgid": "data.fahrzeuge.fahrzeugtyp"
     },
     {
-        "msgid": "data.fahrzeuge.farbe",
-        "msgstr": "Fahrzeugfarbe"
+        "msgstr": "Fahrzeugfarbe",
+        "msgid": "data.fahrzeuge.farbe"
     },
     {
-        "msgid": "data.fahrzeuge.hebebuehne",
-        "msgstr": "Hebebühne"
+        "msgstr": "Hebebühne",
+        "msgid": "data.fahrzeuge.hebebuehne"
     },
     {
-        "msgid": "data.fahrzeuge.hersteller",
-        "msgstr": "Hersteller"
+        "msgstr": "Hersteller",
+        "msgid": "data.fahrzeuge.hersteller"
     },
     {
-        "msgid": "data.fahrzeuge.hubraum",
-        "msgstr": "Hubraum in ccm"
+        "msgstr": "Hubraum in ccm",
+        "msgid": "data.fahrzeuge.hubraum"
     },
     {
-        "msgid": "data.fahrzeuge.kennzeichen",
-        "msgstr": "Kennzeichen"
+        "msgstr": "Kennzeichen",
+        "msgid": "data.fahrzeuge.kennzeichen"
     },
     {
-        "msgid": "data.fahrzeuge.klimaanlage",
-        "msgstr": "Klimaanlage"
+        "msgstr": "Klimaanlage",
+        "msgid": "data.fahrzeuge.klimaanlage"
     },
     {
-        "msgid": "data.fahrzeuge.leistung",
-        "msgstr": "Leistung in kW"
+        "msgstr": "Leistung in kW",
+        "msgid": "data.fahrzeuge.leistung"
     },
     {
-        "msgid": "data.fahrzeuge.modell",
-        "msgstr": "Modell"
+        "msgstr": "Modell",
+        "msgid": "data.fahrzeuge.modell"
     },
     {
-        "msgid": "data.fahrzeuge.palettenplaetze",
-        "msgstr": "Palettenplätze"
+        "msgstr": "Palettenplätze",
+        "msgid": "data.fahrzeuge.palettenplaetze"
     },
     {
-        "msgid": "data.fahrzeuge.rollstuhlplaetze",
-        "msgstr": "Rollstuhlplätze"
+        "msgstr": "Rollstuhlplätze",
+        "msgid": "data.fahrzeuge.rollstuhlplaetze"
     },
     {
-        "msgid": "data.fahrzeuge.save",
-        "msgstr": "Speichern"
+        "msgstr": "Speichern",
+        "msgid": "data.fahrzeuge.save"
     },
     {
-        "msgid": "data.fahrzeuge.saved",
-        "msgstr": "Gespeichert"
+        "msgstr": "Gespeichert",
+        "msgid": "data.fahrzeuge.saved"
     },
     {
-        "msgid": "data.fahrzeuge.schneeketten",
-        "msgstr": "Schneeketten"
+        "msgstr": "Schneeketten",
+        "msgid": "data.fahrzeuge.schneeketten"
     },
     {
-        "msgid": "data.fahrzeuge.sitzheizung",
-        "msgstr": "Sitzheizung"
+        "msgstr": "Sitzheizung",
+        "msgid": "data.fahrzeuge.sitzheizung"
     },
     {
-        "msgid": "data.fahrzeuge.stablebeladung",
-        "msgstr": "Stablerbeladung"
+        "msgstr": "Stablerbeladung",
+        "msgid": "data.fahrzeuge.stablebeladung"
     },
     {
-        "msgid": "data.fahrzeuge.standheizung",
-        "msgstr": "Standheizung"
+        "msgstr": "Standheizung",
+        "msgid": "data.fahrzeuge.standheizung"
     },
     {
-        "msgid": "data.fahrzeuge.treibstoff",
-        "msgstr": "Treibstoff"
+        "msgstr": "Treibstoff",
+        "msgid": "data.fahrzeuge.treibstoff"
     },
     {
-        "msgid": "data.fahrzeuge.zuordnung",
-        "msgstr": "Zuordnung"
+        "msgstr": "Zuordnung",
+        "msgid": "data.fahrzeuge.zuordnung"
     },
     {
-        "msgid": "data.firma",
-        "msgstr": "Firmen"
+        "msgstr": "Firmen",
+        "msgid": "data.firma"
     },
     {
-        "msgid": "data.firma.created",
-        "msgstr": "Datensatz wurde erstellt"
+        "msgstr": "Datensatz wurde erstellt",
+        "msgid": "data.firma.created"
     },
     {
-        "msgid": "data.firma.email",
-        "msgstr": "eMail"
+        "msgstr": "eMail",
+        "msgid": "data.firma.email"
     },
     {
-        "msgid": "data.firma.fahrer",
-        "msgstr": "Fahrer"
+        "msgstr": "Fahrer",
+        "msgid": "data.firma.fahrer"
     },
     {
-        "msgid": "data.firma.fahrer_list",
-        "msgstr": "Fahrer"
+        "msgstr": "Fahrer",
+        "msgid": "data.firma.fahrer_list"
     },
     {
-        "msgid": "data.firma.faxnummer",
-        "msgstr": "Fax"
+        "msgstr": "Fax",
+        "msgid": "data.firma.faxnummer"
     },
     {
-        "msgid": "data.firma.firma",
-        "msgstr": "Firma"
+        "msgstr": "Firma",
+        "msgid": "data.firma.firma"
     },
     {
-        "msgid": "data.firma.ort",
-        "msgstr": "Ort"
+        "msgstr": "Ort",
+        "msgid": "data.firma.ort"
     },
     {
-        "msgid": "data.firma.plz",
-        "msgstr": "PLZ"
+        "msgstr": "PLZ",
+        "msgid": "data.firma.plz"
     },
     {
-        "msgid": "data.firma.save",
-        "msgstr": "Speichern"
+        "msgstr": "Speichern",
+        "msgid": "data.firma.save"
     },
     {
-        "msgid": "data.firma.saved",
-        "msgstr": "Gespeichert"
+        "msgstr": "Gespeichert",
+        "msgid": "data.firma.saved"
     },
     {
-        "msgid": "data.firma.strasse",
-        "msgstr": "Straße"
+        "msgstr": "Straße",
+        "msgid": "data.firma.strasse"
     },
     {
-        "msgid": "data.firma.telefonnummer",
-        "msgstr": "Tel.:"
+        "msgstr": "Tel.:",
+        "msgid": "data.firma.telefonnummer"
     },
     {
-        "msgid": "fahrer_list.geburtsdatum",
-        "msgstr": "Geburtsdatum"
+        "msgstr": "Geburtsdatum",
+        "msgid": "fahrer_list.geburtsdatum"
     },
     {
-        "msgid": "fahrer_list.name",
-        "msgstr": "Name"
+        "msgstr": "Name",
+        "msgid": "fahrer_list.name"
     },
     {
-        "msgid": "data.fahrer.tab1",
-        "msgstr": "Daten"
+        "msgstr": "Daten",
+        "msgid": "data.fahrer.tab1"
     },
     {
-        "msgid": "data.fahrer.tab2",
-        "msgstr": "Teams"
+        "msgstr": "Teams",
+        "msgid": "data.fahrer.tab2"
     },
     {
-        "msgid": "data.fahrer.buchungsvoraussetzungen_list",
-        "msgstr": "Buchungsvoraussetzungen"
+        "msgstr": "Buchungsvoraussetzungen",
+        "msgid": "data.fahrer.buchungsvoraussetzungen_list"
     },
     {
-        "msgid": "data.fahrer.fieldset.set1",
-        "msgstr": "Vor/Nachname"
+        "msgstr": "Vor/Nachname",
+        "msgid": "data.fahrer.fieldset.set1"
     },
     {
-        "msgid": "data.fahrer._team_list",
-        "msgstr": "Teams"
+        "msgstr": "Teams",
+        "msgid": "data.fahrer._team_list"
     },
-	  {
+    {
         "msgstr": "Workflows",
         "msgid": "tr.menu.process_list"
     },
     {
         "msgstr": "Aufgabenliste",
         "msgid": "tr.menu.task_list"
+    },
+    {
+        "msgstr": "Id",
+        "msgid": "data.fahrzeuge.id"
+    },
+    {
+        "msgstr": "Wert",
+        "msgid": "data.fahrzeuge.wert"
+    },
+    {
+        "msgstr": "Teams",
+        "msgid": "data.fahrzeuge._team_list"
     }
-
 ]

@@ -16,13 +16,7 @@
       {
         "label": "input_kennzeichen",
         "connector": null,
-        "field": {
-          "id": "fahrzeuge.kennzeichen",
-          "title": "kennzeichen",
-          "module": "",
-          "moduleTitle": "",
-          "children": []
-        },
+        "field": "fahrzeuge.kennzeichen",
         "op": "cn",
         "data": "",
         "children": []
@@ -51,6 +45,12 @@
       "mapping": null,
       "id": "modell",
       "selector": "fahrzeuge",
+      "module": "fahrzeuge",
+      "path": "fahrzeuge"
+    },
+    {
+      "display": true,
+      "id": "wert",
       "module": "fahrzeuge",
       "path": "fahrzeuge"
     }

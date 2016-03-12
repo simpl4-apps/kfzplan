@@ -16,7 +16,12 @@
     "creationdate": "",
     "modificationdate": "",
     "signaldefinitions": null,
-    "messagedefinitions": null,
+    "messagedefinitions": [
+      {
+        "id": "supervisorAnswer",
+        "name": "supervisorAnswer"
+      }
+    ],
     "orientation": "horizontal",
     "startablegroups": null,
     "startableusers": "admin,guest",
@@ -130,11 +135,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 446.6610781519843,
+          "x": 482.37958062367716,
           "y": 285.700728792992
         },
         "upperLeft": {
-          "x": 293.6323671772338,
+          "x": 329.3508696489266,
           "y": 203.70370310411423
         }
       },
@@ -162,12 +167,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 589.5555539203116,
-          "y": 858.4766967583388
+          "x": 429.72478238175006,
+          "y": 1116.3243545820012
         },
         "upperLeft": {
-          "x": 561.5555539203116,
-          "y": 830.4766967583388
+          "x": 401.72478238175006,
+          "y": 1088.3243545820012
         }
       },
       "dockers": []
@@ -200,11 +205,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 370.1467226646091,
+          "x": 405.8652251363019,
           "y": 324.1358722876929
         },
         "upperLeft": {
-          "x": 370.1467226646091,
+          "x": 405.8652251363019,
           "y": 286.3921832730591
         }
       },
@@ -298,11 +303,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 446.6610781519843,
+          "x": 482.37958062367716,
           "y": 406.8243524566377
         },
         "upperLeft": {
-          "x": 293.6323671772338,
+          "x": 329.3508696489266,
           "y": 324.82732676776004
         }
       },
@@ -337,12 +342,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 85,
-          "y": 753.3655859742765
+          "x": 125.02534020171885,
+          "y": 720.2027216137508
         },
         "upperLeft": {
-          "x": 45,
-          "y": 713.3655859742765
+          "x": 85.02534020171885,
+          "y": 680.2027216137508
         }
       },
       "dockers": []
@@ -357,7 +362,7 @@
         "bordercolor": "#000000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${!isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list,\"beschreibung\")}",
+        "conditionsequenceflow": "${\n  !auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return auswahl_fahrer.fahrer.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
         "isimmediate": "",
         "auditing": "",
         "showdiamondmarker": false,
@@ -375,11 +380,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 292.98504199845684,
-          "y": 712.7384123451004
+          "x": 328.6070512271304,
+          "y": 680.0810293089723
         },
         "upperLeft": {
-          "x": 65.5,
+          "x": 105.52534020171885,
           "y": 365.8258396121989
         }
       },
@@ -389,7 +394,7 @@
           "y": 20.5
         },
         {
-          "x": 65.5,
+          "x": 105.52534020171885,
           "y": 365.8258396121989
         },
         {
@@ -456,12 +461,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 449.3250063989167,
-          "y": 885.4752096027777
+          "x": 492.23913786912533,
+          "y": 979.2721870230024
         },
         "upperLeft": {
-          "x": 296.29629542416615,
-          "y": 803.4781839138999
+          "x": 339.2104268943748,
+          "y": 897.2751613341247
         }
       },
       "dockers": []
@@ -476,10 +481,10 @@
         "bordercolor": "#000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${isListInList( auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list, auswahl_fahrer.fahrer.buchungsvoraussetzungen_list,\"beschreibung\")}",
+        "conditionsequenceflow": "${\n  auswahl_freies_fahrzeug.Freie_Fahrzeuge.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return auswahl_fahrer.fahrer.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
+        "showdiamondmarker": "",
         "isimmediate": "",
         "auditing": "",
-        "showdiamondmarker": "",
         "conditiontype": "None",
         "monitoring": ""
       },
@@ -489,17 +494,17 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+          "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 296.1834204137793,
-          "y": 844.4766967583388
+          "x": 105.52534020171885,
+          "y": 782.051529851223
         },
         "upperLeft": {
-          "x": 65.5,
-          "y": 753.8768706402872
+          "x": 105.52534020171885,
+          "y": 720.8342629214465
         }
       },
       "dockers": [
@@ -508,16 +513,12 @@
           "y": 20.5
         },
         {
-          "x": 65.5,
-          "y": 844.4766967583388
-        },
-        {
-          "x": 76.51435548737527,
-          "y": 40.99851284443889
+          "x": 71.5152041210313,
+          "y": 24.94077816598235
         }
       ],
       "target": {
-        "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+        "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB"
       }
     },
     {
@@ -531,9 +532,9 @@
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
+        "showdiamondmarker": false,
         "isimmediate": "",
         "auditing": "",
-        "showdiamondmarker": false,
         "conditiontype": "None",
         "monitoring": ""
       },
@@ -548,18 +549,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 561.0920252048854,
-          "y": 844.4766967583388
+          "x": 415.72478238175006,
+          "y": 1087.7561487552357
         },
         "upperLeft": {
-          "x": 449.8399895398302,
-          "y": 844.4766967583388
+          "x": 415.72478238175006,
+          "y": 980.2413445820571
         }
       },
       "dockers": [
         {
           "x": 76.51435548737527,
-          "y": 40.99851284443889
+          "y": 80.99702568887767
         },
         {
           "x": 14,
@@ -598,18 +599,26 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 295.6613208537672,
-          "y": 733.3655859742765
+          "x": 338.7000508334198,
+          "y": 755.2113705388772
         },
         "upperLeft": {
-          "x": 85.2050835940947,
-          "y": 733.3655859742765
+          "x": 124.8906396046894,
+          "y": 700.2027216137508
         }
       },
       "dockers": [
         {
           "x": 76.51435548737528,
           "y": 40.998512844438885
+        },
+        {
+          "x": 232.11788354804682,
+          "y": 755.2113705388772
+        },
+        {
+          "x": 232.11788354804682,
+          "y": 700.2027216137508
         },
         {
           "x": 20,
@@ -649,12 +658,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 595.5555539203116,
-          "y": 518.5667387133806
+          "x": 657.2839740355944,
+          "y": 517.1656858663032
         },
         "upperLeft": {
-          "x": 555.5555539203116,
-          "y": 478.56673871338063
+          "x": 617.2839740355944,
+          "y": 477.1656858663032
         }
       },
       "dockers": []
@@ -687,21 +696,21 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 576.0555539203117,
+          "x": 637.7839740355944,
           "y": 623.2504170489109
         },
         "upperLeft": {
-          "x": 447.5803172418846,
-          "y": 519.4704384533072
+          "x": 482.6771023308514,
+          "y": 517.3071694012215
         }
       },
       "dockers": [
         {
           "x": 20.499999999999996,
-          "y": 20.499999999999968
+          "y": 20.499999999999996
         },
         {
-          "x": 576.0555539203117,
+          "x": 637.7839740355944,
           "y": 623.2504170489109
         },
         {
@@ -741,21 +750,21 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 576.0555539203117,
-          "y": 477.6007145227187
+          "x": 637.7839740355944,
+          "y": 476.2434445771124
         },
         "upperLeft": {
-          "x": 447.1536407522218,
+          "x": 483.07534570550513,
           "y": 365.8258396121989
         }
       },
       "dockers": [
         {
           "x": 20.499999999999996,
-          "y": 3.671874999999994
+          "y": 3.6718749999999987
         },
         {
-          "x": 576.0555539203117,
+          "x": 637.7839740355944,
           "y": 365.8258396121989
         },
         {
@@ -778,9 +787,9 @@
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
+        "showdiamondmarker": false,
         "isimmediate": "",
         "auditing": "",
-        "showdiamondmarker": false,
         "conditiontype": "None",
         "monitoring": ""
       },
@@ -795,12 +804,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 372.2533508020659,
-          "y": 692.3436199020637
+          "x": 405.8652251363019,
+          "y": 713.7485569833223
         },
         "upperLeft": {
-          "x": 371.30872350228964,
-          "y": 658.6041233327562
+          "x": 405.8652251363019,
+          "y": 658.3678223329986
         }
       },
       "dockers": [
@@ -809,8 +818,8 @@
           "y": 40.9985128444389
         },
         {
-          "x": 76.51435548737528,
-          "y": 0.9761550677247353
+          "x": 66.6547982419271,
+          "y": 31.742765502217935
         }
       ],
       "target": {
@@ -889,11 +898,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 446.6610781519843,
+          "x": 482.37958062367716,
           "y": 658.099152966684
         },
         "upperLeft": {
-          "x": 293.6323671772338,
+          "x": 329.3508696489266,
           "y": 576.1021272778062
         }
       },
@@ -927,12 +936,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 370.1467226646091,
-          "y": 458.05304722296296
+          "x": 405.8652251363019,
+          "y": 458.0251374126629
         },
         "upperLeft": {
-          "x": 370.1467226646091,
-          "y": 407.73165519651377
+          "x": 405.8652251363019,
+          "y": 407.5745666893801
         }
       },
       "dockers": [
@@ -941,8 +950,12 @@
           "y": 40.99851284443882
         },
         {
-          "x": 70.85752313219973,
-          "y": 29.025249614918323
+          "x": 405.8652251363019,
+          "y": 432.69554558500914
+        },
+        {
+          "x": 72.44668996495278,
+          "y": 19.671884627570137
         }
       ],
       "target": {
@@ -977,12 +990,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 555.9406603943603,
-          "y": 498.3591321189668
+          "x": 617.5372483792264,
+          "y": 497.1656858663032
         },
         "upperLeft": {
-          "x": 444.699605386587,
-          "y": 497.18174226678065
+          "x": 478.93680595646697,
+          "y": 497.1656858663032
         }
       },
       "dockers": [
@@ -992,7 +1005,7 @@
         },
         {
           "x": 20,
-          "y": 19.99999999999997
+          "y": 19.999999999999996
         }
       ],
       "target": {
@@ -1155,12 +1168,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 292.3713853304099,
-          "y": 138.3136519760336
+          "x": 328.23333261869305,
+          "y": 138.37138368953708
         },
         "upperLeft": {
-          "x": 205.32416335489634,
-          "y": 137.34527835019003
+          "x": 205.0167604702691,
+          "y": 137.22363556344106
         }
       },
       "dockers": [
@@ -1170,7 +1183,7 @@
         },
         {
           "x": 30.458697007578447,
-          "y": 47.37755207662281
+          "y": 47.37755207662282
         }
       ],
       "target": {
@@ -1206,12 +1219,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 595.5555539203116,
-          "y": 156.61515477144832
+          "x": 657.2839740355944,
+          "y": 155.49259586384923
         },
         "upperLeft": {
-          "x": 555.5555539203116,
-          "y": 116.61515477144832
+          "x": 617.2839740355944,
+          "y": 115.49259586384923
         }
       },
       "dockers": []
@@ -1244,12 +1257,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 576.0555539203116,
+          "x": 637.7839740355944,
           "y": 244.70221594855312
         },
         "upperLeft": {
-          "x": 446.75387164131234,
-          "y": 157.44720482670934
+          "x": 482.96356461888223,
+          "y": 155.67706181590773
         }
       },
       "dockers": [
@@ -1258,7 +1271,7 @@
           "y": 20.500000000000004
         },
         {
-          "x": 576.0555539203116,
+          "x": 637.7839740355944,
           "y": 244.70221594855312
         },
         {
@@ -1298,8 +1311,8 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 575.5555539203116,
-          "y": 116.2642075982328
+          "x": 637.2839740355944,
+          "y": 115.21180862235866
         },
         "upperLeft": {
           "x": 139.6932668371128,
@@ -1312,7 +1325,7 @@
           "y": 6.000000000000001
         },
         {
-          "x": 575.5555539203116,
+          "x": 637.2839740355944,
           "y": 37
         },
         {
@@ -1356,18 +1369,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 555.298490922858,
-          "y": 136.50444995719775
+          "x": 617.3004047899492,
+          "y": 135.49259586384923
         },
         "upperLeft": {
-          "x": 448.1750194527289,
-          "y": 135.91902037086203
+          "x": 483.7034816067701,
+          "y": 135.49259586384923
         }
       },
       "dockers": [
         {
           "x": 77.07298229942785,
-          "y": 44.209838825169435
+          "y": 44.20983882516944
         },
         {
           "x": 20,
@@ -1458,12 +1471,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 448.7956929928904,
-          "y": 774.3640988187154
+          "x": 492.23913786912533,
+          "y": 796.2098833833161
         },
         "upperLeft": {
-          "x": 295.76698201813986,
-          "y": 692.3670731298376
+          "x": 339.2104268943748,
+          "y": 714.2128576944383
         }
       },
       "dockers": []
@@ -1518,12 +1531,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 447.2197049640369,
+          "x": 482.93820743572974,
           "y": 179.70243468901867
         },
         "upperLeft": {
-          "x": 293.0737403651812,
-          "y": 91.2827570386798
+          "x": 328.79224283687404,
+          "y": 91.28275703867979
         }
       },
       "dockers": []
@@ -1570,15 +1583,673 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 444.18257946231495,
+          "x": 478.31191510125467,
           "y": 535.7646330192258
         },
         "upperLeft": {
-          "x": 299.2891995324094,
+          "x": 333.4185351713491,
           "y": 458.5667387133806
         }
       },
       "dockers": []
+    },
+    {
+      "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB",
+      "properties": {
+        "overrideid": "",
+        "name": "Check",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "multiinstance_type": "None",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "false",
+        "rulesname": "check.rule",
+        "variablesmapping": {
+          "totalCount": 3,
+          "items": [
+            {
+              "processvar": "auswahl_fahrer.fahrer.age",
+              "rulesvar": "alter",
+              "direction": "incoming"
+            },
+            {
+              "processvar": "auswahl_freies_fahrzeug.Freie_Fahrzeuge.wert",
+              "rulesvar": "wert",
+              "direction": "incoming"
+            },
+            {
+              "processvar": "check_status",
+              "rulesvar": "status",
+              "direction": "outgoing"
+            }
+          ]
+        },
+        "tasktype": "Rules"
+      },
+      "stencil": {
+        "id": "RulesTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_05459A2A-339D-4502-B0D5-D5520457335A"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 182.70565836094627,
+          "y": 859.5526443357996
+        },
+        "upperLeft": {
+          "x": 34.01013608068754,
+          "y": 782.2331298558133
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_80E4D936-A798-44B4-B9DA-E143C0B2B23B",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true"
+      },
+      "stencil": {
+        "id": "ExclusiveGateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_DA45E1D2-5092-4923-A1D4-684FC8C422CC"
+        },
+        {
+          "resourceId": "oryx_F812F9F9-6C3D-4753-8CFD-7C3C69B97AD4"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 128.35789722081688,
+          "y": 958.2736741785635
+        },
+        "upperLeft": {
+          "x": 88.35789722081688,
+          "y": 918.2736741785635
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_DA45E1D2-5092-4923-A1D4-684FC8C422CC",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${check_status != \"ok\"}",
+        "showdiamondmarker": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 107.60812236993499,
+          "y": 1061.386140482657
+        },
+        "upperLeft": {
+          "x": 107.60812236993499,
+          "y": 957.2794016949467
+        }
+      },
+      "dockers": [
+        {
+          "x": 19.25022514911811,
+          "y": 35.23772563496459
+        },
+        {
+          "x": 49.25022514911809,
+          "y": 9.288458838717588
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0"
+      }
+    },
+    {
+      "resourceId": "oryx_6A58FC8A-3A06-4354-B526-2BB96D8A0F53",
+      "properties": {
+        "overrideid": "",
+        "name": "Abgelehnt",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${supervisorResult=='nok'}",
+        "showdiamondmarker": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_78B62C09-B402-4898-B2D2-5DFA25F15B81"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 208.19439372401462,
+          "y": 1454.5630046215615
+        },
+        "upperLeft": {
+          "x": 208.19439372401462,
+          "y": 1368.880544434071
+        }
+      },
+      "dockers": [
+        {
+          "x": 19.78917085445488,
+          "y": 29.314643288066236
+        },
+        {
+          "x": 52.99990603719979,
+          "y": 16.192953762633806
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_78B62C09-B402-4898-B2D2-5DFA25F15B81"
+      }
+    },
+    {
+      "resourceId": "oryx_DBF2F93B-2821-4C84-9054-6E2DFB4081C6",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "processid": "",
+        "gatewaytype": "XOR",
+        "xortype": "Data",
+        "markervisible": "true"
+      },
+      "stencil": {
+        "id": "ExclusiveGateway"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_6A58FC8A-3A06-4354-B526-2BB96D8A0F53"
+        },
+        {
+          "resourceId": "oryx_029D1D68-D470-428D-8028-576ADFD9BF65"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 228.40522286955974,
+          "y": 1368.823405569617
+        },
+        "upperLeft": {
+          "x": 188.40522286955974,
+          "y": 1328.823405569617
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0",
+      "properties": {
+        "overrideid": "",
+        "name": "Mail an Supervisor",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "multiinstance_type": "None",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "false",
+        "type": "mail",
+        "to": "ms@tpso.com",
+        "cc": "",
+        "bcc": "",
+        "from": "ms123@gmx.de",
+        "subject": "SuperVisor",
+        "attachment": "",
+        "text": "${auswahl_fahrer.fahrer.name} möchte mit dem teueren Auto fahren\n${__processInstanceId}",
+        "tasktype": "Send"
+      },
+      "stencil": {
+        "id": "MailTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_996D30DF-D6EF-4EAB-B15E-3235EDCBBB3B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 158.3578972208169,
+          "y": 1142.3243545820012
+        },
+        "upperLeft": {
+          "x": 58.3578972208169,
+          "y": 1062.3243545820012
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_144E27C6-28E1-44B0-95FB-C4CD94ED832D",
+      "properties": {
+        "overrideid": "",
+        "name": "Warten auf Antwort",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "messageref": "supervisorAnswer"
+      },
+      "stencil": {
+        "id": "CatchMessageEvent"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_2CCFCAA0-3273-4D67-8E04-47BAFA4BCA79"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 223.40522286955962,
+          "y": 1203.34969478372
+        },
+        "upperLeft": {
+          "x": 193.40522286955962,
+          "y": 1173.34969478372
+        }
+      },
+      "dockers": [
+        {
+          "x": 208.40522286955962,
+          "y": 1188.34969478372
+        }
+      ]
+    },
+    {
+      "resourceId": "oryx_996D30DF-D6EF-4EAB-B15E-3235EDCBBB3B",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": null
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_144E27C6-28E1-44B0-95FB-C4CD94ED832D"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 208.40522286955962,
+          "y": 1172.5640894365497
+        },
+        "upperLeft": {
+          "x": 158.59994031355748,
+          "y": 1102.3243545820012
+        }
+      },
+      "dockers": [
+        {
+          "x": 50.000000000000014,
+          "y": 40
+        },
+        {
+          "x": 208.40522286955962,
+          "y": 1102.3243545820012
+        },
+        {
+          "x": 15.000000000000002,
+          "y": 15
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_144E27C6-28E1-44B0-95FB-C4CD94ED832D"
+      }
+    },
+    {
+      "resourceId": "oryx_2CCFCAA0-3273-4D67-8E04-47BAFA4BCA79",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": null
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_DBF2F93B-2821-4C84-9054-6E2DFB4081C6"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 208.40522286955974,
+          "y": 1329.017892586895
+        },
+        "upperLeft": {
+          "x": 208.40522286955962,
+          "y": 1203.7672547371405
+        }
+      },
+      "dockers": [
+        {
+          "x": 15,
+          "y": 15
+        },
+        {
+          "x": 20,
+          "y": 20
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_DBF2F93B-2821-4C84-9054-6E2DFB4081C6"
+      }
+    },
+    {
+      "resourceId": "oryx_381F3671-1365-4882-A7E5-50AA0F05B8D9",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000"
+      },
+      "stencil": {
+        "id": "EndNoneEvent"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 222.40522286955962,
+          "y": 1592.4662597116267
+        },
+        "upperLeft": {
+          "x": 194.40522286955962,
+          "y": 1564.4662597116267
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_F812F9F9-6C3D-4753-8CFD-7C3C69B97AD4",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${check_status=='ok'}"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 339.2067611890989,
+          "y": 938.7407948097381
+        },
+        "upperLeft": {
+          "x": 129.03707621595294,
+          "y": 938.3983504223892
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 20.5
+        },
+        {
+          "x": 76.51435548737527,
+          "y": 40.998512844438835
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+      }
+    },
+    {
+      "resourceId": "oryx_05459A2A-339D-4502-B0D5-D5520457335A",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": null
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_80E4D936-A798-44B4-B9DA-E143C0B2B23B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 108.35789722081691,
+          "y": 918.0158887977985
+        },
+        "upperLeft": {
+          "x": 108.35789722081688,
+          "y": 860.4084578573361
+        }
+      },
+      "dockers": [
+        {
+          "x": 74.34776114012939,
+          "y": 38.65975723999309
+        },
+        {
+          "x": 20,
+          "y": 20
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_80E4D936-A798-44B4-B9DA-E143C0B2B23B"
+      }
+    },
+    {
+      "resourceId": "oryx_029D1D68-D470-428D-8028-576ADFD9BF65",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${supervisorResult=='ok'}"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 338.46029132718814,
+          "y": 1349.323405569617
+        },
+        "upperLeft": {
+          "x": 228.6308733726616,
+          "y": 938.2736741785636
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 20.5
+        },
+        {
+          "x": 283.80782488196724,
+          "y": 1349.323405569617
+        },
+        {
+          "x": 283.80782488196724,
+          "y": 938.2736741785636
+        },
+        {
+          "x": 76.51435548737527,
+          "y": 40.998512844438835
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+      }
+    },
+    {
+      "resourceId": "oryx_78B62C09-B402-4898-B2D2-5DFA25F15B81",
+      "properties": {
+        "overrideid": "",
+        "name": "Ablehnung",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "asynchronousdefinition": "No",
+        "exclusivedefinition": "Yes",
+        "multiinstance_type": "None",
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "",
+        "multiinstance_variable": "",
+        "multiinstance_condition": "",
+        "isforcompensation": "false",
+        "formkey": "zu_jung.form",
+        "variablesmapping": null,
+        "formvarname": "",
+        "candidategroups": null,
+        "candidateusers": null,
+        "assignee": "${initiator}",
+        "tasktype": "User"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_DC5C9599-FA33-45D7-B5EB-E6E3069E879B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 255.19448768681482,
+          "y": 1535.312316347562
+        },
+        "upperLeft": {
+          "x": 155.19448768681482,
+          "y": 1455.312316347562
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_DC5C9599-FA33-45D7-B5EB-E6E3069E879B",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "None",
+        "conditionsequenceflow": null
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_381F3671-1365-4882-A7E5-50AA0F05B8D9"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 207.86496230670357,
+          "y": 1564.4742006695092
+        },
+        "upperLeft": {
+          "x": 206.76318686289383,
+          "y": 1535.9396228734815
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 14,
+          "y": 14
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_381F3671-1365-4882-A7E5-50AA0F05B8D9"
+      }
     }
   ],
   "bounds": {
@@ -1596,5 +2267,5 @@
     "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
   },
   "ssextensions": [],
-  "zoomLevel": 0.8019000000000002
+  "zoomLevel": 0.8820900000000003
 }
