@@ -4,11 +4,12 @@
 {
   "resourceId": "oryx_5D4C1984-0B6C-4220-B575-8F424514D8DB",
   "properties": {
-    "xf_id": "driverCriteria",
+    "xf_id": "driverCriteria.form",
     "xf_name": "driverCriteria",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,
+    "xf_method_fetch": "",
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -45,7 +46,7 @@
           "resourceId": "oryx_F87214F6-6A92-4497-B8A5-496AB045FDD5",
           "properties": {
             "xf_id": "",
-            "xf_text": "Name des Fahrers eingeben"
+            "xf_text": "@drivername.or.part"
           },
           "stencil": {
             "id": "Label"
@@ -107,7 +108,7 @@
           "resourceId": "oryx_441D81C9-81F4-4521-92C1-AC15AC1768B1",
           "properties": {
             "xf_id": "",
-            "xf_text": "Ausgewähltes Kfzmodell"
+            "xf_text": "@selected.car.model"
           },
           "stencil": {
             "id": "Label"
@@ -144,9 +145,9 @@
       "resourceId": "oryx_D28A63AC-745E-46B8-8D18-2758F0B985C8",
       "properties": {
         "xf_id": "driverListAlert",
-        "xf_message": "Keine Fahrer gefunden",
-        "xf_message_de": null,
-        "xf_message_en": null,
+        "xf_message": "",
+        "xf_message_de": "Keine Fahrer gefunden",
+        "xf_message_en": "No driver found",
         "xf_exclude": "driverListAlert == false"
       },
       "stencil": {
@@ -170,9 +171,9 @@
       "resourceId": "oryx_5C9064A7-6BDF-4DAE-AC46-E02162E1CA23",
       "properties": {
         "xf_id": "error_alert",
-        "xf_message": "Fahrer nicht berechtigt",
-        "xf_message_de": null,
-        "xf_message_en": null,
+        "xf_message": "",
+        "xf_message_de": "Fahrer nicht berechtigt",
+        "xf_message_en": "Driver not authorized",
         "xf_exclude": "!error_alert"
       },
       "stencil": {
@@ -195,8 +196,8 @@
   ],
   "bounds": {
     "lowerRight": {
-      "x": 1485,
-      "y": 1050
+      "x": 2485,
+      "y": 3050
     },
     "upperLeft": {
       "x": 0,

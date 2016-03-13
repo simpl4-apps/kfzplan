@@ -203,6 +203,54 @@
         "msgstr": "Workflows"
     },
     {
+        "msgstr": "Period",
+        "msgid": "needed.period"
+    },
+    {
+        "msgstr": "To",
+        "msgid": "to"
+    },
+    {
+        "msgstr": "From",
+        "msgid": "from"
+    },
+    {
+        "msgstr": "Drivername",
+        "msgid": "drivername.or.part"
+    },
+    {
+        "msgstr": "Selected car",
+        "msgid": "selected.car.model"
+    },
+    {
+        "msgstr": "Available cars",
+        "msgid": "available.cars"
+    },
+    {
+        "msgstr": "Driver givenname",
+        "msgid": "driver.givenname"
+    },
+    {
+        "msgstr": "Driver name",
+        "msgid": "driver.name"
+    },
+    {
+        "msgstr": "Selected car",
+        "msgid": "selected.car"
+    },
+    {
+        "msgstr": "Driver",
+        "msgid": "driver"
+    },
+    {
+        "msgstr": "car registration",
+        "msgid": "car.registration"
+    },
+    {
+        "msgstr": "Car model",
+        "msgid": "car.model"
+    },
+    {
         "msgid": "tr.menu.task_list",
         "msgstr": "Tasklist"
     }

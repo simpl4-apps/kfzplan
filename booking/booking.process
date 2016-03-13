@@ -88,7 +88,7 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formkey": "auswahl_freies_fahrzeug",
+        "formkey": "selectCar.form",
         "variablesmapping": {
           "totalCount": 1,
           "items": [
@@ -1529,7 +1529,7 @@
               "routevar": "input_date_to"
             },
             {
-              "processvar": "carCriteria.hersteller",
+              "processvar": "carCriteria.maker",
               "routevar": "hersteller"
             }
           ]

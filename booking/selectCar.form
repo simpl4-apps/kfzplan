@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_5BDB88DD-D350-4D1A-9C7E-9D2156920C55",
   "properties": {
-    "xf_id": "auswahl_freies_fahrzeug",
-    "xf_name": "auswahl_freies_fahrzeug",
+    "xf_id": "selectCar.form",
+    "xf_name": "selectCar",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,
@@ -26,13 +26,16 @@
           "totalCount": 3,
           "items": [
             {
-              "colname": "modell"
+              "colname": "modell",
+              "display": "@data.fahrzeuge.modell"
             },
             {
-              "colname": "kennzeichen"
+              "colname": "kennzeichen",
+              "display": "@data.fahrzeuge.kennzeichen"
             },
             {
-              "colname": "hersteller"
+              "colname": "hersteller",
+              "display": "@data.fahrzeuge.hersteller"
             }
           ]
         },
@@ -50,7 +53,7 @@
           "resourceId": "oryx_3A267C62-5B63-40B9-9937-21F5CF3B7225",
           "properties": {
             "xf_id": "",
-            "xf_text": "Verfügbare Fahrzeuge"
+            "xf_text": "@available.cars"
           },
           "stencil": {
             "id": "Label"

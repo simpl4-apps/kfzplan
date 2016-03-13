@@ -333,5 +333,53 @@
     {
         "msgstr": "Teams",
         "msgid": "data.fahrzeuge._team_list"
+    },
+    {
+        "msgstr": "Zeitraum",
+        "msgid": "needed.period"
+    },
+    {
+        "msgstr": "Bis",
+        "msgid": "to"
+    },
+    {
+        "msgstr": "Von",
+        "msgid": "from"
+    },
+    {
+        "msgstr": "Fahrername",
+        "msgid": "drivername.or.part"
+    },
+    {
+        "msgstr": "Ausgewähltes Auto",
+        "msgid": "selected.car.model"
+    },
+    {
+        "msgstr": "Fahrer Vorname",
+        "msgid": "driver.givenname"
+    },
+    {
+        "msgstr": "Ausgewähltes Auto",
+        "msgid": "selected.car"
+    },
+    {
+        "msgstr": "Fahrer",
+        "msgid": "driver"
+    },
+    {
+        "msgstr": "Fahrer Name",
+        "msgid": "driver.name"
+    },
+    {
+        "msgstr": "Auto Kennzeichen",
+        "msgid": "car.registration"
+    },
+    {
+        "msgstr": "Automodell",
+        "msgid": "car.model"
+    },
+    {
+        "msgstr": "Verfügbare Autos",
+        "msgid": "available.cars"
     }
 ]

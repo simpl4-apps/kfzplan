@@ -4,7 +4,7 @@
 {
   "resourceId": "oryx_684C4EEC-246A-4DE0-A012-547DCBB6D11C",
   "properties": {
-    "xf_id": "selectDriver",
+    "xf_id": "selectDriver.form",
     "xf_name": "selectDriver",
     "xf_version": "",
     "xf_default_buttons": true,
@@ -46,7 +46,7 @@
           "resourceId": "oryx_9990F6AA-4168-4D9C-9C04-5B9555F45591",
           "properties": {
             "xf_id": "",
-            "xf_text": "Gewähltes Fahrzeug"
+            "xf_text": "@selected.car"
           },
           "stencil": {
             "id": "Label"
@@ -108,7 +108,7 @@
           "resourceId": "oryx_35EAE660-DC64-47A6-8625-EE15DB340435",
           "properties": {
             "xf_id": "",
-            "xf_text": "Kennzeichen"
+            "xf_text": "@car.registration"
           },
           "stencil": {
             "id": "Label"
@@ -160,10 +160,12 @@
               "totalCount": 2,
               "items": [
                 {
-                  "colname": "vorname"
+                  "colname": "vorname",
+                  "display": "@data.fahrer.vorname"
                 },
                 {
-                  "colname": "name"
+                  "colname": "name",
+                  "display": "@data.fahrer.name"
                 }
               ]
             },
@@ -194,7 +196,7 @@
           "resourceId": "oryx_9D0BC09B-C781-44BA-80BF-589B05C68E7D",
           "properties": {
             "xf_id": "",
-            "xf_text": "Fahrer"
+            "xf_text": "@driver"
           },
           "stencil": {
             "id": "Label"

@@ -4,11 +4,12 @@
 {
   "resourceId": "oryx_7CD6DE25-CD87-4855-ACC3-EC3C439ADF8B",
   "properties": {
-    "xf_id": "carCriteria",
+    "xf_id": "carCriteria.form",
     "xf_name": "carCriteria",
     "xf_version": "",
     "xf_default_buttons": false,
     "xf_postprocess": null,
+    "xf_method_fetch": "",
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -137,7 +138,7 @@
               "resourceId": "oryx_CD9C63EE-26B0-45DF-BF4F-68F925CF6C5A",
               "properties": {
                 "xf_id": "",
-                "xf_text": "von"
+                "xf_text": "@from"
               },
               "stencil": {
                 "id": "Label"
@@ -174,7 +175,7 @@
           "resourceId": "oryx_54B3BB58-C1E8-48DD-BCFF-B005A77FF2C3",
           "properties": {
             "xf_id": "",
-            "xf_text": "Zeitraum"
+            "xf_text": "@needed.period"
           },
           "stencil": {
             "id": "Label"
@@ -222,7 +223,7 @@
               "resourceId": "oryx_454D366D-2D3C-4E94-BD43-1AADC73B88A0",
               "properties": {
                 "xf_id": "",
-                "xf_text": "bis"
+                "xf_text": "@to"
               },
               "stencil": {
                 "id": "Label"
@@ -283,9 +284,10 @@
         {
           "resourceId": "oryx_D8E4AD18-3553-4116-B7C9-7DFC56B630C8",
           "properties": {
-            "xf_id": "hersteller",
+            "xf_id": "maker",
             "xf_default": "2",
             "xf_multiselection": "",
+            "xf_jsonpath": "",
             "xf_enumembed": null,
             "xf_enum": {
               "totalCount": 2,
@@ -325,7 +327,7 @@
           "resourceId": "oryx_A400ECE3-E96B-496A-A717-17B57E4D478C",
           "properties": {
             "xf_id": "",
-            "xf_text": "Hersteller"
+            "xf_text": "@data.fahrzeuge.hersteller"
           },
           "stencil": {
             "id": "Label"
@@ -362,9 +364,9 @@
       "resourceId": "oryx_5E59EAA6-3CB9-4DB4-BEB3-7F5323120316",
       "properties": {
         "xf_id": "fahrzeugliste_alert",
-        "xf_message": "Kein Fahrzeug gefunden",
-        "xf_message_de": null,
-        "xf_message_en": null,
+        "xf_message": "",
+        "xf_message_de": "Kein Auto gefunden",
+        "xf_message_en": "No car found",
         "xf_exclude": "!fahrzeugliste_alert"
       },
       "stencil": {

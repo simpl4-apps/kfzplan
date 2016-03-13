@@ -4,11 +4,12 @@
 {
   "resourceId": "oryx_98C5D72F-116D-4A45-9308-89E7C2C099DB",
   "properties": {
-    "xf_id": "overview",
+    "xf_id": "overview.form",
     "xf_name": "overview",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,
+    "xf_method_fetch": "",
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -45,7 +46,7 @@
           "resourceId": "oryx_DC9C14E8-CB7D-4509-810E-FCFBF4B134A8",
           "properties": {
             "xf_id": "",
-            "xf_text": "Fahrzeugkennzeichen"
+            "xf_text": "@car.registration"
           },
           "stencil": {
             "id": "Label"
@@ -107,7 +108,7 @@
           "resourceId": "oryx_01FF53CA-3B94-4C98-AF30-ED04B4B24F75",
           "properties": {
             "xf_id": "",
-            "xf_text": "Fahrzeugmodell"
+            "xf_text": "@car.model"
           },
           "stencil": {
             "id": "Label"
@@ -169,7 +170,7 @@
           "resourceId": "oryx_4B9D02A5-18B4-4BF2-A060-69B135B4DB19",
           "properties": {
             "xf_id": "",
-            "xf_text": "Name Fahrer"
+            "xf_text": "@driver.name"
           },
           "stencil": {
             "id": "Label"
@@ -231,7 +232,7 @@
           "resourceId": "oryx_58E9A148-7036-40A4-8666-B340C82CD2B4",
           "properties": {
             "xf_id": "",
-            "xf_text": "Vorname Fahrer"
+            "xf_text": "@driver.givenname"
           },
           "stencil": {
             "id": "Label"
