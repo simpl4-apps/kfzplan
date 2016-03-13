@@ -1050,7 +1050,7 @@
           "items": [
             {
               "processvar": "${isListEmpty(carList)}",
-              "formvar": "fahrzeugliste_alert",
+              "formvar": "carListEmptyAlert",
               "direction": null
             }
           ]

@@ -363,11 +363,11 @@
     {
       "resourceId": "oryx_5E59EAA6-3CB9-4DB4-BEB3-7F5323120316",
       "properties": {
-        "xf_id": "fahrzeugliste_alert",
+        "xf_id": "carListEmptyAlert",
         "xf_message": "",
-        "xf_message_de": "Kein Auto gefunden",
-        "xf_message_en": "No car found",
-        "xf_exclude": "!fahrzeugliste_alert"
+        "xf_message_de": "<h3>Kein Auto gefunden</h3>",
+        "xf_message_en": "<h3>No car found</h3>",
+        "xf_exclude": "!carListEmptyAlert"
       },
       "stencil": {
         "id": "Alert"

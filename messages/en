@@ -243,12 +243,16 @@
         "msgid": "driver"
     },
     {
-        "msgstr": "car registration",
+        "msgstr": "Registration",
         "msgid": "car.registration"
     },
     {
         "msgstr": "Car model",
         "msgid": "car.model"
+    },
+    {
+        "msgstr": "Registration",
+        "msgid": "data.fahrzeuge.kennzeichen"
     },
     {
         "msgid": "tr.menu.task_list",
