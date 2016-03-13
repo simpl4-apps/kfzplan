@@ -111,6 +111,14 @@
         "msgstr": "Vehicles"
     },
     {
+        "msgstr": "Part1",
+        "msgid": "data.fahrzeuge.tab1"
+    },
+    {
+        "msgstr": "Part2",
+        "msgid": "data.fahrzeuge.tab2"
+    },
+    {
         "msgid": "data.fahrzeuge.buchungen_list",
         "msgstr": "Vehicle bookings"
     },

@@ -131,6 +131,14 @@
         "msgid": "data.fahrzeuge"
     },
     {
+        "msgstr": "Teil1",
+        "msgid": "data.fahrzeuge.tab1"
+    },
+    {
+        "msgstr": "Teil2",
+        "msgid": "data.fahrzeuge.tab2"
+    },
+    {
         "msgstr": "Absenkung",
         "msgid": "data.fahrzeuge.absenkung"
     },
