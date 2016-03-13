@@ -9,6 +9,7 @@
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,
+    "xf_method_fetch": "",
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -19,7 +20,7 @@
     {
       "resourceId": "oryx_FA87E5DC-8D0C-4605-AD56-334C9D20DFDF",
       "properties": {
-        "xf_id": "Freie_Fahrzeuge",
+        "xf_id": "car",
         "xf_multiselection": "",
         "xf_columns": {
           "totalCount": 3,
@@ -35,7 +36,7 @@
             }
           ]
         },
-        "xf_inputlistname": "Freie_Fahrzeuge",
+        "xf_inputlistname": "carList",
         "xf_filter": null,
         "xf_required": "true",
         "xf_navindex": "",

@@ -2,7 +2,7 @@
 	type = sw.filter
 --
 {
-  "id": "Freie_Fahrzeuge_II",
+  "id": "carList",
   "modulename": "fahrzeuge",
   "storeId": "kfzplan_data",
   "user": null,
