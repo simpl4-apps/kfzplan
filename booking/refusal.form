@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_8C445096-C173-4FE6-953D-C7D531FB8FDA",
   "properties": {
-    "xf_id": "",
-    "xf_name": "",
+    "xf_id": "refusal",
+    "xf_name": "refusal",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,

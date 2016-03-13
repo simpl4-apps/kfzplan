@@ -2,7 +2,7 @@
 	type = sw.filter
 --
 {
-  "id": "Fahrerauswahl",
+  "id": "driverList",
   "modulename": "fahrer",
   "storeId": "kfzplan_data",
   "user": null,

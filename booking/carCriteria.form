@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_7CD6DE25-CD87-4855-ACC3-EC3C439ADF8B",
   "properties": {
-    "xf_id": "Form1",
-    "xf_name": "startForm",
+    "xf_id": "carCriteria",
+    "xf_name": "carCriteria",
     "xf_version": "",
     "xf_default_buttons": false,
     "xf_postprocess": null,

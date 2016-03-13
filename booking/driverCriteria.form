@@ -2,10 +2,10 @@
 	type = sw.form
 --
 {
-  "resourceId": "oryx_684C4EEC-246A-4DE0-A012-547DCBB6D11C",
+  "resourceId": "oryx_5D4C1984-0B6C-4220-B575-8F424514D8DB",
   "properties": {
-    "xf_id": "auswahl_fahrer",
-    "xf_name": "auswahl_fahrer",
+    "xf_id": "driverCriteria",
+    "xf_name": "driverCriteria",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,
@@ -17,7 +17,69 @@
   },
   "childShapes": [
     {
-      "resourceId": "oryx_9DE321AD-A266-441B-9696-2A6C4F1C2B87",
+      "resourceId": "oryx_353181B1-A6F7-4CC9-BE7B-E142E4CC4230",
+      "properties": {
+        "xf_id": "name_input",
+        "xf_type": "text",
+        "xf_default": "",
+        "xf_exclude": "",
+        "xf_invisible": "",
+        "xf_readonly": "",
+        "xf_required": "true",
+        "xf_filtercheck": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null,
+        "xf_navindex": "",
+        "xf_accesskey": "",
+        "xf_calculate": "",
+        "xf_constraint": ""
+      },
+      "stencil": {
+        "id": "Input"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_F87214F6-6A92-4497-B8A5-496AB045FDD5",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "Name des Fahrers eingeben"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 111
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 87
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3BCDDABB-66E3-4DF7-B4B7-9C9FFA80FBE2",
       "properties": {
         "xf_id": "kfz_modell",
         "xf_type": "text",
@@ -42,10 +104,10 @@
       },
       "childShapes": [
         {
-          "resourceId": "oryx_9990F6AA-4168-4D9C-9C04-5B9555F45591",
+          "resourceId": "oryx_441D81C9-81F4-4521-92C1-AC15AC1768B1",
           "properties": {
             "xf_id": "",
-            "xf_text": "Gewähltes Fahrzeug"
+            "xf_text": "Ausgewähltes Kfzmodell"
           },
           "stencil": {
             "id": "Label"
@@ -69,6 +131,58 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
+          "y": 165
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 141
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_D28A63AC-745E-46B8-8D18-2758F0B985C8",
+      "properties": {
+        "xf_id": "driverListAlert",
+        "xf_message": "Keine Fahrer gefunden",
+        "xf_message_de": null,
+        "xf_message_en": null,
+        "xf_exclude": "driverListAlert == false"
+      },
+      "stencil": {
+        "id": "Alert"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 350,
+          "y": 57
+        },
+        "upperLeft": {
+          "x": 208,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_5C9064A7-6BDF-4DAE-AC46-E02162E1CA23",
+      "properties": {
+        "xf_id": "error_alert",
+        "xf_message": "Fahrer nicht berechtigt",
+        "xf_message_de": null,
+        "xf_message_en": null,
+        "xf_exclude": "!error_alert"
+      },
+      "stencil": {
+        "id": "Alert"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 178,
           "y": 54
         },
         "upperLeft": {
@@ -77,160 +191,12 @@
         }
       },
       "dockers": []
-    },
-    {
-      "resourceId": "oryx_9CEE2573-A956-4807-943A-4377235D4AB9",
-      "properties": {
-        "xf_id": "kfz_kennzeichen",
-        "xf_type": "text",
-        "xf_default": "",
-        "xf_exclude": "",
-        "xf_invisible": "",
-        "xf_readonly": "true",
-        "xf_required": "",
-        "xf_filtercheck": null,
-        "xf_constraint_text": null,
-        "xf_constraint_date": null,
-        "xf_constraint_boolean": null,
-        "xf_constraint_decimal": null,
-        "xf_constraint_number": null,
-        "xf_navindex": "",
-        "xf_accesskey": "",
-        "xf_calculate": "",
-        "xf_constraint": ""
-      },
-      "stencil": {
-        "id": "Input"
-      },
-      "childShapes": [
-        {
-          "resourceId": "oryx_35EAE660-DC64-47A6-8625-EE15DB340435",
-          "properties": {
-            "xf_id": "",
-            "xf_text": "Kennzeichen"
-          },
-          "stencil": {
-            "id": "Label"
-          },
-          "childShapes": [],
-          "outgoing": [],
-          "bounds": {
-            "lowerRight": {
-              "x": 100,
-              "y": -1
-            },
-            "upperLeft": {
-              "x": 0,
-              "y": -21
-            }
-          },
-          "dockers": []
-        }
-      ],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 180,
-          "y": 108
-        },
-        "upperLeft": {
-          "x": 30,
-          "y": 84
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_80EFE198-9600-44DC-9693-8B652DD0431B",
-      "properties": {
-        "xf_id": "",
-        "xf_place": "normal"
-      },
-      "stencil": {
-        "id": "Group"
-      },
-      "childShapes": [
-        {
-          "resourceId": "oryx_0149FE68-67F1-4D28-870A-FBE5B291FB27",
-          "properties": {
-            "xf_id": "fahrer",
-            "xf_multiselection": "",
-            "xf_columns": {
-              "totalCount": 2,
-              "items": [
-                {
-                  "colname": "vorname"
-                },
-                {
-                  "colname": "name"
-                }
-              ]
-            },
-            "xf_inputlistname": "fahrerliste",
-            "xf_filter": null,
-            "xf_required": "true",
-            "xf_navindex": "",
-            "xf_accesskey": ""
-          },
-          "stencil": {
-            "id": "Tableselect"
-          },
-          "childShapes": [],
-          "outgoing": [],
-          "bounds": {
-            "lowerRight": {
-              "x": 422,
-              "y": 192
-            },
-            "upperLeft": {
-              "x": 30,
-              "y": 30
-            }
-          },
-          "dockers": []
-        },
-        {
-          "resourceId": "oryx_9D0BC09B-C781-44BA-80BF-589B05C68E7D",
-          "properties": {
-            "xf_id": "",
-            "xf_text": "Fahrer"
-          },
-          "stencil": {
-            "id": "Label"
-          },
-          "childShapes": [],
-          "outgoing": [],
-          "bounds": {
-            "lowerRight": {
-              "x": 100,
-              "y": -1
-            },
-            "upperLeft": {
-              "x": 0,
-              "y": -21
-            }
-          },
-          "dockers": []
-        }
-      ],
-      "outgoing": [],
-      "bounds": {
-        "lowerRight": {
-          "x": 482,
-          "y": 360
-        },
-        "upperLeft": {
-          "x": 30,
-          "y": 138
-        }
-      },
-      "dockers": []
     }
   ],
   "bounds": {
     "lowerRight": {
-      "x": 2485,
-      "y": 3050
+      "x": 1485,
+      "y": 1050
     },
     "upperLeft": {
       "x": 0,

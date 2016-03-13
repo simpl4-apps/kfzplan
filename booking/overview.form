@@ -4,8 +4,8 @@
 {
   "resourceId": "oryx_98C5D72F-116D-4A45-9308-89E7C2C099DB",
   "properties": {
-    "xf_id": "uebersicht_selectionen",
-    "xf_name": "uebersicht_selectionen",
+    "xf_id": "overview",
+    "xf_name": "overview",
     "xf_version": "",
     "xf_default_buttons": true,
     "xf_postprocess": null,

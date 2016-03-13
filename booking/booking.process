@@ -99,7 +99,7 @@
             }
           ]
         },
-        "formvarname": "",
+        "formvarname": "-",
         "candidategroups": "",
         "candidateusers": null,
         "assignee": "${initiator}",
@@ -249,25 +249,28 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formkey": "fahrer_suchen",
+        "formkey": "driverCriteria.form",
         "variablesmapping": {
           "totalCount": 3,
           "items": [
             {
               "processvar": "selectedCar.modell",
-              "formvar": "kfz_modell"
+              "formvar": "kfz_modell",
+              "direction": null
             },
             {
-              "processvar": "auswahl_fahrer",
-              "formvar": "error_alert"
+              "processvar": "driverCriteria",
+              "formvar": "error_alert",
+              "direction": null
             },
             {
-              "processvar": "${isListEmpty(fahrerliste)}",
-              "formvar": "fahrerliste_alert"
+              "processvar": "${isListEmpty(driverList)}",
+              "formvar": "driverListAlert",
+              "direction": null
             }
           ]
         },
-        "formvarname": "",
+        "formvarname": "driverCriteria",
         "candidategroups": "",
         "candidateusers": null,
         "assignee": "${initiator}",
@@ -368,7 +371,7 @@
         "bordercolor": "#000000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${\n  !selectedCar.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return auswahl_fahrer.fahrer.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
+        "conditionsequenceflow": "${\n  !selectedCar.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return selectedDriver.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
         "isimmediate": "",
         "auditing": "",
         "showdiamondmarker": false,
@@ -428,7 +431,7 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", auswahl_fahrer.fahrer.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", selectedCar.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(startForm.input_date_from);\nneueBuchung.bisdatum=new Date(startForm.input_date_to);\n",
+        "script": "/*Neue  Buchung erzeugen*/\ndef neueBuchung = createObject(\"buchungen\");\n\n\n//Zuweisung Fahrer/Fahrzeug\nneueBuchung.fahrer = getObjectById (\"fahrer\", selectedDriver.id );\nneueBuchung.fahrzeuge  = getObjectById (\"fahrzeuge\", selectedCar.id );\n\n/*Zuweisung des Buchungszeitraums*/\nneueBuchung.vondatum=new Date(carCriteria.input_date_from);\nneueBuchung.bisdatum=new Date(carCriteria.input_date_to);\n",
         "tasktype": "Script",
         "assignments": "",
         "startquantity": 1,
@@ -487,7 +490,7 @@
         "bordercolor": "#000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${\n  selectedCar.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return auswahl_fahrer.fahrer.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
+        "conditionsequenceflow": "${\n  selectedCar.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return selectedDriver.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
         "showdiamondmarker": "",
         "isimmediate": "",
         "auditing": "",
@@ -684,7 +687,7 @@
         "bordercolor": "#000000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${fahrerliste.size()>0}",
+        "conditionsequenceflow": "${driverList.size()>0}",
         "showdiamondmarker": false,
         "isimmediate": "",
         "monitoring": "",
@@ -738,7 +741,7 @@
         "bordercolor": "#000000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${fahrerliste.size()==0}",
+        "conditionsequenceflow": "${driverList.size()==0}",
         "isimmediate": "",
         "auditing": "",
         "showdiamondmarker": false,
@@ -848,21 +851,28 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formkey": "auswahl_fahrer",
+        "formkey": "selectDriver.form",
         "variablesmapping": {
-          "totalCount": 2,
+          "totalCount": 3,
           "items": [
             {
               "processvar": "selectedCar.modell",
-              "formvar": "kfz_modell"
+              "formvar": "kfz_modell",
+              "direction": "incoming"
             },
             {
               "processvar": "selectedCar.kennzeichen",
-              "formvar": "kfz_kennzeichen"
+              "formvar": "kfz_kennzeichen",
+              "direction": "incoming"
+            },
+            {
+              "processvar": "selectedDriver",
+              "formvar": "fahrer",
+              "direction": "outgoing"
             }
           ]
         },
-        "formvarname": "",
+        "formvarname": "-",
         "candidategroups": "",
         "candidateusers": null,
         "assignee": "${initiator}",
@@ -1034,7 +1044,7 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formkey": "Form1",
+        "formkey": "carCriteria.form",
         "variablesmapping": {
           "totalCount": 1,
           "items": [
@@ -1045,7 +1055,7 @@
             }
           ]
         },
-        "formvarname": "startForm",
+        "formvarname": "carCriteria",
         "candidategroups": "",
         "candidateusers": null,
         "assignee": "${initiator}",
@@ -1414,7 +1424,7 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "",
-        "formkey": "uebersicht_selectionen",
+        "formkey": "overview.form",
         "variablesmapping": {
           "totalCount": 4,
           "items": [
@@ -1427,16 +1437,16 @@
               "formvar": "kfz_kennzeichen"
             },
             {
-              "processvar": "auswahl_fahrer.fahrer.name",
+              "processvar": "selectedDriver.name",
               "formvar": "fahrer_name"
             },
             {
-              "processvar": "auswahl_fahrer.fahrer.vorname",
+              "processvar": "selectedDriver.vorname",
               "formvar": "fahrer_vorname"
             }
           ]
         },
-        "formvarname": "",
+        "formvarname": "-",
         "candidategroups": "",
         "candidateusers": null,
         "assignee": "${initiator}",
@@ -1505,21 +1515,21 @@
         "multiinstance_condition": "",
         "isforcompensation": "false",
         "namespace": "kfzplan",
-        "routename": "getFreieFahrzeuge",
+        "routename": "getCarList",
         "routevarname": "",
         "variablesmapping": {
           "totalCount": 3,
           "items": [
             {
-              "processvar": "startForm.input_date_from",
+              "processvar": "carCriteria.input_date_from",
               "routevar": "input_date_from"
             },
             {
-              "processvar": "startForm.input_date_to",
+              "processvar": "carCriteria.input_date_to",
               "routevar": "input_date_to"
             },
             {
-              "processvar": "startForm.hersteller",
+              "processvar": "carCriteria.hersteller",
               "routevar": "hersteller"
             }
           ]
@@ -1565,18 +1575,18 @@
         "multiinstance_condition": "",
         "isforcompensation": "false",
         "namespace": "-",
-        "routename": "getFahrerauswahl",
+        "routename": "getDriverList",
         "routevarname": "",
         "variablesmapping": {
           "totalCount": 1,
           "items": [
             {
-              "processvar": "fahrer_suchen.name_input",
+              "processvar": "driverCriteria.name_input",
               "routevar": "name"
             }
           ]
         },
-        "returnvariable": "fahrerliste",
+        "returnvariable": "driverList",
         "tasktype": "Filter"
       },
       "stencil": {
@@ -1619,7 +1629,7 @@
           "totalCount": 3,
           "items": [
             {
-              "processvar": "auswahl_fahrer.fahrer.age",
+              "processvar": "selectedDriver.age",
               "rulesvar": "alter",
               "direction": "incoming"
             },
@@ -1629,7 +1639,7 @@
               "direction": "incoming"
             },
             {
-              "processvar": "check_status",
+              "processvar": "checkStatus",
               "rulesvar": "status",
               "direction": "outgoing"
             }
@@ -1705,7 +1715,7 @@
         "bordercolor": "#000000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${check_status != \"ok\"}",
+        "conditionsequenceflow": "${checkStatus != \"ok\"}",
         "showdiamondmarker": false
       },
       "stencil": {
@@ -1845,7 +1855,7 @@
         "from": "ms123@gmx.de",
         "subject": "SuperVisor",
         "attachment": "",
-        "text": "${auswahl_fahrer.fahrer.name} möchte mit dem teueren Auto fahren\n${__processInstanceId}",
+        "text": "${selectedDriver.name} möchte mit dem teueren Auto fahren\n${__processInstanceId}",
         "tasktype": "Send"
       },
       "stencil": {
@@ -2035,7 +2045,7 @@
         "bordercolor": "#000000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${check_status=='ok'}"
+        "conditionsequenceflow": "${checkStatus=='ok'}"
       },
       "stencil": {
         "id": "SequenceFlow"
@@ -2184,7 +2194,7 @@
         "multiinstance_variable": "",
         "multiinstance_condition": "",
         "isforcompensation": "false",
-        "formkey": "zu_jung.form",
+        "formkey": "refusal.form",
         "variablesmapping": null,
         "formvarname": "",
         "candidategroups": null,
