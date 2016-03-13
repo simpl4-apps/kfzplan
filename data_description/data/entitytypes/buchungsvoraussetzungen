@@ -2,31 +2,36 @@
 	type = sw.entitytype
 --
 {
-    "enabled": true,
-    "index": 1,
-    "default_fields": true,
-    "pack": "data",
-    "team_security": true,
-    "add_self_to_subpanel": false,
-    "description": "",
-    "name": "buchungsvoraussetzungen",
-    "multi_add": false,
-    "multiple_tabs": false,
-    "exclusion_list": false,
-    "filter": "",
     "__hints__": {
 
     },
+    "default_fields": true,
+    "index": 1,
+    "description": "",
+    "pack": "data",
+    "enabled": true,
+    "multi_add": false,
+    "multiple_tabs": false,
+    "filter": "",
+    "add_self_to_subpanel": false,
+    "exclusion_list": false,
+    "state_fields": null,
+    "name": "buchungsvoraussetzungen",
+    "team_security": false,
     "fields": {
-        "beschreibung": {
-            "enabled": true,
-            "name": "beschreibung",
-            "datatype": "string"
-        },
         "schluessel": {
-            "enabled": true,
+            "datatype": "string",
             "name": "schluessel",
-            "datatype": "string"
+            "index": 0,
+            "enabled": true,
+            "edittype": "text"
+        },
+        "beschreibung": {
+            "datatype": "string",
+            "name": "beschreibung",
+            "index": 1,
+            "enabled": true,
+            "edittype": "text"
         }
     }
 }

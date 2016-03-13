@@ -6,4 +6,19 @@
   icon: inbox
   url: tasks.html
   hash: tasklist
-
+- name: data.fahrer
+  icon: inbox
+  url: fahrer.html
+  hash: fahrer
+- name: data.fahrzeuge
+  icon: inbox
+  url: fahrzeuge.html
+  hash: fahrzeuge
+- name: data.buchungen
+  icon: inbox
+  url: buchungen.html
+  hash: buchungen
+- name: data.buchungsvoraussetzungen
+  icon: inbox
+  url: buchungsvoraussetzungen.html
+  hash: buchungsvoraussetzungen

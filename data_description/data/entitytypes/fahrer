@@ -2,66 +2,66 @@
 	type = sw.entitytype
 --
 {
-    "enabled": true,
-    "index": 1,
-    "state_fields": true,
-    "default_fields": true,
-    "pack": "data",
-    "team_security": true,
-    "add_self_to_subpanel": false,
-    "description": "",
-    "name": "fahrer",
-    "multi_add": false,
-    "multiple_tabs": false,
-    "exclusion_list": false,
-    "filter": "",
     "__hints__": {
 
     },
+    "default_fields": true,
+    "index": 1,
+    "description": "",
+    "pack": "data",
+    "enabled": true,
+    "multi_add": false,
+    "multiple_tabs": false,
+    "filter": "",
+    "add_self_to_subpanel": false,
+    "exclusion_list": false,
+    "state_fields": false,
+    "name": "fahrer",
+    "team_security": false,
     "fields": {
-        "telefonnummer": {
-            "enabled": true,
-            "index": 0,
-            "name": "telefonnummer",
-            "edittype": "text",
-            "datatype": "string"
-        },
         "geburtsdatum": {
-            "enabled": true,
-            "index": 1,
+            "datatype": "date",
             "name": "geburtsdatum",
-            "edittype": "text",
-            "datatype": "date"
+            "index": 1,
+            "enabled": true,
+            "edittype": "text"
         },
         "vorname": {
-            "enabled": true,
-            "index": 2,
+            "datatype": "string",
             "name": "vorname",
-            "edittype": "text",
-            "datatype": "string"
-        },
-        "email": {
+            "index": 2,
             "enabled": true,
-            "index": 3,
-            "name": "email",
-            "edittype": "text",
-            "datatype": "string"
+            "edittype": "text"
+        },
+        "telefonnummer": {
+            "datatype": "string",
+            "name": "telefonnummer",
+            "index": 0,
+            "enabled": true,
+            "edittype": "text"
         },
         "name": {
-            "enabled": true,
-            "index": 4,
+            "datatype": "string",
             "name": "name",
-            "edittype": "text",
-            "datatype": "string"
+            "index": 4,
+            "enabled": true,
+            "edittype": "text"
         },
         "geschlecht": {
             "formatter": "select",
-            "enabled": true,
-            "index": 5,
-            "name": "geschlecht",
-            "edittype": "select",
+            "selectable_items": "Männlich,Weiblich",
             "datatype": "string",
-            "selectable_items": "Männlich,Weiblich"
+            "name": "geschlecht",
+            "index": 5,
+            "enabled": true,
+            "edittype": "select"
+        },
+        "email": {
+            "datatype": "string",
+            "name": "email",
+            "index": 3,
+            "enabled": true,
+            "edittype": "text"
         }
     }
 }

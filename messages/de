@@ -31,6 +31,14 @@
         "msgid": "data.buchungsvoraussetzungen"
     },
     {
+        "msgstr": "Buchungen",
+        "msgid": "data.buchungen_list"
+    },
+    {
+        "msgstr": "Buchungsvoraussetzungen",
+        "msgid": "data.buchungsvoraussetzungen_list"
+    },
+    {
         "msgstr": "Beschreibung",
         "msgid": "data.buchungsvoraussetzungen.beschreibung"
     },
@@ -293,10 +301,6 @@
     {
         "msgstr": "Name",
         "msgid": "fahrer_list.name"
-    },
-    {
-        "msgstr": "Daten",
-        "msgid": "data.fahrer.tab1"
     },
     {
         "msgstr": "Teams",

@@ -1,48 +1,40 @@
-[sw]
-	type = sw.setting
---
 {
     "fields": [
         {
-            "enabled": "true",
+            "tab": "tab1",
+            "displayname": "Name",
             "name": "name",
-            "tab": "tab1",
-            "displayname": "Name"
+            "enabled": "true"
         },
         {
-            "enabled": "true",
+            "tab": "tab1",
+            "displayname": "Vorname",
             "name": "vorname",
-            "tab": "tab1",
-            "displayname": "Vorname"
+            "enabled": "true"
         },
         {
-            "enabled": "true",
+            "tab": "tab1",
+            "displayname": "eMail",
             "name": "email",
-            "tab": "tab1",
-            "displayname": "eMail"
+            "enabled": "true"
         },
         {
-            "enabled": "true",
+            "tab": "tab1",
+            "displayname": "Geschlecht",
             "name": "geschlecht",
-            "tab": "tab1",
-            "displayname": "Geschlecht"
+            "enabled": "true"
         },
         {
-            "enabled": "true",
+            "tab": "tab1",
+            "displayname": "Tel.",
             "name": "telefonnummer",
+            "enabled": "true"
+        },
+        {
             "tab": "tab1",
-            "displayname": "Tel."
-        },
-        {
-            "name": "_team_list",
-            "tab": "tab2",
-            "displayname": "data.fahrer._team_list"
-        },
-        {
-            "enabled": "true",
+            "displayname": "Geburtsdatum",
             "name": "geburtsdatum",
-            "tab": "tab1",
-            "displayname": "Geburtsdatum"
+            "enabled": "true"
         }
     ]
 }

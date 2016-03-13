@@ -47,6 +47,14 @@
         "msgstr": "Key"
     },
     {
+        "msgstr": "Bookings",
+        "msgid": "data.buchungen_list"
+    },
+    {
+        "msgstr": "Bookingrequirements",
+        "msgid": "data.buchungsvoraussetzungen_list"
+    },
+    {
         "msgid": "data.fahrer",
         "msgstr": "Drivers"
     },
