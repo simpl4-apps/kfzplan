@@ -20,7 +20,7 @@
     {
       "resourceId": "oryx_9DE321AD-A266-441B-9696-2A6C4F1C2B87",
       "properties": {
-        "xf_id": "kfz_modell",
+        "xf_id": "carModel",
         "xf_type": "text",
         "xf_default": "",
         "xf_exclude": "",
@@ -82,7 +82,7 @@
     {
       "resourceId": "oryx_9CEE2573-A956-4807-943A-4377235D4AB9",
       "properties": {
-        "xf_id": "kfz_kennzeichen",
+        "xf_id": "carRegistration",
         "xf_type": "text",
         "xf_default": "",
         "xf_exclude": "",

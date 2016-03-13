@@ -255,7 +255,7 @@
           "items": [
             {
               "processvar": "selectedCar.modell",
-              "formvar": "kfz_modell",
+              "formvar": "carModel",
               "direction": null
             },
             {
@@ -857,12 +857,12 @@
           "items": [
             {
               "processvar": "selectedCar.modell",
-              "formvar": "kfz_modell",
+              "formvar": "carModel",
               "direction": "incoming"
             },
             {
               "processvar": "selectedCar.kennzeichen",
-              "formvar": "kfz_kennzeichen",
+              "formvar": "carRegistration",
               "direction": "incoming"
             },
             {
@@ -1430,11 +1430,11 @@
           "items": [
             {
               "processvar": "selectedCar.modell",
-              "formvar": "kfz_modell"
+              "formvar": "carModel"
             },
             {
               "processvar": "selectedCar.kennzeichen",
-              "formvar": "kfz_kennzeichen"
+              "formvar": "carRegistration"
             },
             {
               "processvar": "selectedDriver.name",
@@ -1581,7 +1581,7 @@
           "totalCount": 1,
           "items": [
             {
-              "processvar": "driverCriteria.name_input",
+              "processvar": "driverCriteria.name",
               "routevar": "name"
             }
           ]

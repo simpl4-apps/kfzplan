@@ -19,7 +19,7 @@
     {
       "resourceId": "oryx_353181B1-A6F7-4CC9-BE7B-E142E4CC4230",
       "properties": {
-        "xf_id": "name_input",
+        "xf_id": "name",
         "xf_type": "text",
         "xf_default": "",
         "xf_exclude": "",
@@ -81,7 +81,7 @@
     {
       "resourceId": "oryx_3BCDDABB-66E3-4DF7-B4B7-9C9FFA80FBE2",
       "properties": {
-        "xf_id": "kfz_modell",
+        "xf_id": "carModel",
         "xf_type": "text",
         "xf_default": "",
         "xf_exclude": "",
