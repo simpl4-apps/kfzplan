@@ -46,7 +46,7 @@
           "resourceId": "oryx_DC9C14E8-CB7D-4509-810E-FCFBF4B134A8",
           "properties": {
             "xf_id": "",
-            "xf_text": "@car.registration"
+            "xf_text": "@car.model"
           },
           "stencil": {
             "id": "Label"
@@ -108,7 +108,7 @@
           "resourceId": "oryx_01FF53CA-3B94-4C98-AF30-ED04B4B24F75",
           "properties": {
             "xf_id": "",
-            "xf_text": "@car.model"
+            "xf_text": "@car.registration"
           },
           "stencil": {
             "id": "Label"
