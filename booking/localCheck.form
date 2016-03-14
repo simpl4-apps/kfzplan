@@ -1,0 +1,126 @@
+[sw]
+	type = sw.form
+--
+{
+  "resourceId": "oryx_DF357DBA-B245-4EFB-8B8B-27FEF954C1FB",
+  "properties": {
+    "xf_id": "localCheck.form",
+    "xf_name": "localCheck",
+    "xf_version": "",
+    "xf_default_buttons": true,
+    "xf_postprocess": null,
+    "xf_method_fetch": ""
+  },
+  "stencil": {
+    "id": "XForm"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_788EABED-BEAA-4523-9DDA-4408AA36B43B",
+      "properties": {
+        "xf_id": "",
+        "xf_message": null,
+        "xf_message_de": "<h2>Fahrgenehmigungsantrag für</h2>\n${selectedDriver.vorname} ${selectedDriver.name}\nfür Auto <b>${selectedCar.modell}</b>\n<br/>\n<br/>",
+        "xf_message_en": "<h2> driving license application for </h2>\n${selectedDriver.vorname} ${selectedDriver.name}\nfor car <b>${selectedCar.modell}</b>\n<br/>\n<br/>",
+        "xf_exclude": ""
+      },
+      "stencil": {
+        "id": "Alert"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 54
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_A43148E9-83F0-4F51-880E-F75F0ECC592E",
+      "properties": {
+        "xf_id": "status",
+        "xf_default": "ok",
+        "xf_multiselection": false,
+        "xf_jsonpath": "",
+        "xf_enumembed": {
+          "totalCount": 2,
+          "items": [
+            {
+              "value": "ok",
+              "label": "@ok",
+              "tooltip": ""
+            },
+            {
+              "value": "supervisor",
+              "label": "@supervisor.check",
+              "tooltip": ""
+            }
+          ]
+        },
+        "xf_enum": null
+      },
+      "stencil": {
+        "id": "Enumselect"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_BC037428-7076-45B2-8636-34584D64A08E",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "@allowed"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 134
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 84
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "form",
+    "namespace": "http://b3mn.org/stencilset/xforms#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}

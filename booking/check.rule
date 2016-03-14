@@ -27,10 +27,11 @@
         "variableType": "integer",
         "operationText": "kleiner gleich",
         "operation": "le",
-        "label": "Bedingung1",
-        "name": "C1",
+        "label": null,
+        "name": null,
         "data": [
           24,
+          22,
           null
         ]
       },
@@ -39,10 +40,11 @@
         "variableType": "decimal",
         "operationText": "größer gleich",
         "operation": "ge",
-        "label": "Bedingung2",
-        "name": "C2",
+        "label": null,
+        "name": null,
         "data": [
           50000,
+          40000,
           null
         ]
       }
@@ -51,10 +53,11 @@
       {
         "variableType": "string",
         "variableName": "status",
-        "label": "Ergebnis0",
-        "name": "A0",
+        "label": null,
+        "name": null,
         "data": [
-          "nok",
+          "supervisor",
+          "localcheck",
           "ok"
         ]
       }

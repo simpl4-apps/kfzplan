@@ -387,6 +387,18 @@
         "msgid": "car.registration"
     },
     {
+        "msgstr": "Ja",
+        "msgid": "ok"
+    },
+    {
+        "msgstr": "Supervisor Call",
+        "msgid": "supervisor.check"
+    },
+    {
+        "msgstr": "Genehmigt",
+        "msgid": "allowed"
+    },
+    {
         "msgstr": "Automodell",
         "msgid": "car.model"
     },

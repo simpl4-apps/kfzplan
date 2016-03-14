@@ -271,6 +271,14 @@
         "msgid": "data.fahrzeuge.kennzeichen"
     },
     {
+        "msgstr": "Supervisorcall",
+        "msgid": "supervisor.check"
+    },
+    {
+        "msgstr": "Approved",
+        "msgid": "allowed"
+    },
+    {
         "msgid": "tr.menu.task_list",
         "msgstr": "Tasklist"
     }
