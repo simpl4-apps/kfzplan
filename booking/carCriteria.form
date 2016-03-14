@@ -365,8 +365,8 @@
       "properties": {
         "xf_id": "carListEmptyAlert",
         "xf_message": "",
-        "xf_message_de": "<h3>Kein Auto gefunden</h3>",
-        "xf_message_en": "<h3>No car found</h3>",
+        "xf_message_de": "<h2>Kein Auto gefunden</h2>",
+        "xf_message_en": "<h2>No car found</h2>",
         "xf_exclude": "!carListEmptyAlert"
       },
       "stencil": {

@@ -326,7 +326,7 @@
       "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B",
       "properties": {
         "overrideid": "buchung_xor",
-        "name": "Voraussetzungen",
+        "name": "Führerscheine",
         "documentation": "",
         "bgcolor": "#FFF",
         "bordercolor": "#000",
@@ -2271,5 +2271,5 @@
     "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
   },
   "ssextensions": [],
-  "zoomLevel": 0.8820900000000003
+  "zoomLevel": 0.8765613343596695
 }

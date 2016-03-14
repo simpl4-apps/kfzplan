@@ -70,11 +70,11 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 111
+          "y": 165
         },
         "upperLeft": {
           "x": 30,
-          "y": 87
+          "y": 141
         }
       },
       "dockers": []
@@ -132,11 +132,11 @@
       "bounds": {
         "lowerRight": {
           "x": 180,
-          "y": 165
+          "y": 219
         },
         "upperLeft": {
           "x": 30,
-          "y": 141
+          "y": 195
         }
       },
       "dockers": []
@@ -146,8 +146,8 @@
       "properties": {
         "xf_id": "driverListAlert",
         "xf_message": "",
-        "xf_message_de": "Keine Fahrer gefunden",
-        "xf_message_en": "No driver found",
+        "xf_message_de": "<h2>Keine Fahrer gefunden</h2>",
+        "xf_message_en": "<h2>No driver found</h2>",
         "xf_exclude": "driverListAlert == false"
       },
       "stencil": {
@@ -157,12 +157,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 350,
-          "y": 57
+          "x": 172,
+          "y": 111
         },
         "upperLeft": {
-          "x": 208,
-          "y": 30
+          "x": 30,
+          "y": 84
         }
       },
       "dockers": []
@@ -172,9 +172,9 @@
       "properties": {
         "xf_id": "error_alert",
         "xf_message": "",
-        "xf_message_de": "Fahrer nicht berechtigt",
-        "xf_message_en": "Driver not authorized",
-        "xf_exclude": "!error_alert"
+        "xf_message_de": "<h2>Fahrer nicht berechtigt</h2>",
+        "xf_message_en": "<h2>Driver not authorized</h2>",
+        "xf_exclude": "error_alert==false  || driverListAlert==true"
       },
       "stencil": {
         "id": "Alert"
