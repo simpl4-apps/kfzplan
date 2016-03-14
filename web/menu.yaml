@@ -1,7 +1,7 @@
 - name: tr.menu.process_list
   icon: settings
   url: processes.html
-  hash: 0
+  hash: '0'
 - name: tr.menu.task_list
   icon: inbox
   url: tasks.html
