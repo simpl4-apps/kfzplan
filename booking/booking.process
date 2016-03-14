@@ -1465,7 +1465,7 @@
         "overrideid": "",
         "name": " Regeln anwenden",
         "documentation": null,
-        "bgcolor": "rgb(237,244,255)",
+        "bgcolor": "#CCC",
         "bordercolor": "#000000",
         "multiinstance_type": "None",
         "multiinstance_cardinality": "",
@@ -1542,17 +1542,17 @@
           "resourceId": "oryx_F812F9F9-6C3D-4753-8CFD-7C3C69B97AD4"
         },
         {
-          "resourceId": "oryx_2E50F5ED-9750-4142-8CCC-71CF07AF15D2"
+          "resourceId": "oryx_C289A170-E556-415C-86D8-F61507B14937"
         }
       ],
       "bounds": {
         "lowerRight": {
           "x": 432.09473336348026,
-          "y": 1052.5146107847945
+          "y": 1052.5146107847947
         },
         "upperLeft": {
           "x": 392.09473336348026,
-          "y": 1012.5146107847952
+          "y": 1012.5146107847954
         }
       },
       "dockers": []
@@ -1983,7 +1983,7 @@
       "resourceId": "oryx_029D1D68-D470-428D-8028-576ADFD9BF65",
       "properties": {
         "overrideid": "",
-        "name": "genehmigt",
+        "name": "Genehmigt",
         "documentation": null,
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
@@ -2174,52 +2174,6 @@
       "dockers": []
     },
     {
-      "resourceId": "oryx_2E50F5ED-9750-4142-8CCC-71CF07AF15D2",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null,
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${checkStatus == 'localcheck'}",
-        "showdiamondmarker": false
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_C2984799-3218-40BC-B0E4-7052BE05EE8D"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 391.93267691034487,
-          "y": 1033.274223697214
-        },
-        "upperLeft": {
-          "x": 292.79540195011646,
-          "y": 1032.7704122845662
-        }
-      },
-      "dockers": [
-        {
-          "x": 8.238217156000928,
-          "y": 20.80230274543395
-        },
-        {
-          "x": 50,
-          "y": 39.999999999999886
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_C2984799-3218-40BC-B0E4-7052BE05EE8D"
-      }
-    },
-    {
       "resourceId": "oryx_8F18BE09-0C97-43FF-9F42-EA3EFAD4A456",
       "properties": {
         "overrideid": "",
@@ -2394,6 +2348,51 @@
       ],
       "target": {
         "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
+      }
+    },
+    {
+      "resourceId": "oryx_C289A170-E556-415C-86D8-F61507B14937",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${checkStatus == 'localcheck'}"
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_C2984799-3218-40BC-B0E4-7052BE05EE8D"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 391.65709369976156,
+          "y": 1032.9530781972367
+        },
+        "upperLeft": {
+          "x": 292.6396888869471,
+          "y": 1032.6620808723537
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.5,
+          "y": 20.5
+        },
+        {
+          "x": 50,
+          "y": 39.99999999999994
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_C2984799-3218-40BC-B0E4-7052BE05EE8D"
       }
     }
   ],
