@@ -25,7 +25,7 @@
         "label": "1.2",
         "connector": null,
         "field": "_exists_not_subselect",
-        "op": "freie_termine",
+        "op": "free.filter",
         "data": "buchungen.fahrzeuge = fahrzeuge",
         "children": []
       }
