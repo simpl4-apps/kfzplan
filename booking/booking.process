@@ -173,12 +173,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 790.5390218079084,
-          "y": 1192.914224654205
+          "x": 978.8194142238378,
+          "y": 1171.1855617272718
         },
         "upperLeft": {
-          "x": 762.5390218079084,
-          "y": 1164.914224654205
+          "x": 950.8194142238378,
+          "y": 1143.1855617272718
         }
       },
       "dockers": []
@@ -323,99 +323,6 @@
       "dockers": []
     },
     {
-      "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B",
-      "properties": {
-        "overrideid": "buchung_xor",
-        "name": "Führerscheine",
-        "documentation": "",
-        "bgcolor": "#FFF",
-        "bordercolor": "#000",
-        "processid": "",
-        "gatewaytype": "XOR",
-        "xortype": "Data",
-        "markervisible": "true",
-        "auditing": "",
-        "monitoring": ""
-      },
-      "stencil": {
-        "id": "ExclusiveGateway"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_06080541-2529-4BE2-AC67-7B8B02C57C59"
-        },
-        {
-          "resourceId": "oryx_8CF2D611-5043-4186-87C1-717C27C55338"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 142.68741909524334,
-          "y": 775.2113705388772
-        },
-        "upperLeft": {
-          "x": 102.68741909524334,
-          "y": 735.2113705388772
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_06080541-2529-4BE2-AC67-7B8B02C57C59",
-      "properties": {
-        "overrideid": "",
-        "name": "stimmen NICHT überein",
-        "documentation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${\n  !selectedCar.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return selectedDriver.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
-        "isimmediate": "",
-        "auditing": "",
-        "showdiamondmarker": false,
-        "conditiontype": "None",
-        "monitoring": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 335.4822722073401,
-          "y": 734.9124959215068
-        },
-        "upperLeft": {
-          "x": 123.18741909524334,
-          "y": 365.8258396121989
-        }
-      },
-      "dockers": [
-        {
-          "x": 20.5,
-          "y": 20.5
-        },
-        {
-          "x": 123.18741909524334,
-          "y": 365.8258396121989
-        },
-        {
-          "x": 76.5143554873753,
-          "y": 40.99851284443882
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
-      }
-    },
-    {
       "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63",
       "properties": {
         "overrideid": "",
@@ -470,65 +377,15 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 711.5069162985337,
-          "y": 1219.9127374986438
+          "x": 899.7873087144633,
+          "y": 1198.1840745717107
         },
         "upperLeft": {
-          "x": 558.4782053237832,
-          "y": 1137.9157118097662
+          "x": 746.7585977397127,
+          "y": 1116.1870488828329
         }
       },
       "dockers": []
-    },
-    {
-      "resourceId": "oryx_8CF2D611-5043-4186-87C1-717C27C55338",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": "",
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${\n  selectedCar.buchungsvoraussetzungen_list.any{ fahrzeug_voraussetzung ->\n    return selectedDriver.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+fahrzeug_voraussetzung);it == fahrzeug_voraussetzung};\n  }\n}\n",
-        "showdiamondmarker": "",
-        "isimmediate": "",
-        "auditing": "",
-        "conditiontype": "None",
-        "monitoring": ""
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 123.11335291834249,
-          "y": 849.4095242508668
-        },
-        "upperLeft": {
-          "x": 122.8357040221442,
-          "y": 775.4428650323188
-        }
-      },
-      "dockers": [
-        {
-          "x": 20.5,
-          "y": 20.5
-        },
-        {
-          "x": 74.34776114012936,
-          "y": 38.659757239993155
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB"
-      }
     },
     {
       "resourceId": "oryx_E7E9A929-7984-4BEC-93EB-1F1FC2B9E17C",
@@ -558,22 +415,22 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 762.3917104665875,
-          "y": 1178.2324968880719
+          "x": 951.0061323145806,
+          "y": 1153.8063840231819
         },
         "upperLeft": {
-          "x": 711.7955110185098,
-          "y": 1175.794377503237
+          "x": 900.1518306990467,
+          "y": 1153.8063840231819
         }
       },
       "dockers": [
         {
           "x": 147.93564125681905,
-          "y": 37.61933514034883
+          "y": 37.61933514034893
         },
         {
-          "x": 14,
-          "y": 13.999999999999998
+          "x": 25.385073047252263,
+          "y": 10.620822295910102
         }
       ],
       "target": {
@@ -591,9 +448,9 @@
         "defaultflow": "None",
         "conditionalflow": "None",
         "conditionsequenceflow": "",
+        "showdiamondmarker": false,
         "isimmediate": "",
         "auditing": "",
-        "showdiamondmarker": false,
         "conditiontype": "None",
         "monitoring": ""
       },
@@ -603,17 +460,17 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
+          "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 335.3514128323401,
-          "y": 755.2113705388772
+          "x": 412.09473336348026,
+          "y": 849.2649859557968
         },
         "upperLeft": {
-          "x": 142.90587355836846,
-          "y": 755.2113705388772
+          "x": 412.09473336348026,
+          "y": 796.9486342889857
         }
       },
       "dockers": [
@@ -622,12 +479,12 @@
           "y": 40.998512844438885
         },
         {
-          "x": 20,
-          "y": 20
+          "x": 74.34776114012936,
+          "y": 38.659757239993155
         }
       ],
       "target": {
-        "resourceId": "oryx_1B9BCE27-3A47-4DEB-B90C-C9CEA83AC28B"
+        "resourceId": "oryx_BF6F4672-B7ED-4D4B-8678-D200F03B8FDB"
       }
     },
     {
@@ -1566,11 +1423,15 @@
         "routename": "getDriverList",
         "routevarname": "",
         "variablesmapping": {
-          "totalCount": 1,
+          "totalCount": 2,
           "items": [
             {
               "processvar": "driverCriteria.name",
               "routevar": "name"
+            },
+            {
+              "processvar": "selectedCar.buchungsvoraussetzungen_list",
+              "routevar": "bookingRequirementList"
             }
           ]
         },
@@ -1646,11 +1507,11 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 197.0351802353727,
+          "x": 486.4424945036096,
           "y": 927.5729164971748
         },
         "upperLeft": {
-          "x": 48.33965795511398,
+          "x": 337.7469722233509,
           "y": 850.2534020171885
         }
       },
@@ -1686,12 +1547,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 142.6739252535995,
-          "y": 1198.914224654205
+          "x": 432.09473336348026,
+          "y": 1052.5146107847945
         },
         "upperLeft": {
-          "x": 102.67392525359949,
-          "y": 1158.914224654205
+          "x": 392.09473336348026,
+          "y": 1012.5146107847952
         }
       },
       "dockers": []
@@ -1700,10 +1561,10 @@
       "resourceId": "oryx_DA45E1D2-5092-4923-A1D4-684FC8C422CC",
       "properties": {
         "overrideid": "",
-        "name": "Supervisor nötig",
+        "name": "Supervisor call",
         "documentation": null,
         "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
+        "bordercolor": "#000",
         "defaultflow": "None",
         "conditionalflow": "Conditional",
         "conditionsequenceflow": "${checkStatus == \"supervisor\"}",
@@ -1720,26 +1581,22 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 184.3667084362203,
-          "y": 1347.966392213204
+          "x": 411.3449585125984,
+          "y": 1256.3729636078174
         },
         "upperLeft": {
-          "x": 121.9241504027176,
-          "y": 1198.1561386079986
+          "x": 411.3449585125984,
+          "y": 1051.4397803580678
         }
       },
       "dockers": [
         {
           "x": 19.25022514911811,
-          "y": 35.23772563496459
+          "y": 35.237725634963994
         },
         {
-          "x": 121.9241504027176,
-          "y": 1347.966392213204
-        },
-        {
-          "x": 0.9999999999999997,
-          "y": 40
+          "x": 49.250225149118094,
+          "y": 20.10907796560855
         }
       ],
       "target": {
@@ -1770,12 +1627,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 489.3836136167432,
-          "y": 1460.7105687956407
+          "x": 700.2116204859875,
+          "y": 1416.876557409159
         },
         "upperLeft": {
-          "x": 489.2473670989268,
-          "y": 1367.8256690906128
+          "x": 700.0719357952216,
+          "y": 1316.7332315721042
         }
       },
       "dockers": [
@@ -1784,7 +1641,7 @@
           "y": 29.314643288066236
         },
         {
-          "x": 49.99999999999995,
+          "x": 49.99999999999989,
           "y": 40
         }
       ],
@@ -1819,12 +1676,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 509.4427290413769,
-          "y": 1367.966392213204
+          "x": 720.2681932727966,
+          "y": 1316.9718078564708
         },
         "upperLeft": {
-          "x": 469.4427290413769,
-          "y": 1327.966392213204
+          "x": 680.2681932727966,
+          "y": 1276.9718078564708
         }
       },
       "dockers": []
@@ -1848,9 +1705,9 @@
         "cc": "",
         "bcc": "",
         "from": "ms123@gmx.de",
-        "subject": "SuperVisor",
+        "subject": "Supervisor Call",
         "attachment": "",
-        "text": "${selectedDriver.name} möchte mit dem teueren Auto fahren\n${__processInstanceId}",
+        "text": "${selectedDriver.givenname} ${selectedDriver.name} möchte mit dem ${selectedCar.modell} fahren.(ok/nok)\n${__processInstanceId}",
         "tasktype": "Send"
       },
       "stencil": {
@@ -1864,12 +1721,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 284.3667084362203,
-          "y": 1387.966392213204
+          "x": 462.09473336348026,
+          "y": 1336.9718078564708
         },
         "upperLeft": {
-          "x": 184.3667084362203,
-          "y": 1307.966392213204
+          "x": 362.09473336348026,
+          "y": 1256.9718078564708
         }
       },
       "dockers": []
@@ -1895,18 +1752,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 367.4123207993142,
-          "y": 1362.966392213204
+          "x": 580.8574922313153,
+          "y": 1311.9718078564708
         },
         "upperLeft": {
-          "x": 337.4123207993142,
-          "y": 1332.966392213204
+          "x": 550.8574922313153,
+          "y": 1281.9718078564708
         }
       },
       "dockers": [
         {
-          "x": 352.4123207993142,
-          "y": 1347.966392213204
+          "x": 565.8574922313153,
+          "y": 1296.9718078564708
         }
       ]
     },
@@ -1934,21 +1791,21 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 336.6566192539275,
-          "y": 1347.966392213204
+          "x": 550.4422335874558,
+          "y": 1296.9718078564708
         },
         "upperLeft": {
-          "x": 285.16720115190054,
-          "y": 1347.966392213204
+          "x": 462.3468670633337,
+          "y": 1296.9718078564708
         }
       },
       "dockers": [
         {
-          "x": 50,
+          "x": 50.00000000000003,
           "y": 40
         },
         {
-          "x": 15,
+          "x": 15.000000000000005,
           "y": 15
         }
       ],
@@ -1980,17 +1837,17 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 469.7507661874372,
-          "y": 1347.966392213204
+          "x": 679.7984933251514,
+          "y": 1296.9718078564708
         },
         "upperLeft": {
-          "x": 367.45247533688814,
-          "y": 1347.966392213204
+          "x": 581.5935180125764,
+          "y": 1296.9718078564708
         }
       },
       "dockers": [
         {
-          "x": 15,
+          "x": 15.000000000000005,
           "y": 15
         },
         {
@@ -2018,12 +1875,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 790.5390218079084,
-          "y": 1515.0120045762978
+          "x": 978.8194142238378,
+          "y": 1471.434953550393
         },
         "upperLeft": {
-          "x": 762.5390218079084,
-          "y": 1487.0120045762978
+          "x": 950.8194142238378,
+          "y": 1443.434953550393
         }
       },
       "dockers": []
@@ -2032,7 +1889,7 @@
       "resourceId": "oryx_F812F9F9-6C3D-4753-8CFD-7C3C69B97AD4",
       "properties": {
         "overrideid": "",
-        "name": "Alles ok",
+        "name": "Ok",
         "documentation": null,
         "bgcolor": "#ffffff",
         "bordercolor": "#000000",
@@ -2051,22 +1908,26 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 558.0194825727582,
-          "y": 1179.3946930586235
+          "x": 823.272953227088,
+          "y": 1115.4419684492718
         },
         "upperLeft": {
-          "x": 143.16719445531848,
-          "y": 1178.9894203122867
+          "x": 432.8452749195869,
+          "y": 1033.014610784795
         }
       },
       "dockers": [
         {
           "x": 20.5,
-          "y": 20.500000000000004
+          "y": 20.499999999999645
+        },
+        {
+          "x": 823.272953227088,
+          "y": 1033.014610784795
         },
         {
           "x": 76.51435548737527,
-          "y": 40.99851284443878
+          "y": 40.998512844438885
         }
       ],
       "target": {
@@ -2096,12 +1957,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 122.68558041408261,
-          "y": 1158.6563414062664
+          "x": 412.09473336348026,
+          "y": 1012.4425430037838
         },
         "upperLeft": {
-          "x": 122.67486785933858,
-          "y": 928.4289257541411
+          "x": 412.09473336348026,
+          "y": 928.0572948192039
         }
       },
       "dockers": [
@@ -2111,7 +1972,7 @@
         },
         {
           "x": 20,
-          "y": 20
+          "y": 19.99999999999966
         }
       ],
       "target": {
@@ -2142,12 +2003,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 634.9925608111585,
-          "y": 1348.466392213204
+          "x": 823.272953227088,
+          "y": 1297.4718078564708
         },
         "upperLeft": {
-          "x": 510.207159823301,
-          "y": 1220.4188064623725
+          "x": 720.9095620156546,
+          "y": 1198.9675724879976
         }
       },
       "dockers": [
@@ -2156,12 +2017,12 @@
           "y": 20.5
         },
         {
-          "x": 634.9925608111585,
-          "y": 1348.466392213204
+          "x": 823.272953227088,
+          "y": 1297.4718078564708
         },
         {
           "x": 76.51435548737527,
-          "y": 80.99702568887744
+          "y": 80.99702568887766
         }
       ],
       "target": {
@@ -2203,12 +2064,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 539.4427290413768,
-          "y": 1541.0120045762978
+          "x": 750.2681932727966,
+          "y": 1497.434953550393
         },
         "upperLeft": {
-          "x": 439.4427290413769,
-          "y": 1461.0120045762978
+          "x": 650.2681932727968,
+          "y": 1417.434953550393
         }
       },
       "dockers": []
@@ -2236,17 +2097,17 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 762.0813830844771,
-          "y": 1501.0120045762978
+          "x": 950.3851725349177,
+          "y": 1457.434953550393
         },
         "upperLeft": {
-          "x": 539.7874043606245,
-          "y": 1501.0120045762978
+          "x": 750.871547201117,
+          "y": 1457.434953550393
         }
       },
       "dockers": [
         {
-          "x": 49.99999999999995,
+          "x": 49.99999999999989,
           "y": 40
         },
         {
@@ -2264,7 +2125,7 @@
         "overrideid": "",
         "name": "Lokaler Check",
         "documentation": null,
-        "bgcolor": "#ffffff",
+        "bgcolor": "rgb(237,244,255)",
         "bordercolor": "#000000",
         "asynchronousdefinition": "No",
         "exclusivedefinition": "Yes",
@@ -2302,12 +2163,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 287.2908494749855,
-          "y": 1067.8800739277015
+          "x": 292.4601713827989,
+          "y": 1072.514610784795
         },
         "upperLeft": {
-          "x": 187.2908494749855,
-          "y": 987.8800739277015
+          "x": 192.46017138279888,
+          "y": 992.5146107847951
         }
       },
       "dockers": []
@@ -2336,30 +2197,22 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 186.69185755192092,
-          "y": 1175.1532418328127
+          "x": 391.93267691034487,
+          "y": 1033.274223697214
         },
         "upperLeft": {
-          "x": 55.90025044206355,
-          "y": 1027.8800739277015
+          "x": 292.79540195011646,
+          "y": 1032.7704122845662
         }
       },
       "dockers": [
         {
-          "x": 7.205190920356675,
-          "y": 16.239017178607583
+          "x": 8.238217156000928,
+          "y": 20.80230274543395
         },
         {
-          "x": 55.90025044206355,
-          "y": 1175.1532418328127
-        },
-        {
-          "x": 55.90025044206355,
-          "y": 1027.8800739277015
-        },
-        {
-          "x": 50.000000000000014,
-          "y": 40
+          "x": 50,
+          "y": 39.999999999999886
         }
       ],
       "target": {
@@ -2385,7 +2238,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_DB1B110C-BFBC-4F13-8B7D-82347760EB84"
+          "resourceId": "oryx_D0D2A0BF-BB5C-4279-981E-798AF11D4454"
         },
         {
           "resourceId": "oryx_B1EA6868-1307-4260-83BD-3E58E470547C"
@@ -2393,12 +2246,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 397.6118806549048,
-          "y": 1047.8800739277015
+          "x": 262.46017138279893,
+          "y": 1177.185561727272
         },
         "upperLeft": {
-          "x": 357.6118806549048,
-          "y": 1007.8800739277015
+          "x": 222.46017138279888,
+          "y": 1137.1855617272715
         }
       },
       "dockers": []
@@ -2426,22 +2279,22 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 357.30892944857055,
-          "y": 1028.3062108440697
+          "x": 242.87805187762655,
+          "y": 1137.1276086205773
         },
         "upperLeft": {
-          "x": 287.798236945834,
-          "y": 1028.0594057613332
+          "x": 242.6204158879712,
+          "y": 1072.6305249762513
         }
       },
       "dockers": [
         {
-          "x": 50.000000000000014,
-          "y": 40
+          "x": 50,
+          "y": 39.999999999999886
         },
         {
-          "x": 20.5,
-          "y": 20.5
+          "x": 20.50000000000003,
+          "y": 20.500000000000238
         }
       ],
       "target": {
@@ -2449,7 +2302,57 @@
       }
     },
     {
-      "resourceId": "oryx_DB1B110C-BFBC-4F13-8B7D-82347760EB84",
+      "resourceId": "oryx_B1EA6868-1307-4260-83BD-3E58E470547C",
+      "properties": {
+        "overrideid": "",
+        "name": "Supervisor call",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000",
+        "defaultflow": "None",
+        "conditionalflow": "Conditional",
+        "conditionsequenceflow": "${status == 'supervisor'}",
+        "showdiamondmarker": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 361.5038952649354,
+          "y": 1296.9718078564708
+        },
+        "upperLeft": {
+          "x": 242.82467265378045,
+          "y": 1177.208588353751
+        }
+      },
+      "dockers": [
+        {
+          "x": 20.36450127098159,
+          "y": 33.08385189683759
+        },
+        {
+          "x": 242.82467265378045,
+          "y": 1296.9718078564708
+        },
+        {
+          "x": 50.000000000000014,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0"
+      }
+    },
+    {
+      "resourceId": "oryx_D0D2A0BF-BB5C-4279-981E-798AF11D4454",
       "properties": {
         "overrideid": "",
         "name": "Ok",
@@ -2471,12 +2374,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 634.9925608111585,
-          "y": 1137.340566841202
+          "x": 746.3335856616137,
+          "y": 1157.668098560771
         },
         "upperLeft": {
-          "x": 398.17724363525167,
-          "y": 1028.3800739277015
+          "x": 263.2283688462917,
+          "y": 1157.2518530187724
         }
       },
       "dockers": [
@@ -2485,69 +2388,12 @@
           "y": 20.5
         },
         {
-          "x": 634.9925608111585,
-          "y": 1028.3800739277015
-        },
-        {
           "x": 76.51435548737527,
-          "y": 40.99851284443878
+          "y": 40.99851284443889
         }
       ],
       "target": {
         "resourceId": "oryx_344D88CF-76B3-42C8-BDF4-CD699C12BE63"
-      }
-    },
-    {
-      "resourceId": "oryx_B1EA6868-1307-4260-83BD-3E58E470547C",
-      "properties": {
-        "overrideid": "",
-        "name": "Supervisor nötig",
-        "documentation": null,
-        "bgcolor": "#ffffff",
-        "bordercolor": "#000000",
-        "defaultflow": "None",
-        "conditionalflow": "Conditional",
-        "conditionsequenceflow": "${status == 'supervisor'}"
-      },
-      "stencil": {
-        "id": "SequenceFlow"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 378.1118806549048,
-          "y": 1307.3619522679703
-        },
-        "upperLeft": {
-          "x": 234.36670843622028,
-          "y": 1048.6043434742855
-        }
-      },
-      "dockers": [
-        {
-          "x": 20.5,
-          "y": 20.5
-        },
-        {
-          "x": 378.1118806549048,
-          "y": 1242.3545523592477
-        },
-        {
-          "x": 234.36670843622028,
-          "y": 1242.3545523592477
-        },
-        {
-          "x": 49.999999999999986,
-          "y": 40
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_65BCADBD-623E-4ABA-BD78-8A34EDF4C3F0"
       }
     }
   ],

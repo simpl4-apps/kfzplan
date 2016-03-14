@@ -226,11 +226,11 @@
       "bounds": {
         "lowerRight": {
           "x": 380.01689994000003,
-          "y": 375
+          "y": 382
         },
         "upperLeft": {
           "x": 300,
-          "y": 315
+          "y": 322
         }
       },
       "dockers": []
@@ -254,11 +254,11 @@
       "bounds": {
         "lowerRight": {
           "x": 299.6707630621484,
-          "y": 345
+          "y": 352
         },
         "upperLeft": {
           "x": 170.29773320007814,
-          "y": 345
+          "y": 352
         }
       },
       "dockers": [
@@ -293,7 +293,7 @@
         "urivalue_name": "getDriverList",
         "rpc": true,
         "rpcParameter": {
-          "totalCount": 1,
+          "totalCount": 2,
           "items": [
             {
               "name": "name",
@@ -301,6 +301,14 @@
               "defaultvalue": null,
               "optional": false,
               "type": "string",
+              "destination": "header"
+            },
+            {
+              "name": "bookingRequirementList",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "list",
               "destination": "header"
             }
           ]
@@ -323,11 +331,11 @@
       "bounds": {
         "lowerRight": {
           "x": 170,
-          "y": 375
+          "y": 382
         },
         "upperLeft": {
           "x": 90,
-          "y": 315
+          "y": 322
         }
       },
       "dockers": []
@@ -482,9 +490,9 @@
         "documentation": null,
         "bgcolor": "white",
         "bordercolor": "#000000",
-        "caption": "Alter ermitteln",
+        "caption": "calc age and check requirement",
         "ref": "",
-        "code": "public void process(Exchange ex){\n  def fahrerList = ex.getIn().getBody();\n  println(\"fahrer:\"+fahrerList);\n\n  fahrerList.each{fahrer->\n    fahrer.age = calculateAge(new Date(fahrer.geburtsdatum));\n    println(\"fahrerage:\"+fahrer);\n  }\n}\nInteger calculateAge(Date birthday, Date offset = new Date()) {\n  def birthdayThisYear = offset.clone().clearTime()\n  birthdayThisYear[Calendar.MONTH]= birthday[Calendar.MONTH]\n  birthdayThisYear[Calendar.DATE] = birthday[Calendar.DATE]\n\n  offset[Calendar.YEAR] - birthday[Calendar.YEAR] - (birthdayThisYear > offset ? 1 : 0)\n}",
+        "code": "public void process(Exchange ex){\n  def driverListOrig = ex.getIn().getBody();\n  println(\"driverList:\"+driverListOrig);\n\n  def bookingRequirementList = ex.getIn().getHeader(\"bookingRequirementList\");\n  def  driverList = driverListOrig.findAll{ driver ->\n    return bookingRequirementList.any{ req ->\n      return driver.buchungsvoraussetzungen_list.any{ println(\"it:\"+it+\"/\"+req);it == req};\n    }\n  }\n  driverList.each{driver->\n    driver.age = calculateAge(new Date(driver.geburtsdatum));\n    println(\"driverage:\"+driver);\n  }\n  ex.getIn().setBody(driverList);\n}\nInteger calculateAge(Date birthday, Date offset = new Date()) {\n  def birthdayThisYear = offset.clone().clearTime()\n  birthdayThisYear[Calendar.MONTH]= birthday[Calendar.MONTH]\n  birthdayThisYear[Calendar.DATE] = birthday[Calendar.DATE]\n\n  offset[Calendar.YEAR] - birthday[Calendar.YEAR] - (birthdayThisYear > offset ? 1 : 0)\n}\n\n",
         "codeKind": "processMethod",
         "addImport": null,
         "codeLanguage": "groovy",
@@ -498,11 +506,11 @@
       "bounds": {
         "lowerRight": {
           "x": 533,
-          "y": 375
+          "y": 396.5
         },
         "upperLeft": {
           "x": 453,
-          "y": 315
+          "y": 307.5
         }
       },
       "dockers": []
@@ -526,11 +534,11 @@
       "bounds": {
         "lowerRight": {
           "x": 452.6875,
-          "y": 345
+          "y": 352
         },
         "upperLeft": {
           "x": 380.3125,
-          "y": 345
+          "y": 352
         }
       },
       "dockers": [
@@ -540,7 +548,7 @@
         },
         {
           "x": 40,
-          "y": 30
+          "y": 44.5
         }
       ],
       "target": {
@@ -669,12 +677,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 215.3321197607762,
-          "y": 709.8013342207258
+          "x": 215.41802129852735,
+          "y": 731.3416277381292
         },
         "upperLeft": {
-          "x": 162.7928802392238,
-          "y": 660.6674157792742
+          "x": 155.53510370147265,
+          "y": 660.2953514285373
         }
       },
       "dockers": [
@@ -684,7 +692,7 @@
         },
         {
           "x": 22,
-          "y": 37
+          "y": 64.13333333333334
         }
       ],
       "target": {
@@ -699,7 +707,7 @@
         "documentation": null,
         "bgcolor": "white",
         "bordercolor": "#000000",
-        "caption": "",
+        "caption": "get ProcessId and Decision",
         "ref": "",
         "code": "public void process(Exchange ex){\n  def body = ex.getIn().getBody();\n  println(\"Body:\"+body);\n  body.readLines().findResult { line ->\n    (line =~ /(nok|ok)/).with { m ->\n      if( m.matches() ) {\n        ex.getIn().setHeader(\"supervisorResult\",m[ 0 ][ 1 ]);\n      }\n    }\n    (line =~ /^> (\\d{5,6})/).with { m ->\n      if( m.matches() ) {\n        ex.getIn().setHeader(\"pid\",m[ 0 ][ 1 ]);\n      }\n    }\n  }\n}",
         "codeKind": "processMethod",
@@ -719,7 +727,7 @@
       "bounds": {
         "lowerRight": {
           "x": 296,
-          "y": 754
+          "y": 798
         },
         "upperLeft": {
           "x": 216,
@@ -747,21 +755,21 @@
       "bounds": {
         "lowerRight": {
           "x": 430,
-          "y": 724
+          "y": 746
         },
         "upperLeft": {
           "x": 296.421875,
-          "y": 660.375
+          "y": 660.90625
         }
       },
       "dockers": [
         {
           "x": 40,
-          "y": 30
+          "y": 52
         },
         {
           "x": 430,
-          "y": 724
+          "y": 746
         },
         {
           "x": 40,
