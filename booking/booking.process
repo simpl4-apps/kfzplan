@@ -1608,7 +1608,7 @@
         "to": "info@simpl4.org",
         "cc": "",
         "bcc": "",
-        "from": "ms123@gmx.de",
+        "from": "ms123s@t-online.de",
         "subject": "Supervisor Call",
         "attachment": "",
         "text": "${selectedDriver.givenname} ${selectedDriver.name} möchte mit dem ${selectedCar.modell} fahren.(ok/nok)\n${__processInstanceId}",
