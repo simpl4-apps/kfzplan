@@ -1611,7 +1611,7 @@
         "from": "ms123s@t-online.de",
         "subject": "Supervisor Call",
         "attachment": "",
-        "text": "${selectedDriver.givenname} ${selectedDriver.name} möchte mit dem ${selectedCar.modell} fahren.(ok/nok)\n${__processInstanceId}",
+        "text": "${selectedDriver.vorname} ${selectedDriver.name} möchte mit dem ${selectedCar.modell} fahren.(ok/nok)\n${__processInstanceId}",
         "tasktype": "Send"
       },
       "stencil": {
