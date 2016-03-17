@@ -1605,7 +1605,7 @@
         "multiinstance_condition": "",
         "isforcompensation": "false",
         "type": "mail",
-        "to": "ms@tpso.com",
+        "to": "info@simpl4.org",
         "cc": "",
         "bcc": "",
         "from": "ms123@gmx.de",
@@ -1621,6 +1621,9 @@
       "outgoing": [
         {
           "resourceId": "oryx_996D30DF-D6EF-4EAB-B15E-3235EDCBBB3B"
+        },
+        {
+          "resourceId": "oryx_DB10855B-3AA2-493C-97C5-0839A6B155B2"
         }
       ],
       "bounds": {
@@ -2401,6 +2404,73 @@
       "target": {
         "resourceId": "oryx_AAACF4AC-F4D7-49F2-AC92-D2AAE168784E"
       }
+    },
+    {
+      "resourceId": "oryx_5C868AEC-F94C-4580-A5A8-BF3D3A605C0D",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#ffffff",
+        "bordercolor": "#000000",
+        "text": ""
+      },
+      "stencil": {
+        "id": "TextAnnotation"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 1184.6890013826778,
+          "y": 633.2353867954837
+        },
+        "upperLeft": {
+          "x": 1084.6890013826778,
+          "y": 583.2353867954837
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_DB10855B-3AA2-493C-97C5-0839A6B155B2",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "Association"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5C868AEC-F94C-4580-A5A8-BF3D3A605C0D"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 1083.9390556317353,
+          "y": 607.7093456939114
+        },
+        "upperLeft": {
+          "x": 1040.1889471336203,
+          "y": 607.253615397056
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 39.99999999999994
+        },
+        {
+          "x": 1,
+          "y": 24
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_5C868AEC-F94C-4580-A5A8-BF3D3A605C0D"
+      }
     }
   ],
   "bounds": {
@@ -2418,5 +2488,5 @@
     "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
   },
   "ssextensions": [],
-  "zoomLevel": 0.8765613343596695
+  "zoomLevel": 0.6390132127481991
 }
