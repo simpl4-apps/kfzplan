@@ -350,7 +350,9 @@
         "bordercolor": "#000000",
         "caption": "calc age and check requirement",
         "ref": "",
+        "srcFile": null,
         "code": "public void process(Exchange ex){\n  def driverListOrig = ex.getIn().getBody();\n\n  def bookingRequirementList = ex.getIn().getHeader(\"bookingRequirementList\");\n  def  driverList = driverListOrig.findAll{ driver ->\n    return bookingRequirementList.any{ req ->\n      return driver.buchungsvoraussetzungen_list.any{ it == req};\n    }\n  }\n  driverList.each{driver->\n    driver.age = calculateAge(new Date(driver.geburtsdatum));\n  }\n  ex.getIn().setBody(driverList);\n}\nInteger calculateAge(Date birthday, Date offset = new Date()) {\n  def birthdayThisYear = offset.clone().clearTime()\n  birthdayThisYear[Calendar.MONTH]= birthday[Calendar.MONTH]\n  birthdayThisYear[Calendar.DATE] = birthday[Calendar.DATE]\n\n  offset[Calendar.YEAR] - birthday[Calendar.YEAR] - (birthdayThisYear > offset ? 1 : 0)\n}\n\n",
+        "script": null,
         "codeKind": "processMethod",
         "addImport": null,
         "codeLanguage": "groovy",
@@ -435,6 +437,7 @@
         "uriparam_sendMessage": null,
         "uriparam_messageName": "supervisorAnswer",
         "uriparam_businessKey": "",
+        "uriparam_events": null,
         "uriparam_headerFields": "pid,supervisorResult",
         "uriparam_variableNames": "",
         "uriparam_processCriteria": [
@@ -494,7 +497,15 @@
         "uriparam_searchTerm.to": "",
         "uriparam_searchTerm.seen": true,
         "uriparam_contentType": "text/plain",
-        "extraParams": null
+        "extraParams": {
+          "totalCount": 1,
+          "items": [
+            {
+              "name": "consumer.delay",
+              "value": "120000"
+            }
+          ]
+        }
       },
       "stencil": {
         "id": "MailEndpoint"
@@ -571,7 +582,9 @@
         "bordercolor": "#000000",
         "caption": "get ProcessId and Decision",
         "ref": "",
+        "srcFile": null,
         "code": "public void process(Exchange ex){\n  def body = ex.getIn().getBody();\n  println(\"Body:\"+body);\n  body.readLines().findResult { line ->\n    (line =~ /(nok|ok)/).with { m ->\n      if( m.matches() ) {\n        ex.getIn().setHeader(\"supervisorResult\",m[ 0 ][ 1 ]);\n      }\n    }\n    (line =~ /^> (\\d{4,6})/).with { m ->\n      if( m.matches() ) {\n        ex.getIn().setHeader(\"pid\",m[ 0 ][ 1 ]);\n      }\n    }\n  }\n}",
+        "script": null,
         "codeKind": "processMethod",
         "addImport": null,
         "codeLanguage": "groovy",
