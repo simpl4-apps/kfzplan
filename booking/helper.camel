@@ -53,7 +53,7 @@
         "uriparam_filterName": "carList.filter",
         "uriparam_entityType": "",
         "uriparam_paramHeaders": "hersteller,input_date_from,input_date_to",
-        "uriparam_resultHeader": "",
+        "uriparam_destination": "",
         "extraParams": null
       },
       "stencil": {
@@ -211,7 +211,7 @@
         "uriparam_filterName": "driverList.filter",
         "uriparam_entityType": "",
         "uriparam_paramHeaders": "",
-        "uriparam_resultHeader": "",
+        "uriparam_destination": "",
         "extraParams": null
       },
       "stencil": {
