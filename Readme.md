@@ -1,5 +1,5 @@
 
-[![alt text](/web/images/logo212121.png?raw=true| width=256 "Logo")] (http://www.simpl4.org)
+[![alt text](/web/images/logo.png?raw=true| width=256 "Logo")] (http://www.simpl4.org)
 
 
 ### URL's to install the app
