@@ -39,6 +39,7 @@
             }
           ]
         },
+        "xf_varname": "carList",
         "xf_inputlistname": "carList",
         "xf_filter": null,
         "xf_required": "true",

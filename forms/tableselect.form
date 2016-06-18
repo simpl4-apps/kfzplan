@@ -217,7 +217,7 @@
                 }
               ]
             },
-            "xf_inputlistname": "",
+            "xf_varname": "",
             "xf_filter": "driverList.filter",
             "xf_required": null
           },

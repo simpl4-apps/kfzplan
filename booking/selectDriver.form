@@ -169,7 +169,8 @@
                 }
               ]
             },
-            "xf_inputlistname": "driverList",
+            "xf_varname": "driverList",
+        		"xf_inputlistname": "driverList",
             "xf_filter": null,
             "xf_required": "true",
             "xf_navindex": "",
