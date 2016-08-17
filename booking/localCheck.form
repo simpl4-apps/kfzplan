@@ -8,8 +8,35 @@
     "xf_name": "localCheck",
     "xf_version": "",
     "xf_default_buttons": true,
-    "xf_postprocess": null,
-    "xf_method_fetch": ""
+    "xf_used_default_buttons": {
+      "totalCount": 3,
+      "items": [
+        {
+          "label": "@form.execute",
+          "action": "execute",
+          "icon": "check"
+        },
+        {
+          "label": "@button.reset",
+          "action": "reset",
+          "icon": "refresh"
+        },
+        {
+          "label": "@button.cancel",
+          "action": "cancel",
+          "icon": "clear"
+        }
+      ]
+    },
+    "xf_method_fetch": "",
+    "xf_preprocess_service": null,
+    "xf_preprocess_service_mode": "edit_add",
+    "xf_preprocess_local": null,
+    "xf_postprocess_service": null,
+    "xf_postprocess_service_mode": "edit_add",
+    "xf_postprocess_local": null,
+    "xf_save_disabled": null,
+    "xf_postprocess": null
   },
   "stencil": {
     "id": "XForm"
@@ -18,11 +45,14 @@
     {
       "resourceId": "oryx_788EABED-BEAA-4523-9DDA-4408AA36B43B",
       "properties": {
+        "xf_exclude": "",
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
         "xf_id": "",
         "xf_message": null,
         "xf_message_de": "<h2>Fahrgenehmigungsantrag für</h2>\n${selectedDriver.vorname} ${selectedDriver.name}\nfür Auto <b>${selectedCar.modell}</b>\n<br/>\n<br/>",
-        "xf_message_en": "<h2> driving license application for </h2>\n${selectedDriver.vorname} ${selectedDriver.name}\nfor car <b>${selectedCar.modell}</b>\n<br/>\n<br/>",
-        "xf_exclude": ""
+        "xf_message_en": "<h2> driving license application for </h2>\n${selectedDriver.vorname} ${selectedDriver.name}\nfor car <b>${selectedCar.modell}</b>\n<br/>\n<br/>"
       },
       "stencil": {
         "id": "Alert"
@@ -44,9 +74,7 @@
     {
       "resourceId": "oryx_A43148E9-83F0-4F51-880E-F75F0ECC592E",
       "properties": {
-        "xf_id": "status",
-        "xf_default": "ok",
-        "xf_multiselection": false,
+        "xf_varname": "",
         "xf_jsonpath": "",
         "xf_enumembed": {
           "totalCount": 2,
@@ -63,7 +91,19 @@
             }
           ]
         },
-        "xf_enum": null
+        "xf_enum": null,
+        "xf_filter": null,
+        "xf_service": null,
+        "xf_parammapping": null,
+        "xf_resultmapping": null,
+        "xf_exclude": null,
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
+        "xf_id": "status",
+        "xf_default": "ok",
+        "xf_multiselection": false,
+        "xf_required": null
       },
       "stencil": {
         "id": "Enumselect"

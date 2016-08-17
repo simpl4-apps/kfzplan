@@ -8,8 +8,35 @@
     "xf_name": "selectDriver",
     "xf_version": "",
     "xf_default_buttons": true,
-    "xf_postprocess": null,
+    "xf_used_default_buttons": {
+      "totalCount": 3,
+      "items": [
+        {
+          "label": "@form.execute",
+          "action": "execute",
+          "icon": "check"
+        },
+        {
+          "label": "@button.reset",
+          "action": "reset",
+          "icon": "refresh"
+        },
+        {
+          "label": "@button.cancel",
+          "action": "cancel",
+          "icon": "clear"
+        }
+      ]
+    },
     "xf_method_fetch": "",
+    "xf_preprocess_service": null,
+    "xf_preprocess_service_mode": "edit_add",
+    "xf_preprocess_local": null,
+    "xf_postprocess_service": null,
+    "xf_postprocess_service_mode": "edit_add",
+    "xf_postprocess_local": null,
+    "xf_save_disabled": null,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -20,19 +47,23 @@
     {
       "resourceId": "oryx_9DE321AD-A266-441B-9696-2A6C4F1C2B87",
       "properties": {
-        "xf_id": "carModel",
-        "xf_type": "text",
-        "xf_default": "",
         "xf_exclude": "",
         "xf_invisible": "",
         "xf_readonly": "true",
+        "xf_tabindex": 0,
+        "xf_id": "carModel",
+        "xf_type": "text",
+        "xf_default": "",
+        "xf_errormsg": "",
+        "xf_expression_in": null,
+        "xf_expression_out": null,
         "xf_required": "",
-        "xf_filtercheck": null,
         "xf_constraint_text": null,
         "xf_constraint_date": null,
         "xf_constraint_boolean": null,
         "xf_constraint_decimal": null,
         "xf_constraint_number": null,
+        "xf_filtercheck": null,
         "xf_navindex": "",
         "xf_accesskey": "",
         "xf_calculate": "",
@@ -82,19 +113,23 @@
     {
       "resourceId": "oryx_9CEE2573-A956-4807-943A-4377235D4AB9",
       "properties": {
-        "xf_id": "carRegistration",
-        "xf_type": "text",
-        "xf_default": "",
         "xf_exclude": "",
         "xf_invisible": "",
         "xf_readonly": "true",
+        "xf_tabindex": 0,
+        "xf_id": "carRegistration",
+        "xf_type": "text",
+        "xf_default": "",
+        "xf_errormsg": "",
+        "xf_expression_in": null,
+        "xf_expression_out": null,
         "xf_required": "",
-        "xf_filtercheck": null,
         "xf_constraint_text": null,
         "xf_constraint_date": null,
         "xf_constraint_boolean": null,
         "xf_constraint_decimal": null,
         "xf_constraint_number": null,
+        "xf_filtercheck": null,
         "xf_navindex": "",
         "xf_accesskey": "",
         "xf_calculate": "",
@@ -154,6 +189,18 @@
         {
           "resourceId": "oryx_0149FE68-67F1-4D28-870A-FBE5B291FB27",
           "properties": {
+            "xf_varname": "driverList",
+            "xf_jsonpath": "",
+            "xf_enumembed": null,
+            "xf_enum": null,
+            "xf_filter": null,
+            "xf_service": null,
+            "xf_parammapping": null,
+            "xf_resultmapping": null,
+            "xf_exclude": null,
+            "xf_invisible": null,
+            "xf_readonly": null,
+            "xf_tabindex": 0,
             "xf_id": "fahrer",
             "xf_multiselection": "",
             "xf_columns": {
@@ -169,10 +216,8 @@
                 }
               ]
             },
-            "xf_varname": "driverList",
-        		"xf_inputlistname": "driverList",
-            "xf_filter": null,
             "xf_required": "true",
+            "xf_inputlistname": "driverList",
             "xf_navindex": "",
             "xf_accesskey": ""
           },

@@ -8,8 +8,38 @@
     "xf_name": "selectCar",
     "xf_version": "",
     "xf_default_buttons": true,
-    "xf_postprocess": null,
+    "xf_used_default_buttons": {
+      "totalCount": 3,
+      "items": [
+        {
+          "label": "@form.execute",
+          "icon": "check",
+          "action": "execute",
+          "enter": null
+        },
+        {
+          "label": "@button.reset",
+          "icon": "refresh",
+          "action": "reset",
+          "enter": null
+        },
+        {
+          "label": "@button.cancel",
+          "icon": "clear",
+          "action": "cancel",
+          "enter": null
+        }
+      ]
+    },
     "xf_method_fetch": "",
+    "xf_preprocess_service": null,
+    "xf_preprocess_service_mode": "edit_add",
+    "xf_preprocess_local": null,
+    "xf_postprocess_service": null,
+    "xf_postprocess_service_mode": "edit_add",
+    "xf_postprocess_local": null,
+    "xf_save_disabled": null,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -20,6 +50,18 @@
     {
       "resourceId": "oryx_FA87E5DC-8D0C-4605-AD56-334C9D20DFDF",
       "properties": {
+        "xf_varname": "carList",
+        "xf_jsonpath": "",
+        "xf_enumembed": null,
+        "xf_enum": null,
+        "xf_filter": null,
+        "xf_service": null,
+        "xf_parammapping": null,
+        "xf_resultmapping": null,
+        "xf_exclude": null,
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
         "xf_id": "car",
         "xf_multiselection": "",
         "xf_columns": {
@@ -39,10 +81,8 @@
             }
           ]
         },
-        "xf_varname": "carList",
-        "xf_inputlistname": "carList",
-        "xf_filter": null,
         "xf_required": "true",
+        "xf_inputlistname": "carList",
         "xf_navindex": "",
         "xf_accesskey": ""
       },

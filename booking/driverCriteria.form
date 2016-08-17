@@ -8,8 +8,35 @@
     "xf_name": "driverCriteria",
     "xf_version": "",
     "xf_default_buttons": true,
-    "xf_postprocess": null,
+    "xf_used_default_buttons": {
+      "totalCount": 3,
+      "items": [
+        {
+          "label": "@form.execute",
+          "action": "execute",
+          "icon": "check"
+        },
+        {
+          "label": "@button.reset",
+          "action": "reset",
+          "icon": "refresh"
+        },
+        {
+          "label": "@button.cancel",
+          "action": "cancel",
+          "icon": "clear"
+        }
+      ]
+    },
     "xf_method_fetch": "",
+    "xf_preprocess_service": null,
+    "xf_preprocess_service_mode": "edit_add",
+    "xf_preprocess_local": null,
+    "xf_postprocess_service": null,
+    "xf_postprocess_service_mode": "edit_add",
+    "xf_postprocess_local": null,
+    "xf_save_disabled": null,
+    "xf_postprocess": null,
     "xf_head": "",
     "xf_nsdeclarations": ""
   },
@@ -20,19 +47,23 @@
     {
       "resourceId": "oryx_353181B1-A6F7-4CC9-BE7B-E142E4CC4230",
       "properties": {
-        "xf_id": "name",
-        "xf_type": "text",
-        "xf_default": "",
         "xf_exclude": "",
         "xf_invisible": "",
         "xf_readonly": "",
+        "xf_tabindex": 0,
+        "xf_id": "name",
+        "xf_type": "text",
+        "xf_default": "",
+        "xf_errormsg": "",
+        "xf_expression_in": null,
+        "xf_expression_out": null,
         "xf_required": "true",
-        "xf_filtercheck": null,
         "xf_constraint_text": null,
         "xf_constraint_date": null,
         "xf_constraint_boolean": null,
         "xf_constraint_decimal": null,
         "xf_constraint_number": null,
+        "xf_filtercheck": null,
         "xf_navindex": "",
         "xf_accesskey": "",
         "xf_calculate": "",
@@ -82,19 +113,23 @@
     {
       "resourceId": "oryx_3BCDDABB-66E3-4DF7-B4B7-9C9FFA80FBE2",
       "properties": {
-        "xf_id": "carModel",
-        "xf_type": "text",
-        "xf_default": "",
         "xf_exclude": "",
         "xf_invisible": "",
         "xf_readonly": "true",
+        "xf_tabindex": 0,
+        "xf_id": "carModel",
+        "xf_type": "text",
+        "xf_default": "",
+        "xf_errormsg": "",
+        "xf_expression_in": null,
+        "xf_expression_out": null,
         "xf_required": "",
-        "xf_filtercheck": null,
         "xf_constraint_text": null,
         "xf_constraint_date": null,
         "xf_constraint_boolean": null,
         "xf_constraint_decimal": null,
         "xf_constraint_number": null,
+        "xf_filtercheck": null,
         "xf_navindex": "",
         "xf_accesskey": "",
         "xf_calculate": "",
@@ -144,11 +179,14 @@
     {
       "resourceId": "oryx_D28A63AC-745E-46B8-8D18-2758F0B985C8",
       "properties": {
+        "xf_exclude": "driverListAlert == false",
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
         "xf_id": "driverListAlert",
         "xf_message": "",
         "xf_message_de": "<h2>Keine Fahrer gefunden</h2>",
-        "xf_message_en": "<h2>No driver found</h2>",
-        "xf_exclude": "driverListAlert == false"
+        "xf_message_en": "<h2>No driver found</h2>"
       },
       "stencil": {
         "id": "Alert"
@@ -170,11 +208,14 @@
     {
       "resourceId": "oryx_5C9064A7-6BDF-4DAE-AC46-E02162E1CA23",
       "properties": {
+        "xf_exclude": "error_alert==false  || driverListAlert==true",
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
         "xf_id": "error_alert",
         "xf_message": "",
         "xf_message_de": "<h2>Fahrer nicht berechtigt</h2>",
-        "xf_message_en": "<h2>Driver not authorized</h2>",
-        "xf_exclude": "error_alert==false  || driverListAlert==true"
+        "xf_message_en": "<h2>Driver not authorized</h2>"
       },
       "stencil": {
         "id": "Alert"

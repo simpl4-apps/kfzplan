@@ -4,12 +4,39 @@
 {
   "resourceId": "oryx_8C445096-C173-4FE6-953D-C7D531FB8FDA",
   "properties": {
-    "xf_id": "refusal",
+    "xf_id": "refusal.form",
     "xf_name": "refusal",
     "xf_version": "",
     "xf_default_buttons": true,
-    "xf_postprocess": null,
-    "xf_method_fetch": ""
+    "xf_used_default_buttons": {
+      "totalCount": 3,
+      "items": [
+        {
+          "label": "@form.execute",
+          "action": "execute",
+          "icon": "check"
+        },
+        {
+          "label": "@button.reset",
+          "action": "reset",
+          "icon": "refresh"
+        },
+        {
+          "label": "@button.cancel",
+          "action": "cancel",
+          "icon": "clear"
+        }
+      ]
+    },
+    "xf_method_fetch": "",
+    "xf_preprocess_service": null,
+    "xf_preprocess_service_mode": "edit_add",
+    "xf_preprocess_local": null,
+    "xf_postprocess_service": null,
+    "xf_postprocess_service_mode": "edit_add",
+    "xf_postprocess_local": null,
+    "xf_save_disabled": null,
+    "xf_postprocess": null
   },
   "stencil": {
     "id": "XForm"
@@ -18,11 +45,14 @@
     {
       "resourceId": "oryx_71C9C0E1-A70B-4805-991A-947DD7EDE406",
       "properties": {
+        "xf_exclude": "",
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
         "xf_id": "",
         "xf_message": "Sie sind zu jung für das teuere Fahrzeug!",
         "xf_message_de": null,
-        "xf_message_en": null,
-        "xf_exclude": ""
+        "xf_message_en": null
       },
       "stencil": {
         "id": "Alert"
